@@ -20,48 +20,48 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_d9HCBcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_d9HCBsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_d9HCB8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_El9oALBnEeSFN7Nv2N7-Tw" name="executeReport" definitionId="jasper" event="ON_ENTER" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_El9oB7BnEeSFN7Nv2N7-Tw" definitionId="jasper" version="1.0.0" modelVersion="6.4.0-005">
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_El9oCLBnEeSFN7Nv2N7-Tw" key="dbDriver">
-                <expression xmi:type="expression:Expression" xmi:id="_d9HCF8avEeWStvAm3pigyA" name="jdbcDriver" content="jdbcDriver" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_El9oCrBnEeSFN7Nv2N7-Tw" name="jdbcDriver" typeClassname="java.lang.String"/>
+          <connectors xmi:type="process:Connector" xmi:id="_MlBvsAwcEei-AeSrpwoQZQ" name="executeReport" definitionId="jasper" event="ON_ENTER" definitionVersion="1.0.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_MlBvsQwcEei-AeSrpwoQZQ" definitionId="jasper" version="1.0.0" modelVersion="7.6.0-002">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_MlBvsgwcEei-AeSrpwoQZQ" key="dbDriver">
+                <expression xmi:type="expression:Expression" xmi:id="_MlBvswwcEei-AeSrpwoQZQ" name="jdbcDriver" content="jdbcDriver" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_MlBvtAwcEei-AeSrpwoQZQ" name="jdbcDriver" typeClassname="java.lang.String"/>
                 </expression>
               </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_El9oC7BnEeSFN7Nv2N7-Tw" key="jdbcUrl">
-                <expression xmi:type="expression:Expression" xmi:id="_d9HCGcavEeWStvAm3pigyA" name="parameterJdbcUrl" content="parameterJdbcUrl" interpreter="GROOVY" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_El9oDbBnEeSFN7Nv2N7-Tw" name="parameterJdbcUrl" typeClassname="java.lang.String"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_MlBvtQwcEei-AeSrpwoQZQ" key="jdbcUrl">
+                <expression xmi:type="expression:Expression" xmi:id="_MlBvtgwcEei-AeSrpwoQZQ" name="parameterJdbcUrl" content="parameterJdbcUrl" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_MlBvtwwcEei-AeSrpwoQZQ" name="parameterJdbcUrl" typeClassname="java.lang.String"/>
                 </expression>
               </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_El9oDrBnEeSFN7Nv2N7-Tw" key="user">
-                <expression xmi:type="expression:Expression" xmi:id="_d9HCG8avEeWStvAm3pigyA" name="parameterJdbcUser" content="parameterJdbcUser" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_El9oELBnEeSFN7Nv2N7-Tw" name="parameterJdbcUser" typeClassname="java.lang.String"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_MlBvuAwcEei-AeSrpwoQZQ" key="user">
+                <expression xmi:type="expression:Expression" xmi:id="_MlBvuQwcEei-AeSrpwoQZQ" name="parameterJdbcUser" content="parameterJdbcUser" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_MlBvugwcEei-AeSrpwoQZQ" name="parameterJdbcUser" typeClassname="java.lang.String"/>
                 </expression>
               </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_El9oEbBnEeSFN7Nv2N7-Tw" key="password">
-                <expression xmi:type="expression:Expression" xmi:id="_d9HCHcavEeWStvAm3pigyA" name="parameterJdbcPassword" content="parameterJdbcPassword" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_El9oE7BnEeSFN7Nv2N7-Tw" name="parameterJdbcPassword" typeClassname="java.lang.String"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_MlBvuwwcEei-AeSrpwoQZQ" key="password">
+                <expression xmi:type="expression:Expression" xmi:id="_MlBvvAwcEei-AeSrpwoQZQ" name="parameterJdbcPassword" content="parameterJdbcPassword" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_MlBvvQwcEei-AeSrpwoQZQ" name="parameterJdbcPassword" typeClassname="java.lang.String"/>
                 </expression>
               </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_El9oFLBnEeSFN7Nv2N7-Tw" key="jrxmlDocument">
-                <expression xmi:type="expression:Expression" xmi:id="_d9HCH8avEeWStvAm3pigyA" name="jrxml" content="jrxml" type="DOCUMENT_REF_TYPE" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Document" xmi:id="__cXYAAwYEei-AeSrpwoQZQ" name="jrxml"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_MlBvvgwcEei-AeSrpwoQZQ" key="jrxmlDocument">
+                <expression xmi:type="expression:Expression" xmi:id="_MlBvvwwcEei-AeSrpwoQZQ" name="jrxml" content="jrxml" type="DOCUMENT_REF_TYPE" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Document" xmi:id="_MlBvwAwcEei-AeSrpwoQZQ" name="jrxml"/>
                 </expression>
               </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_El9oF7BnEeSFN7Nv2N7-Tw" key="parameters">
-                <expression xmi:type="expression:TableExpression" xmi:id="_El9oGLBnEeSFN7Nv2N7-Tw"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_MlBvwQwcEei-AeSrpwoQZQ" key="parameters">
+                <expression xmi:type="expression:TableExpression" xmi:id="_MlBvwgwcEei-AeSrpwoQZQ"/>
               </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_El9oGbBnEeSFN7Nv2N7-Tw" key="outputFormat">
-                <expression xmi:type="expression:Expression" xmi:id="_d9HCIsavEeWStvAm3pigyA" name="PDF" content="PDF" returnTypeFixed="true"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_MlBvwwwcEei-AeSrpwoQZQ" key="outputFormat">
+                <expression xmi:type="expression:Expression" xmi:id="_MlBvxAwcEei-AeSrpwoQZQ" name="PDF" content="PDF" returnTypeFixed="true"/>
               </parameters>
             </configuration>
-            <outputs xmi:type="expression:Operation" xmi:id="_El9oAbBnEeSFN7Nv2N7-Tw">
-              <leftOperand xmi:type="expression:Expression" xmi:id="_d9HCKMavEeWStvAm3pigyA" name="myDoc" content="myDoc" type="DOCUMENT_REF_TYPE">
-                <referencedElements xmi:type="process:Document" xmi:id="__cXYCQwYEei-AeSrpwoQZQ" name="myDoc"/>
+            <outputs xmi:type="expression:Operation" xmi:id="_MlBvxQwcEei-AeSrpwoQZQ">
+              <leftOperand xmi:type="expression:Expression" xmi:id="_MlBvxgwcEei-AeSrpwoQZQ" name="myDoc" content="myDoc" type="DOCUMENT_REF_TYPE">
+                <referencedElements xmi:type="process:Document" xmi:id="_MlBvxwwcEei-AeSrpwoQZQ" name="myDoc"/>
               </leftOperand>
-              <rightOperand xmi:type="expression:Expression" xmi:id="_d9HCKsavEeWStvAm3pigyA" name="reportDocValue" content="reportDocValue" type="CONNECTOR_OUTPUT_TYPE" returnType="org.bonitasoft.engine.bpm.document.DocumentValue">
-                <referencedElements xmi:type="definition:Output" xmi:id="_El9oBrBnEeSFN7Nv2N7-Tw" name="reportDocValue" type="org.bonitasoft.engine.bpm.document.DocumentValue"/>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_MlBvyAwcEei-AeSrpwoQZQ" name="reportDocValue" content="reportDocValue" type="CONNECTOR_OUTPUT_TYPE" returnType="org.bonitasoft.engine.bpm.document.DocumentValue">
+                <referencedElements xmi:type="definition:Output" xmi:id="_MlBvyQwcEei-AeSrpwoQZQ" name="reportDocValue" type="org.bonitasoft.engine.bpm.document.DocumentValue"/>
               </rightOperand>
-              <operator xmi:type="expression:Operator" xmi:id="_El9oBLBnEeSFN7Nv2N7-Tw" type="DOCUMENT_CREATE_UPDATE"/>
+              <operator xmi:type="expression:Operator" xmi:id="_MlBvygwcEei-AeSrpwoQZQ" type="DOCUMENT_CREATE_UPDATE"/>
             </outputs>
           </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_d9HCCcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
