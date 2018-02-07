@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>TwitterSearch</id>
+  <version>1.0.0</version>
+  <category id="Social"/>
+  <input mandatory="true" name="consumerKey" type="java.lang.String"/>
+  <input mandatory="true" name="consumerSecret" type="java.lang.String"/>
+  <input mandatory="true" name="accessToken" type="java.lang.String"/>
+  <input mandatory="true" name="accessSecret" type="java.lang.String"/>
+  <input mandatory="true" name="query" type="java.lang.String"/>
+  <output name="tweets" type="java.util.List"/>
+  <page id="ConfigurationPage">
+    <widget xsi:type="definition:Text" id="consumerKey" inputName="consumerKey"/>
+    <widget xsi:type="definition:Text" id="consumerSecret" inputName="consumerSecret"/>
+    <widget xsi:type="definition:Text" id="accessToken" inputName="accessToken"/>
+    <widget xsi:type="definition:Text" id="accessSecret" inputName="accessSecret"/>
+  </page>
+  <page id="Query">
+    <widget xsi:type="definition:Text" id="query" inputName="query"/>
+  </page>
+  <jarDependency>twitter4j-core-3.0.3.jar</jarDependency>
+</definition:ConnectorDefinition>

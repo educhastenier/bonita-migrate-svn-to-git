@@ -1,0 +1,4 @@
+#Tue Feb 12 09:46:21 CET 2013
+jars=postgresql-9.2-1002.jdbc4.jar
+default=postgresql-9.2-1002.jdbc4.jar
+auto=true

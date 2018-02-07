@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<implementation:connectorImplementation xmlns:implementation="http://www.bonitasoft.org/ns/connector/implementation/6.0">
+  <implementationId>check-variable-impl</implementationId>
+  <implementationVersion>1.0.0</implementationVersion>
+  <definitionId>check-variable</definitionId>
+  <definitionVersion>1.0.0</definitionVersion>
+  <implementationClassname>org.bonitasoft.qa.connector.CheckVariableImpl</implementationClassname>
+  <jarDependencies/>
+</implementation:connectorImplementation>
