@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_lhFGoM6gEeK_Bsz25E4WBw" name="UpdateProcessDatesDiagram" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED000574002955706461746550726F6365737344617465734469616772616D372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_lhFGoM6gEeK_Bsz25E4WBw" name="UpdateProcessDatesDiagram" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574002955706461746550726F6365737344617465734469616772616D372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_lhf9YM6gEeK_Bsz25E4WBw" name="Update Process Dates" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:Lane" xmi:id="_lhqVcM6gEeK_Bsz25E4WBw" name="Tester lane" actor="_lhogQM6gEeK_Bsz25E4WBw">
         <elements xmi:type="process:StartEvent" xmi:id="_lh5mAM6gEeK_Bsz25E4WBw" name="Start1" outgoing="_NKmFIM66EeKu0-GwR_A9yw">
@@ -18,7 +18,7 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_iucIMc9WEeKAyNtHCf8Y6g" definitionId="database-datasource" version="1.0.0" modelVersion="6.4.0-005">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_iucIMs9WEeKAyNtHCf8Y6g" key="dataSourceName">
                 <expression xmi:type="expression:Expression" xmi:id="_eAsiOMavEeWStvAm3pigyA" name="jndiName" content="jndiName" type="TYPE_VARIABLE" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_ub1AEeGOEeOBRccffrPWDw" name="jndiName" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__rCGQAwYEei-AeSrpwoQZQ" name="jndiName" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_iucINs9WEeKAyNtHCf8Y6g" key="properties">
@@ -26,7 +26,7 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_iucIOM9WEeKAyNtHCf8Y6g" key="script">
                 <expression xmi:type="expression:Expression" xmi:id="_eAsiO8avEeWStvAm3pigyA" name="slqScriptMySQL" content="slqScriptMySQL" interpreter="GROOVY" type="TYPE_VARIABLE" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_ub1AFOGOEeOBRccffrPWDw" name="slqScriptMySQL" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__rCGQwwYEei-AeSrpwoQZQ" name="slqScriptMySQL" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_iucIPM9WEeKAyNtHCf8Y6g" key="separator">
@@ -56,6 +56,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_eAsiZ8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pwlT7BvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__rCGbgwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndTerminatedEvent" xmi:id="_B3Er0M6hEeK_Bsz25E4WBw" name="Terminate end event1" incoming="_B3Zb8M6hEeK_Bsz25E4WBw">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eAtIkMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -72,7 +73,7 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_IbVW6M9NEeKAyNtHCf8Y6g" definitionId="database-datasource" version="1.0.0" modelVersion="6.4.0-005">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_IbVW6c9NEeKAyNtHCf8Y6g" key="dataSourceName">
                 <expression xmi:type="expression:Expression" xmi:id="_eAsiPsavEeWStvAm3pigyA" name="jndiName" content="jndiName" type="TYPE_VARIABLE" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_ub1AF-GOEeOBRccffrPWDw" name="jndiName" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__rCGRgwYEei-AeSrpwoQZQ" name="jndiName" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_IbVW7c9NEeKAyNtHCf8Y6g" key="properties">
@@ -87,7 +88,7 @@
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_IbVW4c9NEeKAyNtHCf8Y6g">
               <leftOperand xmi:type="expression:Expression" xmi:id="_eAtIlMavEeWStvAm3pigyA" name="minStartDate" content="minStartDate" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_eAtIlcavEeWStvAm3pigyA" name="minStartDate" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__rCs5QwYEei-AeSrpwoQZQ" name="minStartDate" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_eAtIlsavEeWStvAm3pigyA" name="getMinStartDate" content="import org.joda.time.DateTime;&#xD;&#xA;&#xD;&#xA;resultset.first();&#xD;&#xA;DateTime dt = new DateTime(resultset.getLong(1));&#xD;&#xA;return dt.dayOfMonth().getAsText() + &quot; &quot; + dt.monthOfYear().getAsShortText() + &quot; &quot; + dt.year().getAsText();" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
                 <referencedElements xmi:type="definition:Output" xmi:id="_IbVW589NEeKAyNtHCf8Y6g" name="resultset" type="java.sql.ResultSet"/>
@@ -110,7 +111,7 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_geSDcc9WEeKAyNtHCf8Y6g" definitionId="database-datasource" version="1.0.0" modelVersion="6.4.0-005">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_geSDcs9WEeKAyNtHCf8Y6g" key="dataSourceName">
                 <expression xmi:type="expression:Expression" xmi:id="_eAsiQ8avEeWStvAm3pigyA" name="jndiName" content="jndiName" type="TYPE_VARIABLE" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_ub1AHOGOEeOBRccffrPWDw" name="jndiName" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__rCGSwwYEei-AeSrpwoQZQ" name="jndiName" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_geSDds9WEeKAyNtHCf8Y6g" key="properties">
@@ -118,7 +119,7 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_geSDeM9WEeKAyNtHCf8Y6g" key="script">
                 <expression xmi:type="expression:Expression" xmi:id="_eAsiRsavEeWStvAm3pigyA" name="sqlScript" content="sqlScript" interpreter="GROOVY" type="TYPE_VARIABLE" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_ub1AH-GOEeOBRccffrPWDw" name="sqlScript" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__rCGTgwYEei-AeSrpwoQZQ" name="sqlScript" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_geSDfM9WEeKAyNtHCf8Y6g" key="separator">
@@ -161,7 +162,7 @@
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_b1bFYc67EeKu0-GwR_A9yw">
               <leftOperand xmi:type="expression:Expression" xmi:id="_eAtImcavEeWStvAm3pigyA" name="userCount" content="userCount" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_eAtImsavEeWStvAm3pigyA" name="userCount" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__rCs6gwYEei-AeSrpwoQZQ" name="userCount" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_eAtIm8avEeWStvAm3pigyA" name="getUserCount" content="resultset.first()&#xD;&#xA;resultset.getString(1)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
                 <referencedElements xmi:type="definition:Output" xmi:id="_b1bscM67EeKu0-GwR_A9yw" name="resultset" type="java.sql.ResultSet"/>
@@ -171,7 +172,7 @@
           </connectors>
           <operations xmi:type="expression:Operation" xmi:id="_rRDiYM66EeKu0-GwR_A9yw">
             <leftOperand xmi:type="expression:Expression" xmi:id="_eAtInsavEeWStvAm3pigyA" name="jndiName" content="jndiName" type="TYPE_VARIABLE">
-              <referencedElements xmi:type="process:Data" xmi:id="_eAtIn8avEeWStvAm3pigyA" name="jndiName" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
+              <referencedElements xmi:type="process:Data" xmi:id="__rCs7wwYEei-AeSrpwoQZQ" name="jndiName" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_eAtIoMavEeWStvAm3pigyA" name="java:comp/env/bonitaSequenceManagerDS" content="java:comp/env/bonitaSequenceManagerDS"/>
             <operator xmi:type="expression:Operator" xmi:id="_rRDiYc66EeKu0-GwR_A9yw" type="ASSIGNMENT"/>
@@ -205,7 +206,7 @@
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_651_cYjmEeOLQYplKWlrHA">
               <leftOperand xmi:type="expression:Expression" xmi:id="_eAtIosavEeWStvAm3pigyA" name="userCount" content="userCount" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_eAtIo8avEeWStvAm3pigyA" name="userCount" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__rCs8wwYEei-AeSrpwoQZQ" name="userCount" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_eAtIpMavEeWStvAm3pigyA" name="getUserCount" content="resultset.first()&#xD;&#xA;resultset.getString(1)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
                 <referencedElements xmi:type="definition:Output" xmi:id="_651_d4jmEeOLQYplKWlrHA" name="resultset" type="java.sql.ResultSet"/>
@@ -215,7 +216,7 @@
           </connectors>
           <operations xmi:type="expression:Operation" xmi:id="_v5-OQM66EeKu0-GwR_A9yw">
             <leftOperand xmi:type="expression:Expression" xmi:id="_eAtIp8avEeWStvAm3pigyA" name="jndiName" content="jndiName" type="TYPE_VARIABLE">
-              <referencedElements xmi:type="process:Data" xmi:id="_eAtIqMavEeWStvAm3pigyA" name="jndiName" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
+              <referencedElements xmi:type="process:Data" xmi:id="__rCs-AwYEei-AeSrpwoQZQ" name="jndiName" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_eAtIqcavEeWStvAm3pigyA" name="bonitaSequenceManagerDS" content="bonitaSequenceManagerDS"/>
             <operator xmi:type="expression:Operator" xmi:id="_v5-OQc66EeKu0-GwR_A9yw" type="ASSIGNMENT"/>
@@ -240,7 +241,7 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_eAsiA8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_79_kEIjmEeOLQYplKWlrHA">
             <leftOperand xmi:type="expression:Expression" xmi:id="_eAtIq8avEeWStvAm3pigyA" name="jndiName" content="jndiName" type="TYPE_VARIABLE">
-              <referencedElements xmi:type="process:Data" xmi:id="_eAtIrMavEeWStvAm3pigyA" name="jndiName" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
+              <referencedElements xmi:type="process:Data" xmi:id="__rCs_AwYEei-AeSrpwoQZQ" name="jndiName" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_eAtIrcavEeWStvAm3pigyA" name="jdbc/bonitaSequenceManagerDS" content="jdbc/bonitaSequenceManagerDS"/>
             <operator xmi:type="expression:Operator" xmi:id="_79_kEYjmEeOLQYplKWlrHA" type="ASSIGNMENT"/>
@@ -273,7 +274,7 @@
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_hziNQU7yEeSF1otMJA2eew">
               <leftOperand xmi:type="expression:Expression" xmi:id="_eAtIr8avEeWStvAm3pigyA" name="userCount" content="userCount" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_eAtIsMavEeWStvAm3pigyA" name="userCount" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__rCtAAwYEei-AeSrpwoQZQ" name="userCount" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_eAtIscavEeWStvAm3pigyA" name="getUserCount" content="resultset.first()&#xA;resultset.getString(1)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
                 <referencedElements xmi:type="definition:Output" xmi:id="_hziNRk7yEeSF1otMJA2eew" name="resultset" type="java.sql.ResultSet"/>
@@ -283,7 +284,7 @@
           </connectors>
           <operations xmi:type="expression:Operation" xmi:id="_vmK2sE7yEeSF1otMJA2eew">
             <leftOperand xmi:type="expression:Expression" xmi:id="_eAtItMavEeWStvAm3pigyA" name="jndiName" content="jndiName" type="TYPE_VARIABLE">
-              <referencedElements xmi:type="process:Data" xmi:id="_eAtItcavEeWStvAm3pigyA" name="jndiName" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
+              <referencedElements xmi:type="process:Data" xmi:id="__rCtBQwYEei-AeSrpwoQZQ" name="jndiName" dataType="_lhFGps6gEeK_Bsz25E4WBw"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_eAtItsavEeWStvAm3pigyA" name="java:jboss/datasources/bonitaSequenceManagerDS" content="java:jboss/datasources/bonitaSequenceManagerDS"/>
             <operator xmi:type="expression:Operator" xmi:id="_vmK2sU7yEeSF1otMJA2eew" type="ASSIGNMENT"/>

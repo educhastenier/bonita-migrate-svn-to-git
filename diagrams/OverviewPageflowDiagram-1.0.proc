@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_xiR-IA5bEeOP14xOCu9RsQ" name="OverviewPageflowDiagram" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED00057400274F7665727669657750616765666C6F774469616772616D372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_xiR-IA5bEeOP14xOCu9RsQ" name="OverviewPageflowDiagram" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED00057400274F7665727669657750616765666C6F774469616772616D372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_xkXo0A5bEeOP14xOCu9RsQ" name="OverviewPageflowTestPool" welcomePageInternal="false" basedOnLookAndFeel="Default Application" entryPageFlowType="SKIP">
       <elements xmi:type="process:Lane" xmi:id="_xkjPAA5bEeOP14xOCu9RsQ" name="Employee lane" actor="_xkhZ0A5bEeOP14xOCu9RsQ">
         <elements xmi:type="process:Task" xmi:id="_xkuOIA5bEeOP14xOCu9RsQ" name="Step1" outgoing="_F5quAA5cEeOP14xOCu9RsQ" incoming="_xlCXMA5bEeOP14xOCu9RsQ" useCardinality="true" overrideActorsOfTheLane="false">
@@ -19,6 +19,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d0WvAsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pgea9hvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__De95AwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_xk6bYA5bEeOP14xOCu9RsQ" name="Start1" outgoing="_xlCXMA5bEeOP14xOCu9RsQ">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d0WvCcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -48,6 +49,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d0WvA8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pgebAxvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__De98gwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_-E6_UA5bEeOP14xOCu9RsQ" name="Manager lane" actor="_dqVt4A5cEeOP14xOCu9RsQ">
@@ -67,6 +69,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d0WvBMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pgebEBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__De-AAwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_HCSi8A5cEeOP14xOCu9RsQ" name="Step3" outgoing="_IXEkkA5cEeOP14xOCu9RsQ" incoming="_HCf-UA5cEeOP14xOCu9RsQ" useCardinality="true">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d0WvEcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -151,7 +154,7 @@
           <tooltipForRemove xmi:type="expression:Expression" xmi:id="_d0XV2cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <exampleMessage xmi:type="expression:Expression" xmi:id="_d0XV2savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <defaultExpression xmi:type="expression:Expression" xmi:id="_d0XV28avEeWStvAm3pigyA" name="carBrand" content="carBrand" type="TYPE_VARIABLE">
-            <referencedElements xmi:type="process:Data" xmi:id="_d0XV3MavEeWStvAm3pigyA" name="carBrand" dataType="_JcRAIA5eEeOP14xOCu9RsQ"/>
+            <referencedElements xmi:type="process:Data" xmi:id="__De-TAwYEei-AeSrpwoQZQ" name="carBrand" dataType="_JcRAIA5eEeOP14xOCu9RsQ"/>
           </defaultExpression>
           <defaultExpressionAfterEvent xmi:type="expression:Expression" xmi:id="_d0XV3cavEeWStvAm3pigyA" name="" content=""/>
         </widgets>
@@ -176,7 +179,7 @@
           <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_d0XV7MavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_d0XV7cavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <inputExpression xmi:type="expression:Expression" xmi:id="_d0XV7savEeWStvAm3pigyA" name="varText" content="varText" type="TYPE_VARIABLE">
-            <referencedElements xmi:type="process:Data" xmi:id="_d0XV78avEeWStvAm3pigyA" name="varText" dataType="_xiSlNA5bEeOP14xOCu9RsQ"/>
+            <referencedElements xmi:type="process:Data" xmi:id="__De-XwwYEei-AeSrpwoQZQ" name="varText" dataType="_xiSlNA5bEeOP14xOCu9RsQ"/>
           </inputExpression>
           <afterEventExpression xmi:type="expression:Expression" xmi:id="_d0XV8MavEeWStvAm3pigyA" name="" content=""/>
           <tooltip xmi:type="expression:Expression" xmi:id="_d0XV8cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -219,7 +222,7 @@
           <tooltipForRemove xmi:type="expression:Expression" xmi:id="_d0XWEsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <exampleMessage xmi:type="expression:Expression" xmi:id="_d0XWE8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <defaultExpression xmi:type="expression:Expression" xmi:id="_d0XWFMavEeWStvAm3pigyA" name="carBrand" content="carBrand" type="TYPE_VARIABLE">
-            <referencedElements xmi:type="process:Data" xmi:id="_d0XWFcavEeWStvAm3pigyA" name="carBrand" dataType="_JcRAIA5eEeOP14xOCu9RsQ"/>
+            <referencedElements xmi:type="process:Data" xmi:id="__De-hQwYEei-AeSrpwoQZQ" name="carBrand" dataType="_JcRAIA5eEeOP14xOCu9RsQ"/>
           </defaultExpression>
           <defaultExpressionAfterEvent xmi:type="expression:Expression" xmi:id="_d0XWFsavEeWStvAm3pigyA" name="" content=""/>
         </widgets>
@@ -236,7 +239,7 @@
           <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_d0XWG8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_d0XWHMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <inputExpression xmi:type="expression:Expression" xmi:id="_d0XWHcavEeWStvAm3pigyA" name="varBool" content="varBool" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-            <referencedElements xmi:type="process:Data" xmi:id="_d0XWHsavEeWStvAm3pigyA" name="varBool" dataType="_xiR-IQ5bEeOP14xOCu9RsQ"/>
+            <referencedElements xmi:type="process:Data" xmi:id="__De-jgwYEei-AeSrpwoQZQ" name="varBool" dataType="_xiR-IQ5bEeOP14xOCu9RsQ"/>
           </inputExpression>
           <afterEventExpression xmi:type="expression:Expression" xmi:id="_d0XWH8avEeWStvAm3pigyA" name="" content=""/>
           <tooltip xmi:type="expression:Expression" xmi:id="_d0XWIMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -261,7 +264,7 @@
           <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_d0XWMMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_d0XWMcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <inputExpression xmi:type="expression:Expression" xmi:id="_d0XWMsavEeWStvAm3pigyA" name="varDate" content="varDate" type="TYPE_VARIABLE" returnType="java.util.Date">
-            <referencedElements xmi:type="process:Data" xmi:id="_d0XWM8avEeWStvAm3pigyA" name="varDate" dataType="_xiSlMA5bEeOP14xOCu9RsQ"/>
+            <referencedElements xmi:type="process:Data" xmi:id="__De-owwYEei-AeSrpwoQZQ" name="varDate" dataType="_xiSlMA5bEeOP14xOCu9RsQ"/>
           </inputExpression>
           <afterEventExpression xmi:type="expression:Expression" xmi:id="_d0XWNMavEeWStvAm3pigyA" name="" content=""/>
           <tooltip xmi:type="expression:Expression" xmi:id="_d0XWNcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_STK04NA5EeOfutm74wvRDg" name="TimerEventDiagram" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED000574002154696D65724576656E744469616772616D372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_STK04NA5EeOfutm74wvRDg" name="TimerEventDiagram" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574002154696D65724576656E744469616772616D372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_SZGdwNA5EeOfutm74wvRDg" name="Timer start" welcomePageInternal="false" basedOnLookAndFeel="Default Application" entryPageFlowType="SKIP" version="2.0">
       <elements xmi:type="process:Lane" xmi:id="_SmbvINA5EeOfutm74wvRDg" name="Birthday lane" actor="_SmEiwNA5EeOfutm74wvRDg">
         <elements xmi:type="process:StartTimerEvent" xmi:id="_hmSZoNA5EeOfutm74wvRDg" name="Once after 3 seconds" outgoing="_qXQqkNA6EeOfutm74wvRDg">
@@ -26,6 +26,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d9_MR8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_ptimWxvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__hER2wwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_1EIyENA8EeOfutm74wvRDg" name="Send birthday gift" outgoing="_3NsfkNA8EeOfutm74wvRDg" incoming="_01yNANA8EeOfutm74wvRDg" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d9_MH8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -43,6 +44,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d9_MSMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_ptimaBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__hER6QwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_3NiHgNA8EeOfutm74wvRDg" name="End3" incoming="_3NsfkNA8EeOfutm74wvRDg">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d9_MUcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -178,7 +180,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_d9_M1cavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_d9_M1savEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_d9_M18avEeWStvAm3pigyA" name="cookDuration" content="cookDuration" type="TYPE_VARIABLE" returnType="java.lang.Long">
-                <referencedElements xmi:type="process:Data" xmi:id="_rpMXFtA7EeOfutm74wvRDg" name="cookDuration" dataType="_STK05NA5EeOfutm74wvRDg"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__hESmAwYEei-AeSrpwoQZQ" name="cookDuration" dataType="_STK05NA5EeOfutm74wvRDg"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_d9_M2cavEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_d9_M2savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -187,10 +189,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_d9_M3cavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_rpMXGNA7EeOfutm74wvRDg">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_d9_M58avEeWStvAm3pigyA" name="cookDuration" content="cookDuration" type="TYPE_VARIABLE" returnType="java.lang.Long">
-                  <referencedElements xmi:type="process:Data" xmi:id="_d9_M6MavEeWStvAm3pigyA" name="cookDuration" dataType="_STK05NA5EeOfutm74wvRDg"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__hE4kQwYEei-AeSrpwoQZQ" name="cookDuration" dataType="_STK05NA5EeOfutm74wvRDg"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_d9_M6cavEeWStvAm3pigyA" name="field_cookDuration1" content="field_cookDuration1" type="TYPE_INPUT" returnType="java.lang.Long">
-                  <referencedElements xmi:type="form:TextFormField" xmi:id="_d9_M6savEeWStvAm3pigyA" name="cookDuration1" returnTypeModifier="java.lang.Long"/>
+                  <referencedElements xmi:type="form:TextFormField" xmi:id="__hE4kwwYEei-AeSrpwoQZQ" name="cookDuration1" returnTypeModifier="java.lang.Long"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_rpMXG9A7EeOfutm74wvRDg" type="ASSIGNMENT"/>
               </action>
@@ -215,6 +217,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d9_MS8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_ptimdhvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__hER-AwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:IntermediateCatchTimerEvent" xmi:id="_ZO1UkNA7EeOfutm74wvRDg" name="Cooking timer" outgoing="_aPF3sNA7EeOfutm74wvRDg" incoming="_ZPGaUNA7EeOfutm74wvRDg">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d9_M78avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -222,7 +225,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_d9_M8cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_d9_M8savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <condition xmi:type="expression:Expression" xmi:id="_d9_M88avEeWStvAm3pigyA" name="durationInMillis" content="cookDuration * 1000" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
-            <referencedElements xmi:type="process:Data" xmi:id="_d9_M9MavEeWStvAm3pigyA" name="cookDuration" dataType="_STK05NA5EeOfutm74wvRDg"/>
+            <referencedElements xmi:type="process:Data" xmi:id="__hE4nQwYEei-AeSrpwoQZQ" name="cookDuration" dataType="_STK05NA5EeOfutm74wvRDg"/>
           </condition>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_afMwQNA7EeOfutm74wvRDg" name="Done!" outgoing="_a-vL8NA7EeOfutm74wvRDg" incoming="_aPF3sNA7EeOfutm74wvRDg" useCardinality="true" overrideActorsOfTheLane="false">
@@ -241,6 +244,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d9_MTMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_ptimgxvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__hESBgwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_a-la8NA7EeOfutm74wvRDg" name="End2" incoming="_a-vL8NA7EeOfutm74wvRDg">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d9_MVcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>

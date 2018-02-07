@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_5X4OgJIyEeKE_t-Q_0jPnQ" name="DynamicDescriptionDiagram" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED000574002944796E616D69634465736372697074696F6E4469616772616D372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_5X4OgJIyEeKE_t-Q_0jPnQ" name="DynamicDescriptionDiagram" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574002944796E616D69634465736372697074696F6E4469616772616D372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_5YItMJIyEeKE_t-Q_0jPnQ" name="DynamicDescriptionPool" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:Lane" xmi:id="_5YRQEJIyEeKE_t-Q_0jPnQ" name="Employee lane" actor="_5YPa4JIyEeKE_t-Q_0jPnQ">
         <elements xmi:type="process:Task" xmi:id="_5YWvoJIyEeKE_t-Q_0jPnQ" name="A human task" outgoing="_O-CeoJIzEeKE_t-Q_0jPnQ" incoming="_5YmAMJIyEeKE_t-Q_0jPnQ" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_5YWvpJIyEeKE_t-Q_0jPnQ" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_5YWvopIyEeKE_t-Q_0jPnQ" name="humanTaskTitle" content="humanTaskTitle" type="TYPE_VARIABLE">
-            <referencedElements xmi:type="process:Data" xmi:id="_s4Xo7uGOEeOBRccffrPWDw" name="humanTaskTitle" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
+            <referencedElements xmi:type="process:Data" xmi:id="_96sw7QwYEei-AeSrpwoQZQ" name="humanTaskTitle" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
           </dynamicLabel>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_5YWvoZIyEeKE_t-Q_0jPnQ" name="taskDescription" content="taskDescription" type="TYPE_VARIABLE">
-            <referencedElements xmi:type="process:Data" xmi:id="_s4Xo7-GOEeOBRccffrPWDw" documentation="A variable to configure the task description." name="taskDescription" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
+            <referencedElements xmi:type="process:Data" xmi:id="_96sw7gwYEei-AeSrpwoQZQ" documentation="A variable to configure the task description." name="taskDescription" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
           </dynamicDescription>
           <stepSummary xmi:type="expression:Expression" xmi:id="_5YWvo5IyEeKE_t-Q_0jPnQ" name="groovyDescAfterCompletion" content="&quot;[Bravo!] &quot; + taskDescriptionAfterCompletion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-            <referencedElements xmi:type="process:Data" xmi:id="_s4Xo8OGOEeOBRccffrPWDw" documentation="A variable to configure the task description after completion." name="taskDescriptionAfterCompletion" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
+            <referencedElements xmi:type="process:Data" xmi:id="_96sw7wwYEei-AeSrpwoQZQ" documentation="A variable to configure the task description after completion." name="taskDescriptionAfterCompletion" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
           </stepSummary>
           <loopCondition xmi:type="expression:Expression" xmi:id="_5YWvpZIyEeKE_t-Q_0jPnQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_5YWvppIyEeKE_t-Q_0jPnQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -24,6 +24,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dczKRcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_o3r8cRvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_96sw3wwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_5YercJIyEeKE_t-Q_0jPnQ" name="Start1" outgoing="_5YmAMJIyEeKE_t-Q_0jPnQ">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_dczxVcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -34,13 +35,13 @@
         <elements xmi:type="process:ServiceTask" xmi:id="_O9zOEJIzEeKE_t-Q_0jPnQ" name="A service task" outgoing="_PivHIJIzEeKE_t-Q_0jPnQ" incoming="_O-CeoJIzEeKE_t-Q_0jPnQ" useCardinality="true">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_dczxWcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_dczxWsavEeWStvAm3pigyA" name="serviceTaskTitle" content="serviceTaskTitle" type="TYPE_VARIABLE">
-            <referencedElements xmi:type="process:Data" xmi:id="_dczxW8avEeWStvAm3pigyA" name="serviceTaskTitle" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
+            <referencedElements xmi:type="process:Data" xmi:id="_96tXwQwYEei-AeSrpwoQZQ" name="serviceTaskTitle" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
           </dynamicLabel>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_dczxXMavEeWStvAm3pigyA" name="groovyTaskDescription" content="&quot;[Groovy task description] &quot; + taskDescription" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-            <referencedElements xmi:type="process:Data" xmi:id="_dczxXcavEeWStvAm3pigyA" documentation="A variable to configure the task description." name="taskDescription" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
+            <referencedElements xmi:type="process:Data" xmi:id="_96tXwwwYEei-AeSrpwoQZQ" documentation="A variable to configure the task description." name="taskDescription" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
           </dynamicDescription>
           <stepSummary xmi:type="expression:Expression" xmi:id="_dczxXsavEeWStvAm3pigyA" name="taskDescriptionAfterCompletion" content="taskDescriptionAfterCompletion" type="TYPE_VARIABLE">
-            <referencedElements xmi:type="process:Data" xmi:id="_dczxX8avEeWStvAm3pigyA" documentation="A variable to configure the task description after completion." name="taskDescriptionAfterCompletion" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
+            <referencedElements xmi:type="process:Data" xmi:id="_96tXxQwYEei-AeSrpwoQZQ" documentation="A variable to configure the task description after completion." name="taskDescriptionAfterCompletion" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
           </stepSummary>
           <loopCondition xmi:type="expression:Expression" xmi:id="_dczxYMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_dczxYcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -63,6 +64,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dczxUMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_o3r8fRvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_96sw7AwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndTerminatedEvent" xmi:id="_QY5TEJIzEeKE_t-Q_0jPnQ" name="Terminate end event1" incoming="_QZLm8JIzEeKE_t-Q_0jPnQ">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_dczxZcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -98,10 +100,10 @@
           <displayLabel xmi:type="expression:Expression" xmi:id="_dczxb8avEeWStvAm3pigyA" name="taskTitle" content="taskTitle"/>
           <action xmi:type="expression:Operation" xmi:id="_WQoMYpI8EeKE_t-Q_0jPnQ">
             <leftOperand xmi:type="expression:Expression" xmi:id="_dczxd8avEeWStvAm3pigyA" name="taskTitle" content="taskTitle" type="TYPE_VARIABLE">
-              <referencedElements xmi:type="process:Data" xmi:id="_dczxeMavEeWStvAm3pigyA" documentation="A variable to store the task title." name="taskTitle" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_96tX3gwYEei-AeSrpwoQZQ" documentation="A variable to store the task title." name="taskTitle" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_dczxecavEeWStvAm3pigyA" name="field_taskTitle" content="field_taskTitle" type="TYPE_INPUT">
-              <referencedElements xmi:type="form:TextFormField" xmi:id="_dczxesavEeWStvAm3pigyA" name="taskTitle"/>
+              <referencedElements xmi:type="form:TextFormField" xmi:id="_96tX4AwYEei-AeSrpwoQZQ" name="taskTitle"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_WQoMZpI8EeKE_t-Q_0jPnQ" type="ASSIGNMENT"/>
           </action>
@@ -111,10 +113,10 @@
           <displayLabel xmi:type="expression:Expression" xmi:id="_dczxcsavEeWStvAm3pigyA" name="taskDescriptionAfterCompletion" content="taskDescriptionAfterCompletion"/>
           <action xmi:type="expression:Operation" xmi:id="_WQoMbpI8EeKE_t-Q_0jPnQ">
             <leftOperand xmi:type="expression:Expression" xmi:id="_dczxfMavEeWStvAm3pigyA" name="taskDescriptionAfterCompletion" content="taskDescriptionAfterCompletion" type="TYPE_VARIABLE">
-              <referencedElements xmi:type="process:Data" xmi:id="_dczxfcavEeWStvAm3pigyA" documentation="A variable to configure the task description after completion." name="taskDescriptionAfterCompletion" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_96tX4wwYEei-AeSrpwoQZQ" documentation="A variable to configure the task description after completion." name="taskDescriptionAfterCompletion" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_dczxfsavEeWStvAm3pigyA" name="field_taskDescriptionAfterCompletion" content="field_taskDescriptionAfterCompletion" type="TYPE_INPUT">
-              <referencedElements xmi:type="form:TextFormField" xmi:id="_dczxf8avEeWStvAm3pigyA" name="taskDescriptionAfterCompletion"/>
+              <referencedElements xmi:type="form:TextFormField" xmi:id="_96tX5QwYEei-AeSrpwoQZQ" name="taskDescriptionAfterCompletion"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_WQoMcpI8EeKE_t-Q_0jPnQ" type="ASSIGNMENT"/>
           </action>
@@ -124,10 +126,10 @@
           <displayLabel xmi:type="expression:Expression" xmi:id="_dczxdcavEeWStvAm3pigyA" name="taskDescription" content="taskDescription"/>
           <action xmi:type="expression:Operation" xmi:id="_WQoMepI8EeKE_t-Q_0jPnQ">
             <leftOperand xmi:type="expression:Expression" xmi:id="_dczxgcavEeWStvAm3pigyA" name="taskDescription" content="taskDescription" type="TYPE_VARIABLE">
-              <referencedElements xmi:type="process:Data" xmi:id="_dczxgsavEeWStvAm3pigyA" documentation="A variable to configure the task description." name="taskDescription" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_96tX6AwYEei-AeSrpwoQZQ" documentation="A variable to configure the task description." name="taskDescription" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_dczxg8avEeWStvAm3pigyA" name="field_taskDescription" content="field_taskDescription" type="TYPE_INPUT">
-              <referencedElements xmi:type="form:TextFormField" xmi:id="_dczxhMavEeWStvAm3pigyA" name="taskDescription"/>
+              <referencedElements xmi:type="form:TextFormField" xmi:id="_96tX6gwYEei-AeSrpwoQZQ" name="taskDescription"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_WQozcZI8EeKE_t-Q_0jPnQ" type="ASSIGNMENT"/>
           </action>
@@ -137,19 +139,19 @@
           <displayLabel xmi:type="expression:Expression" xmi:id="_dczxh8avEeWStvAm3pigyA" name="Submit" content="Submit"/>
           <actions xmi:type="expression:Operation" xmi:id="_dczxiMavEeWStvAm3pigyA">
             <leftOperand xmi:type="expression:Expression" xmi:id="_dczxicavEeWStvAm3pigyA" name="humanTaskTitle" content="humanTaskTitle" type="TYPE_VARIABLE">
-              <referencedElements xmi:type="process:Data" xmi:id="_dczxisavEeWStvAm3pigyA" name="humanTaskTitle" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_96tX8AwYEei-AeSrpwoQZQ" name="humanTaskTitle" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_dczxi8avEeWStvAm3pigyA" name="groovyHumanTaskTitle" content="&quot;[Human] &quot; + field_taskTitle" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="form:TextFormField" xmi:id="_dczxjMavEeWStvAm3pigyA" name="taskTitle"/>
+              <referencedElements xmi:type="form:TextFormField" xmi:id="_96tX8gwYEei-AeSrpwoQZQ" name="taskTitle"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_dczxjcavEeWStvAm3pigyA" type="ASSIGNMENT"/>
           </actions>
           <actions xmi:type="expression:Operation" xmi:id="_dczxjsavEeWStvAm3pigyA">
             <leftOperand xmi:type="expression:Expression" xmi:id="_dczxj8avEeWStvAm3pigyA" name="serviceTaskTitle" content="serviceTaskTitle" type="TYPE_VARIABLE">
-              <referencedElements xmi:type="process:Data" xmi:id="_dczxkMavEeWStvAm3pigyA" name="serviceTaskTitle" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_96tX9gwYEei-AeSrpwoQZQ" name="serviceTaskTitle" dataType="_5X4OhpIyEeKE_t-Q_0jPnQ"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_dczxkcavEeWStvAm3pigyA" name="groovyServiceTaskTitle" content="&quot;[Service] &quot; + field_taskTitle" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="form:TextFormField" xmi:id="_dczxksavEeWStvAm3pigyA" name="taskTitle"/>
+              <referencedElements xmi:type="form:TextFormField" xmi:id="_96tX-AwYEei-AeSrpwoQZQ" name="taskTitle"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_dczxk8avEeWStvAm3pigyA" type="ASSIGNMENT"/>
           </actions>

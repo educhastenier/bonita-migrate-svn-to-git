@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_tqM8caMarche48UwrOWNXw" name="Leave Management - Set Up" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED00057400294C65617665204D616E6167656D656E74202D20536574205570372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_tqM8caMarche48UwrOWNXw" name="Leave Management - Set Up" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED00057400294C65617665204D616E6167656D656E74202D20536574205570372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_W7N74KsyEeK648UwrOWNXw" name="Leave Management Set Up" welcomePageInternal="false" basedOnLookAndFeel="PT Look n feel">
       <elements xmi:type="process:Lane" xmi:id="_XNbGMKsyEeK648UwrOWNXw" name="Administrator" actor="_mXhZgLrjEeKw95pVEqjESQ">
         <elements xmi:type="process:StartEvent" xmi:id="_YWgOIKsyEeK648UwrOWNXw" name="Start" outgoing="_Ysu80KsyEeK648UwrOWNXw">
@@ -83,7 +83,7 @@
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_13418MheEeK5fexJ8dSHnQ">
               <leftOperand xmi:type="expression:Expression" xmi:id="_dlo9w8avEeWStvAm3pigyA" name="leaveTypes" content="leaveTypes" type="TYPE_VARIABLE" returnType="java.util.List">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_dlo9xMavEeWStvAm3pigyA" name="leaveTypes" transient="true" datasourceId="IN_MEMORY" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
+                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_-Uo7HAwYEei-AeSrpwoQZQ" name="leaveTypes" transient="true" datasourceId="IN_MEMORY" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_dlo9xcavEeWStvAm3pigyA" name="leaveTypes" content="return LMMapper.mapLeaveTypeList(resultset);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
                 <referencedElements xmi:type="definition:Output" xmi:id="_13419sheEeK5fexJ8dSHnQ" name="resultset" type="java.sql.ResultSet"/>
@@ -105,7 +105,7 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ImLwuMnWEeK6T64lhPoZHA" key="script">
                 <expression xmi:type="expression:Expression" xmi:id="_dlo9sMavEeWStvAm3pigyA" name="insertQuery" content="import java.util.logging.Logger;&#xD;&#xA;&#xD;&#xA;import org.apache.commons.lang.StringEscapeUtils;&#xD;&#xA;import org.bonitasoft.engine.identity.User;&#xD;&#xA;import org.bonitasoft.engine.identity.UserCriterion;&#xD;&#xA;&#xD;&#xA;StringBuilder query = new StringBuilder();&#xD;&#xA;for(User user in users){&#xD;&#xA;   query.append(String.format(&quot;INSERT INTO employees (first_name, last_name, bonita_user_id) values('%s','%s',%s);&quot;,&#xD;&#xA;&#x9;    StringEscapeUtils.escapeSql(user.getFirstName()), StringEscapeUtils.escapeSql(user.getLastName()), user.getId()));&#xD;&#xA;}&#xD;&#xA;Logger logger = Logger.getLogger(&quot;org.bonitasoft.test&quot;);&#xD;&#xA;logger.warning(query.toString());&#xD;&#xA;return query.toString();" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_dlo9scavEeWStvAm3pigyA" name="users" transient="true" datasourceId="IN_MEMORY" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
+                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_-Uo7CQwYEei-AeSrpwoQZQ" name="users" transient="true" datasourceId="IN_MEMORY" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ImLwvcnWEeK6T64lhPoZHA" key="username">
@@ -137,8 +137,8 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Uts8KMnWEeK6T64lhPoZHA" key="script">
                 <expression xmi:type="expression:Expression" xmi:id="_dlo9u8avEeWStvAm3pigyA" name="insertQuery" content="import org.bonitasoft.engine.identity.ContactData;&#xD;&#xA;import org.bonitasoft.engine.identity.User;&#xD;&#xA;import org.bonitasoft.engine.identity.UserCriterion;&#xD;&#xA;import org.bonitasoft.leavemanagement.LeaveType;&#xD;&#xA;&#xD;&#xA;StringBuilder query = new StringBuilder();&#xD;&#xA;for(User user in users){&#xD;&#xA; for(LeaveType leaveType in leaveTypes){&#xD;&#xA;&#x9;   query.append(String.format(&quot;INSERT INTO employee_applicable_leaves (leave_type_id, total, total_taken, total_available, employee_id) SELECT %s, %s, 0, %s, id from employees where bonita_user_id  = %s;&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;leaveType.getId(), leaveType.getDefaultDaysOff(), leaveType.getDefaultDaysOff(), user.getId()));&#xD;&#xA; }&#xD;&#xA;}&#xD;&#xA;return query.toString();" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_dlo9vMavEeWStvAm3pigyA" name="users" transient="true" datasourceId="IN_MEMORY" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_dlo9vcavEeWStvAm3pigyA" name="leaveTypes" transient="true" datasourceId="IN_MEMORY" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
+                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_-Uo7FAwYEei-AeSrpwoQZQ" name="users" transient="true" datasourceId="IN_MEMORY" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
+                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_-Uo7FQwYEei-AeSrpwoQZQ" name="leaveTypes" transient="true" datasourceId="IN_MEMORY" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Uts8L8nWEeK6T64lhPoZHA" key="username">
@@ -210,6 +210,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dlo-AsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pDEtQBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_-Uo7MgwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:TextAnnotation" xmi:id="_iCtMYMnsEeKOV80NW5bkvw" text="This process is meant to be run only once at installation time and should be removed afterwards."/>
       </elements>

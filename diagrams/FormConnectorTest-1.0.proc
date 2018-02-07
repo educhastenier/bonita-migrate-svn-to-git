@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="__oxHEKjWEeKPm6p2e1Odlw" name="FormConnectorTest" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED0005740021466F726D436F6E6E6563746F7254657374372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="__oxHEKjWEeKPm6p2e1Odlw" name="FormConnectorTest" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED0005740021466F726D436F6E6E6563746F7254657374372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="__p6WkKjWEeKPm6p2e1Odlw" documentation="This is a simple test that queries a HSQL database to populate a text variable.&#xD;&#xA;&#xD;&#xA;It aims at sanity checking DB connector integration on Form in enter or out of task." name="FormConnectorTestPool" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:Lane" xmi:id="__qTYIKjWEeKPm6p2e1Odlw" name="Employee lane" actor="__qRi8KjWEeKPm6p2e1Odlw">
         <elements xmi:type="process:StartEvent" xmi:id="__qlE8KjWEeKPm6p2e1Odlw" name="Start1" outgoing="__q3Y0KjWEeKPm6p2e1Odlw">
@@ -46,7 +46,7 @@
                 </configuration>
                 <outputs xmi:type="expression:Operation" xmi:id="_CIHQca2PEeKe7fpMl077yg">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_df5hw8avEeWStvAm3pigyA" name="listLastNameUsers" content="listLastNameUsers" type="TYPE_VARIABLE" returnType="java.util.List">
-                    <referencedElements xmi:type="process:JavaObjectData" xmi:id="_s-JgvuGOEeOBRccffrPWDw" name="listLastNameUsers" dataType="__oxHF6jWEeKPm6p2e1Odlw" className="java.util.List"/>
+                    <referencedElements xmi:type="process:JavaObjectData" xmi:id="_-DW9lgwYEei-AeSrpwoQZQ" name="listLastNameUsers" dataType="__oxHF6jWEeKPm6p2e1Odlw" className="java.util.List"/>
                   </leftOperand>
                   <rightOperand xmi:type="expression:Expression" xmi:id="_df5hxcavEeWStvAm3pigyA" name="resultset" content="String userName;&#xD;&#xA;List listUsersName = new ArrayList();&#xD;&#xA;&#xD;&#xA;resultset.beforeFirst();&#xD;&#xA;while (resultset.next())&#xD;&#xA;{&#xD;&#xA;&#x9;userName = resultset.getString(1);&#xD;&#xA;&#x9;listUsersName.add(userName);&#xD;&#xA;}&#xD;&#xA;resultset.close();&#xD;&#xA;return listUsersName;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
                     <referencedElements xmi:type="definition:Output" xmi:id="_CIHQd62PEeKe7fpMl077yg" name="resultset" type="java.sql.ResultSet"/>
@@ -62,6 +62,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_df5hycavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_o7feVhvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_-DW9bQwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_X-ITIKj9EeKs37GZ5XMsGw" name="End1" incoming="_X_NRMKj9EeKs37GZ5XMsGw">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_df5hz8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -89,7 +90,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_df5h1MavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_df5h1cavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_df5h1savEeWStvAm3pigyA" name="listLastNameUsers" content="listLastNameUsers" type="TYPE_VARIABLE" returnType="java.util.List">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_df5h18avEeWStvAm3pigyA" name="listLastNameUsers" dataType="__oxHF6jWEeKPm6p2e1Odlw" className="java.util.List"/>
+                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_-DW9qQwYEei-AeSrpwoQZQ" name="listLastNameUsers" dataType="__oxHF6jWEeKPm6p2e1Odlw" className="java.util.List"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_df5h2MavEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_df5h2cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -173,6 +174,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_df5hysavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_o7feYxvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_-DW9ewwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
       <resourceFolders xmi:type="process:ResourceFolder" xmi:id="__1Fr0KjWEeKPm6p2e1Odlw" path="__p6WkKjWEeKPm6p2e1Odlw/application/application"/>

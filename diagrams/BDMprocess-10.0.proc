@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_QrGssMFYEeOb55HQn-8Daw" name="BDMprocess" version="10.0" author="Philippe" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED000574001A42444D70726F63657373372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_QrGssMFYEeOb55HQn-8Daw" name="BDMprocess" version="10.0" author="Philippe" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574001A42444D70726F63657373372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_QvyYYMFYEeOb55HQn-8Daw" name="BDMprocess" welcomePageInternal="false" basedOnLookAndFeel="Default Application" version="10.0">
       <elements xmi:type="process:Lane" xmi:id="_Q33WUMFYEeOb55HQn-8Daw" name="Employee lane" actor="_Q3yd0MFYEeOb55HQn-8Daw">
         <elements xmi:type="process:Task" xmi:id="_Q4hdoMFYEeOb55HQn-8Daw" name="Step1" outgoing="_--F7kMFbEeORlrlwlJ0wew" incoming="_Q8G9IMFYEeOb55HQn-8Daw" useCardinality="true" overrideActorsOfTheLane="false">
@@ -19,7 +19,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dQ8fpcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dQ8fpsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dQ8fp8avEeWStvAm3pigyA" name="bo1 - com.company.model.BO1#getNom" content="getNom" type="TYPE_JAVA_METHOD_CALL">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_KFefscFcEeORlrlwlJ0wew" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eWy_AwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dQ8fqcavEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dQ8fqsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -28,10 +28,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ8frcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_KFefs8FcEeORlrlwlJ0wew">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dQ9tsMavEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ9tscavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXaVAwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dQ9tssavEeWStvAm3pigyA" name="field_nom1" content="field_nom1" type="TYPE_INPUT">
-                  <referencedElements xmi:type="form:TextFormField" xmi:id="_dQ9ts8avEeWStvAm3pigyA" name="nom1"/>
+                  <referencedElements xmi:type="form:TextFormField" xmi:id="_9eXaVgwYEei-AeSrpwoQZQ" name="nom1"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_KFeftsFcEeORlrlwlJ0wew" type="JAVA_METHOD" expression="setNom">
                   <inputTypes>java.lang.String</inputTypes>
@@ -50,7 +50,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dQ8ft8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dQ8fuMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dQ8fucavEeWStvAm3pigyA" name="bo1 - com.company.model.BO1#getEntier" content="getEntier" type="TYPE_JAVA_METHOD_CALL" returnType="java.lang.Integer">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_KFefycFcEeORlrlwlJ0wew" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eWzDgwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dQ8fu8avEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dQ8fvMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -59,10 +59,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ8fv8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_KFefy8FcEeORlrlwlJ0wew">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dQ9ttcavEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ9ttsavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXaWQwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dQ9tt8avEeWStvAm3pigyA" name="field_entier1" content="field_entier1" type="TYPE_INPUT" returnType="java.lang.Integer">
-                  <referencedElements xmi:type="form:TextFormField" xmi:id="_dQ9tuMavEeWStvAm3pigyA" name="entier1" returnTypeModifier="java.lang.Integer"/>
+                  <referencedElements xmi:type="form:TextFormField" xmi:id="_9eXaWwwYEei-AeSrpwoQZQ" name="entier1" returnTypeModifier="java.lang.Integer"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_KFefzsFcEeORlrlwlJ0wew" type="JAVA_METHOD" expression="setEntier">
                   <inputTypes>java.lang.Integer</inputTypes>
@@ -81,7 +81,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dQ8fycavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dQ8fysavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dQ8fy8avEeWStvAm3pigyA" name="bo1 - com.company.model.BO1#getDb" content="getDb" type="TYPE_JAVA_METHOD_CALL" returnType="java.lang.Double">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_KFef4cFcEeORlrlwlJ0wew" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eWzIAwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dQ8fzcavEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dQ8fzsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -90,10 +90,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ8f0cavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_KFef48FcEeORlrlwlJ0wew">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dQ9tusavEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ9tu8avEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXaXgwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dQ9tvMavEeWStvAm3pigyA" name="field_db1" content="field_db1" type="TYPE_INPUT" returnType="java.lang.Double">
-                  <referencedElements xmi:type="form:TextFormField" xmi:id="_dQ9tvcavEeWStvAm3pigyA" name="db1" returnTypeModifier="java.lang.Double"/>
+                  <referencedElements xmi:type="form:TextFormField" xmi:id="_9eXaYAwYEei-AeSrpwoQZQ" name="db1" returnTypeModifier="java.lang.Double"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_KFef5sFcEeORlrlwlJ0wew" type="JAVA_METHOD" expression="setDb">
                   <inputTypes>java.lang.Double</inputTypes>
@@ -112,7 +112,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dQ9t3savEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dQ9t38avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dQ9t4MavEeWStvAm3pigyA" name="bo1 - com.company.model.BO1#getTexte" content="getTexte" type="TYPE_JAVA_METHOD_CALL">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ9t4cavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXahAwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dQ9t4savEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dQ9t48avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -121,10 +121,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ-UwsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_dQ-Uw8avEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dQ-UxMavEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ-UxcavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXajAwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dQ-UxsavEeWStvAm3pigyA" name="field_texte1" content="field_texte1" type="TYPE_INPUT">
-                  <referencedElements xmi:type="form:TextAreaFormField" xmi:id="_KFegAMFcEeORlrlwlJ0wew" name="texte1"/>
+                  <referencedElements xmi:type="form:TextAreaFormField" xmi:id="_9eXajgwYEei-AeSrpwoQZQ" name="texte1"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_dQ-UyMavEeWStvAm3pigyA" type="JAVA_METHOD" expression="setTexte">
                   <inputTypes>java.lang.String</inputTypes>
@@ -143,7 +143,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dQ-U_savEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dQ-U_8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dQ-VAMavEeWStvAm3pigyA" name="bo1 - com.company.model.BO1#isDroit" content="isDroit" type="TYPE_JAVA_METHOD_CALL" returnType="java.lang.Boolean" returnTypeFixed="true">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ-VAcavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXayAwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dQ-VAsavEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dQ-VA8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -152,10 +152,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ-VBsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_dQ-VB8avEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dQ-VCMavEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ-VCcavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXa0AwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dQ-VCsavEeWStvAm3pigyA" name="field_droit1" content="field_droit1" type="TYPE_INPUT" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_KFfGxMFcEeORlrlwlJ0wew" name="droit1"/>
+                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_9eXa0gwYEei-AeSrpwoQZQ" name="droit1"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_dQ-VDMavEeWStvAm3pigyA" type="JAVA_METHOD" expression="setDroit">
                   <inputTypes>java.lang.Boolean</inputTypes>
@@ -174,7 +174,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dQ-VQsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dQ-VQ8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dQ-VRMavEeWStvAm3pigyA" name="bo1 - com.company.model.BO1#getQuand" content="getQuand" type="TYPE_JAVA_METHOD_CALL" returnType="java.util.Date">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ-VRcavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eYBMQwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dQ-VRsavEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dQ-VR8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -183,10 +183,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ-VSsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_dQ-VS8avEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dQ-VTMavEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ-VTcavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eYBOQwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dQ-VTsavEeWStvAm3pigyA" name="field_quand1" content="field_quand1" type="TYPE_INPUT" returnType="java.util.Date">
-                  <referencedElements xmi:type="form:DateFormField" xmi:id="_KFg7_sFcEeORlrlwlJ0wew" name="quand1"/>
+                  <referencedElements xmi:type="form:DateFormField" xmi:id="_9eYBOwwYEei-AeSrpwoQZQ" name="quand1"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_dQ-VUMavEeWStvAm3pigyA" type="JAVA_METHOD" expression="setQuand">
                   <inputTypes>java.util.Date</inputTypes>
@@ -213,6 +213,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dQ-8DMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_ojywNxvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_9eWMDgwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_Q7ZygMFYEeOb55HQn-8Daw" name="Start1" outgoing="_Q8G9IMFYEeOb55HQn-8Daw">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_dQ-8EsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -236,7 +237,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dQ8f28avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dQ8f3MavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dQ8f3cavEeWStvAm3pigyA" name="bo1 - com.company.model.BO1#getNom" content="getNom" type="TYPE_JAVA_METHOD_CALL">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Mb_EFsFcEeORlrlwlJ0wew" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eWzMgwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dQ8f38avEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dQ8f4MavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -245,10 +246,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ8f48avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_Mb_EGMFcEeORlrlwlJ0wew">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dQ9tv8avEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ9twMavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXaYwwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dQ9twcavEeWStvAm3pigyA" name="field_nom1" content="field_nom1" type="TYPE_INPUT">
-                  <referencedElements xmi:type="form:TextFormField" xmi:id="_dQ9twsavEeWStvAm3pigyA" name="nom1"/>
+                  <referencedElements xmi:type="form:TextFormField" xmi:id="_9eXaZQwYEei-AeSrpwoQZQ" name="nom1"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_Mb_EG8FcEeORlrlwlJ0wew" type="JAVA_METHOD" expression="setNom">
                   <inputTypes>java.lang.String</inputTypes>
@@ -267,7 +268,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dQ8f7cavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dQ8f7savEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dQ8f78avEeWStvAm3pigyA" name="bo1 - com.company.model.BO1#getEntier" content="getEntier" type="TYPE_JAVA_METHOD_CALL" returnType="java.lang.Integer">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Mb_ELsFcEeORlrlwlJ0wew" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXaAAwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dQ8f8cavEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dQ8f8savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -276,10 +277,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ8f9cavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_Mb_EMMFcEeORlrlwlJ0wew">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dQ9txMavEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ9txcavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXaaAwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dQ9txsavEeWStvAm3pigyA" name="field_entier1" content="field_entier1" type="TYPE_INPUT" returnType="java.lang.Integer">
-                  <referencedElements xmi:type="form:TextFormField" xmi:id="_dQ9tx8avEeWStvAm3pigyA" name="entier1" returnTypeModifier="java.lang.Integer"/>
+                  <referencedElements xmi:type="form:TextFormField" xmi:id="_9eXaagwYEei-AeSrpwoQZQ" name="entier1" returnTypeModifier="java.lang.Integer"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_Mb_EM8FcEeORlrlwlJ0wew" type="JAVA_METHOD" expression="setEntier">
                   <inputTypes>java.lang.Integer</inputTypes>
@@ -298,7 +299,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dQ9GocavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dQ9GosavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dQ9Go8avEeWStvAm3pigyA" name="bo1 - com.company.model.BO1#getDb" content="getDb" type="TYPE_JAVA_METHOD_CALL" returnType="java.lang.Double">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Mb_ERsFcEeORlrlwlJ0wew" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXaEgwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dQ9GpcavEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dQ9GpsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -307,10 +308,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ9GqcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_Mb_ESMFcEeORlrlwlJ0wew">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dQ9tycavEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ9tysavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXabQwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dQ9ty8avEeWStvAm3pigyA" name="field_db1" content="field_db1" type="TYPE_INPUT" returnType="java.lang.Double">
-                  <referencedElements xmi:type="form:TextFormField" xmi:id="_dQ9tzMavEeWStvAm3pigyA" name="db1" returnTypeModifier="java.lang.Double"/>
+                  <referencedElements xmi:type="form:TextFormField" xmi:id="_9eXabwwYEei-AeSrpwoQZQ" name="db1" returnTypeModifier="java.lang.Double"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_Mb_ES8FcEeORlrlwlJ0wew" type="JAVA_METHOD" expression="setDb">
                   <inputTypes>java.lang.Double</inputTypes>
@@ -329,7 +330,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dQ-U0cavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dQ-U0savEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dQ-U08avEeWStvAm3pigyA" name="bo1 - com.company.model.BO1#getTexte" content="getTexte" type="TYPE_JAVA_METHOD_CALL">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ-U1MavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXamwwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dQ-U1cavEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dQ-U1savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -338,10 +339,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ-U2cavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_dQ-U2savEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dQ-U28avEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ-U3MavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXaowwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dQ-U3cavEeWStvAm3pigyA" name="field_texte1" content="field_texte1" type="TYPE_INPUT">
-                  <referencedElements xmi:type="form:TextAreaFormField" xmi:id="_Mb_EZcFcEeORlrlwlJ0wew" name="texte1"/>
+                  <referencedElements xmi:type="form:TextAreaFormField" xmi:id="_9eXapQwYEei-AeSrpwoQZQ" name="texte1"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_dQ-U38avEeWStvAm3pigyA" type="JAVA_METHOD" expression="setTexte">
                   <inputTypes>java.lang.String</inputTypes>
@@ -360,7 +361,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dQ-VFcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dQ-VFsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dQ-VF8avEeWStvAm3pigyA" name="bo1 - com.company.model.BO1#isDroit" content="isDroit" type="TYPE_JAVA_METHOD_CALL" returnType="java.lang.Boolean" returnTypeFixed="true">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ-VGMavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eYBBAwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dQ-VGcavEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dQ-VGsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -369,10 +370,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ-VHcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_dQ-VHsavEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dQ-VH8avEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ-VIMavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eYBDAwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dQ-VIcavEeWStvAm3pigyA" name="field_droit1" content="field_droit1" type="TYPE_INPUT" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_Mb_EfcFcEeORlrlwlJ0wew" name="droit1"/>
+                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_9eYBDgwYEei-AeSrpwoQZQ" name="droit1"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_dQ-VI8avEeWStvAm3pigyA" type="JAVA_METHOD" expression="setDroit">
                   <inputTypes>java.lang.Boolean</inputTypes>
@@ -391,7 +392,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dQ-718avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dQ-72MavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dQ-72cavEeWStvAm3pigyA" name="bo1 - com.company.model.BO1#getQuand" content="getQuand" type="TYPE_JAVA_METHOD_CALL" returnType="java.util.Date">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ-72savEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eYBSAwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dQ-728avEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dQ-73MavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -400,10 +401,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ-738avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_dQ-74MavEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dQ-74cavEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ-74savEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eYBUAwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dQ-748avEeWStvAm3pigyA" name="field_quand1" content="field_quand1" type="TYPE_INPUT" returnType="java.util.Date">
-                  <referencedElements xmi:type="form:DateFormField" xmi:id="_Mb_ElcFcEeORlrlwlJ0wew" name="quand1"/>
+                  <referencedElements xmi:type="form:DateFormField" xmi:id="_9eYBUgwYEei-AeSrpwoQZQ" name="quand1"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_dQ-75cavEeWStvAm3pigyA" type="JAVA_METHOD" expression="setQuand">
                   <inputTypes>java.util.Date</inputTypes>
@@ -430,6 +431,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dQ-8DcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_ojywRRvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_9eWMHQwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_skCcEMYyEeOeMsoWvEjWOg" name="End1" incoming="_slLrkMYyEeOeMsoWvEjWOg">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_dQ-8FsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -459,10 +461,10 @@
           <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ9GusavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <action xmi:type="expression:Operation" xmi:id="_FZBXp8FcEeORlrlwlJ0wew">
             <leftOperand xmi:type="expression:Expression" xmi:id="_dQ9tzsavEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ9tz8avEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXacgwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_dQ9t0MavEeWStvAm3pigyA" name="field_nom1" content="field_nom1" type="TYPE_INPUT">
-              <referencedElements xmi:type="form:TextFormField" xmi:id="_dQ9t0cavEeWStvAm3pigyA" name="nom1"/>
+              <referencedElements xmi:type="form:TextFormField" xmi:id="_9eXadAwYEei-AeSrpwoQZQ" name="nom1"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_FZBXqsFcEeORlrlwlJ0wew" type="JAVA_METHOD" expression="setNom">
               <inputTypes>java.lang.String</inputTypes>
@@ -488,10 +490,10 @@
           <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ9Gy8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <action xmi:type="expression:Operation" xmi:id="_FZB-wsFcEeORlrlwlJ0wew">
             <leftOperand xmi:type="expression:Expression" xmi:id="_dQ9t08avEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ9t1MavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXadwwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_dQ9t1cavEeWStvAm3pigyA" name="field_entier1" content="field_entier1" type="TYPE_INPUT" returnType="java.lang.Integer">
-              <referencedElements xmi:type="form:TextFormField" xmi:id="_dQ9t1savEeWStvAm3pigyA" name="entier1" returnTypeModifier="java.lang.Integer"/>
+              <referencedElements xmi:type="form:TextFormField" xmi:id="_9eXaeQwYEei-AeSrpwoQZQ" name="entier1" returnTypeModifier="java.lang.Integer"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_FZB-xcFcEeORlrlwlJ0wew" type="JAVA_METHOD" expression="setEntier">
               <inputTypes>java.lang.Integer</inputTypes>
@@ -517,10 +519,10 @@
           <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ9G3MavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <action xmi:type="expression:Operation" xmi:id="_FZB-2cFcEeORlrlwlJ0wew">
             <leftOperand xmi:type="expression:Expression" xmi:id="_dQ9t2MavEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ9t2cavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXafAwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_dQ9t2savEeWStvAm3pigyA" name="field_db1" content="field_db1" type="TYPE_INPUT" returnType="java.lang.Double">
-              <referencedElements xmi:type="form:TextFormField" xmi:id="_dQ9t28avEeWStvAm3pigyA" name="db1" returnTypeModifier="java.lang.Double"/>
+              <referencedElements xmi:type="form:TextFormField" xmi:id="_9eXafgwYEei-AeSrpwoQZQ" name="db1" returnTypeModifier="java.lang.Double"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_FZB-3MFcEeORlrlwlJ0wew" type="JAVA_METHOD" expression="setDb">
               <inputTypes>java.lang.Double</inputTypes>
@@ -546,10 +548,10 @@
           <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ-U78avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <action xmi:type="expression:Operation" xmi:id="_dQ-U8MavEeWStvAm3pigyA">
             <leftOperand xmi:type="expression:Expression" xmi:id="_dQ-U8cavEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ-U8savEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eXauQwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_dQ-U88avEeWStvAm3pigyA" name="field_texte1" content="field_texte1" type="TYPE_INPUT">
-              <referencedElements xmi:type="form:TextAreaFormField" xmi:id="_FZCly8FcEeORlrlwlJ0wew" name="texte1"/>
+              <referencedElements xmi:type="form:TextAreaFormField" xmi:id="_9eXauwwYEei-AeSrpwoQZQ" name="texte1"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_dQ-U9cavEeWStvAm3pigyA" type="JAVA_METHOD" expression="setTexte">
               <inputTypes>java.lang.String</inputTypes>
@@ -575,10 +577,10 @@
           <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ-VM8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <action xmi:type="expression:Operation" xmi:id="_dQ-VNMavEeWStvAm3pigyA">
             <leftOperand xmi:type="expression:Expression" xmi:id="_dQ-VNcavEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ-VNsavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eYBIgwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_dQ-VN8avEeWStvAm3pigyA" name="field_droit1" content="field_droit1" type="TYPE_INPUT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_FZCl4sFcEeORlrlwlJ0wew" name="droit1"/>
+              <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_9eYBJAwYEei-AeSrpwoQZQ" name="droit1"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_dQ-VOcavEeWStvAm3pigyA" type="JAVA_METHOD" expression="setDroit">
               <inputTypes>java.lang.Boolean</inputTypes>
@@ -604,10 +606,10 @@
           <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dQ-79cavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <action xmi:type="expression:Operation" xmi:id="_dQ-79savEeWStvAm3pigyA">
             <leftOperand xmi:type="expression:Expression" xmi:id="_dQ-798avEeWStvAm3pigyA" name="bo1" content="bo1" type="TYPE_VARIABLE" returnType="com.company.model.BO1">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dQ-7-MavEeWStvAm3pigyA" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9eYBZgwYEei-AeSrpwoQZQ" name="bo1" dataType="_QrGsucFYEeOb55HQn-8Daw" className="com.company.model.BO1"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_dQ-7-cavEeWStvAm3pigyA" name="field_quand1" content="field_quand1" type="TYPE_INPUT" returnType="java.util.Date">
-              <referencedElements xmi:type="form:DateFormField" xmi:id="_FZDM0MFcEeORlrlwlJ0wew" name="quand1"/>
+              <referencedElements xmi:type="form:DateFormField" xmi:id="_9eYBaAwYEei-AeSrpwoQZQ" name="quand1"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_dQ-7-8avEeWStvAm3pigyA" type="JAVA_METHOD" expression="setQuand">
               <inputTypes>java.util.Date</inputTypes>

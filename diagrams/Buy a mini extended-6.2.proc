@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_2BFJsS_5EeKnBYGJ1mXUfw" name="Buy a mini extended" version="6.2" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED00057400234275792061206D696E6920657874656E646564372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_2BFJsS_5EeKnBYGJ1mXUfw" name="Buy a mini extended" version="6.2" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED00057400234275792061206D696E6920657874656E646564372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_2BFJsi_5EeKnBYGJ1mXUfw" documentation="The famous Buy a mini process used for testing!&#xD;&#xA;You will love this process..." name="Buy a mini extended" welcomePageInternal="false" basedOnLookAndFeel="Default Application" useRegExpToHideDefaultField="true" version="6.2">
       <elements xmi:type="process:Lane" xmi:id="_2BFJsy_5EeKnBYGJ1mXUfw" name="Customer" actor="_2BL3jC_5EeKnBYGJ1mXUfw">
         <elements xmi:type="process:Task" xmi:id="_2BFJtC_5EeKnBYGJ1mXUfw" documentation="Select the model that suits you most!" name="Model choice" outgoing="_2BL3by_5EeKnBYGJ1mXUfw" incoming="_2BL3Yy_5EeKnBYGJ1mXUfw _2BL3dS_5EeKnBYGJ1mXUfw" useCardinality="true" overrideActorsOfTheLane="false">
@@ -22,10 +22,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dXaUJsavEeWStvAm3pigyA" content=""/>
               <action xmi:type="expression:Operation" xmi:id="_2BFwwS_5EeKnBYGJ1mXUfw">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dXaUQcavEeWStvAm3pigyA" name="carType" content="carType" type="TYPE_VARIABLE">
-                  <referencedElements xmi:type="process:Data" xmi:id="_svyUquGOEeOBRccffrPWDw" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9r-_ggwYEei-AeSrpwoQZQ" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dXaUQ8avEeWStvAm3pigyA" name="field_carTypeSelection" content="field_carTypeSelection" type="TYPE_INPUT">
-                  <referencedElements xmi:type="form:RadioFormField" xmi:id="_dXa7AMavEeWStvAm3pigyA" name="carTypeSelection"/>
+                  <referencedElements xmi:type="form:RadioFormField" xmi:id="_9r-_hAwYEei-AeSrpwoQZQ" name="carTypeSelection"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_2BFwxS_5EeKnBYGJ1mXUfw" type="ASSIGNMENT"/>
               </action>
@@ -33,7 +33,7 @@
               <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXaUKcavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
               <exampleMessage xmi:type="expression:Expression" xmi:id="_dXaUKsavEeWStvAm3pigyA"/>
               <defaultExpression xmi:type="expression:Expression" xmi:id="_dXaUK8avEeWStvAm3pigyA" name="carType" content="carType" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_svyUlOGOEeOBRccffrPWDw" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9r-_bAwYEei-AeSrpwoQZQ" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
               </defaultExpression>
             </widgets>
             <widgets xmi:type="form:SubmitFormButton" xmi:id="_2BGX2y_5EeKnBYGJ1mXUfw" name="GoToColorSeelction" labelPosition="Left">
@@ -72,6 +72,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dXbiVsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_owcsUBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_9r9KYwwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_2BGX4S_5EeKnBYGJ1mXUfw" name="Start" outgoing="_2BL3Yy_5EeKnBYGJ1mXUfw">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_dXbiYMavEeWStvAm3pigyA" content=""/>
@@ -82,13 +83,13 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_2BGX7S_5EeKnBYGJ1mXUfw" definitionId="MiniStockCheck" version="1.0" modelVersion="6.4.0-005">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2BGX7i_5EeKnBYGJ1mXUfw" key="model">
                 <expression xmi:type="expression:Expression" xmi:id="_dXcJaMavEeWStvAm3pigyA" name="carType" content="carType" type="TYPE_VARIABLE">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dXcJacavEeWStvAm3pigyA" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9sANpAwYEei-AeSrpwoQZQ" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
                 </expression>
               </parameters>
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_dXcJOsavEeWStvAm3pigyA">
               <leftOperand xmi:type="expression:Expression" xmi:id="_dXcJO8avEeWStvAm3pigyA" name="available" content="available" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcJPMavEeWStvAm3pigyA" name="available" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sANdwwYEei-AeSrpwoQZQ" name="available" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_dXcJPcavEeWStvAm3pigyA" name="isAvailable" content="isAvailable" type="CONNECTOR_OUTPUT_TYPE" returnType="java.lang.Boolean">
                 <referencedElements xmi:type="definition:Output" xmi:id="_2BGX7C_5EeKnBYGJ1mXUfw" name="isAvailable" type="java.lang.Boolean"/>
@@ -108,13 +109,13 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_2BGYAS_5EeKnBYGJ1mXUfw" definitionId="MiniDueDate" version="1.0" modelVersion="6.4.0-005">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2BGYAi_5EeKnBYGJ1mXUfw" key="model">
                 <expression xmi:type="expression:Expression" xmi:id="_dXcJasavEeWStvAm3pigyA" name="carType" content="carType" type="TYPE_VARIABLE">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dXcJa8avEeWStvAm3pigyA" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9sANpgwYEei-AeSrpwoQZQ" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
                 </expression>
               </parameters>
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_dXcJQcavEeWStvAm3pigyA">
               <leftOperand xmi:type="expression:Expression" xmi:id="_dXcJQsavEeWStvAm3pigyA" name="dueDate" content="dueDate" type="TYPE_VARIABLE" returnType="java.util.Date">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcJQ8avEeWStvAm3pigyA" name="dueDate" dataType="_2BL3ji_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sANfgwYEei-AeSrpwoQZQ" name="dueDate" dataType="_2BL3ji_5EeKnBYGJ1mXUfw"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_dXcJRMavEeWStvAm3pigyA" name="dueDate" content="dueDate" type="CONNECTOR_OUTPUT_TYPE" returnType="java.util.Date">
                 <referencedElements xmi:type="definition:Output" xmi:id="_2BGYAC_5EeKnBYGJ1mXUfw" name="dueDate" type="java.util.Date"/>
@@ -126,13 +127,13 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_LnETiIgGEeKVrbxodqcTlw" definitionId="scripting-groovy" version="1.0.2" modelVersion="6.4.0-005">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_LnETiYgGEeKVrbxodqcTlw" key="script">
                 <expression xmi:type="expression:Expression" xmi:id="_dXcJbMavEeWStvAm3pigyA" name="scriptScript" content="import org.joda.time.DateTime;&#xD;&#xA;&#xD;&#xA;def dt = new DateTime(dueDate.getTime());&#xD;&#xA;dt.toString(&quot;dd-MM-yyyy&quot;)&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dXcJbcavEeWStvAm3pigyA" name="dueDate" dataType="_2BL3ji_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9sANqAwYEei-AeSrpwoQZQ" name="dueDate" dataType="_2BL3ji_5EeKnBYGJ1mXUfw"/>
                 </expression>
               </parameters>
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_dXcJSMavEeWStvAm3pigyA">
               <leftOperand xmi:type="expression:Expression" xmi:id="_dXcJScavEeWStvAm3pigyA" name="dueDateText" content="dueDateText" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcJSsavEeWStvAm3pigyA" documentation="Human-readable due date." name="dueDateText" dataType="_2BL3ky_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sANhQwYEei-AeSrpwoQZQ" documentation="Human-readable due date." name="dueDateText" dataType="_2BL3ky_5EeKnBYGJ1mXUfw"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_dXcJS8avEeWStvAm3pigyA" name="result" content="result" type="CONNECTOR_OUTPUT_TYPE" returnType="java.lang.Object">
                 <referencedElements xmi:type="definition:Output" xmi:id="_LnETh4gGEeKVrbxodqcTlw" name="result" type="java.lang.Object"/>
@@ -160,15 +161,15 @@
             <widgets xmi:type="form:CheckBoxSingleFormField" xmi:id="_2BGYDi_5EeKnBYGJ1mXUfw" name="chromeLineOption" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXcJh8avEeWStvAm3pigyA" line="2"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXcJiMavEeWStvAm3pigyA" name="chromeLineOption" content="chromeLineOption" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcJicavEeWStvAm3pigyA" name="chromeLineOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA0ZAwYEei-AeSrpwoQZQ" name="chromeLineOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXcJisavEeWStvAm3pigyA" name="Add chrome line option" content="Add chrome line option"/>
               <action xmi:type="expression:Operation" xmi:id="_dXcJi8avEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dXcJjMavEeWStvAm3pigyA" name="chromeLineOption" content="chromeLineOption" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dXcJjcavEeWStvAm3pigyA" name="chromeLineOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9sA0aAwYEei-AeSrpwoQZQ" name="chromeLineOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dXcwMMavEeWStvAm3pigyA" name="field_chromeLineOption" content="field_chromeLineOption" type="TYPE_INPUT" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_svy76eGOEeOBRccffrPWDw" name="chromeLineOption"/>
+                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_9sA0agwYEei-AeSrpwoQZQ" name="chromeLineOption"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_dXcwMsavEeWStvAm3pigyA" type="ASSIGNMENT"/>
               </action>
@@ -181,28 +182,28 @@
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXcwVcavEeWStvAm3pigyA" name="Choose wheelset" content="Choose wheelset"/>
               <action xmi:type="expression:Operation" xmi:id="_dXcwVsavEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dXcwV8avEeWStvAm3pigyA" name="wheelsOption" content="wheelsOption" type="TYPE_VARIABLE">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dXcwWMavEeWStvAm3pigyA" name="wheelsOption" dataType="_2BL3nC_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9sA0kQwYEei-AeSrpwoQZQ" name="wheelsOption" dataType="_2BL3nC_5EeKnBYGJ1mXUfw"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dXcwWcavEeWStvAm3pigyA" name="field_wheelsOption" content="field_wheelsOption" type="TYPE_INPUT">
-                  <referencedElements xmi:type="form:SelectFormField" xmi:id="_svy8EuGOEeOBRccffrPWDw" name="wheelsOption"/>
+                  <referencedElements xmi:type="form:SelectFormField" xmi:id="_9sA0kwwYEei-AeSrpwoQZQ" name="wheelsOption"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_dXcwW8avEeWStvAm3pigyA" type="ASSIGNMENT"/>
               </action>
               <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXcwXMavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
               <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXcwXcavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
               <defaultExpression xmi:type="expression:Expression" xmi:id="_dXcwXsavEeWStvAm3pigyA" name="wheelsOption" content="wheelsOption" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwX8avEeWStvAm3pigyA" name="wheelsOption" dataType="_2BL3nC_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA0mAwYEei-AeSrpwoQZQ" name="wheelsOption" dataType="_2BL3nC_5EeKnBYGJ1mXUfw"/>
               </defaultExpression>
             </widgets>
             <widgets xmi:type="form:TextInfo" xmi:id="_2BG_By_5EeKnBYGJ1mXUfw" name="Running_summary_1" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXcwksavEeWStvAm3pigyA"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXcwk8avEeWStvAm3pigyA" name="chosenCar" content="def sColor = stripesColor;&#xA;if(sColor == &quot;None&quot;) {&#xA;  sColor = &quot;no&quot;;&#xA;};&#xA;def mColor = mirrorColor;&#xA;if(mColor == &quot;body color&quot;) {&#xA;  mColor = body_color;&#xA;};&#xA;def rColor = roofColor;&#xA;if(rColor == &quot;body color&quot;) {&#xA;  rColor = body_color;&#xA;};&#xA;&quot;the &quot; + carModel + &quot; &quot; + carType + &quot; in &quot; + body_color + &quot;,\nwith &quot; + sColor + &quot; striping, &quot; + mColor + &quot; side view mirrors, and a &quot; + rColor + &quot; roof.&quot;;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwlMavEeWStvAm3pigyA" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwlcavEeWStvAm3pigyA" name="roofColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwlsavEeWStvAm3pigyA" name="carModel" dataType="_2BL3my_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwl8avEeWStvAm3pigyA" name="body_color" dataType="_2BL3mi_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwmMavEeWStvAm3pigyA" name="mirrorColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwmcavEeWStvAm3pigyA" name="stripesColor" dataType="_2BL3ly_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA0zQwYEei-AeSrpwoQZQ" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA0zgwYEei-AeSrpwoQZQ" name="roofColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA0zwwYEei-AeSrpwoQZQ" name="carModel" dataType="_2BL3my_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA00AwYEei-AeSrpwoQZQ" name="body_color" dataType="_2BL3mi_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA00QwYEei-AeSrpwoQZQ" name="mirrorColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA00gwYEei-AeSrpwoQZQ" name="stripesColor" dataType="_2BL3ly_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXcwmsavEeWStvAm3pigyA" name="You have chosen:" content="You have chosen:" returnTypeFixed="true"/>
               <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXcwm8avEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -218,15 +219,15 @@
             <widgets xmi:type="form:CheckBoxSingleFormField" xmi:id="_2BG_Hi_5EeKnBYGJ1mXUfw" name="boseAudioSysOption" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXcwNcavEeWStvAm3pigyA" line="1" horizontalSpan="3"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXcwNsavEeWStvAm3pigyA" name="boseAudioSysOption" content="boseAudioSysOption" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwN8avEeWStvAm3pigyA" name="boseAudioSysOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA0cAwYEei-AeSrpwoQZQ" name="boseAudioSysOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXcwOMavEeWStvAm3pigyA" name="Bose audio system" content="Bose audio system"/>
               <action xmi:type="expression:Operation" xmi:id="_dXcwOcavEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dXcwOsavEeWStvAm3pigyA" name="boseAudioSysOption" content="boseAudioSysOption" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dXcwO8avEeWStvAm3pigyA" name="boseAudioSysOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9sA0dAwYEei-AeSrpwoQZQ" name="boseAudioSysOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dXcwPMavEeWStvAm3pigyA" name="field_boseAudioSysOption" content="field_boseAudioSysOption" type="TYPE_INPUT" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_svy79eGOEeOBRccffrPWDw" name="boseAudioSysOption"/>
+                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_9sA0dgwYEei-AeSrpwoQZQ" name="boseAudioSysOption"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_dXcwPsavEeWStvAm3pigyA" type="ASSIGNMENT"/>
               </action>
@@ -234,15 +235,15 @@
             <widgets xmi:type="form:CheckBoxSingleFormField" xmi:id="_2BG_MC_5EeKnBYGJ1mXUfw" name="gpsOption" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXcwP8avEeWStvAm3pigyA" line="2" horizontalSpan="3"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXcwQMavEeWStvAm3pigyA" name="gpsOption" content="gpsOption" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwQcavEeWStvAm3pigyA" name="gpsOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA0egwYEei-AeSrpwoQZQ" name="gpsOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXcwQsavEeWStvAm3pigyA" name="GPS" content="GPS"/>
               <action xmi:type="expression:Operation" xmi:id="_dXcwQ8avEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dXcwRMavEeWStvAm3pigyA" name="gpsOption" content="gpsOption" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dXcwRcavEeWStvAm3pigyA" name="gpsOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9sA0fgwYEei-AeSrpwoQZQ" name="gpsOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dXcwRsavEeWStvAm3pigyA" name="field_gpsOption" content="field_gpsOption" type="TYPE_INPUT" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_svy7_-GOEeOBRccffrPWDw" name="gpsOption"/>
+                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_9sA0gAwYEei-AeSrpwoQZQ" name="gpsOption"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_dXcwSMavEeWStvAm3pigyA" type="ASSIGNMENT"/>
               </action>
@@ -250,15 +251,15 @@
             <widgets xmi:type="form:CheckBoxSingleFormField" xmi:id="_2BHl-i_5EeKnBYGJ1mXUfw" name="leatherSeatOption" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXcwScavEeWStvAm3pigyA" line="3" horizontalSpan="3"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXcwSsavEeWStvAm3pigyA" name="leatherSeatOption" content="leatherSeatOption" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwS8avEeWStvAm3pigyA" name="leatherSeatOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA0hAwYEei-AeSrpwoQZQ" name="leatherSeatOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXcwTMavEeWStvAm3pigyA" name="Leather seats" content="Leather seats"/>
               <action xmi:type="expression:Operation" xmi:id="_dXcwTcavEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dXcwTsavEeWStvAm3pigyA" name="leatherSeatOption" content="leatherSeatOption" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dXcwT8avEeWStvAm3pigyA" name="leatherSeatOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9sA0iAwYEei-AeSrpwoQZQ" name="leatherSeatOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dXcwUMavEeWStvAm3pigyA" name="field_leatherSeatOption" content="field_leatherSeatOption" type="TYPE_INPUT" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_svy8CeGOEeOBRccffrPWDw" name="leatherSeatOption"/>
+                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_9sA0igwYEei-AeSrpwoQZQ" name="leatherSeatOption"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_dXcwUsavEeWStvAm3pigyA" type="ASSIGNMENT"/>
               </action>
@@ -272,7 +273,7 @@
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXbiJcavEeWStvAm3pigyA" name="Check availability" content="Check availability"/>
               <actions xmi:type="expression:Operation" xmi:id="_dXbiJsavEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dXbiJ8avEeWStvAm3pigyA" name="isOrdered" content="isOrdered" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dXbiKMavEeWStvAm3pigyA" name="isOrdered" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9r_mWQwYEei-AeSrpwoQZQ" name="isOrdered" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dXbiKcavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean"/>
                 <operator xmi:type="expression:Operator" xmi:id="_dXbiKsavEeWStvAm3pigyA" type="ASSIGNMENT"/>
@@ -281,12 +282,12 @@
             <widgets xmi:type="form:TextInfo" xmi:id="_2BHmGC_5EeKnBYGJ1mXUfw" name="Running_summary_2" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXcwncavEeWStvAm3pigyA" horizontalSpan="3"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXcwnsavEeWStvAm3pigyA" name="chosenCar" content="def sColor = stripesColor;&#xA;if(sColor == &quot;None&quot;) {&#xA;  sColor = &quot;no&quot;;&#xA;};&#xA;def mColor = mirrorColor;&#xA;if(mColor == &quot;body color&quot;) {&#xA;  mColor = body_color;&#xA;};&#xA;def rColor = roofColor;&#xA;if(rColor == &quot;body color&quot;) {&#xA;  rColor = body_color;&#xA;};&#xA;&quot;the &quot; + carModel + &quot; &quot; + carType + &quot; in &quot; + body_color + &quot;,\nwith &quot; + sColor + &quot; striping, &quot; + mColor + &quot; side view mirrors, and a &quot; + rColor + &quot; roof.&quot;;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwn8avEeWStvAm3pigyA" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwoMavEeWStvAm3pigyA" name="roofColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwocavEeWStvAm3pigyA" name="carModel" dataType="_2BL3my_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwosavEeWStvAm3pigyA" name="body_color" dataType="_2BL3mi_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwo8avEeWStvAm3pigyA" name="mirrorColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwpMavEeWStvAm3pigyA" name="stripesColor" dataType="_2BL3ly_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA02AwYEei-AeSrpwoQZQ" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA02QwYEei-AeSrpwoQZQ" name="roofColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA02gwYEei-AeSrpwoQZQ" name="carModel" dataType="_2BL3my_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA02wwYEei-AeSrpwoQZQ" name="body_color" dataType="_2BL3mi_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA03AwYEei-AeSrpwoQZQ" name="mirrorColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA03QwYEei-AeSrpwoQZQ" name="stripesColor" dataType="_2BL3ly_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXcwpcavEeWStvAm3pigyA" name="You have chosen:" content="You have chosen:" returnTypeFixed="true"/>
               <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXcwpsavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -299,6 +300,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dXbiV8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_owcsXhvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_9r9KcgwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_2BHmLC_5EeKnBYGJ1mXUfw" documentation="Pick up the best color you ever imagine." name="Color selection" outgoing="_2BL3Zi_5EeKnBYGJ1mXUfw" incoming="_2BL3by_5EeKnBYGJ1mXUfw" useCardinality="true" overrideActorsOfTheLane="false" priority="1">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_2BHmLS_5EeKnBYGJ1mXUfw" content=""/>
@@ -317,24 +319,24 @@
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXcwYsavEeWStvAm3pigyA" name="Choose a body color" content="Choose a body color"/>
               <action xmi:type="expression:Operation" xmi:id="_dXcwY8avEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dXcwZMavEeWStvAm3pigyA" name="body_color" content="body_color" type="TYPE_VARIABLE">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dXcwZcavEeWStvAm3pigyA" name="body_color" dataType="_2BL3mi_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9sA0ngwYEei-AeSrpwoQZQ" name="body_color" dataType="_2BL3mi_5EeKnBYGJ1mXUfw"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dXcwZsavEeWStvAm3pigyA" name="field_body_color" content="field_body_color" type="TYPE_INPUT">
-                  <referencedElements xmi:type="form:SelectFormField" xmi:id="_svy8H-GOEeOBRccffrPWDw" name="body_color"/>
+                  <referencedElements xmi:type="form:SelectFormField" xmi:id="_9sA0oAwYEei-AeSrpwoQZQ" name="body_color"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_dXcwaMavEeWStvAm3pigyA" type="ASSIGNMENT"/>
               </action>
               <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXcwacavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
               <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXcwasavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
               <defaultExpression xmi:type="expression:Expression" xmi:id="_dXcwa8avEeWStvAm3pigyA" name="body_color" content="body_color" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwbMavEeWStvAm3pigyA" name="body_color" dataType="_2BL3mi_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA0pQwYEei-AeSrpwoQZQ" name="body_color" dataType="_2BL3mi_5EeKnBYGJ1mXUfw"/>
               </defaultExpression>
             </widgets>
             <widgets xmi:type="form:TextInfo" xmi:id="_2BINCC_5EeKnBYGJ1mXUfw" name="Running_summary_1" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXcwqMavEeWStvAm3pigyA"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXcwqcavEeWStvAm3pigyA" name="chosenCar" content="&quot;the &quot; + carModel + &quot; &quot; + carType;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwqsavEeWStvAm3pigyA" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwq8avEeWStvAm3pigyA" name="carModel" dataType="_2BL3my_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA04wwYEei-AeSrpwoQZQ" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA05AwYEei-AeSrpwoQZQ" name="carModel" dataType="_2BL3my_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXcwrMavEeWStvAm3pigyA" name="You have chosen:" content="You have chosen:" returnTypeFixed="true"/>
               <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXcwrcavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -357,15 +359,15 @@
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXcwb8avEeWStvAm3pigyA" name="Choose stripes color" content="Choose stripes color"/>
               <action xmi:type="expression:Operation" xmi:id="_dXcwcMavEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dXcwccavEeWStvAm3pigyA" name="stripesColor" content="stripesColor" type="TYPE_VARIABLE">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dXcwcsavEeWStvAm3pigyA" name="stripesColor" dataType="_2BL3ly_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9sA0qwwYEei-AeSrpwoQZQ" name="stripesColor" dataType="_2BL3ly_5EeKnBYGJ1mXUfw"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dXcwc8avEeWStvAm3pigyA" name="field_stripesColor" content="field_stripesColor" type="TYPE_INPUT">
-                  <referencedElements xmi:type="form:SelectFormField" xmi:id="_svy8LOGOEeOBRccffrPWDw" name="stripesColor"/>
+                  <referencedElements xmi:type="form:SelectFormField" xmi:id="_9sA0rQwYEei-AeSrpwoQZQ" name="stripesColor"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_dXcwdcavEeWStvAm3pigyA" type="ASSIGNMENT"/>
               </action>
               <defaultExpression xmi:type="expression:Expression" xmi:id="_dXcwdsavEeWStvAm3pigyA" name="stripesColor" content="stripesColor" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwd8avEeWStvAm3pigyA" name="stripesColor" dataType="_2BL3ly_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA0sAwYEei-AeSrpwoQZQ" name="stripesColor" dataType="_2BL3ly_5EeKnBYGJ1mXUfw"/>
               </defaultExpression>
             </widgets>
             <widgets xmi:type="form:SelectFormField" xmi:id="_2BINRi_5EeKnBYGJ1mXUfw" name="mirrorColor" labelPosition="Left">
@@ -374,17 +376,17 @@
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXcwesavEeWStvAm3pigyA" name="Choose mirror color" content="Choose mirror color"/>
               <action xmi:type="expression:Operation" xmi:id="_dXcwe8avEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dXcwfMavEeWStvAm3pigyA" name="mirrorColor" content="mirrorColor" type="TYPE_VARIABLE">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dXcwfcavEeWStvAm3pigyA" name="mirrorColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
-                  <referencedElements xmi:type="process:Data" xmi:id="_dXcwfsavEeWStvAm3pigyA" name="mirrorColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9sA0tgwYEei-AeSrpwoQZQ" name="mirrorColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9sA0twwYEei-AeSrpwoQZQ" name="mirrorColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dXcwf8avEeWStvAm3pigyA" name="field_mirrorColor" content="field_mirrorColor" type="TYPE_INPUT">
-                  <referencedElements xmi:type="form:SelectFormField" xmi:id="_svy8OOGOEeOBRccffrPWDw" name="mirrosColor"/>
+                  <referencedElements xmi:type="form:SelectFormField" xmi:id="_9sA0uQwYEei-AeSrpwoQZQ" name="mirrosColor"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_dXcwgcavEeWStvAm3pigyA" type="ASSIGNMENT"/>
               </action>
               <defaultExpression xmi:type="expression:Expression" xmi:id="_dXcwgsavEeWStvAm3pigyA" name="mirrorColor" content="mirrorColor" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwg8avEeWStvAm3pigyA" name="mirrorColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwhMavEeWStvAm3pigyA" name="mirrorColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA0vAwYEei-AeSrpwoQZQ" name="mirrorColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA0vQwYEei-AeSrpwoQZQ" name="mirrorColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
               </defaultExpression>
             </widgets>
             <widgets xmi:type="form:SelectFormField" xmi:id="_2BI0Ly_5EeKnBYGJ1mXUfw" name="roofColor" labelPosition="Left">
@@ -393,17 +395,17 @@
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXcwh8avEeWStvAm3pigyA" name="Choose roof color" content="Choose roof color"/>
               <action xmi:type="expression:Operation" xmi:id="_dXcwiMavEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dXcwicavEeWStvAm3pigyA" name="roofColor" content="roofColor" type="TYPE_VARIABLE">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dXcwisavEeWStvAm3pigyA" name="roofColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9sA0wwwYEei-AeSrpwoQZQ" name="roofColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dXcwi8avEeWStvAm3pigyA" name="field_roofColor" content="field_roofColor" type="TYPE_INPUT">
-                  <referencedElements xmi:type="form:SelectFormField" xmi:id="_svy8ROGOEeOBRccffrPWDw" name="roofColor"/>
+                  <referencedElements xmi:type="form:SelectFormField" xmi:id="_9sA0xQwYEei-AeSrpwoQZQ" name="roofColor"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_dXcwjcavEeWStvAm3pigyA" type="ASSIGNMENT"/>
               </action>
               <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXcwjsavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
               <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXcwj8avEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
               <defaultExpression xmi:type="expression:Expression" xmi:id="_dXcwkMavEeWStvAm3pigyA" name="roofColor" content="roofColor" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwkcavEeWStvAm3pigyA" name="roofColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA0ygwYEei-AeSrpwoQZQ" name="roofColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
               </defaultExpression>
             </widgets>
             <widgets xmi:type="form:SubmitFormButton" xmi:id="_2BI0VC_5EeKnBYGJ1mXUfw" name="Go_to_accessories" labelPosition="Left">
@@ -415,8 +417,8 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dXcwsMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dXcwscavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXcwssavEeWStvAm3pigyA" name="chosenCar" content="&quot;the &quot; + carModel + &quot; &quot; + carType;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcws8avEeWStvAm3pigyA" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwtMavEeWStvAm3pigyA" name="carModel" dataType="_2BL3my_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA07AwYEei-AeSrpwoQZQ" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA07QwYEei-AeSrpwoQZQ" name="carModel" dataType="_2BL3my_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dXcwtcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dXcwtsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -438,6 +440,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dXbiWMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_owcsbBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_9r9xHgwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_2BI0WS_5EeKnBYGJ1mXUfw" documentation="Do you have a chance to get the latest Mini?" name="Availability info" outgoing="_2BL3bC_5EeKnBYGJ1mXUfw" incoming="_2BL3aS_5EeKnBYGJ1mXUfw" useCardinality="true" overrideActorsOfTheLane="false" priority="3">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_2BI0Wi_5EeKnBYGJ1mXUfw" content=""/>
@@ -450,8 +453,8 @@
             <widgets xmi:type="form:TextInfo" xmi:id="_2BJbIC_5EeKnBYGJ1mXUfw" name="Model_availability" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXcwwMavEeWStvAm3pigyA" line="1"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXcwwcavEeWStvAm3pigyA" name="availablityLabel" content="if (available) {&#xA;&#x9;&quot;The &quot; + carType + &quot; is available. Click Continue to proceed with your order.&quot;;&#xA;} else {&#xA;&#x9;&quot;The &quot; + carType + &quot; is not available for the moment. Click Continue to look at other model options.&quot;;&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwwsavEeWStvAm3pigyA" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcww8avEeWStvAm3pigyA" name="available" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA0-wwYEei-AeSrpwoQZQ" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA0_AwYEei-AeSrpwoQZQ" name="available" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXcwxMavEeWStvAm3pigyA" name="Model availability" content="Model availability" returnTypeFixed="true"/>
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dXcwxcavEeWStvAm3pigyA" content=""/>
@@ -461,17 +464,17 @@
             <widgets xmi:type="form:TextInfo" xmi:id="_2BJbKy_5EeKnBYGJ1mXUfw" name="Running_summary" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXcwyMavEeWStvAm3pigyA"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXcwycavEeWStvAm3pigyA" name="chosenCar" content="def chromeOption = &quot;&quot;;&#xA;if (chromeLineOption) {&#xA;  chromeOption = &quot; and chrome line&quot;;&#xA;};&#xA;def audioOption = &quot;&quot;;&#xA;if (boseAudioSysOption) {&#xA;  audioOption = &quot;Bose audio &quot;;&#xA;};&#xA;def gpsOption = &quot;&quot;;&#xA;if (gpsOption) {&#xA;  gpsOption = &quot; GPS &quot;;&#xA;};&#xA;def seatsOption = &quot;&quot;;&#xA;if (leatherSeatOption) {&#xA; seatsOption = &quot; leather seats &quot;;&#xA;};&#xA;def sColor = stripesColor;&#xA;if(sColor == &quot;None&quot;) {&#xA;  sColor = &quot;no&quot;;&#xA;};&#xA;def mColor = mirrorColor;&#xA;if(mColor == &quot;body color&quot;) {&#xA;  mColor = body_color;&#xA;};&#xA;def rColor = roofColor;&#xA;if(rColor == &quot;body color&quot;) {&#xA;  rColor = body_color;&#xA;};&#xA;&quot;the &quot; + carModel + &quot; &quot; + carType + &quot; in &quot; + body_color + &quot;,\nwith &quot; + sColor + &quot; striping, &quot; + mColor + &quot; side view mirrors, and a &quot; + rColor + &quot; roof. \n \n&quot; + &quot;with: &quot; + wheelsOption + &quot; wheels &quot; + chromeOption + &quot;\n&quot; + audioOption + &quot; &quot; + gpsOption + &quot; &quot; + seatsOption;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwysavEeWStvAm3pigyA" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwy8avEeWStvAm3pigyA" name="wheelsOption" dataType="_2BL3nC_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwzMavEeWStvAm3pigyA" name="roofColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwzcavEeWStvAm3pigyA" name="body_color" dataType="_2BL3mi_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwzsavEeWStvAm3pigyA" name="carModel" dataType="_2BL3my_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcwz8avEeWStvAm3pigyA" name="chromeLineOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcw0MavEeWStvAm3pigyA" name="mirrorColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcw0cavEeWStvAm3pigyA" name="gpsOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcw0savEeWStvAm3pigyA" name="leatherSeatOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcw08avEeWStvAm3pigyA" name="stripesColor" dataType="_2BL3ly_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcw1MavEeWStvAm3pigyA" name="boseAudioSysOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA1AwwYEei-AeSrpwoQZQ" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA1BAwYEei-AeSrpwoQZQ" name="wheelsOption" dataType="_2BL3nC_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA1BQwYEei-AeSrpwoQZQ" name="roofColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA1BgwYEei-AeSrpwoQZQ" name="body_color" dataType="_2BL3mi_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA1BwwYEei-AeSrpwoQZQ" name="carModel" dataType="_2BL3my_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA1CAwYEei-AeSrpwoQZQ" name="chromeLineOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA1CQwYEei-AeSrpwoQZQ" name="mirrorColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA1CgwYEei-AeSrpwoQZQ" name="gpsOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA1CwwYEei-AeSrpwoQZQ" name="leatherSeatOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA1DAwYEei-AeSrpwoQZQ" name="stripesColor" dataType="_2BL3ly_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA1DQwYEei-AeSrpwoQZQ" name="boseAudioSysOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXcw1cavEeWStvAm3pigyA" name="You have chosen:" content="You have chosen:" returnTypeFixed="true"/>
               <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXcw1savEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -500,6 +503,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dXbiWcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_owcsdhvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_9r9xKQwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_2BJbSS_5EeKnBYGJ1mXUfw" documentation="You have several choices for payment.&#xD;&#xA;&#xD;&#xA;Make the good decision :-)" name="Payment options" outgoing="_2BL3gS_5EeKnBYGJ1mXUfw" incoming="_2BL3ei_5EeKnBYGJ1mXUfw" useCardinality="true" overrideActorsOfTheLane="false" priority="4">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_2BJbSi_5EeKnBYGJ1mXUfw" content=""/>
@@ -515,17 +519,17 @@
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXaUL8avEeWStvAm3pigyA" name="Payment options" content="Payment options"/>
               <action xmi:type="expression:Operation" xmi:id="_2BJbTy_5EeKnBYGJ1mXUfw">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dXa7AsavEeWStvAm3pigyA" name="paymentOption" content="paymentOption" type="TYPE_VARIABLE">
-                  <referencedElements xmi:type="process:Data" xmi:id="_svyUr-GOEeOBRccffrPWDw" name="paymentOption" dataType="_2BL3li_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9r-_hwwYEei-AeSrpwoQZQ" name="paymentOption" dataType="_2BL3li_5EeKnBYGJ1mXUfw"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dXa7BMavEeWStvAm3pigyA" name="field_payment_option" content="field_payment_option" type="TYPE_INPUT">
-                  <referencedElements xmi:type="form:RadioFormField" xmi:id="_dXa7BcavEeWStvAm3pigyA" name="payment_option"/>
+                  <referencedElements xmi:type="form:RadioFormField" xmi:id="_9r-_iQwYEei-AeSrpwoQZQ" name="payment_option"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_2BJbUy_5EeKnBYGJ1mXUfw" type="ASSIGNMENT"/>
               </action>
               <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXaUMcavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
               <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXaUMsavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
               <defaultExpression xmi:type="expression:Expression" xmi:id="_dXaUM8avEeWStvAm3pigyA" name="paymentOption" content="paymentOption" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_svyUnOGOEeOBRccffrPWDw" name="paymentOption" dataType="_2BL3li_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9r-_dAwYEei-AeSrpwoQZQ" name="paymentOption" dataType="_2BL3li_5EeKnBYGJ1mXUfw"/>
               </defaultExpression>
             </widgets>
             <widgets xmi:type="form:SubmitFormButton" xmi:id="_2BJbcS_5EeKnBYGJ1mXUfw" name="Continue" labelPosition="Left">
@@ -539,6 +543,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dXbiWsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_owdTABvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_9r9xNAwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_2BJbdi_5EeKnBYGJ1mXUfw" documentation="This is the recap of your order.&#xD;&#xA;Read it carefully to avoid any mistake in the delivery." name="Recap" outgoing="_utoxcIgCEeKVrbxodqcTlw" incoming="_2BL3hC_5EeKnBYGJ1mXUfw" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_2BJbdy_5EeKnBYGJ1mXUfw" content=""/>
@@ -559,7 +564,7 @@
             <widgets xmi:type="form:TextInfo" xmi:id="_2BKCbi_5EeKnBYGJ1mXUfw" name="Delivery_date" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXcw2MavEeWStvAm3pigyA" line="8"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXcw2cavEeWStvAm3pigyA" name="dueDateText" content="dueDateText" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXcw2savEeWStvAm3pigyA" documentation="Human-readable due date." name="dueDateText" dataType="_2BL3ky_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sA1EwwYEei-AeSrpwoQZQ" documentation="Human-readable due date." name="dueDateText" dataType="_2BL3ky_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <tooltip xmi:type="expression:Expression" xmi:id="_dXcw28avEeWStvAm3pigyA"/>
               <helpMessage xmi:type="expression:Expression" xmi:id="_dXcw3MavEeWStvAm3pigyA"/>
@@ -571,7 +576,7 @@
             <widgets xmi:type="form:TextInfo" xmi:id="_2BKCey_5EeKnBYGJ1mXUfw" name="Chrome_line" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXdXRMavEeWStvAm3pigyA" line="7"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXdXRcavEeWStvAm3pigyA" name="chromeLineOption" content="def chromeOption = &quot;&quot;;&#xA;if (chromeLineOption) {&#xA;&#x9;chromeOption = &quot;yes&quot;;&#xA;};&#xA;if (!chromeLineOption) {&#xA;&#x9;chromeOption = &quot;no&quot;;&#xA;};&#xA;chromeOption;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXdXRsavEeWStvAm3pigyA" name="chromeLineOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sBbcQwYEei-AeSrpwoQZQ" name="chromeLineOption" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXdXR8avEeWStvAm3pigyA" name="Chrome line" content="Chrome line" returnTypeFixed="true"/>
               <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXdXSMavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -580,7 +585,7 @@
             <widgets xmi:type="form:TextInfo" xmi:id="_2BKCgy_5EeKnBYGJ1mXUfw" name="Wheelset" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXdXSsavEeWStvAm3pigyA" line="6"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXdXS8avEeWStvAm3pigyA" name="wheelsOption" content="wheelsOption" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXdXTMavEeWStvAm3pigyA" name="wheelsOption" dataType="_2BL3nC_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sBbdwwYEei-AeSrpwoQZQ" name="wheelsOption" dataType="_2BL3nC_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXdXTcavEeWStvAm3pigyA" name="Wheelset" content="Wheelset" returnTypeFixed="true"/>
               <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXdXTsavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -589,8 +594,8 @@
             <widgets xmi:type="form:TextInfo" xmi:id="_2BKCiy_5EeKnBYGJ1mXUfw" name="Roof_color" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXdXUMavEeWStvAm3pigyA" line="5"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXdXUcavEeWStvAm3pigyA" name="roofColor" content="def rColor = roofColor;&#xA;if(rColor == &quot;body color&quot;) {&#xA;&#x9;rColor = body_color;&#xA;};&#xA;rColor;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXdXUsavEeWStvAm3pigyA" name="roofColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXdXU8avEeWStvAm3pigyA" name="body_color" dataType="_2BL3mi_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sBbfQwYEei-AeSrpwoQZQ" name="roofColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sBbfgwYEei-AeSrpwoQZQ" name="body_color" dataType="_2BL3mi_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXdXVMavEeWStvAm3pigyA" name="Roof color" content="Roof color" returnTypeFixed="true"/>
               <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXdXVcavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -599,8 +604,8 @@
             <widgets xmi:type="form:TextInfo" xmi:id="_2BKpRC_5EeKnBYGJ1mXUfw" name="Mirrors_color" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXdXV8avEeWStvAm3pigyA" line="4"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXdXWMavEeWStvAm3pigyA" name="mirrorColor" content="def mColor = mirrorColor;&#xA;if(mColor == &quot;body color&quot;) {&#xA;&#x9;mColor = body_color;&#xA;}&#xA;mColor;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXdXWcavEeWStvAm3pigyA" name="body_color" dataType="_2BL3mi_5EeKnBYGJ1mXUfw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dXdXWsavEeWStvAm3pigyA" name="mirrorColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sBbhAwYEei-AeSrpwoQZQ" name="body_color" dataType="_2BL3mi_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sBbhQwYEei-AeSrpwoQZQ" name="mirrorColor" dataType="_2BL3mC_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXdXW8avEeWStvAm3pigyA" name="Side view mirror color" content="Side view mirror color" returnTypeFixed="true"/>
               <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXdXXMavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -609,7 +614,7 @@
             <widgets xmi:type="form:TextInfo" xmi:id="_2BKpTi_5EeKnBYGJ1mXUfw" name="Stripe_color" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXdXXsavEeWStvAm3pigyA" line="3"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXdXX8avEeWStvAm3pigyA" name="stripesColor" content="def sColor = stripesColor;&#xA;if(sColor == &quot;None&quot;) {&#xA;&#x9;sColor = &quot;no striping&quot;;&#xA;};&#xA;sColor;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXdXYMavEeWStvAm3pigyA" name="stripesColor" dataType="_2BL3ly_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sBbiwwYEei-AeSrpwoQZQ" name="stripesColor" dataType="_2BL3ly_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXdXYcavEeWStvAm3pigyA" name="Stripe color" content="Stripe color" returnTypeFixed="true"/>
               <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXdXYsavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -618,7 +623,7 @@
             <widgets xmi:type="form:TextInfo" xmi:id="_2BKpVi_5EeKnBYGJ1mXUfw" name="Body_color" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXdXZMavEeWStvAm3pigyA" line="2"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXdXZcavEeWStvAm3pigyA" name="body_color" content="body_color" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXdXZsavEeWStvAm3pigyA" name="body_color" dataType="_2BL3mi_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sBbkQwYEei-AeSrpwoQZQ" name="body_color" dataType="_2BL3mi_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXdXZ8avEeWStvAm3pigyA" name="Body color" content="Body color" returnTypeFixed="true"/>
               <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXdXaMavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -627,7 +632,7 @@
             <widgets xmi:type="form:TextInfo" xmi:id="_2BKpXi_5EeKnBYGJ1mXUfw" name="Model" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXdXasavEeWStvAm3pigyA" line="1"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXdXa8avEeWStvAm3pigyA" name="carType" content="carType" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXdXbMavEeWStvAm3pigyA" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sBblwwYEei-AeSrpwoQZQ" name="carType" dataType="_2BL3mS_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXdXbcavEeWStvAm3pigyA" name="Model" content="Model" returnTypeFixed="true"/>
               <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXdXbsavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -636,7 +641,7 @@
             <widgets xmi:type="form:TextInfo" xmi:id="_2BKpZi_5EeKnBYGJ1mXUfw" name="Car" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_dXdXcMavEeWStvAm3pigyA"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dXdXccavEeWStvAm3pigyA" name="carModel" content="carModel" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_dXdXcsavEeWStvAm3pigyA" name="carModel" dataType="_2BL3my_5EeKnBYGJ1mXUfw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9sBbnQwYEei-AeSrpwoQZQ" name="carModel" dataType="_2BL3my_5EeKnBYGJ1mXUfw"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dXdXc8avEeWStvAm3pigyA" name="Car" content="Car" returnTypeFixed="true"/>
               <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXdXdMavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -654,10 +659,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dXdXhsavEeWStvAm3pigyA" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_dXdXh8avEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dXdXiMavEeWStvAm3pigyA" name="buyerEmail" content="buyerEmail" type="TYPE_VARIABLE">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dXdXicavEeWStvAm3pigyA" documentation="Email address of buyer" name="buyerEmail" dataType="_2BL3ky_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9sBbtAwYEei-AeSrpwoQZQ" documentation="Email address of buyer" name="buyerEmail" dataType="_2BL3ky_5EeKnBYGJ1mXUfw"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dXdXisavEeWStvAm3pigyA" name="field_Email_address" content="field_Email_address" type="TYPE_INPUT">
-                  <referencedElements xmi:type="form:TextFormField" xmi:id="_svzjEeGOEeOBRccffrPWDw" name="Email_address"/>
+                  <referencedElements xmi:type="form:TextFormField" xmi:id="_9sBbtgwYEei-AeSrpwoQZQ" name="Email_address"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_dXdXjMavEeWStvAm3pigyA" type="ASSIGNMENT" expression="="/>
               </action>
@@ -672,6 +677,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dXbiW8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_owdTDRvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_9r9xQgwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:XORGateway" xmi:id="_2BKpjy_5EeKnBYGJ1mXUfw" name="Is available" outgoing="_2BL3dS_5EeKnBYGJ1mXUfw _2BL3ei_5EeKnBYGJ1mXUfw" incoming="_2BL3bC_5EeKnBYGJ1mXUfw" exclusiveOutgoingTransition="true">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_dXdXkMavEeWStvAm3pigyA" content=""/>
@@ -721,7 +727,7 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_5s6G0rY2EeKXGraN8OWqEg" key="to">
                 <expression xmi:type="expression:Expression" xmi:id="_dXcJe8avEeWStvAm3pigyA" name="buyerEmail" content="buyerEmail" type="TYPE_VARIABLE" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dXcJfMavEeWStvAm3pigyA" documentation="Email address of buyer" name="buyerEmail" dataType="_2BL3ky_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9sANtwwYEei-AeSrpwoQZQ" documentation="Email address of buyer" name="buyerEmail" dataType="_2BL3ky_5EeKnBYGJ1mXUfw"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_5s6G1rY2EeKXGraN8OWqEg" key="replyTo">
@@ -738,7 +744,7 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_5s6G3rY2EeKXGraN8OWqEg" key="message">
                 <expression xmi:type="expression:Expression" xmi:id="_dXcJgcavEeWStvAm3pigyA" name="&lt;pattern-expression>" content="&lt;html>&#xA;&lt;body>&#xA;&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;right&quot;>&lt;span style='font-family:Trebuchet MS; font-weight: normal; font-size: 11.0pt;' >Your Mini will be delivered on ${dueDateText}.&#xD;&#xA;&lt;/span>&lt;/P>&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;right&quot;>&lt;span style='font-family:Trebuchet MS; font-weight: normal; font-size: 11.0pt;' >Have fun with your new Mini!&lt;/span>&lt;/P>&#xD;&#xA;&lt;/body>&lt;/html>&#xD;&#xA;" type="TYPE_PATTERN" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dXcJgsavEeWStvAm3pigyA" documentation="Human-readable due date." name="dueDateText" dataType="_2BL3ky_5EeKnBYGJ1mXUfw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9sANvQwYEei-AeSrpwoQZQ" documentation="Human-readable due date." name="dueDateText" dataType="_2BL3ky_5EeKnBYGJ1mXUfw"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_5s6t0LY2EeKXGraN8OWqEg" key="html">
@@ -850,10 +856,10 @@
           <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dXaUOsavEeWStvAm3pigyA" content=""/>
           <action xmi:type="expression:Operation" xmi:id="_2BLQeC_5EeKnBYGJ1mXUfw">
             <leftOperand xmi:type="expression:Expression" xmi:id="_dXa7B8avEeWStvAm3pigyA" name="carModel" content="carModel" type="TYPE_VARIABLE">
-              <referencedElements xmi:type="process:Data" xmi:id="_svyUtOGOEeOBRccffrPWDw" name="carModel" dataType="_2BL3my_5EeKnBYGJ1mXUfw"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_9r-_jAwYEei-AeSrpwoQZQ" name="carModel" dataType="_2BL3my_5EeKnBYGJ1mXUfw"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_dXa7CcavEeWStvAm3pigyA" name="field_carModel" content="field_carModel" type="TYPE_INPUT">
-              <referencedElements xmi:type="form:RadioFormField" xmi:id="_dXa7CsavEeWStvAm3pigyA" name="carModel"/>
+              <referencedElements xmi:type="form:RadioFormField" xmi:id="_9r-_jgwYEei-AeSrpwoQZQ" name="carModel"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_2BLQfC_5EeKnBYGJ1mXUfw" type="ASSIGNMENT" expression="="/>
           </action>
@@ -861,7 +867,7 @@
           <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_dXaUPcavEeWStvAm3pigyA" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <exampleMessage xmi:type="expression:Expression" xmi:id="_dXaUPsavEeWStvAm3pigyA" name="" content=""/>
           <defaultExpression xmi:type="expression:Expression" xmi:id="_dXaUP8avEeWStvAm3pigyA" name="Mini Convertible" content="Mini Convertible">
-            <referencedElements xmi:type="process:Data" xmi:id="_svyUqOGOEeOBRccffrPWDw" name="carModel" dataType="_2BL3my_5EeKnBYGJ1mXUfw"/>
+            <referencedElements xmi:type="process:Data" xmi:id="_9r-_gAwYEei-AeSrpwoQZQ" name="carModel" dataType="_2BL3my_5EeKnBYGJ1mXUfw"/>
           </defaultExpression>
         </widgets>
         <pageLabel xmi:type="expression:Expression" xmi:id="_dXaUIMavEeWStvAm3pigyA" name="Choose a car" content="Choose a car" returnTypeFixed="true"/>
@@ -901,14 +907,14 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_2BL3dS_5EeKnBYGJ1mXUfw" name="No" target="_2BFJtC_5EeKnBYGJ1mXUfw" source="_2BKpjy_5EeKnBYGJ1mXUfw" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_2BL3di_5EeKnBYGJ1mXUfw"/>
         <condition xmi:type="expression:Expression" xmi:id="_dXd-XMavEeWStvAm3pigyA" name="NotAvailable" content="!available" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-          <referencedElements xmi:type="process:Data" xmi:id="_dXd-XcavEeWStvAm3pigyA" name="available" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+          <referencedElements xmi:type="process:Data" xmi:id="_9sBb0QwYEei-AeSrpwoQZQ" name="available" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_2BL3ei_5EeKnBYGJ1mXUfw" name="Yes" target="_2BJbSS_5EeKnBYGJ1mXUfw" source="_2BKpjy_5EeKnBYGJ1mXUfw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_2BL3ey_5EeKnBYGJ1mXUfw"/>
         <condition xmi:type="expression:Expression" xmi:id="_dXd-X8avEeWStvAm3pigyA" name="isAvailable" content="available &amp;&amp; isOrdered" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-          <referencedElements xmi:type="process:Data" xmi:id="_dXd-YMavEeWStvAm3pigyA" name="isOrdered" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
-          <referencedElements xmi:type="process:Data" xmi:id="_dXd-YcavEeWStvAm3pigyA" name="available" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+          <referencedElements xmi:type="process:Data" xmi:id="_9sBb1AwYEei-AeSrpwoQZQ" name="isOrdered" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
+          <referencedElements xmi:type="process:Data" xmi:id="_9sBb1QwYEei-AeSrpwoQZQ" name="available" dataType="_2BL3jS_5EeKnBYGJ1mXUfw"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_2BL3gS_5EeKnBYGJ1mXUfw" target="_2BGX9y_5EeKnBYGJ1mXUfw" source="_2BJbSS_5EeKnBYGJ1mXUfw">

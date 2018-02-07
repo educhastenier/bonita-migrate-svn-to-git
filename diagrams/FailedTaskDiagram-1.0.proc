@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_rSzOcHtuEeKJXORUeR0MHg" name="FailedTaskDiagram" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED00057400214661696C65645461736B4469616772616D372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_rSzOcHtuEeKJXORUeR0MHg" name="FailedTaskDiagram" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED00057400214661696C65645461736B4469616772616D372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_rTM3EHtuEeKJXORUeR0MHg" documentation="This is a test process which raises an exception using a Groovy script.&#xD;&#xA;This is to test the failed tasks feature." name="FailedTaskProcess" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:Lane" xmi:id="_rTRvkHtuEeKJXORUeR0MHg" name="Employee lane" actor="_rTRIgHtuEeKJXORUeR0MHg">
         <elements xmi:type="process:Task" xmi:id="_rTVZ8HtuEeKJXORUeR0MHg" documentation="The description of my Human Task&#xD;&#xA;which can be long." name="Human task" outgoing="_438ZAHtvEeKJXORUeR0MHg" incoming="_zPJkgHtvEeKJXORUeR0MHg" useCardinality="true" overrideActorsOfTheLane="false">
@@ -20,6 +20,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_de3m0cavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_o6NsLBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_-A4RXgwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_rTZrYHtuEeKJXORUeR0MHg" name="Start1" outgoing="_t967cHtvEeKJXORUeR0MHg">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_de3m18avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -67,6 +68,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_de3m0savEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_o6NsNxvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_-A4RagwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndTerminatedEvent" xmi:id="_7X8QkHtvEeKJXORUeR0MHg" name="Terminate end event1" incoming="_7YBwIHtvEeKJXORUeR0MHg">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_de3m7savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -101,7 +103,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_zPJkgHtvEeKJXORUeR0MHg" target="_rTVZ8HtuEeKJXORUeR0MHg" source="_v5FAkHtvEeKJXORUeR0MHg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_zPKLkHtvEeKJXORUeR0MHg"/>
         <condition xmi:type="expression:Expression" xmi:id="_de3m9savEeWStvAm3pigyA" name="isHuman" content="isHuman" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_de3m98avEeWStvAm3pigyA" name="isHuman" dataType="_rSzOcXtuEeKJXORUeR0MHg"/>
+          <referencedElements xmi:type="process:Data" xmi:id="_-A44VwwYEei-AeSrpwoQZQ" name="isHuman" dataType="_rSzOcXtuEeKJXORUeR0MHg"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_0wqakHtvEeKJXORUeR0MHg" target="_0wQx8HtvEeKJXORUeR0MHg" source="_v5FAkHtvEeKJXORUeR0MHg" isDefault="true">

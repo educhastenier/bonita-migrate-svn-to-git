@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_-FLdwftyEeKqOcvVaqq4Fg" name="MonDiagramme" author="ermedeiros" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED000574001C4D6F6E4469616772616D6D65372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_-FLdwftyEeKqOcvVaqq4Fg" name="MonDiagramme" author="ermedeiros" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574001C4D6F6E4469616772616D6D65372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_-fpMMPtyEeKqOcvVaqq4Fg" name="Pool" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:Lane" xmi:id="_-ggH0PtyEeKqOcvVaqq4Fg" name="Lane employée" actor="_-gaBMPtyEeKqOcvVaqq4Fg">
         <elements xmi:type="process:Task" xmi:id="_-hGkwPtyEeKqOcvVaqq4Fg" name="Étape1" outgoing="_TefksPtzEeKqOcvVaqq4Fg" incoming="_-hyhQPtyEeKqOcvVaqq4Fg" useCardinality="true" overrideActorsOfTheLane="false">
@@ -19,6 +19,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dq53_cavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pLpaRxvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_-pnFXQwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_-hgNYPtyEeKqOcvVaqq4Fg" name="Début1" outgoing="_-hyhQPtyEeKqOcvVaqq4Fg">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_dq54BMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_KeS6ABkrEeKG1IpBrJ024Q" name="PaginationTestDiagram" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED0005740025506167696E6174696F6E546573744469616772616D372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_KeS6ABkrEeKG1IpBrJ024Q" name="PaginationTestDiagram" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED0005740025506167696E6174696F6E546573744469616772616D372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_Kf-8EBkrEeKG1IpBrJ024Q" name="Task Pagination Process" welcomePageInternal="false" basedOnLookAndFeel="Default Application" entryPageFlowType="SKIP">
       <elements xmi:type="process:Lane" xmi:id="_KgYksBkrEeKG1IpBrJ024Q" name="Sales of Europe" actor="_f4cAABkuEeKG1IpBrJ024Q">
         <elements xmi:type="process:Task" xmi:id="_Kgt74BkrEeKG1IpBrJ024Q" name="Step0" outgoing="_0OQxABkrEeKG1IpBrJ024Q" incoming="_KhNrIBkrEeKG1IpBrJ024Q" useCardinality="true" overrideActorsOfTheLane="false">
@@ -15,6 +15,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKBsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBS_BvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfI0AwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_Kg3s4BkrEeKG1IpBrJ024Q" name="Start1" outgoing="_KhNrIBkrEeKG1IpBrJ024Q"/>
         <elements xmi:type="process:ANDGateway" xmi:id="_0OASUBkrEeKG1IpBrJ024Q" name="Gateway1" outgoing="_40bq4BkrEeKG1IpBrJ024Q _5spsUBkrEeKG1IpBrJ024Q _6c3BQBkrEeKG1IpBrJ024Q _7Uo90BkrEeKG1IpBrJ024Q _8Qe7ABkrEeKG1IpBrJ024Q __cCRABkrEeKG1IpBrJ024Q _ATIREBksEeKG1IpBrJ024Q _B0xC8BksEeKG1IpBrJ024Q _E_ercBksEeKG1IpBrJ024Q _HQSQcBksEeKG1IpBrJ024Q _IMahgBksEeKG1IpBrJ024Q _KA3hsBksEeKG1IpBrJ024Q _L1jLYBksEeKG1IpBrJ024Q _SQxiYBksEeKG1IpBrJ024Q _Tv-rUBksEeKG1IpBrJ024Q _gQgmoBzwEeK9QsPnLlTEjw _goEyEBzwEeK9QsPnLlTEjw _0CfpoB6AEeKkkbvZPBhKHg" incoming="_0OQxABkrEeKG1IpBrJ024Q">
@@ -31,6 +32,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKB8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTBBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfI2QwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_58cb0BkrEeKG1IpBrJ024Q" name="Step2" outgoing="_cENV4BktEeKG1IpBrJ024Q" incoming="_5spsUBkrEeKG1IpBrJ024Q" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_5uYKoBkrEeKG1IpBrJ024Q" content=""/>
@@ -43,6 +45,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKCMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTDBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfI4gwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_6pFfYBkrEeKG1IpBrJ024Q" name="Step.3" outgoing="_ceYJYBktEeKG1IpBrJ024Q" incoming="_6c3BQBkrEeKG1IpBrJ024Q" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_6ejqYBkrEeKG1IpBrJ024Q" content=""/>
@@ -55,6 +58,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKCcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTFBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfI6wwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_7l4e0BkrEeKG1IpBrJ024Q" name="step4" outgoing="_c4eEYBktEeKG1IpBrJ024Q" incoming="_7Uo90BkrEeKG1IpBrJ024Q" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_7WYqQBkrEeKG1IpBrJ024Q" content=""/>
@@ -67,6 +71,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKCsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTHBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfI9AwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_8s1f0BkrEeKG1IpBrJ024Q" name="STEP5" outgoing="_dRav4BktEeKG1IpBrJ024Q" incoming="_8Qe7ABkrEeKG1IpBrJ024Q" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_8SQcoBkrEeKG1IpBrJ024Q" content=""/>
@@ -79,6 +84,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKC8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTJBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfI_QwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="__vjC4BkrEeKG1IpBrJ024Q" name="SteP6" outgoing="_gBCX0BktEeKG1IpBrJ024Q" incoming="__cCRABkrEeKG1IpBrJ024Q" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="__eBOABkrEeKG1IpBrJ024Q" content=""/>
@@ -91,6 +97,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKDMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTLBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfJBgwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_AnuoEBksEeKG1IpBrJ024Q" name="Step 7" outgoing="_gh1-0BktEeKG1IpBrJ024Q" incoming="_ATIREBksEeKG1IpBrJ024Q" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_AVPJ4BksEeKG1IpBrJ024Q" content=""/>
@@ -103,6 +110,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKDcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTNBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfJDwwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_CKzkYBksEeKG1IpBrJ024Q" name="The Step8" outgoing="_m0Xs0BktEeKG1IpBrJ024Q" incoming="_B0xC8BksEeKG1IpBrJ024Q" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_B2x1IBksEeKG1IpBrJ024Q" content=""/>
@@ -115,6 +123,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKDsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTPBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfJGAwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_FSdR0BksEeKG1IpBrJ024Q" name="The step 9 is important" outgoing="_nJC8UBktEeKG1IpBrJ024Q" incoming="_E_ercBksEeKG1IpBrJ024Q" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_FBdocBksEeKG1IpBrJ024Q" content=""/>
@@ -127,6 +136,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKD8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTRBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfJIQwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_Hh0FUBksEeKG1IpBrJ024Q" name="Step-10" outgoing="_naSdUBktEeKG1IpBrJ024Q" incoming="_HQSQcBksEeKG1IpBrJ024Q" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_HSVe4BksEeKG1IpBrJ024Q" content=""/>
@@ -139,6 +149,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKEMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTTBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfJKgwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_InyO4BksEeKG1IpBrJ024Q" name="Step_11" outgoing="_nvRO0BktEeKG1IpBrJ024Q" incoming="_IMahgBksEeKG1IpBrJ024Q" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_IOlrwBksEeKG1IpBrJ024Q" content=""/>
@@ -151,6 +162,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKEcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTVBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfJMwwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_K-m8UBksEeKG1IpBrJ024Q" name="^Step~{12}" outgoing="_oR-6UBktEeKG1IpBrJ024Q" incoming="_KA3hsBksEeKG1IpBrJ024Q" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_KDAPsBksEeKG1IpBrJ024Q" content=""/>
@@ -163,6 +175,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKEsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTXBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfJPAwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_SqKSwBksEeKG1IpBrJ024Q" name="Step13 - &quot;With double quote&quot;" outgoing="_o9Fs0BktEeKG1IpBrJ024Q" incoming="_L1jLYBksEeKG1IpBrJ024Q" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_L34tsBksEeKG1IpBrJ024Q" content=""/>
@@ -175,6 +188,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKE8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTZBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfJRQwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_S9ihwBksEeKG1IpBrJ024Q" name="Step | 14" outgoing="_pPVTYBktEeKG1IpBrJ024Q" incoming="_SQxiYBksEeKG1IpBrJ024Q" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_SS2mABksEeKG1IpBrJ024Q" content=""/>
@@ -187,6 +201,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKFMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTbBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfJTgwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_UAEVwBksEeKG1IpBrJ024Q" name="Step^15" outgoing="_pl1H0BktEeKG1IpBrJ024Q" incoming="_Tv-rUBksEeKG1IpBrJ024Q" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_TyEWABksEeKG1IpBrJ024Q" content=""/>
@@ -199,6 +214,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKFcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTdBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfJVwwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndTerminatedEvent" xmi:id="_9Q6yYBktEeKG1IpBrJ024Q" name="Terminate end event1" incoming="_9RA5ABktEeKG1IpBrJ024Q">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d1ewAsavEeWStvAm3pigyA" content=""/>
@@ -214,6 +230,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKFsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTfBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfJYAwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_P-E58BzwEeK9QsPnLlTEjw" name="étape à effectuer en 17" outgoing="_j5zBgBzwEeK9QsPnLlTEjw" incoming="_goEyEBzwEeK9QsPnLlTEjw" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_P-E58RzwEeK9QsPnLlTEjw" content=""/>
@@ -226,6 +243,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKF8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBThBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfJaQwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:CallActivity" xmi:id="_AiF94B6BEeKkkbvZPBhKHg" name="Start subprocess" outgoing="_C_bjAB6BEeKkkbvZPBhKHg" incoming="_0CfpoB6AEeKkkbvZPBhKHg" useCardinality="true">
           <loopCondition xmi:type="expression:Expression" xmi:id="_d1ewA8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -480,6 +498,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKGsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTixvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfJcQwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_TVXPoB6BEeKkkbvZPBhKHg" name="My Subtask 2" outgoing="_dXWR8B6BEeKkkbvZPBhKHg" incoming="_ZnGTcB6BEeKkkbvZPBhKHg" useCardinality="true" overrideActorsOfTheLane="false">
           <loopCondition xmi:type="expression:Expression" xmi:id="_bu1PEjpTEeSntPZ4lnT8Jg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -491,6 +510,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKG8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTkhvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfJeQwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_T5VfYB6BEeKkkbvZPBhKHg" name="the sub TASK 3" outgoing="_dnrM8B6BEeKkkbvZPBhKHg" incoming="_Z7PXcB6BEeKkkbvZPBhKHg" useCardinality="true" overrideActorsOfTheLane="false">
           <loopCondition xmi:type="expression:Expression" xmi:id="_bu1PFzpTEeSntPZ4lnT8Jg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -502,6 +522,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKHMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBTmRvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfJgQwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_UUa44B6BEeKkkbvZPBhKHg" name="Last subtask - 100" outgoing="_d5wbcB6BEeKkkbvZPBhKHg" incoming="_aK9OcB6BEeKkkbvZPBhKHg" useCardinality="true" overrideActorsOfTheLane="false">
           <loopCondition xmi:type="expression:Expression" xmi:id="_bu1PHDpTEeSntPZ4lnT8Jg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -513,6 +534,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d1eKHcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_piBToBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__FfJiQwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ANDGateway" xmi:id="_c_1w4B6BEeKkkbvZPBhKHg" name="Gateway4" outgoing="_e5I00B6BEeKkkbvZPBhKHg" incoming="_dABXEB6BEeKkkbvZPBhKHg _dXWR8B6BEeKkkbvZPBhKHg _dnrM8B6BEeKkkbvZPBhKHg _d5wbcB6BEeKkkbvZPBhKHg"/>
         <elements xmi:type="process:EndTerminatedEvent" xmi:id="_e5CuMB6BEeKkkbvZPBhKHg" name="Terminate end event2" incoming="_e5I00B6BEeKkkbvZPBhKHg"/>

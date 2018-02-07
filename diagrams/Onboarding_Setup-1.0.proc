@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_BPj4wGxdEeKbYv3tkUdwCw" documentation="This company's process to bring in a new employee" name="Onboarding_Setup" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED00057400204F6E626F617264696E675F5365747570372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_BPj4wGxdEeKbYv3tkUdwCw" documentation="This company's process to bring in a new employee" name="Onboarding_Setup" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED00057400204F6E626F617264696E675F5365747570372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_BPj4wWxdEeKbYv3tkUdwCw" name="Onboarding SetUp" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:Lane" xmi:id="_Y2weILltEeK7H6UEOAVYQw" name="Administrator" actor="_TysOsLlqEeK7H6UEOAVYQw">
         <elements xmi:type="process:StartEvent" xmi:id="_BPj4wmxdEeKbYv3tkUdwCw" name="Start_Onboarding_Setup" outgoing="_BPkgDWxdEeKbYv3tkUdwCw">
@@ -134,6 +134,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dzX3wcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pfKzohvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__BbIMQwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:TextAnnotation" xmi:id="_BPj41mxdEeKbYv3tkUdwCw" text="This process is meant to be run only once at installation time and should be removed afterwards."/>
         <elements xmi:type="process:CallActivity" xmi:id="_BPj412xdEeKbYv3tkUdwCw" name="Add Reference Data" outgoing="_BPkgEWxdEeKbYv3tkUdwCw" incoming="_BPkgD2xdEeKbYv3tkUdwCw" useCardinality="true">
@@ -186,7 +187,7 @@
           <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dzX368avEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dzX37MavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <inputExpression xmi:type="expression:Expression" xmi:id="_dzX37cavEeWStvAm3pigyA" name="userData" content="userData" type="TYPE_VARIABLE" returnType="java.util.List">
-            <referencedElements xmi:type="process:JavaObjectData" xmi:id="_dzX37savEeWStvAm3pigyA" name="userData" datasourceId="PAGEFLOW" dataType="_BPkgVmxdEeKbYv3tkUdwCw" className="java.util.List"/>
+            <referencedElements xmi:type="process:JavaObjectData" xmi:id="__BbvjAwYEei-AeSrpwoQZQ" name="userData" datasourceId="PAGEFLOW" dataType="_BPkgVmxdEeKbYv3tkUdwCw" className="java.util.List"/>
           </inputExpression>
           <afterEventExpression xmi:type="expression:Expression" xmi:id="_dzX378avEeWStvAm3pigyA" name="" content=""/>
           <tooltip xmi:type="expression:Expression" xmi:id="_dzX38MavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -195,12 +196,10 @@
           <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dzX388avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <action xmi:type="expression:Operation" xmi:id="_dzX39MavEeWStvAm3pigyA">
             <leftOperand xmi:type="expression:Expression" xmi:id="_dzX39cavEeWStvAm3pigyA" name="userData" content="userData" returnType="java.util.List">
-              <referencedElements xmi:type="process:JavaObjectData" xmi:id="_dzX39savEeWStvAm3pigyA" name="userData" datasourceId="PAGEFLOW" dataType="_BPkgVmxdEeKbYv3tkUdwCw" className="java.util.List"/>
+              <referencedElements xmi:type="process:JavaObjectData" xmi:id="__BbvlAwYEei-AeSrpwoQZQ" name="userData" datasourceId="PAGEFLOW" dataType="_BPkgVmxdEeKbYv3tkUdwCw" className="java.util.List"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_dzX398avEeWStvAm3pigyA" name="field_Group1" content="field_Group1" type="TYPE_INPUT" returnType="java.util.List">
-              <referencedElements xmi:type="form:Group" xmi:id="_uBqME-GOEeOBRccffrPWDw" name="Group1" duplicate="true">
-                <iterator xmi:type="form:GroupIterator" xmi:id="_uBqMXOGOEeOBRccffrPWDw" className="java.lang.Object"/>
-              </referencedElements>
+              <referencedElements xmi:type="form:Group" xmi:id="__BbvlgwYEei-AeSrpwoQZQ" name="Group1" duplicate="true"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_dzX3-cavEeWStvAm3pigyA" type="ASSIGNMENT"/>
           </action>
@@ -630,13 +629,13 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_fSxGhN2XEeKABLp6l0GlHg" key="script">
                 <expression xmi:type="expression:Expression" xmi:id="_dzX3McavEeWStvAm3pigyA" name="insertQuery" content="import org.apache.commons.lang.StringEscapeUtils;&#xD;&#xA;import org.bonitasoft.onboarding.Department;&#xD;&#xA;if(department == null || department.trim().equals(&quot;&quot;)){&#xD;&#xA;&#x9;return &quot;-- No query to be fired&quot;&#xD;&#xA;}&#xD;&#xA;return String.format(&quot;INSERT INTO department (name) values ('%s');&quot;, StringEscapeUtils.escapeSql(department));" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_uBo-P-GOEeOBRccffrPWDw" name="department" transient="true" datasourceId="IN_MEMORY" dataType="_BPkgVGxdEeKbYv3tkUdwCw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__BbIiQwYEei-AeSrpwoQZQ" name="department" transient="true" datasourceId="IN_MEMORY" dataType="_BPkgVGxdEeKbYv3tkUdwCw"/>
                 </expression>
               </parameters>
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_fSxGcd2XEeKABLp6l0GlHg">
               <leftOperand xmi:type="expression:Expression" xmi:id="_dzX3ksavEeWStvAm3pigyA" name="departmentId" content="departmentId" type="TYPE_VARIABLE" returnType="java.lang.Long">
-                <referencedElements xmi:type="process:Data" xmi:id="_uBplPOGOEeOBRccffrPWDw" name="departmentId" transient="true" datasourceId="IN_MEMORY" dataType="_Mz6eublqEeK7H6UEOAVYQw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__BbvMQwYEei-AeSrpwoQZQ" name="departmentId" transient="true" datasourceId="IN_MEMORY" dataType="_Mz6eublqEeK7H6UEOAVYQw"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_dzX3lMavEeWStvAm3pigyA" name="id" content="id" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
                 <referencedElements xmi:type="definition:Output" xmi:id="_fSxGdt2XEeKABLp6l0GlHg" name="id" type="java.lang.Long"/>
@@ -658,9 +657,9 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_f2dCWN2XEeKABLp6l0GlHg" key="script">
                 <expression xmi:type="expression:Expression" xmi:id="_dzX3N8avEeWStvAm3pigyA" name="savePosition" content="import java.util.logging.Logger;&#xD;&#xA;import org.apache.commons.lang.StringEscapeUtils;&#xD;&#xA;&#xD;&#xA;if(department == null || department.trim().equals(&quot;&quot;)){&#xD;&#xA;&#x9;return &quot;-- No query to be fired&quot;&#xD;&#xA;}&#xD;&#xA;List selectQueryList = new ArrayList();&#xD;&#xA;for (Map&lt;String,String> positionData : positions)&#xD;&#xA;{&#xD;&#xA;&#x9;String position = positionData.get(&quot;Position&quot;);&#xD;&#xA;&#x9;if(position != null &amp;&amp; !position.trim().equals(&quot;&quot;))&#xD;&#xA;&#x9;&#x9;selectQueryList.add(String.format(&quot;SELECT  %s, '%s' &quot;, departmentId, StringEscapeUtils.escapeSql(position)));&#xD;&#xA;}&#xD;&#xA;if(selectQueryList.size() == 0) &#x9;return &quot;-- No query to be fired&quot;;&#xD;&#xA;return &quot;INSERT INTO dep_position(department_id, name) &quot; +  org.codehaus.groovy.runtime.DefaultGroovyMethods.join(selectQueryList, &quot; UNION &quot;);&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_uBo-ReGOEeOBRccffrPWDw" name="positions" transient="true" datasourceId="IN_MEMORY" dataType="_BPkgVmxdEeKbYv3tkUdwCw" className="java.util.List"/>
-                  <referencedElements xmi:type="process:Data" xmi:id="_uBo-RuGOEeOBRccffrPWDw" name="department" transient="true" datasourceId="IN_MEMORY" dataType="_BPkgVGxdEeKbYv3tkUdwCw"/>
-                  <referencedElements xmi:type="process:Data" xmi:id="_uBo-R-GOEeOBRccffrPWDw" name="departmentId" transient="true" datasourceId="IN_MEMORY" dataType="_Mz6eublqEeK7H6UEOAVYQw"/>
+                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="__BbIjwwYEei-AeSrpwoQZQ" name="positions" transient="true" datasourceId="IN_MEMORY" dataType="_BPkgVmxdEeKbYv3tkUdwCw" className="java.util.List"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__BbIkAwYEei-AeSrpwoQZQ" name="department" transient="true" datasourceId="IN_MEMORY" dataType="_BPkgVGxdEeKbYv3tkUdwCw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__BbIkQwYEei-AeSrpwoQZQ" name="departmentId" transient="true" datasourceId="IN_MEMORY" dataType="_Mz6eublqEeK7H6UEOAVYQw"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_f2dCYN2XEeKABLp6l0GlHg" key="username">
@@ -700,7 +699,7 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_c6558eL3EeK7xqnlbVon5w" key="script">
                 <expression xmi:type="expression:Expression" xmi:id="_dzX3RMavEeWStvAm3pigyA" name="&lt;pattern-expression>" content="select dep.name as department, pos.name as position from department dep, dep_position as pos where pos.department_id = dep.id;" type="TYPE_PATTERN" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_uBo-UuGOEeOBRccffrPWDw" name="department" transient="true" datasourceId="IN_MEMORY" dataType="_BPkgVGxdEeKbYv3tkUdwCw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__BbInAwYEei-AeSrpwoQZQ" name="department" transient="true" datasourceId="IN_MEMORY" dataType="_BPkgVGxdEeKbYv3tkUdwCw"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_c6559eL3EeK7xqnlbVon5w" key="username">
@@ -719,7 +718,7 @@
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_c65S4eL3EeK7xqnlbVon5w">
               <leftOperand xmi:type="expression:Expression" xmi:id="_dzX3l8avEeWStvAm3pigyA" name="departmentDataMap" content="departmentDataMap" type="TYPE_VARIABLE" returnType="java.util.Map">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_uBplQeGOEeOBRccffrPWDw" name="departmentDataMap" datasourceId="PAGEFLOW" dataType="_BPkgVmxdEeKbYv3tkUdwCw" className="java.util.Map"/>
+                <referencedElements xmi:type="process:JavaObjectData" xmi:id="__BbvNgwYEei-AeSrpwoQZQ" name="departmentDataMap" datasourceId="PAGEFLOW" dataType="_BPkgVmxdEeKbYv3tkUdwCw" className="java.util.Map"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_dzX3mcavEeWStvAm3pigyA" name="resultset" content="return OnboardingUtil.mapDepartmentData(resultset);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Map">
                 <referencedElements xmi:type="definition:Output" xmi:id="_c65S5-L3EeK7xqnlbVon5w" name="resultset" type="java.sql.ResultSet"/>
@@ -742,7 +741,7 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dzX3u8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <actions xmi:type="expression:Operation" xmi:id="_dzX3vMavEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dzX3vcavEeWStvAm3pigyA" name="referenceDataAdditionComplete" content="referenceDataAdditionComplete" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="process:Data" xmi:id="_uBplZ-GOEeOBRccffrPWDw" name="referenceDataAdditionComplete" dataType="_BPkgUGxdEeKbYv3tkUdwCw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__BbvXAwYEei-AeSrpwoQZQ" name="referenceDataAdditionComplete" dataType="_BPkgUGxdEeKbYv3tkUdwCw"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dzX3v8avEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean"/>
                 <operator xmi:type="expression:Operator" xmi:id="_dzX3wMavEeWStvAm3pigyA" type="ASSIGNMENT"/>
@@ -781,12 +780,10 @@
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dzX4M8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <action xmi:type="expression:Operation" xmi:id="_dzX4NMavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dzX4NcavEeWStvAm3pigyA" name="positions" content="positions" type="TYPE_VARIABLE" returnType="java.util.List">
-                    <referencedElements xmi:type="process:JavaObjectData" xmi:id="_dzX4NsavEeWStvAm3pigyA" name="positions" transient="true" datasourceId="IN_MEMORY" dataType="_BPkgVmxdEeKbYv3tkUdwCw" className="java.util.List"/>
+                    <referencedElements xmi:type="process:JavaObjectData" xmi:id="__Bbv0wwYEei-AeSrpwoQZQ" name="positions" transient="true" datasourceId="IN_MEMORY" dataType="_BPkgVmxdEeKbYv3tkUdwCw" className="java.util.List"/>
                   </leftOperand>
                   <rightOperand xmi:type="expression:Expression" xmi:id="_dzX4N8avEeWStvAm3pigyA" name="field_Positions" content="field_Positions" type="TYPE_INPUT" returnType="java.util.List">
-                    <referencedElements xmi:type="form:Group" xmi:id="_uBqMUuGOEeOBRccffrPWDw" name="Positions" duplicate="true">
-                      <iterator xmi:type="form:GroupIterator" xmi:id="_uBqMXeGOEeOBRccffrPWDw" className="java.lang.Object"/>
-                    </referencedElements>
+                    <referencedElements xmi:type="form:Group" xmi:id="__Bbv1QwYEei-AeSrpwoQZQ" name="Positions" duplicate="true"/>
                   </rightOperand>
                   <operator xmi:type="expression:Operator" xmi:id="_dzX4OcavEeWStvAm3pigyA" type="ASSIGNMENT"/>
                 </action>
@@ -833,10 +830,10 @@
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dzX4m8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <action xmi:type="expression:Operation" xmi:id="_dzX4nMavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dzX4ncavEeWStvAm3pigyA" name="department" content="department" type="TYPE_VARIABLE">
-                    <referencedElements xmi:type="process:Data" xmi:id="_uBqMueGOEeOBRccffrPWDw" name="department" transient="true" datasourceId="IN_MEMORY" dataType="_BPkgVGxdEeKbYv3tkUdwCw"/>
+                    <referencedElements xmi:type="process:Data" xmi:id="__BbwOgwYEei-AeSrpwoQZQ" name="department" transient="true" datasourceId="IN_MEMORY" dataType="_BPkgVGxdEeKbYv3tkUdwCw"/>
                   </leftOperand>
                   <rightOperand xmi:type="expression:Expression" xmi:id="_dzX4n8avEeWStvAm3pigyA" name="field_Department" content="field_Department" type="TYPE_INPUT">
-                    <referencedElements xmi:type="form:TextFormField" xmi:id="_uBqMu-GOEeOBRccffrPWDw" name="Department"/>
+                    <referencedElements xmi:type="form:TextFormField" xmi:id="__BbwPAwYEei-AeSrpwoQZQ" name="Department"/>
                   </rightOperand>
                   <operator xmi:type="expression:Operator" xmi:id="_dzX4ocavEeWStvAm3pigyA" type="ASSIGNMENT"/>
                 </action>
@@ -861,7 +858,7 @@
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dzX4JMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <actions xmi:type="expression:Operation" xmi:id="_dzX4JcavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dzX4JsavEeWStvAm3pigyA" name="referenceDataAdditionComplete" content="referenceDataAdditionComplete" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
-                    <referencedElements xmi:type="process:Data" xmi:id="_uBqMQeGOEeOBRccffrPWDw" name="referenceDataAdditionComplete" dataType="_BPkgUGxdEeKbYv3tkUdwCw"/>
+                    <referencedElements xmi:type="process:Data" xmi:id="__BbvxAwYEei-AeSrpwoQZQ" name="referenceDataAdditionComplete" dataType="_BPkgUGxdEeKbYv3tkUdwCw"/>
                   </leftOperand>
                   <rightOperand xmi:type="expression:Expression" xmi:id="_dzX4KMavEeWStvAm3pigyA" name="false" content="false" returnType="java.lang.Boolean"/>
                   <operator xmi:type="expression:Operator" xmi:id="_dzX4KcavEeWStvAm3pigyA" type="ASSIGNMENT"/>
@@ -879,8 +876,8 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dzYeicavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dzYeisavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dzYei8avEeWStvAm3pigyA" name="availableValuesScript" content="import org.codehaus.groovy.runtime.DefaultGroovyMethods;&#xD;&#xD;List&lt;List&lt;String>> output = new ArrayList&lt;List&lt;String>>();&#xD;for (String department : departmentDataMap.keySet()) {&#xD;&#x9;List&lt;String> row = new ArrayList&lt;String>();&#xD;&#x9;row.add(department);&#xD;&#x9;row.add(DefaultGroovyMethods.join(departmentDataMap.get(department),&quot;, &quot;));&#xD;&#x9;output.add(row);&#xD;}&#xD;return output;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_dzYejMavEeWStvAm3pigyA" name="departmentDataMap" datasourceId="PAGEFLOW" dataType="_BPkgVmxdEeKbYv3tkUdwCw" className="java.util.Map"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_dzYejcavEeWStvAm3pigyA" name="department" transient="true" datasourceId="IN_MEMORY" dataType="_BPkgVGxdEeKbYv3tkUdwCw"/>
+                <referencedElements xmi:type="process:JavaObjectData" xmi:id="__BcWuwwYEei-AeSrpwoQZQ" name="departmentDataMap" datasourceId="PAGEFLOW" dataType="_BPkgVmxdEeKbYv3tkUdwCw" className="java.util.Map"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__BcWvAwYEei-AeSrpwoQZQ" name="department" transient="true" datasourceId="IN_MEMORY" dataType="_BPkgVGxdEeKbYv3tkUdwCw"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dzYejsavEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dzYej8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -941,6 +938,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dzX3xMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pfKztxvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__BbIRwwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:XORGateway" xmi:id="_h8AOULyBEeK8gfiskClvGg" name="Continue to add department" outgoing="_ilmk8LyBEeK8gfiskClvGg _kSyfgLyBEeK8gfiskClvGg" incoming="_hb-qcLyBEeK8gfiskClvGg" exclusiveOutgoingTransition="true">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_dzYeucavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -989,7 +987,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_kSyfgLyBEeK8gfiskClvGg" target="_zyn8gLx_EeK8gfiskClvGg" source="_h8AOULyBEeK8gfiskClvGg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_kSzGkLyBEeK8gfiskClvGg"/>
         <condition xmi:type="expression:Expression" xmi:id="_dzX49savEeWStvAm3pigyA" name="continueAddingData" content="!referenceDataAdditionComplete" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_uBqzEuGOEeOBRccffrPWDw" name="referenceDataAdditionComplete" dataType="_BPkgUGxdEeKbYv3tkUdwCw"/>
+          <referencedElements xmi:type="process:Data" xmi:id="__BbwkwwYEei-AeSrpwoQZQ" name="referenceDataAdditionComplete" dataType="_BPkgUGxdEeKbYv3tkUdwCw"/>
         </condition>
       </connections>
       <categories>On-boarding</categories>

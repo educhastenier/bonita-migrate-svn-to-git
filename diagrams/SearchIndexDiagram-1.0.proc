@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_b0aVUbbsEeKM-Y_vIhfjng" name="SearchIndexDiagram" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED0005740022536561726368496E6465784469616772616D372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_b0aVUbbsEeKM-Y_vIhfjng" name="SearchIndexDiagram" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED0005740022536561726368496E6465784469616772616D372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_cPWk4LbsEeKM-Y_vIhfjng" name="SearchIndexPool" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:Lane" xmi:id="_ceE9YLbsEeKM-Y_vIhfjng" name="Employee lane" actor="_cdwNQLbsEeKM-Y_vIhfjng">
         <elements xmi:type="process:StartEvent" xmi:id="_csEWELbsEeKM-Y_vIhfjng" name="Start1" outgoing="_cvI4MLbsEeKM-Y_vIhfjng">
@@ -23,16 +23,16 @@
             <widgets xmi:type="form:TextFormField" xmi:id="_qzuiYbbuEeKM-Y_vIhfjng" name="fEmployeeName" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_qzuiYrbuEeKM-Y_vIhfjng"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_d5NZzsavEeWStvAm3pigyA" name="varEmployeeName" content="varEmployeeName" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_uRG9lOGOEeOBRccffrPWDw" name="varEmployeeName" dataType="_b0aVV7bsEeKM-Y_vIhfjng"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__OlawQwYEei-AeSrpwoQZQ" name="varEmployeeName" dataType="_b0aVV7bsEeKM-Y_vIhfjng"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_d5NZ0MavEeWStvAm3pigyA" name="Employee name (variable):" content="Employee name (variable):" returnTypeFixed="true"/>
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_d5NZ0cavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_qzuiZrbuEeKM-Y_vIhfjng">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_d5NZ1savEeWStvAm3pigyA" name="varEmployeeName" content="varEmployeeName" type="TYPE_VARIABLE">
-                  <referencedElements xmi:type="process:Data" xmi:id="_d5NZ18avEeWStvAm3pigyA" name="varEmployeeName" dataType="_b0aVV7bsEeKM-Y_vIhfjng"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__OlayQwYEei-AeSrpwoQZQ" name="varEmployeeName" dataType="_b0aVV7bsEeKM-Y_vIhfjng"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_d5NZ2MavEeWStvAm3pigyA" name="field_fEmployeeName" content="field_fEmployeeName" type="TYPE_INPUT">
-                  <referencedElements xmi:type="form:TextFormField" xmi:id="_d5NZ2cavEeWStvAm3pigyA" name="varEmployeeName"/>
+                  <referencedElements xmi:type="form:TextFormField" xmi:id="__OlaywwYEei-AeSrpwoQZQ" name="varEmployeeName"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_qzvJcrbuEeKM-Y_vIhfjng" type="ASSIGNMENT"/>
               </action>
@@ -71,6 +71,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d5OApcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pnQ_OxvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__OlapQwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_CdBZ0LbtEeKM-Y_vIhfjng" name="Manager lane" actor="_GE-X8LbtEeKM-Y_vIhfjng">
@@ -95,7 +96,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_d5OAhsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_d5OAh8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_d5OAiMavEeWStvAm3pigyA" name="varEmployeeName" content="varEmployeeName" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_d5OAicavEeWStvAm3pigyA" name="varEmployeeName" dataType="_b0aVV7bsEeKM-Y_vIhfjng"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__OmBiwwYEei-AeSrpwoQZQ" name="varEmployeeName" dataType="_b0aVV7bsEeKM-Y_vIhfjng"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_d5OAisavEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_d5OAi8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -137,6 +138,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d5OApsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pnQ_SBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__OlaswwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndTerminatedEvent" xmi:id="_kZgtcLbtEeKM-Y_vIhfjng" name="Terminate end event1" incoming="_kZ4g4LbtEeKM-Y_vIhfjng">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d5OAq8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -154,12 +156,12 @@
               <referencedElements xmi:type="process:SearchIndex" xmi:id="_q2gv0LceEeKRhIz8m1ZflA">
                 <name xmi:type="expression:Expression" xmi:id="_d5OAvsavEeWStvAm3pigyA" name="From variable" content="From variable" returnTypeFixed="true"/>
                 <value xmi:type="expression:Expression" xmi:id="_d5OAv8avEeWStvAm3pigyA" name="varEmployeeName" content="varEmployeeName" type="TYPE_VARIABLE" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_d5OAwMavEeWStvAm3pigyA" name="varEmployeeName" dataType="_b0aVV7bsEeKM-Y_vIhfjng"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__OmBwgwYEei-AeSrpwoQZQ" name="varEmployeeName" dataType="_b0aVV7bsEeKM-Y_vIhfjng"/>
                 </value>
               </referencedElements>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_d5OAtsavEeWStvAm3pigyA" name="varEmployeeName" content="varEmployeeName" type="TYPE_VARIABLE">
-              <referencedElements xmi:type="process:Data" xmi:id="_d5OAt8avEeWStvAm3pigyA" name="varEmployeeName" dataType="_b0aVV7bsEeKM-Y_vIhfjng"/>
+              <referencedElements xmi:type="process:Data" xmi:id="__OmBuQwYEei-AeSrpwoQZQ" name="varEmployeeName" dataType="_b0aVV7bsEeKM-Y_vIhfjng"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_d5OAuMavEeWStvAm3pigyA" type="ASSIGNMENT"/>
           </operations>
@@ -266,7 +268,7 @@
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_cPnqoLbsEeKM-Y_vIhfjng">
         <name xmi:type="expression:Expression" xmi:id="_d5OAwcavEeWStvAm3pigyA" name="From variable" content="From variable" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_d5OAwsavEeWStvAm3pigyA" name="varEmployeeName" content="varEmployeeName" type="TYPE_VARIABLE" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_d5OAw8avEeWStvAm3pigyA" name="varEmployeeName" dataType="_b0aVV7bsEeKM-Y_vIhfjng"/>
+          <referencedElements xmi:type="process:Data" xmi:id="__OmBxQwYEei-AeSrpwoQZQ" name="varEmployeeName" dataType="_b0aVV7bsEeKM-Y_vIhfjng"/>
         </value>
       </searchIndexes>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_cPnqo7bsEeKM-Y_vIhfjng">

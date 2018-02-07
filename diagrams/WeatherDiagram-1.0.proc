@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_VfsHkTMZEeKvsbYsrc8Gjw" name="WeatherDiagram" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED000574001E576561746865724469616772616D372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_VfsHkTMZEeKvsbYsrc8Gjw" name="WeatherDiagram" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574001E576561746865724469616772616D372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_VlLEgDMZEeKvsbYsrc8Gjw" name="WeatherTest" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:Lane" xmi:id="_Vn950DMZEeKvsbYsrc8Gjw" name="Employee lane" actor="_Vn6PcDMZEeKvsbYsrc8Gjw">
         <elements xmi:type="process:Task" xmi:id="_VoeQIDMZEeKvsbYsrc8Gjw" name="Show Weather" outgoing="_spvSsDMhEeKYJdGEEYJqbw" incoming="_DzRTwLYsEeKxxbFzg49gog" useCardinality="true" overrideActorsOfTheLane="false">
@@ -22,15 +22,15 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eDKmw8avEeWStvAm3pigyA" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eDKmxMavEeWStvAm3pigyA" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_eDKmxcavEeWStvAm3pigyA" name="weatherMessage" content="&quot;Weather forecast for ZIP &quot; + zipCode + &quot;&lt;br>&quot; + weatherText" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" htmlAllowed="true">
-                <referencedElements xmi:type="process:Data" xmi:id="_ueqRSOGOEeOBRccffrPWDw" name="weatherText" dataType="_VfsupTMZEeKvsbYsrc8Gjw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_ueqRSeGOEeOBRccffrPWDw" name="zipCode" dataType="_VfsupTMZEeKvsbYsrc8Gjw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__06a0AwYEei-AeSrpwoQZQ" name="weatherText" dataType="_VfsupTMZEeKvsbYsrc8Gjw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__06a0QwYEei-AeSrpwoQZQ" name="zipCode" dataType="_VfsupTMZEeKvsbYsrc8Gjw"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_eDKmyMavEeWStvAm3pigyA" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_eDKmycavEeWStvAm3pigyA" content=""/>
               <displayLabel xmi:type="expression:Expression" xmi:id="_eDKmysavEeWStvAm3pigyA" name="Message1" content="Message1" returnTypeFixed="true"/>
             </widgets>
             <pageLabel xmi:type="expression:Expression" xmi:id="_eDKmvsavEeWStvAm3pigyA" name="pageTitle" content="&quot;Weather for ZIP &quot; + zipCode" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-              <referencedElements xmi:type="process:Data" xmi:id="_ueqRQeGOEeOBRccffrPWDw" name="zipCode" dataType="_VfsupTMZEeKvsbYsrc8Gjw"/>
+              <referencedElements xmi:type="process:Data" xmi:id="__06ayQwYEei-AeSrpwoQZQ" name="zipCode" dataType="_VfsupTMZEeKvsbYsrc8Gjw"/>
             </pageLabel>
           </form>
           <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_SY0Y4DfdEeKw75Hfph0dHg" content=""/>
@@ -38,6 +38,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_eDKmzcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pzRbExvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__06axQwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_VqcmEDMZEeKvsbYsrc8Gjw" name="Start1" outgoing="_ZfbLoMoLEeKZxthsZIoBCw">
           <textAnnotationAttachment xmi:type="process:TextAnnotationAttachment" xmi:id="_q8kOALYtEeKxxbFzg49gog" source="_mX2ssLYtEeKxxbFzg49gog"/>
@@ -51,8 +52,8 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_eDKm1savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_eDKm18avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_eDKm2MavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_t1tS0MoMEeKZxthsZIoBCw" name="callWeatherWS" definitionId="webservice" event="ON_ENTER" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_t1tS2MoMEeKZxthsZIoBCw" definitionId="webservice" version="1.0.0" modelVersion="6.4.0-005">
+          <connectors xmi:type="process:Connector" xmi:id="_t1tS0MoMEeKZxthsZIoBCw" name="callWeatherWS" definitionId="webservice" event="ON_ENTER" definitionVersion="1.0.1">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_t1tS2MoMEeKZxthsZIoBCw" definitionId="webservice" version="1.0.1" modelVersion="6.4.0-005">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_t1tS2coMEeKZxthsZIoBCw" key="serviceNS">
                 <expression xmi:type="expression:Expression" xmi:id="_eDKm7savEeWStvAm3pigyA" name="Weather" content="Weather"/>
               </parameters>
@@ -64,7 +65,7 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_t1tS38oMEeKZxthsZIoBCw" key="envelope">
                 <expression xmi:type="expression:Expression" xmi:id="_eDKm8cavEeWStvAm3pigyA" name="&lt;pattern-expression>" content="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?>&#xD;&#xA;&lt;soap12:Envelope xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap12=&quot;http://www.w3.org/2003/05/soap-envelope&quot;>&#xD;&#xA;  &lt;soap12:Body>&#xD;&#xA;    &lt;GetCityForecastByZIP xmlns=&quot;http://ws.cdyne.com/WeatherWS/&quot;>&#xD;&#xA;      &lt;ZIP>${zipCode}&lt;/ZIP>&#xD;&#xA;    &lt;/GetCityForecastByZIP>&#xD;&#xA;  &lt;/soap12:Body>&#xD;&#xA;&lt;/soap12:Envelope>&#xD;&#xA;" type="TYPE_PATTERN">
-                  <referencedElements xmi:type="process:Data" xmi:id="_eDKm8savEeWStvAm3pigyA" name="zipCode" dataType="_VfsupTMZEeKvsbYsrc8Gjw"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__06a_AwYEei-AeSrpwoQZQ" name="zipCode" dataType="_VfsupTMZEeKvsbYsrc8Gjw"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_t1tS48oMEeKZxthsZIoBCw" key="endpointAddress">
@@ -97,7 +98,7 @@
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_t1tS0coMEeKZxthsZIoBCw">
               <leftOperand xmi:type="expression:Expression" xmi:id="_eDKm_MavEeWStvAm3pigyA" name="weatherText" content="weatherText" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_eDKm_cavEeWStvAm3pigyA" name="weatherText" dataType="_VfsupTMZEeKvsbYsrc8Gjw"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__06bBwwYEei-AeSrpwoQZQ" name="weatherText" dataType="_VfsupTMZEeKvsbYsrc8Gjw"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_eDKm_savEeWStvAm3pigyA" name="weatherTextScript" content="import org.w3c.dom.Element;&#xD;&#xA;import org.w3c.dom.NodeList;&#xD;&#xA;&#xD;&#xA;StringBuilder sb = new StringBuilder();&#xD;&#xA;NodeList forecasts = responseDocumentBody.getElementsByTagName(&quot;Forecast&quot;);&#xD;&#xA;&#xD;&#xA;Element elForecast;&#xD;&#xA;for (int i = 0; i &lt; forecasts.length; i++) {&#xD;&#xA;&#x9;elForecast = (Element) forecasts.item(i);&#xD;&#xA;&#x9;sb.append(((NodeList) elForecast.getElementsByTagName(&quot;Date&quot;)).item(0).getTextContent());&#xD;&#xA;&#x9;sb.append(&quot; :: &quot;);&#xD;&#xA;&#x9;sb.append(((NodeList) elForecast.getElementsByTagName(&quot;Desciption&quot;)).item(0).getTextContent());&#xD;&#xA;&#x9;sb.append(&quot;&lt;br>&quot;);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return sb.toString();&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
                 <referencedElements xmi:type="definition:Output" xmi:id="_t1tS18oMEeKZxthsZIoBCw" name="responseDocumentBody" type="org.w3c.dom.Document"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_aq2soSUTEeO14fq4nuSeMw" name="SignalEventDiagram" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED00057400225369676E616C4576656E744469616772616D372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_aq2soSUTEeO14fq4nuSeMw" name="SignalEventDiagram" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED00057400225369676E616C4576656E744469616772616D372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_bB4skCUTEeO14fq4nuSeMw" name="Signal milestone process" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:Lane" xmi:id="_bJw2MCUTEeO14fq4nuSeMw" name="Acme lane" actor="_bJty4CUTEeO14fq4nuSeMw">
         <elements xmi:type="process:StartEvent" xmi:id="_bTjEUCUTEeO14fq4nuSeMw" name="Start1" outgoing="_1Aj1ECUTEeO14fq4nuSeMw">
@@ -50,6 +50,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d8L1D8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_prVANBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__Z4rrgwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ANDGateway" xmi:id="_8wjmoCUTEeO14fq4nuSeMw" name="Gateway2" outgoing="__kNaACUTEeO14fq4nuSeMw" incoming="_8wulwCUTEeO14fq4nuSeMw _-R4PcCUTEeO14fq4nuSeMw">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d8LOkcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -200,6 +201,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d8L1EsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_prVAQRvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__Z4rvAwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_gn4PQCUUEeO14fq4nuSeMw" name="Link to employee benefits page" outgoing="_RtLxkCUUEeO14fq4nuSeMw" incoming="_QWPz0CUUEeO14fq4nuSeMw" useCardinality="true" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d8LOvsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -217,6 +219,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d8L1E8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_prVAThvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__Z4rygwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
       <resourceFolders xmi:type="process:ResourceFolder" xmi:id="_BF3aACUUEeO14fq4nuSeMw" path="_BE5wsCUUEeO14fq4nuSeMw/application/application"/>
@@ -331,6 +334,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d8L1FsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_prVAWxvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__Z4r2AwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_GRUgUCUWEeO14fq4nuSeMw" name="End3" incoming="_GRh7sCUWEeO14fq4nuSeMw">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d8L1KcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -443,6 +447,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d8L1GcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_prVAaBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__Z4r5gwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_O6Z2ACUWEeO14fq4nuSeMw" name="End4" incoming="_O6n4cCUWEeO14fq4nuSeMw">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d8L1LcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -555,6 +560,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d8L1HMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_prVAdRvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__Z4r9AwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndSignalEvent" xmi:id="_SVU9YCUZEeO14fq4nuSeMw" name="Employee hired" signalCode="employeeHired" incoming="_SV5lICUZEeO14fq4nuSeMw">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d8L2DsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>

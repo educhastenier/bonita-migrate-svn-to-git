@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_uTLgkDdTEeSTKZHAIFloxA" name="UtilityDiagram" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED000574001E5574696C6974794469616772616D372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_uTLgkDdTEeSTKZHAIFloxA" name="UtilityDiagram" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574001E5574696C6974794469616772616D372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_uTLgkTdTEeSTKZHAIFloxA" documentation="This process allows to retrieve current webapp absolute path on file system." name="GetWebAppPath" welcomePageInternal="false" basedOnLookAndFeel="Default Application" entryPageFlowType="SKIP">
       <elements xmi:type="process:Lane" xmi:id="_uTLgkjdTEeSTKZHAIFloxA" name="Employee lane" actor="_uTLguzdTEeSTKZHAIFloxA">
         <elements xmi:type="process:StartEvent" xmi:id="_uTLgnzdTEeSTKZHAIFloxA" name="Start1" outgoing="_IjwmgDdWEeSTKZHAIFloxA">
@@ -22,7 +22,7 @@
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_7GkhQTdYEeSTKZHAIFloxA">
               <leftOperand xmi:type="expression:Expression" xmi:id="_eBlSUsavEeWStvAm3pigyA" name="webapp_path" content="webapp_path" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_Kx1DwDdaEeSTKZHAIFloxA" name="webapp_path" dataType="_uTLg0DdTEeSTKZHAIFloxA"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__vQewAwYEei-AeSrpwoQZQ" name="webapp_path" dataType="_uTLg0DdTEeSTKZHAIFloxA"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_eBlSVMavEeWStvAm3pigyA" name="result" content="result" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
                 <referencedElements xmi:type="definition:Output" xmi:id="_7GkhRjdYEeSTKZHAIFloxA" name="result" type="java.lang.Object"/>
@@ -52,6 +52,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_eBlSZcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pxkK8hvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__vQe0gwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_PVeDgDdZEeSTKZHAIFloxA" name="End1" incoming="_PVpCoDdZEeSTKZHAIFloxA">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eBlSasavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_fa3VwL_kEeOE0tmaYDzcJw" name="BDMQueryProcess" version="10.0" author="Philippe" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED000574001F42444D517565727950726F63657373372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_fa3VwL_kEeOE0tmaYDzcJw" name="BDMQueryProcess" version="10.0" author="Philippe" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574001F42444D517565727950726F63657373372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_fgWSsL_kEeOE0tmaYDzcJw" name="BDMQueryProcess" welcomePageInternal="false" basedOnLookAndFeel="Default Application" version="10.0">
       <elements xmi:type="process:Lane" xmi:id="_fnp0kL_kEeOE0tmaYDzcJw" name="Employee lane" actor="_fnmxQL_kEeOE0tmaYDzcJw">
         <elements xmi:type="process:Task" xmi:id="_foF5cL_kEeOE0tmaYDzcJw" name="Step1" outgoing="_R26LEL_wEeOE0tmaYDzcJw" incoming="_frQiML_kEeOE0tmaYDzcJw" useCardinality="true" overrideActorsOfTheLane="false">
@@ -62,6 +62,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dN_5YMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_ofsTXBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_9b4t7gwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_fqqFQL_kEeOE0tmaYDzcJw" name="Start1" outgoing="_frQiML_kEeOE0tmaYDzcJw">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_dN_5ZcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -118,10 +119,10 @@
             <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dOAgbMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
             <action xmi:type="expression:Operation" xmi:id="_dOAgbcavEeWStvAm3pigyA">
               <leftOperand xmi:type="expression:Expression" xmi:id="_dOAgbsavEeWStvAm3pigyA" name="newOrder" content="newOrder" type="TYPE_VARIABLE" returnType="com.company.model.PurchaseOrder">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dOAgb8avEeWStvAm3pigyA" name="newOrder" dataType="_fa380r_kEeOE0tmaYDzcJw" className="com.company.model.PurchaseOrder"/>
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9b5VBQwYEei-AeSrpwoQZQ" name="newOrder" dataType="_fa380r_kEeOE0tmaYDzcJw" className="com.company.model.PurchaseOrder"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_dOAgcMavEeWStvAm3pigyA" name="field_newOrder1_client1" content="field_newOrder1_client1" type="TYPE_INPUT">
-                <referencedElements xmi:type="form:TextFormField" xmi:id="_mvk5jL_kEeOE0tmaYDzcJw" name="newOrder1_client1"/>
+                <referencedElements xmi:type="form:TextFormField" xmi:id="_9b5VBwwYEei-AeSrpwoQZQ" name="newOrder1_client1"/>
               </rightOperand>
               <operator xmi:type="expression:Operator" xmi:id="_dOAgcsavEeWStvAm3pigyA" type="JAVA_METHOD" expression="setClient">
                 <inputTypes>java.lang.String</inputTypes>
@@ -147,10 +148,10 @@
             <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dOAggsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
             <action xmi:type="expression:Operation" xmi:id="_dOAgg8avEeWStvAm3pigyA">
               <leftOperand xmi:type="expression:Expression" xmi:id="_dOAghMavEeWStvAm3pigyA" name="newOrder" content="newOrder" type="TYPE_VARIABLE" returnType="com.company.model.PurchaseOrder">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dOAghcavEeWStvAm3pigyA" name="newOrder" dataType="_fa380r_kEeOE0tmaYDzcJw" className="com.company.model.PurchaseOrder"/>
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9b5VGwwYEei-AeSrpwoQZQ" name="newOrder" dataType="_fa380r_kEeOE0tmaYDzcJw" className="com.company.model.PurchaseOrder"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_dOAghsavEeWStvAm3pigyA" name="field_newOrder1_description1" content="field_newOrder1_description1" type="TYPE_INPUT">
-                <referencedElements xmi:type="form:TextAreaFormField" xmi:id="_mvk5o7_kEeOE0tmaYDzcJw" name="newOrder1_description1"/>
+                <referencedElements xmi:type="form:TextAreaFormField" xmi:id="_9b5VHQwYEei-AeSrpwoQZQ" name="newOrder1_description1"/>
               </rightOperand>
               <operator xmi:type="expression:Operator" xmi:id="_dOAgiMavEeWStvAm3pigyA" type="JAVA_METHOD" expression="setDescription">
                 <inputTypes>java.lang.String</inputTypes>

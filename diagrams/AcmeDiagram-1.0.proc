@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_Q6uWYDJPEeKSpr5Kj7uJaA" name="AcmeDiagram" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED000574001B41636D654469616772616D372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_Q6uWYDJPEeKSpr5Kj7uJaA" name="AcmeDiagram" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574001B41636D654469616772616D372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_Q68_4DJPEeKSpr5Kj7uJaA" name="ACME Process" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:Lane" xmi:id="_Q7CfcDJPEeKSpr5Kj7uJaA" name="Employee lane" actor="_Q7BRUDJPEeKSpr5Kj7uJaA">
         <elements xmi:type="process:Task" xmi:id="_Q7HX8DJPEeKSpr5Kj7uJaA" name="My First Human Step" outgoing="_nIKB4DJPEeKSpr5Kj7uJaA" incoming="_Q7RI8DJPEeKSpr5Kj7uJaA" useCardinality="true" overrideActorsOfTheLane="false">
@@ -14,6 +14,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dJpkwMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_oTPLlRvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_9VoU2wwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_Q7M3gDJPEeKSpr5Kj7uJaA" name="Start1" outgoing="_Q7RI8DJPEeKSpr5Kj7uJaA"/>
         <elements xmi:type="process:EndTerminatedEvent" xmi:id="_hxSq4DJPEeKSpr5Kj7uJaA" name="Terminate end event1" incoming="_ne5t8DJPEeKSpr5Kj7uJaA">
@@ -30,6 +31,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dJpkwcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_oTPLnRvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_9VoU5AwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
       <resourceFolders xmi:type="process:ResourceFolder" xmi:id="_joRfgJLXEeKwgcxqM60reg" path="_Q68_4DJPEeKSpr5Kj7uJaA/application/application"/>

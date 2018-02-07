@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_Lu42geewEeKflre9tnf7iA" name="InsertIfInGroup" author="vince" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED000574001F496E736572744966496E47726F7570372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_Lu42geewEeKflre9tnf7iA" name="InsertIfInGroup" author="vince" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574001F496E736572744966496E47726F7570372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_L4h6sOewEeKflre9tnf7iA" name="InsertIfInGroup" welcomePageInternal="false" basedOnLookAndFeel="Default Application" entryPageFlowType="SKIP">
       <elements xmi:type="process:Lane" xmi:id="_L9qSUOewEeKflre9tnf7iA" name="Lane employée" actor="_L9n2EOewEeKflre9tnf7iA">
         <elements xmi:type="process:Task" xmi:id="_L-vQYOewEeKflre9tnf7iA" name="Choice" outgoing="_WhOBgOh9EeKibtuFxcfoMg" incoming="_MDWDkOewEeKflre9tnf7iA" useCardinality="true" overrideActorsOfTheLane="false">
@@ -19,7 +19,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dkkmUsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dkkmU8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dkkmVMavEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                <referencedElements xmi:type="process:Data" xmi:id="_tK90ueGOEeOBRccffrPWDw" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_-SWbxQwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dkkmVsavEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dkkmV8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -28,10 +28,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dkkmWsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_Kv-esuiWEeKibtuFxcfoMg">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dkkmfcavEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkkmfsavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SXCsQwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dkkmf8avEeWStvAm3pigyA" name="field_Case_a_cocher1" content="field_Case_a_cocher1" type="TYPE_INPUT" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_dkkmgMavEeWStvAm3pigyA" name="Case_a_cocher1"/>
+                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_-SXCswwYEei-AeSrpwoQZQ" name="Case_a_cocher1"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_Kv-etOiWEeKibtuFxcfoMg" type="ASSIGNMENT" expression="="/>
               </action>
@@ -64,7 +64,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dkkmZMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dkkmZcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dkkmZsavEeWStvAm3pigyA" name="showPartially" content="showPartially" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                <referencedElements xmi:type="process:Data" xmi:id="_tK90y-GOEeOBRccffrPWDw" name="showPartially" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_-SWb1wwYEei-AeSrpwoQZQ" name="showPartially" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dkkmaMavEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dkkmacavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -73,10 +73,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dkkmbMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_RxREEO1gEeKO3P6DOJC4Gw">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dkkmgsavEeWStvAm3pigyA" name="showPartially" content="showPartially" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkkmg8avEeWStvAm3pigyA" name="showPartially" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SXCtgwYEei-AeSrpwoQZQ" name="showPartially" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dkkmhMavEeWStvAm3pigyA" name="field_ShowPartially" content="field_ShowPartially" type="TYPE_INPUT" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_dkkmhcavEeWStvAm3pigyA" name="ShowPartially"/>
+                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_-SXCuAwYEei-AeSrpwoQZQ" name="ShowPartially"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_RxREEu1gEeKO3P6DOJC4Gw" type="ASSIGNMENT" expression="="/>
               </action>
@@ -96,6 +96,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dkkmocavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pBh1JBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_-SV01gwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_MCMNAOewEeKflre9tnf7iA" name="Début1" outgoing="_MDWDkOewEeKflre9tnf7iA">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_dkkmp8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -144,10 +145,10 @@
                 <tooltip xmi:type="expression:Expression" xmi:id="_dkkmxMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dkkmxcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dkkmxsavEeWStvAm3pigyA" name="Case_a_cocher1" content="MyScript.testShow(showAll,&quot;CheckBox&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkkmx8avEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SXC-gwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </displayLabel>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dkkmyMavEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkkmycavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SXC_AwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dkkmysavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dkkmy8avEeWStvAm3pigyA" content=""/>
@@ -174,7 +175,7 @@
               <helpMessage xmi:type="expression:Expression" xmi:id="_dkkm3MavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dkkm3cavEeWStvAm3pigyA" name="Groupe2" content="Groupe2" returnTypeFixed="true"/>
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dkkm3savEeWStvAm3pigyA" name="bool2" content="bool2" returnType="java.lang.Boolean" returnTypeFixed="true">
-                <referencedElements xmi:type="process:Data" xmi:id="_dkkm38avEeWStvAm3pigyA" name="bool2" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_-SXDEgwYEei-AeSrpwoQZQ" name="bool2" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
               </injectWidgetScript>
               <action xmi:type="expression:Operation" xmi:id="_dkkm4MavEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dkkm4cavEeWStvAm3pigyA" content=""/>
@@ -196,12 +197,12 @@
                 <tooltip xmi:type="expression:Expression" xmi:id="_dklOpsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dklOp8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dklOqMavEeWStvAm3pigyA" name="Liste_de_cases_a_cocher13" content="MyScript.testShow(showAll | showPartially,&quot;CheckList&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklOqcavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklOqsavEeWStvAm3pigyA" name="showPartially" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SYRVAwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SYRVQwYEei-AeSrpwoQZQ" name="showPartially" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </displayLabel>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dklOq8avEeWStvAm3pigyA" name="showAllOrPatially" content="if (showAll || showPartially){&#xD;&#xA;&#x9;return true;&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;&#x9;return false;&#xD;&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklOrMavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklOrcavEeWStvAm3pigyA" name="showPartially" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SYRVwwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SYRWAwYEei-AeSrpwoQZQ" name="showPartially" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dklOrsavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dklOr8avEeWStvAm3pigyA" content=""/>
@@ -250,10 +251,10 @@
                 <tooltip xmi:type="expression:Expression" xmi:id="_dklOwMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dklOwcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dklOwsavEeWStvAm3pigyA" name="Duree1" content="MyScript.testShow(showAll,&quot;Duree&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklOw8avEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SYRbgwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </displayLabel>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dklOxMavEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklOxcavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SYRcAwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dklOxsavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dklOx8avEeWStvAm3pigyA" content=""/>
@@ -296,14 +297,14 @@
                 <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dklO0savEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dklO08avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <inputExpression xmi:type="expression:Expression" xmi:id="_dklO1MavEeWStvAm3pigyA" name="password" content="MyScript.testShow(showAll,&quot;Password&quot;);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklO1cavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SYRgAwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </inputExpression>
                 <afterEventExpression xmi:type="expression:Expression" xmi:id="_dklO1savEeWStvAm3pigyA" name="" content=""/>
                 <tooltip xmi:type="expression:Expression" xmi:id="_dklO18avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dklO2MavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dklO2cavEeWStvAm3pigyA" name="Mot_de_passe1" content="Mot_de_passe1" returnTypeFixed="true"/>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dklO2savEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklO28avEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SYRhgwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dklO3MavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dklO3cavEeWStvAm3pigyA" content=""/>
@@ -351,8 +352,8 @@
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dklO7cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dklO7savEeWStvAm3pigyA" name="Boutons_radio1" content="Boutons_radio1" returnTypeFixed="true"/>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dklO78avEeWStvAm3pigyA" name="showAllOrPatially" content="if (showAll || showPartially){&#xD;&#xA;&#x9;return true;&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;&#x9;return false;&#xD;&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklO8MavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklO8cavEeWStvAm3pigyA" name="showPartially" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SYRmwwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SYRnAwYEei-AeSrpwoQZQ" name="showPartially" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dklO8savEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dklO88avEeWStvAm3pigyA" content=""/>
@@ -402,7 +403,7 @@
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dklPBcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dklPBsavEeWStvAm3pigyA" name="Liste_deroulante1" content="Liste_deroulante1" returnTypeFixed="true"/>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dklPB8avEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklPCMavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SYRswwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dklPCcavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dklPCsavEeWStvAm3pigyA" content=""/>
@@ -451,10 +452,10 @@
                 <tooltip xmi:type="expression:Expression" xmi:id="_dklPG8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dklPHMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dklPHcavEeWStvAm3pigyA" name="Date1" content="MyScript.testShow(showAll,&quot;Date&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklPHsavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SYRyQwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </displayLabel>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dklPH8avEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklPIMavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SYRywwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dklPIcavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dklPIsavEeWStvAm3pigyA" content=""/>
@@ -502,7 +503,7 @@
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dklPMsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dklPM8avEeWStvAm3pigyA" name="Liste1" content="Liste1" returnTypeFixed="true"/>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dklPNMavEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklPNcavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SYR4AwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dklPNsavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dklPN8avEeWStvAm3pigyA" content=""/>
@@ -552,7 +553,7 @@
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dklPScavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dklPSsavEeWStvAm3pigyA" name="Boite_de_suggestion1" content="Boite_de_suggestion1" returnTypeFixed="true"/>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dklPS8avEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklPTMavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SYR9wwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dklPTcavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dklPTsavEeWStvAm3pigyA" content=""/>
@@ -597,14 +598,14 @@
                 <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dklPW8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dklPXMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <inputExpression xmi:type="expression:Expression" xmi:id="_dklPXcavEeWStvAm3pigyA" name="textField" content="MyScript.testShow(showAll,&quot;textField&quot;);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklPXsavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY35gwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </inputExpression>
                 <afterEventExpression xmi:type="expression:Expression" xmi:id="_dklPX8avEeWStvAm3pigyA" name="" content=""/>
                 <tooltip xmi:type="expression:Expression" xmi:id="_dklPYMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dklPYcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dklPYsavEeWStvAm3pigyA" name="Champ_texte1" content="Champ_texte1" returnTypeFixed="true"/>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dklPY8avEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklPZMavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY37AwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dklPZcavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dklPZsavEeWStvAm3pigyA" content=""/>
@@ -647,14 +648,14 @@
                 <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dklPccavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dklPcsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <inputExpression xmi:type="expression:Expression" xmi:id="_dklPc8avEeWStvAm3pigyA" name="textZone" content="MyScript.testShow(showAll,&quot;textZone&quot;);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklPdMavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY3_AwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </inputExpression>
                 <afterEventExpression xmi:type="expression:Expression" xmi:id="_dklPdcavEeWStvAm3pigyA" name="" content=""/>
                 <tooltip xmi:type="expression:Expression" xmi:id="_dklPdsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dklPd8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dklPeMavEeWStvAm3pigyA" name="Zone_de_texte_editable1" content="Zone_de_texte_editable1" returnTypeFixed="true"/>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dklPecavEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklPesavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4AgwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dklPe8avEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dklPfMavEeWStvAm3pigyA" content=""/>
@@ -697,14 +698,14 @@
                 <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dklPh8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dklPiMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <inputExpression xmi:type="expression:Expression" xmi:id="_dklPicavEeWStvAm3pigyA" name="richTextArea" content="MyScript.testShow(showAll,&quot;RichTextArea&quot;);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklPisavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4EgwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </inputExpression>
                 <afterEventExpression xmi:type="expression:Expression" xmi:id="_dklPi8avEeWStvAm3pigyA" name="" content=""/>
                 <tooltip xmi:type="expression:Expression" xmi:id="_dklPjMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dklPjcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dklPjsavEeWStvAm3pigyA" name="Zone_texte_enrichi1" content="Zone_texte_enrichi1" returnTypeFixed="true"/>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dklPj8avEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklPkMavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4GAwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dklPkcavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dklPksavEeWStvAm3pigyA" content=""/>
@@ -747,14 +748,14 @@
                 <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dklPncavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dklPnsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <inputExpression xmi:type="expression:Expression" xmi:id="_dklPn8avEeWStvAm3pigyA" name="text" content="MyScript.testShow(showAll,&quot;Text&quot;);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklPoMavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4KAwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </inputExpression>
                 <afterEventExpression xmi:type="expression:Expression" xmi:id="_dklPocavEeWStvAm3pigyA" name="" content=""/>
                 <tooltip xmi:type="expression:Expression" xmi:id="_dklPosavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dklPo8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dklPpMavEeWStvAm3pigyA" name="Texte1" content="Texte1" returnTypeFixed="true"/>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dklPpcavEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklPpsavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4LgwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dklPp8avEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dklPqMavEeWStvAm3pigyA"/>
@@ -792,16 +793,16 @@
                 <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dklPrsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dklPr8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <inputExpression xmi:type="expression:Expression" xmi:id="_dklPsMavEeWStvAm3pigyA" name="exception1" content="MyScript.testShow(showAll | showPartially,&quot;Message Widget 16&quot;)&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklPscavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklPssavEeWStvAm3pigyA" name="showPartially" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4OQwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4OgwYEei-AeSrpwoQZQ" name="showPartially" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </inputExpression>
                 <afterEventExpression xmi:type="expression:Expression" xmi:id="_dklPs8avEeWStvAm3pigyA" name="" content=""/>
                 <tooltip xmi:type="expression:Expression" xmi:id="_dklPtMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dklPtcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dklPtsavEeWStvAm3pigyA" name="Message1" content="Message1" returnTypeFixed="true"/>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dklPt8avEeWStvAm3pigyA" name="showAllOrPartially" content="if (showAll || showPartially){&#xD;&#xA;&#x9;return true;&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;&#x9;return false;&#xD;&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklPuMavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklPucavEeWStvAm3pigyA" name="showPartially" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4QAwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4QQwYEei-AeSrpwoQZQ" name="showPartially" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dkl0UMavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dkl0UcavEeWStvAm3pigyA"/>
@@ -841,10 +842,10 @@
                 <tooltip xmi:type="expression:Expression" xmi:id="_dklNg8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dklNhMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dklNhcavEeWStvAm3pigyA" name="Soumettre2" content="MyScript.testShow(showAll,&quot;SubmitButton&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklNhsavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SXqbAwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </displayLabel>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dklNh8avEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklNiMavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SXqbgwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dklNicavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dklNisavEeWStvAm3pigyA"/>
@@ -884,10 +885,10 @@
                 <tooltip xmi:type="expression:Expression" xmi:id="_dkl0dcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dkl0dsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dkl0d8avEeWStvAm3pigyA" name="Precedent1" content="MyScript.testShow(showAll,&quot;previousButton&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl0eMavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4agwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </displayLabel>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dkl0ecavEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl0esavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4bAwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dkl0e8avEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dkl0fMavEeWStvAm3pigyA"/>
@@ -927,10 +928,10 @@
                 <tooltip xmi:type="expression:Expression" xmi:id="_dkl0hMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dkl0hcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dkl0hsavEeWStvAm3pigyA" name="Suivant1" content="MyScript.testShow(showAll,&quot;nextButton&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl0h8avEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4eQwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </displayLabel>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dkl0iMavEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl0icavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4ewwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dkl0isavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dkl0i8avEeWStvAm3pigyA"/>
@@ -970,10 +971,10 @@
                 <tooltip xmi:type="expression:Expression" xmi:id="_dkl0k8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dkl0lMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dkl0lcavEeWStvAm3pigyA" name="Bouton_simple1" content="MyScript.testShow(showAll,&quot;simpleButton&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl0lsavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4iAwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </displayLabel>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dkl0l8avEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl0mMavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4igwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dkl0mcavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dkl0msavEeWStvAm3pigyA"/>
@@ -1013,10 +1014,10 @@
                 <tooltip xmi:type="expression:Expression" xmi:id="_dkl0osavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dkl0o8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dkl0pMavEeWStvAm3pigyA" name="Fichier1" content="MyScript.testShow(showAll,&quot;File&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl0pcavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4lwwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </displayLabel>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dkl0psavEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl0p8avEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4mQwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dkl0qMavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dkl0qcavEeWStvAm3pigyA"/>
@@ -1064,10 +1065,10 @@
                 <tooltip xmi:type="expression:Expression" xmi:id="_dkl0ucavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dkl0usavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dkl0u8avEeWStvAm3pigyA" name="Image1" content="MyScript.testShow(showAll,&quot;Image&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl0vMavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4rgwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </displayLabel>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dkl0vcavEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl0vsavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4sAwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dkl0v8avEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dkl0wMavEeWStvAm3pigyA"/>
@@ -1114,10 +1115,10 @@
                 <tooltip xmi:type="expression:Expression" xmi:id="_dkl0z8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dkl00MavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dkl00cavEeWStvAm3pigyA" name="Table1" content="MyScript.testShow(showAll,&quot;Table&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl00savEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4xAwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </displayLabel>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dkl008avEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl01MavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4xgwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dkl01cavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dkl01savEeWStvAm3pigyA" content=""/>
@@ -1173,7 +1174,7 @@
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dkl07savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dkl078avEeWStvAm3pigyA" name="Grille_editable1" content="Grille_editable1" returnTypeFixed="true"/>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dkl08MavEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl08cavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY44wwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dkl08savEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dkl088avEeWStvAm3pigyA"/>
@@ -1227,7 +1228,7 @@
                 <tooltip xmi:type="expression:Expression" xmi:id="_dkl1CcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dkl1CsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dkl1C8avEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl1DMavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4_gwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dkl1DcavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dkl1DsavEeWStvAm3pigyA" content=""/>
@@ -1275,7 +1276,7 @@
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dkl1HsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dkl1H8avEeWStvAm3pigyA" name="IFrame1" content="IFrame1" returnTypeFixed="true"/>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dkl1IMavEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl1IcavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY5EwwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dkl1IsavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dkl1I8avEeWStvAm3pigyA"/>
@@ -1311,14 +1312,14 @@
                 <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dkl1J8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dkl1KMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <inputExpression xmi:type="expression:Expression" xmi:id="_dkl1KcavEeWStvAm3pigyA" name="html" content="MyScript.testShow(showAll,&quot;HTML&quot;);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl1KsavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY5HAwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </inputExpression>
                 <afterEventExpression xmi:type="expression:Expression" xmi:id="_dkl1K8avEeWStvAm3pigyA" name="" content=""/>
                 <tooltip xmi:type="expression:Expression" xmi:id="_dkl1LMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dkl1LcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dkl1LsavEeWStvAm3pigyA" name="Champ_HTML1" content="Champ_HTML1" returnTypeFixed="true"/>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dkl1L8avEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl1MMavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY5IgwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dkl1McavEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dkl1MsavEeWStvAm3pigyA"/>
@@ -1359,7 +1360,7 @@
                 <helpMessage xmi:type="expression:Expression" xmi:id="_dklOe8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
                 <displayLabel xmi:type="expression:Expression" xmi:id="_dklOfMavEeWStvAm3pigyA" name="Groupe29" content="Groupe29" returnTypeFixed="true"/>
                 <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dklOfcavEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dklOfsavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SYRKQwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </injectWidgetScript>
                 <action xmi:type="expression:Operation" xmi:id="_dklOf8avEeWStvAm3pigyA">
                   <leftOperand xmi:type="expression:Expression" xmi:id="_dklOgMavEeWStvAm3pigyA"/>
@@ -1377,7 +1378,7 @@
                   <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dkl0VcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                   <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dkl0VsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                   <inputExpression xmi:type="expression:Expression" xmi:id="_dkl0V8avEeWStvAm3pigyA" name="message in Goup in Group" content="MyScript.testShow(showAll,&quot;Message in Group&quot;);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="process:Data" xmi:id="_dkl0WMavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                    <referencedElements xmi:type="process:Data" xmi:id="_-SY4SgwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                   </inputExpression>
                   <afterEventExpression xmi:type="expression:Expression" xmi:id="_dkl0WcavEeWStvAm3pigyA" name="" content=""/>
                   <tooltip xmi:type="expression:Expression" xmi:id="_dkl0WsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -1404,7 +1405,7 @@
               <helpMessage xmi:type="expression:Expression" xmi:id="_dklOkcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
               <displayLabel xmi:type="expression:Expression" xmi:id="_dklOksavEeWStvAm3pigyA" name="Groupe30" content="Groupe30" returnTypeFixed="true"/>
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dklOk8avEeWStvAm3pigyA" name="showAll" content="showAll" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                <referencedElements xmi:type="process:Data" xmi:id="_dklOlMavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_-SYRPwwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
               </injectWidgetScript>
               <action xmi:type="expression:Operation" xmi:id="_dklOlcavEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dklOlsavEeWStvAm3pigyA" content=""/>
@@ -1422,7 +1423,7 @@
                 <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dkl0Y8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dkl0ZMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
                 <inputExpression xmi:type="expression:Expression" xmi:id="_dkl0ZcavEeWStvAm3pigyA" name="group" content="MyScript.testShow(showAll,&quot;Group&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dkl0ZsavEeWStvAm3pigyA" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_-SY4WAwYEei-AeSrpwoQZQ" name="showAll" dataType="_Lu5dkOewEeKflre9tnf7iA"/>
                 </inputExpression>
                 <afterEventExpression xmi:type="expression:Expression" xmi:id="_dkl0Z8avEeWStvAm3pigyA" name="" content=""/>
                 <tooltip xmi:type="expression:Expression" xmi:id="_dkl0aMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -1461,6 +1462,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dkkmosavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pBh1MhvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_-SV05QwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_cqX_EOfjEeKflre9tnf7iA" name="Fin1" incoming="_cricsOfjEeKflre9tnf7iA">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_dkl1NcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>

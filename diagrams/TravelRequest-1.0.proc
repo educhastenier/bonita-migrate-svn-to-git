@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_e22pIDS3EeKpZ7YOVniyeQ" name="TravelRequest" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED000574001D54726176656C52657175657374372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_e22pIDS3EeKpZ7YOVniyeQ" name="TravelRequest" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574001D54726176656C52657175657374372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_fXWHEDS3EeKpZ7YOVniyeQ" name="TravelRequest" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:Lane" xmi:id="_fXbmoDS3EeKpZ7YOVniyeQ" name="Employee" actor="_Cz1N0DS4EeKpZ7YOVniyeQ">
         <elements xmi:type="process:Task" xmi:id="_fXf4EDS3EeKpZ7YOVniyeQ" documentation="Invalid character / :&#xD;&#xA;Book an hotel for Anthony Birembaut in Paris from 04/05/12 to 07/05/12" name="Book an hotel for Anthony Birembaut in Paris " incoming="_fXpCADS3EeKpZ7YOVniyeQ" useCardinality="true" actor="_Cz1N0DS4EeKpZ7YOVniyeQ">
@@ -14,6 +14,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d-zrSsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pubXJhvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__kUZ-gwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_fXkwkDS3EeKpZ7YOVniyeQ" name="Début1" outgoing="_fXpCADS3EeKpZ7YOVniyeQ">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d-zrT8avEeWStvAm3pigyA" content=""/>

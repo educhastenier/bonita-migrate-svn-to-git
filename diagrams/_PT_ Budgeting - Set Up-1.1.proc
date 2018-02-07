@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_tqM8budgtingue48UwrOWNXw" name="[PT] Budgeting - Set Up" version="1.1" author="bonitasoft" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED00057400275B50545D20427564676574696E67202D20536574205570372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_tqM8budgtingue48UwrOWNXw" name="[PT] Budgeting - Set Up" version="1.1" author="bonitasoft" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED00057400275B50545D20427564676574696E67202D20536574205570372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_W7N74KsyEeK648UwrOWNXw" name="Budgeting Set Up" welcomePageInternal="false" basedOnLookAndFeel="Default Application" version="1.1">
       <elements xmi:type="process:Lane" xmi:id="_XNbGMKsyEeK648UwrOWNXw" name="Administrator" actor="_mXhZgLrjEeKw95pVEqjESQ">
         <elements xmi:type="process:StartEvent" xmi:id="_YWgOIKsyEeK648UwrOWNXw" name="Start" outgoing="_Ysu80KsyEeK648UwrOWNXw">
@@ -98,6 +98,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_eFMAvMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_p1qAuxvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__-U1UgwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:TextAnnotation" xmi:id="_iCtMYMnsEeKOV80NW5bkvw" text="This process is meant to be run only once at installation time and should be removed afterwards. &#xD;&#xA;&#xD;&#xA;To ensure that the users receive all the mails, during set up there is an option to configure the email addresses (please provide your email address)"/>
         <elements xmi:type="process:Task" xmi:id="_g1izoDsUEeOy_95x8EspWQ" documentation="This task is to help set up the mail address of the stakeholders involved in the budgeting process so that you can receive all the emails configured in the process" name="Configure stakeholder email" outgoing="_Zjha4KsyEeK648UwrOWNXw" incoming="_cOH8kDsUEeOy_95x8EspWQ" useCardinality="true" overrideActorsOfTheLane="false">
@@ -113,7 +114,7 @@
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_eFMAY8avEeWStvAm3pigyA" key="script">
                 <expression xmi:type="expression:Expression" xmi:id="_eFMAZMavEeWStvAm3pigyA" name="updateEmailAddressOfUsers" content="import org.bonitasoft.engine.identity.UserUpdater;&#xD;&#xA;import java.util.logging.Logger;&#xD;&#xA;&#xD;&#xA;import org.bonitasoft.engine.identity.ContactDataUpdater;&#xD;&#xA;import org.bonitasoft.engine.identity.User;&#xD;&#xA;import org.bonitasoft.engine.identity.UserUpdater;&#xD;&#xA;import com.bonitasoft.engine.api.IdentityAPI;&#xD;&#xA;&#xD;&#xA;for(Map userData in users){&#xD;&#xA;&#x9;ContactDataUpdater contactDataUpdater = new ContactDataUpdater();&#xD;&#xA;&#x9;contactDataUpdater.setEmail(userData.get(&quot;mail&quot;));&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;UserUpdater updater = new UserUpdater();&#xD;&#xA;&#x9;updater.setProfessionalContactData(contactDataUpdater)&#xD;&#xA;&#xD;&#xA;&#x9;apiAccessor.getIdentityAPI().updateUser(new Long(userData.get(&quot;userId&quot;)), updater);&#xD;&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true">
                   <referencedElements xmi:type="expression:Expression" xmi:id="_eFMAZcavEeWStvAm3pigyA" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="com.bonitasoft.engine.api.APIAccessor"/>
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_aHF6SK21EeOMubxQCBYqOA" name="users" transient="true" datasourceId="IN_MEMORY" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
+                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="__-U1XQwYEei-AeSrpwoQZQ" name="users" transient="true" datasourceId="IN_MEMORY" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
                 </expression>
               </parameters>
             </configuration>
@@ -131,13 +132,13 @@
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_eFMAb8avEeWStvAm3pigyA" key="script">
                 <expression xmi:type="expression:Expression" xmi:id="_eFMAcMavEeWStvAm3pigyA" name="data" content="import org.bonitasoft.engine.identity.Group;&#xD;&#xA;import org.bonitasoft.engine.identity.GroupCriterion;&#xD;&#xA;import org.bonitasoft.engine.identity.User;&#xD;&#xA;import org.bonitasoft.engine.identity.UserCriterion;&#xD;&#xA;import org.bonitasoft.engine.identity.UserMembership;&#xD;&#xA;import org.bonitasoft.engine.identity.UserMembershipCriterion;&#xD;&#xA;&#xD;&#xA;List userData = new ArrayList();&#xD;&#xA;List groups = apiAccessor.getIdentityAPI().getGroups(0, 100, GroupCriterion.LABEL_ASC);&#xD;&#xA;try{&#xD;&#xA;&#x9;for(Group group in groups){&#xD;&#xA;&#x9;&#x9;List users = BudgetingUtil.findUsers(apiAccessor,group.getId(),&quot;budgetController&quot;);&#xD;&#xA;&#x9;&#x9;List CFO = BudgetingUtil.findUsers(apiAccessor,group.getId(),&quot;CFO&quot;);&#xD;&#xA;&#x9;&#x9;users.addAll(CFO);&#xD;&#xA;&#x9;&#x9;for(User user in users){&#xD;&#xA;&#x9;&#x9;&#x9;Map map  =  new HashMap();&#xD;&#xA;&#x9;&#x9;&#x9;map.put(&quot;userId&quot;, user.getId());&#xD;&#xA;&#x9;&#x9;&#x9;map.put(&quot;name&quot;, user.getFirstName() + &quot; &quot; + user.getLastName());&#xD;&#xA;&#x9;&#x9;&#x9;map.put(&quot;mail&quot;, apiAccessor.getIdentityAPI().getUserContactData(user.getId(), false).getEmail());&#xD;&#xA;&#x9;&#x9;&#x9;userData.add(map);&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;return userData;&#xD;&#xA;}catch(Exception e){&#xD;&#xA;&#x9;return new ArrayList();&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true">
                   <referencedElements xmi:type="expression:Expression" xmi:id="_eFMAccavEeWStvAm3pigyA" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="com.bonitasoft.engine.api.APIAccessor"/>
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_aHF6VK21EeOMubxQCBYqOA" name="users" transient="true" datasourceId="IN_MEMORY" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
+                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="__-U1aQwYEei-AeSrpwoQZQ" name="users" transient="true" datasourceId="IN_MEMORY" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
                 </expression>
               </parameters>
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_5Rix0VXWEeOUMuE60lwMXg">
               <leftOperand xmi:type="expression:Expression" xmi:id="_eFMAscavEeWStvAm3pigyA" name="usersInvolvedInBudgeting" content="usersInvolvedInBudgeting" type="TYPE_VARIABLE" returnType="java.util.List">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_aHGhdq21EeOMubxQCBYqOA" name="usersInvolvedInBudgeting" datasourceId="PAGEFLOW" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
+                <referencedElements xmi:type="process:JavaObjectData" xmi:id="__-U1qgwYEei-AeSrpwoQZQ" name="usersInvolvedInBudgeting" datasourceId="PAGEFLOW" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_eFMAs8avEeWStvAm3pigyA" name="result" content="result" type="CONNECTOR_OUTPUT_TYPE" returnType="java.lang.Object">
                 <referencedElements xmi:type="definition:Output" xmi:id="_5Rix11XWEeOUMuE60lwMXg" name="result" type="java.lang.Object"/>
@@ -157,7 +158,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eFMAmcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eFMAmsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_eFMAm8avEeWStvAm3pigyA" name="message" content="if(usersInvolvedInBudgeting.size() > 0) {&#xD;&#xA;&#x9;return &quot;This task is to set the email address of the various Bonita Users who will be &quot; +&#xD;&#xA;&#x9;&quot;involved in the process to ensure that all the emails configured in the process are delivered. &quot; +&#xD;&#xA;&#x9;&quot;&lt;br/> &lt;strong>Please ensure that the correct organization is published before performing this step. &quot;+&#xD;&#xA;&#x9;&quot;If not, publish the organization first and run the set up again&lt;/strong>&quot;;&#xD;&#xA;   }&#xD;&#xA;  return &quot;&lt;p style='color:#CD0000'>It seems that the expected organization is not published as no valid budgeting users are found. &quot; +&#xD;&#xA;  &quot;&lt;br/> &lt;strong>Please Go to Bonita Studio -> Organization -> Publish and select 'ACMEForBudgeting' and publish it. After publishing, run the set up process again&lt;/strong>&lt;/p>&quot;;&#xD;&#xA;  " interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" htmlAllowed="true">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_aHGhYK21EeOMubxQCBYqOA" name="usersInvolvedInBudgeting" datasourceId="PAGEFLOW" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
+                <referencedElements xmi:type="process:JavaObjectData" xmi:id="__-U1lAwYEei-AeSrpwoQZQ" name="usersInvolvedInBudgeting" datasourceId="PAGEFLOW" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_eFMAncavEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_eFMAnsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -177,23 +178,21 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eFMAx8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eFMAyMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_eFMAycavEeWStvAm3pigyA" name="usersInvolvedInBudgeting" content="usersInvolvedInBudgeting" type="TYPE_VARIABLE" returnType="java.util.List">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_eFMAysavEeWStvAm3pigyA" name="usersInvolvedInBudgeting" datasourceId="PAGEFLOW" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
+                <referencedElements xmi:type="process:JavaObjectData" xmi:id="__-U1wgwYEei-AeSrpwoQZQ" name="usersInvolvedInBudgeting" datasourceId="PAGEFLOW" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_eFMAy8avEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_eFMAzMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
               <helpMessage xmi:type="expression:Expression" xmi:id="_eFMAzcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
               <displayLabel xmi:type="expression:Expression" xmi:id="_eFMAzsavEeWStvAm3pigyA" name="Users" content="Users" returnTypeFixed="true"/>
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eFMAz8avEeWStvAm3pigyA" name="hasUsers" content="usersInvolvedInBudgeting.size() > 0" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_eFMA0MavEeWStvAm3pigyA" name="usersInvolvedInBudgeting" datasourceId="PAGEFLOW" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
+                <referencedElements xmi:type="process:JavaObjectData" xmi:id="__-U1yAwYEei-AeSrpwoQZQ" name="usersInvolvedInBudgeting" datasourceId="PAGEFLOW" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
               </injectWidgetScript>
               <action xmi:type="expression:Operation" xmi:id="_eFMA0cavEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_eFMA0savEeWStvAm3pigyA" name="users" content="users" type="TYPE_VARIABLE" returnType="java.util.List">
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_eFMA08avEeWStvAm3pigyA" name="users" transient="true" datasourceId="IN_MEMORY" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
+                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="__-U1ywwYEei-AeSrpwoQZQ" name="users" transient="true" datasourceId="IN_MEMORY" dataType="_tqM8p6svEeK648UwrOWNXw" className="java.util.List"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_eFMA1MavEeWStvAm3pigyA" name="field_Group1" content="field_Group1" type="TYPE_INPUT" returnType="java.util.List">
-                  <referencedElements xmi:type="form:Group" xmi:id="_aHHIc621EeOMubxQCBYqOA" name="Group1" duplicate="true">
-                    <iterator xmi:type="form:GroupIterator" xmi:id="_uh7oKeGOEeOBRccffrPWDw" className="java.lang.Object"/>
-                  </referencedElements>
+                  <referencedElements xmi:type="form:Group" xmi:id="__-U1zQwYEei-AeSrpwoQZQ" name="Group1" duplicate="true"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_eFMA1savEeWStvAm3pigyA" type="ASSIGNMENT" expression="="/>
               </action>
@@ -281,6 +280,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_eFMAvcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_p1qA2BvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__-U1cAwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
       <resourceFolders xmi:type="process:ResourceFolder" xmi:id="_27s1oDsYEeOy_95x8EspWQ" path="_W7N74KsyEeK648UwrOWNXw/application/application"/>

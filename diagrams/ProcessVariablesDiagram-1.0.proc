@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_Q2uUMbvYEeKuuMrgmiHc2w" name="ProcessVariablesDiagram" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED000574002750726F636573735661726961626C65734469616772616D372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_Q2uUMbvYEeKuuMrgmiHc2w" name="ProcessVariablesDiagram" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574002750726F636573735661726961626C65734469616772616D372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_RWA4QLvYEeKuuMrgmiHc2w" documentation="This process aims at testing all types of variable (especially updating variable values within Portal aka &quot;case variables&quot;)." name="ProcessVariablesPool" welcomePageInternal="false" basedOnLookAndFeel="Default Application" entryPageFlowType="SKIP">
       <elements xmi:type="process:Lane" xmi:id="_RkBfELvYEeKuuMrgmiHc2w" name="Employee lane" actor="_Rj6KULvYEeKuuMrgmiHc2w">
         <elements xmi:type="process:Task" xmi:id="_RlnagLvYEeKuuMrgmiHc2w" name="Review variables initial value" outgoing="_Zyq0ILvbEeKuuMrgmiHc2w _aOUOULvbEeKuuMrgmiHc2w _is8AcLvbEeKuuMrgmiHc2w _kQbMcLvbEeKuuMrgmiHc2w _l2jcwLvbEeKuuMrgmiHc2w _mxvSoLvbEeKuuMrgmiHc2w _oJZpILvbEeKuuMrgmiHc2w _o7sBsLvbEeKuuMrgmiHc2w _pqxVQLvbEeKuuMrgmiHc2w _6OjQoLvbEeKuuMrgmiHc2w" incoming="_RyW2ALvYEeKuuMrgmiHc2w" useCardinality="true" overrideActorsOfTheLane="false">
@@ -17,16 +17,16 @@
             <widgets xmi:type="form:TextFormField" xmi:id="_rHhZIbx1EeKbXMZfvCXhdQ" name="varLong" labelPosition="Left" returnTypeModifier="java.lang.Long">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_rHhZIrx1EeKbXMZfvCXhdQ" line="2"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_d2tfHcavEeWStvAm3pigyA" name="varLong" content="varLong" type="TYPE_VARIABLE" returnType="java.lang.Long">
-                <referencedElements xmi:type="process:Data" xmi:id="_uKvPyOGOEeOBRccffrPWDw" name="varLong" dataType="_Q2uUNbvYEeKuuMrgmiHc2w"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__HlajgwYEei-AeSrpwoQZQ" name="varLong" dataType="_Q2uUNbvYEeKuuMrgmiHc2w"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_d2tfH8avEeWStvAm3pigyA" name="Long:" content="Long:" returnTypeFixed="true"/>
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_d2tfIMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_rHhZJrx1EeKbXMZfvCXhdQ">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_d2tfPcavEeWStvAm3pigyA" name="varLong" content="varLong" type="TYPE_VARIABLE" returnType="java.lang.Long">
-                  <referencedElements xmi:type="process:Data" xmi:id="_d2tfPsavEeWStvAm3pigyA" name="varLong" dataType="_Q2uUNbvYEeKuuMrgmiHc2w"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__HlargwYEei-AeSrpwoQZQ" name="varLong" dataType="_Q2uUNbvYEeKuuMrgmiHc2w"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_d2tfP8avEeWStvAm3pigyA" name="field_varLong" content="field_varLong" type="TYPE_INPUT" returnType="java.lang.Long">
-                  <referencedElements xmi:type="form:TextFormField" xmi:id="_d2tfQMavEeWStvAm3pigyA" name="varLong" returnTypeModifier="java.lang.Long"/>
+                  <referencedElements xmi:type="form:TextFormField" xmi:id="__HlasAwYEei-AeSrpwoQZQ" name="varLong" returnTypeModifier="java.lang.Long"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_rHhZKrx1EeKbXMZfvCXhdQ" type="ASSIGNMENT"/>
               </action>
@@ -38,30 +38,30 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_d2tfVMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_d2tfVcavEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_d2tfVsavEeWStvAm3pigyA" name="varOption" content="varOption" type="TYPE_VARIABLE">
-                  <referencedElements xmi:type="process:Data" xmi:id="_d2tfV8avEeWStvAm3pigyA" name="varOption" dataType="_1RJp4LvYEeKuuMrgmiHc2w"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__HlaxwwYEei-AeSrpwoQZQ" name="varOption" dataType="_1RJp4LvYEeKuuMrgmiHc2w"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_d2tfWMavEeWStvAm3pigyA" name="field_varOption" content="field_varOption" type="TYPE_INPUT">
-                  <referencedElements xmi:type="form:RadioFormField" xmi:id="_uKv2mOGOEeOBRccffrPWDw" name="varOption"/>
+                  <referencedElements xmi:type="form:RadioFormField" xmi:id="__HlayQwYEei-AeSrpwoQZQ" name="varOption"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_d2tfWsavEeWStvAm3pigyA" type="ASSIGNMENT"/>
               </action>
               <defaultExpression xmi:type="expression:Expression" xmi:id="_d2tfW8avEeWStvAm3pigyA" name="varOption" content="varOption" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_d2tfXMavEeWStvAm3pigyA" name="varOption" dataType="_1RJp4LvYEeKuuMrgmiHc2w"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__HlazAwYEei-AeSrpwoQZQ" name="varOption" dataType="_1RJp4LvYEeKuuMrgmiHc2w"/>
               </defaultExpression>
             </widgets>
             <widgets xmi:type="form:DateFormField" xmi:id="_rHiANbx1EeKbXMZfvCXhdQ" name="varDate" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_d2tfXcavEeWStvAm3pigyA" line="4"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_d2tfXsavEeWStvAm3pigyA" name="varDate" content="varDate" type="TYPE_VARIABLE" returnType="java.util.Date">
-                <referencedElements xmi:type="process:Data" xmi:id="_d2tfX8avEeWStvAm3pigyA" name="varDate" dataType="_Q2uUM7vYEeKuuMrgmiHc2w"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__HlazwwYEei-AeSrpwoQZQ" name="varDate" dataType="_Q2uUM7vYEeKuuMrgmiHc2w"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_d2tfYMavEeWStvAm3pigyA" name="Date:" content="Date:" returnTypeFixed="true"/>
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_d2tfYcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_d2tfYsavEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_d2tfY8avEeWStvAm3pigyA" name="varDate" content="varDate" type="TYPE_VARIABLE" returnType="java.util.Date">
-                  <referencedElements xmi:type="process:Data" xmi:id="_d2tfZMavEeWStvAm3pigyA" name="varDate" dataType="_Q2uUM7vYEeKuuMrgmiHc2w"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__Hla1AwYEei-AeSrpwoQZQ" name="varDate" dataType="_Q2uUM7vYEeKuuMrgmiHc2w"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_d2tfZcavEeWStvAm3pigyA" name="field_varDate" content="field_varDate" type="TYPE_INPUT" returnType="java.util.Date">
-                  <referencedElements xmi:type="form:DateFormField" xmi:id="_uKv2peGOEeOBRccffrPWDw" name="varDate"/>
+                  <referencedElements xmi:type="form:DateFormField" xmi:id="__Hla1gwYEei-AeSrpwoQZQ" name="varDate"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_d2tfZ8avEeWStvAm3pigyA" type="ASSIGNMENT"/>
               </action>
@@ -69,16 +69,16 @@
             <widgets xmi:type="form:TextFormField" xmi:id="_rHiASbx1EeKbXMZfvCXhdQ" name="varDouble" labelPosition="Left" returnTypeModifier="java.lang.Double">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_rHiASrx1EeKbXMZfvCXhdQ" line="3"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_d2tfI8avEeWStvAm3pigyA" name="varDouble" content="varDouble" type="TYPE_VARIABLE" returnType="java.lang.Double">
-                <referencedElements xmi:type="process:Data" xmi:id="_uKvPzuGOEeOBRccffrPWDw" name="varDouble" dataType="_Q2uUNrvYEeKuuMrgmiHc2w"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__HlalAwYEei-AeSrpwoQZQ" name="varDouble" dataType="_Q2uUNrvYEeKuuMrgmiHc2w"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_d2tfJcavEeWStvAm3pigyA" name="Double:" content="Double:" returnTypeFixed="true"/>
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_d2tfJsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_rHiATrx1EeKbXMZfvCXhdQ">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_d2tfQsavEeWStvAm3pigyA" name="varDouble" content="varDouble" type="TYPE_VARIABLE" returnType="java.lang.Double">
-                  <referencedElements xmi:type="process:Data" xmi:id="_d2tfQ8avEeWStvAm3pigyA" name="varDouble" dataType="_Q2uUNrvYEeKuuMrgmiHc2w"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__HlaswwYEei-AeSrpwoQZQ" name="varDouble" dataType="_Q2uUNrvYEeKuuMrgmiHc2w"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_d2tfRMavEeWStvAm3pigyA" name="field_varDouble" content="field_varDouble" type="TYPE_INPUT" returnType="java.lang.Double">
-                  <referencedElements xmi:type="form:TextFormField" xmi:id="_d2tfRcavEeWStvAm3pigyA" name="varDouble" returnTypeModifier="java.lang.Double"/>
+                  <referencedElements xmi:type="form:TextFormField" xmi:id="__HlatQwYEei-AeSrpwoQZQ" name="varDouble" returnTypeModifier="java.lang.Double"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_rHiAUrx1EeKbXMZfvCXhdQ" type="ASSIGNMENT"/>
               </action>
@@ -86,16 +86,16 @@
             <widgets xmi:type="form:CheckBoxSingleFormField" xmi:id="_rHiAXbx1EeKbXMZfvCXhdQ" name="varBoolean" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_d2tfaMavEeWStvAm3pigyA" line="3" column="1"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_d2tfacavEeWStvAm3pigyA" name="varBoolean" content="varBoolean" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                <referencedElements xmi:type="process:Data" xmi:id="_d2tfasavEeWStvAm3pigyA" name="varBoolean" dataType="_Q2uUMrvYEeKuuMrgmiHc2w"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__Hla2gwYEei-AeSrpwoQZQ" name="varBoolean" dataType="_Q2uUMrvYEeKuuMrgmiHc2w"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_d2tfa8avEeWStvAm3pigyA" name="Boolean:" content="Boolean:" returnTypeFixed="true"/>
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_d2tfbMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_d2tfbcavEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_d2tfbsavEeWStvAm3pigyA" name="varBoolean" content="varBoolean" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="process:Data" xmi:id="_d2tfb8avEeWStvAm3pigyA" name="varBoolean" dataType="_Q2uUMrvYEeKuuMrgmiHc2w"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__Hla3wwYEei-AeSrpwoQZQ" name="varBoolean" dataType="_Q2uUMrvYEeKuuMrgmiHc2w"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_d2tfcMavEeWStvAm3pigyA" name="field_varBoolean" content="field_varBoolean" type="TYPE_INPUT" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="_uKv2sOGOEeOBRccffrPWDw" name="varBoolean"/>
+                  <referencedElements xmi:type="form:CheckBoxSingleFormField" xmi:id="__Hla4QwYEei-AeSrpwoQZQ" name="varBoolean"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_d2tfcsavEeWStvAm3pigyA" type="ASSIGNMENT"/>
               </action>
@@ -103,16 +103,16 @@
             <widgets xmi:type="form:TextFormField" xmi:id="_rHinSbx1EeKbXMZfvCXhdQ" name="varText" labelPosition="Left">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_rHinSrx1EeKbXMZfvCXhdQ"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_d2tfKcavEeWStvAm3pigyA" name="varText" content="varText" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_uKvP1OGOEeOBRccffrPWDw" name="varText" dataType="_Q2uUN7vYEeKuuMrgmiHc2w"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__HlamgwYEei-AeSrpwoQZQ" name="varText" dataType="_Q2uUN7vYEeKuuMrgmiHc2w"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_d2tfK8avEeWStvAm3pigyA" name="Text:" content="Text:" returnTypeFixed="true"/>
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_d2tfLMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_rHinTrx1EeKbXMZfvCXhdQ">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_d2tfR8avEeWStvAm3pigyA" name="varText" content="varText" type="TYPE_VARIABLE">
-                  <referencedElements xmi:type="process:Data" xmi:id="_d2tfSMavEeWStvAm3pigyA" name="varText" dataType="_Q2uUN7vYEeKuuMrgmiHc2w"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__HlauAwYEei-AeSrpwoQZQ" name="varText" dataType="_Q2uUN7vYEeKuuMrgmiHc2w"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_d2tfScavEeWStvAm3pigyA" name="field_varText" content="field_varText" type="TYPE_INPUT">
-                  <referencedElements xmi:type="form:TextFormField" xmi:id="_d2tfSsavEeWStvAm3pigyA" name="varText"/>
+                  <referencedElements xmi:type="form:TextFormField" xmi:id="__HlaugwYEei-AeSrpwoQZQ" name="varText"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_rHinUrx1EeKbXMZfvCXhdQ" type="ASSIGNMENT"/>
               </action>
@@ -122,16 +122,16 @@
             <widgets xmi:type="form:TextFormField" xmi:id="_rHinXbx1EeKbXMZfvCXhdQ" name="varInteger" labelPosition="Left" returnTypeModifier="java.lang.Integer">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_rHinXrx1EeKbXMZfvCXhdQ" line="1"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_d2tfMcavEeWStvAm3pigyA" name="varInteger" content="varInteger" type="TYPE_VARIABLE" returnType="java.lang.Integer">
-                <referencedElements xmi:type="process:Data" xmi:id="_uKvP3OGOEeOBRccffrPWDw" name="varInteger" dataType="_Q2uUNLvYEeKuuMrgmiHc2w"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__HlaogwYEei-AeSrpwoQZQ" name="varInteger" dataType="_Q2uUNLvYEeKuuMrgmiHc2w"/>
               </inputExpression>
               <displayLabel xmi:type="expression:Expression" xmi:id="_d2tfM8avEeWStvAm3pigyA" name="Integer:" content="Integer:" returnTypeFixed="true"/>
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_d2tfNMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_rHinYrx1EeKbXMZfvCXhdQ">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_d2tfTMavEeWStvAm3pigyA" name="varInteger" content="varInteger" type="TYPE_VARIABLE" returnType="java.lang.Integer">
-                  <referencedElements xmi:type="process:Data" xmi:id="_d2tfTcavEeWStvAm3pigyA" name="varInteger" dataType="_Q2uUNLvYEeKuuMrgmiHc2w"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__HlavQwYEei-AeSrpwoQZQ" name="varInteger" dataType="_Q2uUNLvYEeKuuMrgmiHc2w"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_d2tfTsavEeWStvAm3pigyA" name="field_varInteger" content="field_varInteger" type="TYPE_INPUT" returnType="java.lang.Integer">
-                  <referencedElements xmi:type="form:TextFormField" xmi:id="_d2tfT8avEeWStvAm3pigyA" name="varInteger" returnTypeModifier="java.lang.Integer"/>
+                  <referencedElements xmi:type="form:TextFormField" xmi:id="__HlavwwYEei-AeSrpwoQZQ" name="varInteger" returnTypeModifier="java.lang.Integer"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_rHinZrx1EeKbXMZfvCXhdQ" type="ASSIGNMENT"/>
               </action>
@@ -148,6 +148,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d2tfecavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pjpDexvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__Hkz1AwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_RvwN8LvYEeKuuMrgmiHc2w" name="Start1" outgoing="_RyW2ALvYEeKuuMrgmiHc2w">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d2tfgMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -195,6 +196,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d2tfesavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pjpDiRvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__Hkz4wwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndTerminatedEvent" xmi:id="_7--FYLvbEeKuuMrgmiHc2w" name="Terminate end event1" incoming="_7_Dk8LvbEeKuuMrgmiHc2w">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d2tfkcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -212,7 +214,7 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_vD060LxuEeKbXMZfvCXhdQ" definitionId="check-variable" version="1.0.0" modelVersion="6.4.0-005">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_vD060bxuEeKbXMZfvCXhdQ" key="inputVariable">
                 <expression xmi:type="expression:Expression" xmi:id="_d2tgBcavEeWStvAm3pigyA" name="var" content="varText" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_d2tgBsavEeWStvAm3pigyA" name="varText" dataType="_Q2uUN7vYEeKuuMrgmiHc2w"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__HlbdgwYEei-AeSrpwoQZQ" name="varText" dataType="_Q2uUN7vYEeKuuMrgmiHc2w"/>
                 </expression>
               </parameters>
             </configuration>
@@ -232,7 +234,7 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_9DvyUbxuEeKbXMZfvCXhdQ" definitionId="check-variable" version="1.0.0" modelVersion="6.4.0-005">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_9DvyUrxuEeKbXMZfvCXhdQ" key="inputVariable">
                 <expression xmi:type="expression:Expression" xmi:id="_d2tgB8avEeWStvAm3pigyA" name="var" content="varBoolean" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_d2tgCMavEeWStvAm3pigyA" name="varBoolean" dataType="_Q2uUMrvYEeKuuMrgmiHc2w"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__HlbeAwYEei-AeSrpwoQZQ" name="varBoolean" dataType="_Q2uUMrvYEeKuuMrgmiHc2w"/>
                 </expression>
               </parameters>
             </configuration>
@@ -252,7 +254,7 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="__sqVUbxuEeKbXMZfvCXhdQ" definitionId="check-variable" version="1.0.0" modelVersion="6.4.0-005">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="__sqVUrxuEeKbXMZfvCXhdQ" key="inputVariable">
                 <expression xmi:type="expression:Expression" xmi:id="_d2tgCcavEeWStvAm3pigyA" name="var" content="varDate" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_d2tgCsavEeWStvAm3pigyA" name="varDate" dataType="_Q2uUM7vYEeKuuMrgmiHc2w"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__HlbegwYEei-AeSrpwoQZQ" name="varDate" dataType="_Q2uUM7vYEeKuuMrgmiHc2w"/>
                 </expression>
               </parameters>
             </configuration>
@@ -272,7 +274,7 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_CNLxUbxvEeKbXMZfvCXhdQ" definitionId="check-variable" version="1.0.0" modelVersion="6.4.0-005">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_CNLxUrxvEeKbXMZfvCXhdQ" key="inputVariable">
                 <expression xmi:type="expression:Expression" xmi:id="_d2tgC8avEeWStvAm3pigyA" name="var" content="varInteger" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_d2tgDMavEeWStvAm3pigyA" name="varInteger" dataType="_Q2uUNLvYEeKuuMrgmiHc2w"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__HlbfAwYEei-AeSrpwoQZQ" name="varInteger" dataType="_Q2uUNLvYEeKuuMrgmiHc2w"/>
                 </expression>
               </parameters>
             </configuration>
@@ -292,7 +294,7 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_FOTY8bxvEeKbXMZfvCXhdQ" definitionId="check-variable" version="1.0.0" modelVersion="6.4.0-005">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_FOTY8rxvEeKbXMZfvCXhdQ" key="inputVariable">
                 <expression xmi:type="expression:Expression" xmi:id="_d2tgDcavEeWStvAm3pigyA" name="var" content="varLong" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_d2tgDsavEeWStvAm3pigyA" name="varLong" dataType="_Q2uUNbvYEeKuuMrgmiHc2w"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__HlbfgwYEei-AeSrpwoQZQ" name="varLong" dataType="_Q2uUNbvYEeKuuMrgmiHc2w"/>
                 </expression>
               </parameters>
             </configuration>
@@ -312,7 +314,7 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_G-qjUbxvEeKbXMZfvCXhdQ" definitionId="check-variable" version="1.0.0" modelVersion="6.4.0-005">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_G-qjUrxvEeKbXMZfvCXhdQ" key="inputVariable">
                 <expression xmi:type="expression:Expression" xmi:id="_d2tgD8avEeWStvAm3pigyA" name="var" content="varDouble" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_d2tgEMavEeWStvAm3pigyA" name="varDouble" dataType="_Q2uUNrvYEeKuuMrgmiHc2w"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__HlbgAwYEei-AeSrpwoQZQ" name="varDouble" dataType="_Q2uUNrvYEeKuuMrgmiHc2w"/>
                 </expression>
               </parameters>
             </configuration>
@@ -332,7 +334,7 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_IxDG8bxvEeKbXMZfvCXhdQ" definitionId="check-variable" version="1.0.0" modelVersion="6.4.0-005">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_IxDG8rxvEeKbXMZfvCXhdQ" key="inputVariable">
                 <expression xmi:type="expression:Expression" xmi:id="_d2tgEcavEeWStvAm3pigyA" name="var" content="varOption" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_d2tgEsavEeWStvAm3pigyA" name="varOption" dataType="_1RJp4LvYEeKuuMrgmiHc2w"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="__HlbggwYEei-AeSrpwoQZQ" name="varOption" dataType="_1RJp4LvYEeKuuMrgmiHc2w"/>
                 </expression>
               </parameters>
             </configuration>
@@ -352,7 +354,7 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_K5uqsbxvEeKbXMZfvCXhdQ" definitionId="check-variable" version="1.0.0" modelVersion="6.4.0-005">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_K5uqsrxvEeKbXMZfvCXhdQ" key="inputVariable">
                 <expression xmi:type="expression:Expression" xmi:id="_d2tgE8avEeWStvAm3pigyA" name="var" content="varJavaObject" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_uKv3Q-GOEeOBRccffrPWDw" name="varJavaObject" dataType="_Q2uUOLvYEeKuuMrgmiHc2w" className="java.sql.ResultSet"/>
+                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="__HlbhAwYEei-AeSrpwoQZQ" name="varJavaObject" dataType="_Q2uUOLvYEeKuuMrgmiHc2w" className="java.sql.ResultSet"/>
                 </expression>
               </parameters>
             </configuration>
@@ -372,7 +374,7 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_Mzr18bxvEeKbXMZfvCXhdQ" definitionId="check-variable" version="1.0.0" modelVersion="6.4.0-005">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Mzr18rxvEeKbXMZfvCXhdQ" key="inputVariable">
                 <expression xmi:type="expression:Expression" xmi:id="_d2tgFcavEeWStvAm3pigyA" name="var" content="varXML" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:XMLData" xmi:id="_uKv3ReGOEeOBRccffrPWDw" name="varXML" dataType="_Q2uUObvYEeKuuMrgmiHc2w" namespace="http://www.example.org/GolfCountryClub" type="GolfCountryClub"/>
+                  <referencedElements xmi:type="process:XMLData" xmi:id="__HlbhgwYEei-AeSrpwoQZQ" name="varXML" dataType="_Q2uUObvYEeKuuMrgmiHc2w" namespace="http://www.example.org/GolfCountryClub" type="GolfCountryClub"/>
                 </expression>
               </parameters>
             </configuration>
@@ -398,6 +400,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_d2tfe8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pjpDlRvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="__Hkz8AwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndTerminatedEvent" xmi:id="_fWFDQLvkEeKt5eaZSPjquw" name="Terminate end event2" incoming="_fWc2sLvkEeKt5eaZSPjquw">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d2tflcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>

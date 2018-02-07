@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_m47Q4DSxEeKpZ7YOVniyeQ" name="DeclareExpense" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED000574001E4465636C617265457870656E7365372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_m47Q4DSxEeKpZ7YOVniyeQ" name="DeclareExpense" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574001E4465636C617265457870656E7365372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_nBcTsDSxEeKpZ7YOVniyeQ" name="DeclareExpense" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:Lane" xmi:id="_nBjocDSxEeKpZ7YOVniyeQ" name="Employee" actor="_vX1sADSzEeKpZ7YOVniyeQ">
         <elements xmi:type="process:Task" xmi:id="_nBqWIDSxEeKpZ7YOVniyeQ" name="Send the invoice for &quot;New servers plus 5 PCs&quot;" outgoing="_9q4lwDSxEeKpZ7YOVniyeQ" incoming="_nB2jYDSxEeKpZ7YOVniyeQ" useCardinality="true" actor="_vX1sADSzEeKpZ7YOVniyeQ">
@@ -14,6 +14,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dbwBYMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_o2oMmhvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_93AjmwwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_nBxD0DSxEeKpZ7YOVniyeQ" name="Début1" outgoing="_nB2jYDSxEeKpZ7YOVniyeQ">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_dbwBZsavEeWStvAm3pigyA" content=""/>
@@ -32,6 +33,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dbwBYcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_o2oMpRvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_93AjpwwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
       <resourceFolders xmi:type="process:ResourceFolder" xmi:id="_nNP7EDSxEeKpZ7YOVniyeQ" path="_nBcTsDSxEeKpZ7YOVniyeQ/application/application"/>

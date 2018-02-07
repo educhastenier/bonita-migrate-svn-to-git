@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_86dScV2bEeOQx8mB9lRYOA" name="TestJasper" author="pablo.alonso" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED000574001A546573744A6173706572372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_86dScV2bEeOQx8mB9lRYOA" name="TestJasper" author="pablo.alonso" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574001A546573744A6173706572372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_9Xt2MF2bEeOQx8mB9lRYOA" name="TestJasperConnector" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:Lane" xmi:id="_9rKWoF2bEeOQx8mB9lRYOA" name="Employee (lane) " actor="_9rGFMF2bEeOQx8mB9lRYOA">
         <elements xmi:type="process:StartEvent" xmi:id="_97c1YF2bEeOQx8mB9lRYOA" name="start" outgoing="_99Z9MF2bEeOQx8mB9lRYOA">
@@ -44,7 +44,7 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_El9oFLBnEeSFN7Nv2N7-Tw" key="jrxmlDocument">
                 <expression xmi:type="expression:Expression" xmi:id="_d9HCH8avEeWStvAm3pigyA" name="jrxml" content="jrxml" type="DOCUMENT_REF_TYPE" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Document" xmi:id="_zo7wELBvEeShMNHKNjXdYA" name="jrxml"/>
+                  <referencedElements xmi:type="process:Document" xmi:id="__cXYAAwYEei-AeSrpwoQZQ" name="jrxml"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_El9oF7BnEeSFN7Nv2N7-Tw" key="parameters">
@@ -56,7 +56,7 @@
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_El9oAbBnEeSFN7Nv2N7-Tw">
               <leftOperand xmi:type="expression:Expression" xmi:id="_d9HCKMavEeWStvAm3pigyA" name="myDoc" content="myDoc" type="DOCUMENT_REF_TYPE">
-                <referencedElements xmi:type="process:Document" xmi:id="_d9HCKcavEeWStvAm3pigyA" name="myDoc"/>
+                <referencedElements xmi:type="process:Document" xmi:id="__cXYCQwYEei-AeSrpwoQZQ" name="myDoc"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_d9HCKsavEeWStvAm3pigyA" name="reportDocValue" content="reportDocValue" type="CONNECTOR_OUTPUT_TYPE" returnType="org.bonitasoft.engine.bpm.document.DocumentValue">
                 <referencedElements xmi:type="definition:Output" xmi:id="_El9oBrBnEeSFN7Nv2N7-Tw" name="reportDocValue" type="org.bonitasoft.engine.bpm.document.DocumentValue"/>

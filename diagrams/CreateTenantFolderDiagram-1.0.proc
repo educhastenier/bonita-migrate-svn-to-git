@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_6xl9MRFXEeOLYaoiVMhzBQ" name="CreateTenantFolderDiagram" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED000574002943726561746554656E616E74466F6C6465724469616772616D372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_6xl9MRFXEeOLYaoiVMhzBQ" name="CreateTenantFolderDiagram" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574002943726561746554656E616E74466F6C6465724469616772616D372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_7DFV0BFXEeOLYaoiVMhzBQ" name="Create tenant folder" welcomePageInternal="false" basedOnLookAndFeel="Default Application" entryPageFlowType="SKIP">
       <elements xmi:type="process:Lane" xmi:id="_7KnhMBFXEeOLYaoiVMhzBQ" name="Administrator lane" actor="_7KlE8BFXEeOLYaoiVMhzBQ">
         <elements xmi:type="process:StartEvent" xmi:id="_7YK1ABFXEeOLYaoiVMhzBQ" name="Start1" outgoing="_shavQBFvEeOLYaoiVMhzBQ">
@@ -52,7 +52,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dZUYjsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dZUYj8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dZUYkMavEeWStvAm3pigyA" name="bonitaHome" content="bonitaHome" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_szZCXeGOEeOBRccffrPWDw" name="bonitaHome" generated="false" dataType="_6xmkRRFXEeOLYaoiVMhzBQ"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9ueSmQwYEei-AeSrpwoQZQ" name="bonitaHome" generated="false" dataType="_6xmkRRFXEeOLYaoiVMhzBQ"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dZUYksavEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dZUYk8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -78,7 +78,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dZU_gMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dZU_gcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dZU_gsavEeWStvAm3pigyA" name="tenantId" content="tenantId" type="TYPE_VARIABLE" returnType="java.lang.Long">
-                <referencedElements xmi:type="process:Data" xmi:id="_dZU_g8avEeWStvAm3pigyA" name="tenantId" generated="false" dataType="_6xmkQxFXEeOLYaoiVMhzBQ"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9ueSsgwYEei-AeSrpwoQZQ" name="tenantId" generated="false" dataType="_6xmkQxFXEeOLYaoiVMhzBQ"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dZU_hMavEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dZU_hcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -87,10 +87,10 @@
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_dZU_iMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_dZU_icavEeWStvAm3pigyA">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_dZU_isavEeWStvAm3pigyA" name="tenantId" content="tenantId" type="TYPE_VARIABLE" returnType="java.lang.Long">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dZU_i8avEeWStvAm3pigyA" name="tenantId" generated="false" dataType="_6xmkQxFXEeOLYaoiVMhzBQ"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9ueSugwYEei-AeSrpwoQZQ" name="tenantId" generated="false" dataType="_6xmkQxFXEeOLYaoiVMhzBQ"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_dZU_jMavEeWStvAm3pigyA" name="field_Text_field1" content="field_Text_field1" type="TYPE_INPUT" returnType="java.lang.Long">
-                  <referencedElements xmi:type="form:TextFormField" xmi:id="_szZpNuGOEeOBRccffrPWDw" name="Text_field1" returnTypeModifier="java.lang.Long"/>
+                  <referencedElements xmi:type="form:TextFormField" xmi:id="_9ueSvAwYEei-AeSrpwoQZQ" name="Text_field1" returnTypeModifier="java.lang.Long"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_dZU_jsavEeWStvAm3pigyA" type="ASSIGNMENT" expression="="/>
               </action>
@@ -110,6 +110,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dZU_lsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_o0SqYBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_9udrggwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_EzVu8BFYEeOLYaoiVMhzBQ" name="Copy tenant folder" outgoing="_FiBZ4BFYEeOLYaoiVMhzBQ" incoming="_DhtvABFYEeOLYaoiVMhzBQ" useCardinality="true">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_dZU_nMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -126,14 +127,14 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_7M_2IhFzEeOLYaoiVMhzBQ" key="script">
                 <expression xmi:type="expression:Expression" xmi:id="_dZU_ycavEeWStvAm3pigyA" name="&lt;pattern-expression>" content="echo &quot;##### Creating new tenant folder #####&quot;&#xA;cd ${bonitaHome}/client/tenants&#xA;mkdir -v ${tenantId}&#xA;&#xA;echo &quot;&quot;&#xA;echo &quot;##### Copying tenant template files #####&quot;&#xA;cd ${bonitaHome}/client&#xA;cp -v -R platform/tenant-template/* tenants/${tenantId}/&#xA;&#xA;" type="TYPE_PATTERN" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_dZU_ysavEeWStvAm3pigyA" name="bonitaHome" generated="false" dataType="_6xmkRRFXEeOLYaoiVMhzBQ"/>
-                  <referencedElements xmi:type="process:Data" xmi:id="_dZU_y8avEeWStvAm3pigyA" name="tenantId" generated="false" dataType="_6xmkQxFXEeOLYaoiVMhzBQ"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9ue5ngwYEei-AeSrpwoQZQ" name="bonitaHome" generated="false" dataType="_6xmkRRFXEeOLYaoiVMhzBQ"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9ue5nwwYEei-AeSrpwoQZQ" name="tenantId" generated="false" dataType="_6xmkQxFXEeOLYaoiVMhzBQ"/>
                 </expression>
               </parameters>
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_dZU_scavEeWStvAm3pigyA">
               <leftOperand xmi:type="expression:Expression" xmi:id="_dZU_ssavEeWStvAm3pigyA" name="commandResult" content="commandResult" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_dZU_s8avEeWStvAm3pigyA" name="commandResult" generated="false" dataType="_6xmkRRFXEeOLYaoiVMhzBQ"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9ueS4gwYEei-AeSrpwoQZQ" name="commandResult" generated="false" dataType="_6xmkRRFXEeOLYaoiVMhzBQ"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_dZU_tMavEeWStvAm3pigyA" name="formattedResult" content="String r = (String) result;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
                 <referencedElements xmi:type="definition:Output" xmi:id="_7M_2FxFzEeOLYaoiVMhzBQ" name="result" type="java.lang.Object"/>
@@ -175,7 +176,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dZU_zsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dZU_z8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dZU_0MavEeWStvAm3pigyA" name="commandResult" content="commandResult" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_dZU_0cavEeWStvAm3pigyA" name="commandResult" generated="false" dataType="_6xmkRRFXEeOLYaoiVMhzBQ"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9ue5pQwYEei-AeSrpwoQZQ" name="commandResult" generated="false" dataType="_6xmkRRFXEeOLYaoiVMhzBQ"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dZU_0savEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dZU_08avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -200,8 +201,8 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_dZUYdsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_dZUYd8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_dZUYeMavEeWStvAm3pigyA" name="successMessage" content="&quot;Successfully created tenant folder &lt;strong>&quot; + bonitaHome + &quot;/client/tenants/&quot; + tenantId + &quot;&lt;/strong>&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" htmlAllowed="true">
-                <referencedElements xmi:type="process:Data" xmi:id="_szZCReGOEeOBRccffrPWDw" name="tenantId" generated="false" dataType="_6xmkQxFXEeOLYaoiVMhzBQ"/>
-                <referencedElements xmi:type="process:Data" xmi:id="_szZCRuGOEeOBRccffrPWDw" name="bonitaHome" generated="false" dataType="_6xmkRRFXEeOLYaoiVMhzBQ"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9ueSgQwYEei-AeSrpwoQZQ" name="tenantId" generated="false" dataType="_6xmkQxFXEeOLYaoiVMhzBQ"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9ueSggwYEei-AeSrpwoQZQ" name="bonitaHome" generated="false" dataType="_6xmkRRFXEeOLYaoiVMhzBQ"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_dZUYe8avEeWStvAm3pigyA" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_dZUYfMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -222,6 +223,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dZU_l8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_o0SqbhvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_9udrkQwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndTerminatedEvent" xmi:id="_HAkbgBFYEeOLYaoiVMhzBQ" name="Terminate end event1" incoming="_HBTbUBFYEeOLYaoiVMhzBQ">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_dZU_4savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -242,7 +244,7 @@
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_dZU_vcavEeWStvAm3pigyA">
               <leftOperand xmi:type="expression:Expression" xmi:id="_dZU_vsavEeWStvAm3pigyA" name="bonitaHome" content="bonitaHome" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_dZU_v8avEeWStvAm3pigyA" name="bonitaHome" generated="false" dataType="_6xmkRRFXEeOLYaoiVMhzBQ"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9ue5kwwYEei-AeSrpwoQZQ" name="bonitaHome" generated="false" dataType="_6xmkRRFXEeOLYaoiVMhzBQ"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_dZU_wMavEeWStvAm3pigyA" name="result" content="result" type="CONNECTOR_OUTPUT_TYPE" returnType="java.lang.Object">
                 <referencedElements xmi:type="definition:Output" xmi:id="__pfMVxFvEeOLYaoiVMhzBQ" name="result" type="java.lang.Object"/>

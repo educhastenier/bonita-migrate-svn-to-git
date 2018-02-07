@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_tCGWcCTKEeKb_6eRZWVvpA" name="MultipleDiagram" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED000574001F4D756C7469706C654469616772616D372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_tCGWcCTKEeKb_6eRZWVvpA" name="MultipleDiagram" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574001F4D756C7469706C654469616772616D372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_tCQHcCTKEeKb_6eRZWVvpA" name="PoolA" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:StartEvent" xmi:id="_tDSpQCTKEeKb_6eRZWVvpA" name="Start1" outgoing="_tECQICTKEeKb_6eRZWVvpA"/>
       <elements xmi:type="process:EndEvent" xmi:id="_31AfYCTKEeKb_6eRZWVvpA" name="End1" incoming="_4YQ9cCTKEeKb_6eRZWVvpA"/>
@@ -315,6 +315,7 @@
           <targetForm xmi:type="expression:Expression" xmi:id="_dscwdMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
         </formMapping>
         <contract xmi:type="process:Contract" xmi:id="_dscwdcavEeWStvAm3pigyA"/>
+        <expectedDuration xmi:type="expression:Expression" xmi:id="_-slhTQwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
       </elements>
       <resourceFolders xmi:type="process:ResourceFolder" xmi:id="_0aXjsJLXEeKwgcxqM60reg" path="_WDwFYCUMEeKgfI10jNYmCw/application/application"/>
       <processTemplate xmi:type="process:AssociatedFile" xmi:id="_0aYKwJLXEeKwgcxqM60reg" path="_WDwFYCUMEeKgfI10jNYmCw/html/process.html"/>

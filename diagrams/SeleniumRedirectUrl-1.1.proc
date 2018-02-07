@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_IR-zwNtxEeOmJNaADVVI8Q" name="SeleniumRedirectUrl" version="1.1" author="lfrancou" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED000574002353656C656E69756D526564697265637455726C372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_IR-zwNtxEeOmJNaADVVI8Q" name="SeleniumRedirectUrl" version="1.1" author="lfrancou" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574002353656C656E69756D526564697265637455726C372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_IR-zwdtxEeOmJNaADVVI8Q" name="Test redirect" welcomePageInternal="false" basedOnLookAndFeel="Default Application" entryPageFlowType="SKIP" version="1.1">
       <elements xmi:type="process:StartEvent" xmi:id="_IR-zwttxEeOmJNaADVVI8Q" name="Start1" outgoing="_ISApCNtxEeOmJNaADVVI8Q">
         <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_IR-zw9txEeOmJNaADVVI8Q" name="" content="" returnTypeFixed="true"/>
@@ -25,12 +25,12 @@
         <iteratorExpression xmi:type="expression:Expression" xmi:id="_d6PUdMavEeWStvAm3pigyA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object"/>
         <completionCondition xmi:type="expression:Expression" xmi:id="_d6PUdcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_d6PUdsavEeWStvAm3pigyA" name="url" content="url" type="TYPE_VARIABLE" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_20T1MA0DEeS-LYLaJ5PXmA" name="url" generated="false" dataType="_ISApLNtxEeOmJNaADVVI8Q"/>
+          <referencedElements xmi:type="process:Data" xmi:id="__RGjJwwYEei-AeSrpwoQZQ" name="url" generated="false" dataType="_ISApLNtxEeOmJNaADVVI8Q"/>
         </entryRedirectionURL>
         <confirmationMessage xmi:type="expression:Expression" xmi:id="_d6PUeMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
         <entryRedirectionActions xmi:type="expression:Operation" xmi:id="_IR_a4ttxEeOmJNaADVVI8Q">
           <leftOperand xmi:type="expression:Expression" xmi:id="_d6PUqMavEeWStvAm3pigyA" name="returnValue" content="returnValue" type="TYPE_VARIABLE">
-            <referencedElements xmi:type="process:Data" xmi:id="_d6PUqcavEeWStvAm3pigyA" name="returnValue" dataType="_ISApLNtxEeOmJNaADVVI8Q"/>
+            <referencedElements xmi:type="process:Data" xmi:id="__RGjXQwYEei-AeSrpwoQZQ" name="returnValue" dataType="_ISApLNtxEeOmJNaADVVI8Q"/>
           </leftOperand>
           <rightOperand xmi:type="expression:Expression" xmi:id="_d6PUqsavEeWStvAm3pigyA" name="field_myReturn" content="field_myReturn"/>
           <operator xmi:type="expression:Operator" xmi:id="_IR_a5dtxEeOmJNaADVVI8Q" type="ASSIGNMENT"/>
@@ -39,6 +39,7 @@
           <targetForm xmi:type="expression:Expression" xmi:id="_d6PUrMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
         </formMapping>
         <contract xmi:type="process:Contract" xmi:id="_ponqOhvNEeWwB5BI7jdhZw"/>
+        <expectedDuration xmi:type="expression:Expression" xmi:id="__RGjLAwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
       </elements>
       <elements xmi:type="process:Task" xmi:id="_IR_a6NtxEeOmJNaADVVI8Q" name="Back to the process" outgoing="_hywd0N8rEeOK3c7ciBctgw" incoming="_ISApC9txEeOmJNaADVVI8Q" useCardinality="true" actor="_ISApFNtxEeOmJNaADVVI8Q">
         <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d6PUfMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -61,7 +62,7 @@
             <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_d6PUwcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
             <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_d6PUwsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
             <inputExpression xmi:type="expression:Expression" xmi:id="_d6PUw8avEeWStvAm3pigyA" name="returnValue" content="returnValue" type="TYPE_VARIABLE">
-              <referencedElements xmi:type="process:Data" xmi:id="_d6PUxMavEeWStvAm3pigyA" name="returnValue" dataType="_ISApLNtxEeOmJNaADVVI8Q"/>
+              <referencedElements xmi:type="process:Data" xmi:id="__RHKBAwYEei-AeSrpwoQZQ" name="returnValue" dataType="_ISApLNtxEeOmJNaADVVI8Q"/>
             </inputExpression>
             <afterEventExpression xmi:type="expression:Expression" xmi:id="_d6PUxcavEeWStvAm3pigyA" name="" content=""/>
             <tooltip xmi:type="expression:Expression" xmi:id="_d6PUxsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -70,10 +71,10 @@
             <injectWidgetScript xmi:type="expression:Expression" xmi:id="_d6PUycavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
             <action xmi:type="expression:Operation" xmi:id="_d6PUysavEeWStvAm3pigyA">
               <leftOperand xmi:type="expression:Expression" xmi:id="_d6PUy8avEeWStvAm3pigyA" name="returnValue" content="returnValue" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_d6PUzMavEeWStvAm3pigyA" name="returnValue" dataType="_ISApLNtxEeOmJNaADVVI8Q"/>
+                <referencedElements xmi:type="process:Data" xmi:id="__RHKDAwYEei-AeSrpwoQZQ" name="returnValue" dataType="_ISApLNtxEeOmJNaADVVI8Q"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_d6PUzcavEeWStvAm3pigyA" name="field_returnValue" content="field_returnValue" type="TYPE_INPUT">
-                <referencedElements xmi:type="form:TextFormField" xmi:id="_hPyMQN8uEeOK3c7ciBctgw" name="returnValue"/>
+                <referencedElements xmi:type="form:TextFormField" xmi:id="__RHKDgwYEei-AeSrpwoQZQ" name="returnValue"/>
               </rightOperand>
               <operator xmi:type="expression:Operator" xmi:id="_d6PUz8avEeWStvAm3pigyA" type="ASSIGNMENT" expression="="/>
             </action>
@@ -93,6 +94,7 @@
           <targetForm xmi:type="expression:Expression" xmi:id="_d6PUrcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
         </formMapping>
         <contract xmi:type="process:Contract" xmi:id="_ponqSBvNEeWwB5BI7jdhZw"/>
+        <expectedDuration xmi:type="expression:Expression" xmi:id="__RGjOwwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
       </elements>
       <elements xmi:type="process:Task" xmi:id="_mh8JwN8rEeOK3c7ciBctgw" name="Process is OK" outgoing="_nUtDcN8rEeOK3c7ciBctgw" incoming="_ltem8N8rEeOK3c7ciBctgw" useCardinality="true" actor="_ISApFNtxEeOmJNaADVVI8Q">
         <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d6PUisavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -136,6 +138,7 @@
           <targetForm xmi:type="expression:Expression" xmi:id="_d6PUrsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
         </formMapping>
         <contract xmi:type="process:Contract" xmi:id="_ponqVhvNEeWwB5BI7jdhZw"/>
+        <expectedDuration xmi:type="expression:Expression" xmi:id="__RGjSgwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
       </elements>
       <elements xmi:type="process:Task" xmi:id="_pu3YwN8rEeOK3c7ciBctgw" name="Redirect returns a wrong value" outgoing="_qOEdQN8rEeOK3c7ciBctgw" incoming="_oHCfUN8rEeOK3c7ciBctgw" useCardinality="true" actor="_ISApFNtxEeOmJNaADVVI8Q">
         <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d6PUmMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -153,6 +156,7 @@
           <targetForm xmi:type="expression:Expression" xmi:id="_d6PUr8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
         </formMapping>
         <contract xmi:type="process:Contract" xmi:id="_ponqYxvNEeWwB5BI7jdhZw"/>
+        <expectedDuration xmi:type="expression:Expression" xmi:id="__RGjWAwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
       </elements>
       <elements xmi:type="process:XORGateway" xmi:id="_4qiG0N8rEeOK3c7ciBctgw" name="Gateway1" outgoing="_ltem8N8rEeOK3c7ciBctgw _oHCfUN8rEeOK3c7ciBctgw" incoming="_hywd0N8rEeOK3c7ciBctgw" exclusiveOutgoingTransition="true">
         <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_d6PU5savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -199,9 +203,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_ltem8N8rEeOK3c7ciBctgw" target="_mh8JwN8rEeOK3c7ciBctgw" source="_4qiG0N8rEeOK3c7ciBctgw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_ltem8d8rEeOK3c7ciBctgw"/>
         <condition xmi:type="expression:Expression" xmi:id="_d6PU8cavEeWStvAm3pigyA" name="returnValue == &quot;TEST_RETURNED_VALUE&quot;" content="returnValue == &quot;TEST_RETURNED_VALUE&quot;" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_d6PU8savEeWStvAm3pigyA" name="returnValue" dataType="_ISApLNtxEeOmJNaADVVI8Q">
-            <defaultValue xmi:type="expression:Expression" xmi:id="_d6PU88avEeWStvAm3pigyA" content=""/>
-          </referencedElements>
+          <referencedElements xmi:type="process:Data" xmi:id="__RHKMgwYEei-AeSrpwoQZQ" name="returnValue" dataType="_ISApLNtxEeOmJNaADVVI8Q"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_nUtDcN8rEeOK3c7ciBctgw" target="_IR_a0NtxEeOmJNaADVVI8Q" source="_mh8JwN8rEeOK3c7ciBctgw">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_4UVvoJUsEeKvC9wXmDW5_w" name="DBConnectorDiagram" author="truc" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED00057400224442436F6E6E6563746F724469616772616D372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_4UVvoJUsEeKvC9wXmDW5_w" name="DBConnectorDiagram" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED00057400224442436F6E6E6563746F724469616772616D372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_4UuKIJUsEeKvC9wXmDW5_w" documentation="This is a simple test that queries a HSQL database to populate a text variable.&#xD;&#xA;&#xD;&#xA;It aims at sanity checking DB connector integration." name="DBConnectorPool" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:Lane" xmi:id="_4VtBkJUsEeKvC9wXmDW5_w" name="Employee lane" actor="_4VqlUJUsEeKvC9wXmDW5_w">
         <elements xmi:type="process:StartEvent" xmi:id="_4WDm4JUsEeKvC9wXmDW5_w" name="Start1" outgoing="_PugZkJVlEeK5xqJD6S0Ldw">
@@ -45,7 +45,7 @@
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_UJ-bw0s3EeWERPTGdrymTQ">
               <leftOperand xmi:type="expression:Expression" xmi:id="_dak8ucavEeWStvAm3pigyA" name="varFromHyperSQL" content="varFromHyperSQL" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_UJ-bxUs3EeWERPTGdrymTQ" name="varFromHyperSQL" dataType="_4UVvppUsEeKvC9wXmDW5_w"/>
+                <referencedElements xmi:type="process:Data" xmi:id="_9xMPoAwYEei-AeSrpwoQZQ" name="varFromHyperSQL" dataType="_4UVvppUsEeKvC9wXmDW5_w"/>
               </leftOperand>
               <rightOperand xmi:type="expression:Expression" xmi:id="_dak8u8avEeWStvAm3pigyA" name="customerLabel" content="import java.lang.StringBuilder;&#xD;&#xA;resultset.first();&#xD;&#xA;def StringBuilder sb = new StringBuilder();&#xD;&#xA;sb.append(resultset.getInt(&quot;id&quot;)).append(&quot;. &quot;);&#xD;&#xA;sb.append(resultset.getString(&quot;firstname&quot;)).append(&quot; &quot;);&#xD;&#xA;sb.append(resultset.getString(&quot;lastname&quot;));&#xD;&#xA;sb.append(&quot; from &quot;);&#xD;&#xA;sb.append(resultset.getString(&quot;city&quot;));&#xD;&#xA;return sb.toString();" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
                 <referencedElements xmi:type="definition:Output" xmi:id="_UJ-bx0s3EeWERPTGdrymTQ" name="resultset" type="java.sql.ResultSet"/>
@@ -75,6 +75,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_dak8zMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_o1hZjxvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_9xMPsgwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndTerminatedEvent" xmi:id="_hi-IQJU6EeK5xqJD6S0Ldw" name="Terminate end event1" incoming="_hjMxwJU6EeK5xqJD6S0Ldw">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_dak80cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>

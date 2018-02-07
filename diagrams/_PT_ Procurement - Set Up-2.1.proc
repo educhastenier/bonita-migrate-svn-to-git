@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_mJ_4oKsvEeK648UwrWOLFw" name="[PT] Procurement - Set Up" version="2.1" author="bonitasoft" bonitaVersion="7.4.0" bonitaModelVersion="7.2.0-002" configId="ACED00057400295B50545D2050726F637572656D656E74202D20536574205570372E322E302D303032372E342E307370">
+  <process:MainProcess xmi:id="_mJ_4oKsvEeK648UwrWOLFw" name="[PT] Procurement - Set Up" version="2.1" author="bonitasoft" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED00057400295B50545D2050726F637572656D656E74202D20536574205570372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_MJ474KsyEeK648UwrOWNXw" name="Procurement Set Up" welcomePageInternal="false" basedOnLookAndFeel="Default Application" version="2.1">
       <elements xmi:type="process:Lane" xmi:id="_XNbGMKsyEeK648UwrOWNXw" name="Administrator" actor="_mXhZgLrjEeKw95pVEqjESQ">
         <elements xmi:type="process:StartEvent" xmi:id="_YWgOIKsyEeK648UwrOWNXw" name="Start" outgoing="_Ysu80KsyEeK648UwrOWNXw">
@@ -106,6 +106,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_eJZLE8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_p8ZiHBvNEeWwB5BI7jdhZw"/>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_AQs_HgwZEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:TextAnnotation" xmi:id="_iCtMYMnsEeKOV80NW5bkvw" text="This process is meant to be run only once at installation time and should be removed afterwards."/>
       </elements>
