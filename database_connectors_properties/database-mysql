@@ -1,4 +1,0 @@
-#Tue Feb 12 09:46:16 CET 2013
-jars=mysql-connector-java-5.1.23-bin.jar
-default=mysql-connector-java-5.1.23-bin.jar
-auto=true
