@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_VfsHkTMZEeKvsbYsrc8Gjw" name="WeatherDiagram" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574001E576561746865724469616772616D372E362E302D303032372E372E307370">
-    <elements xmi:type="process:Pool" xmi:id="_VlLEgDMZEeKvsbYsrc8Gjw" name="WeatherTest" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+  <process:MainProcess xmi:id="_VfsHkTMZEeKvsbYsrc8Gjw" name="WeatherDiagram" author="truc" bonitaVersion="7.8.0" bonitaModelVersion="7.8.0-002" configId="ACED000574001E576561746865724469616772616D372E382E302D303032372E382E307370">
+    <elements xmi:type="process:Pool" xmi:id="_VlLEgDMZEeKvsbYsrc8Gjw" name="WeatherTest">
       <elements xmi:type="process:Lane" xmi:id="_Vn950DMZEeKvsbYsrc8Gjw" name="Employee lane" actor="_Vn6PcDMZEeKvsbYsrc8Gjw">
         <elements xmi:type="process:Task" xmi:id="_VoeQIDMZEeKvsbYsrc8Gjw" name="Show Weather" outgoing="_spvSsDMhEeKYJdGEEYJqbw" incoming="_DzRTwLYsEeKxxbFzg49gog" useCardinality="true" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_v2BkwMoMEeKZxthsZIoBCw" content=""/>
@@ -12,43 +12,17 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_b8q2eDpTEeSntPZ4lnT8Jg" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_b8q2eTpTEeSntPZ4lnT8Jg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_b8q2ejpTEeSntPZ4lnT8Jg" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <form xmi:type="form:Form" xmi:id="_6ltTkDfdEeKw75Hfph0dHg" name="Show_weather" nLine="2">
-            <widgets xmi:type="form:SubmitFormButton" xmi:id="_6ltTozfdEeKw75Hfph0dHg" name="Submit1" labelPosition="Left">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_6ltTpDfdEeKw75Hfph0dHg" line="1"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eDKmwcavEeWStvAm3pigyA" name="Finish" content="Finish"/>
-            </widgets>
-            <widgets xmi:type="form:MessageInfo" xmi:id="_9Rp8cDfdEeKw75Hfph0dHg" name="Message1" labelPosition="Left">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eDKmwsavEeWStvAm3pigyA"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eDKmw8avEeWStvAm3pigyA" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eDKmxMavEeWStvAm3pigyA" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eDKmxcavEeWStvAm3pigyA" name="weatherMessage" content="&quot;Weather forecast for ZIP &quot; + zipCode + &quot;&lt;br>&quot; + weatherText" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" htmlAllowed="true">
-                <referencedElements xmi:type="process:Data" xmi:id="__06a0AwYEei-AeSrpwoQZQ" name="weatherText" dataType="_VfsupTMZEeKvsbYsrc8Gjw"/>
-                <referencedElements xmi:type="process:Data" xmi:id="__06a0QwYEei-AeSrpwoQZQ" name="zipCode" dataType="_VfsupTMZEeKvsbYsrc8Gjw"/>
-              </inputExpression>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eDKmyMavEeWStvAm3pigyA" content=""/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eDKmycavEeWStvAm3pigyA" content=""/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eDKmysavEeWStvAm3pigyA" name="Message1" content="Message1" returnTypeFixed="true"/>
-            </widgets>
-            <pageLabel xmi:type="expression:Expression" xmi:id="_eDKmvsavEeWStvAm3pigyA" name="pageTitle" content="&quot;Weather for ZIP &quot; + zipCode" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-              <referencedElements xmi:type="process:Data" xmi:id="__06ayQwYEei-AeSrpwoQZQ" name="zipCode" dataType="_VfsupTMZEeKvsbYsrc8Gjw"/>
-            </pageLabel>
-          </form>
-          <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_SY0Y4DfdEeKw75Hfph0dHg" content=""/>
-          <formMapping xmi:type="process:FormMapping" xmi:id="_pzRbFBvNEeWwB5BI7jdhZw" type="LEGACY">
+          <formMapping xmi:type="process:FormMapping" xmi:id="_pzRbFBvNEeWwB5BI7jdhZw">
             <targetForm xmi:type="expression:Expression" xmi:id="_eDKmzcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_pzRbExvNEeWwB5BI7jdhZw"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="__06axQwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_VqcmEDMZEeKvsbYsrc8Gjw" name="Start1" outgoing="_ZfbLoMoLEeKZxthsZIoBCw">
-          <textAnnotationAttachment xmi:type="process:TextAnnotationAttachment" xmi:id="_q8kOALYtEeKxxbFzg49gog" source="_mX2ssLYtEeKxxbFzg49gog"/>
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eDKm08avEeWStvAm3pigyA" content=""/>
+          <textAnnotationAttachment xmi:type="process:TextAnnotationAttachment" xmi:id="_6ZKZ4scgEeixX8Pu4cJneQ" source="_mX2ssLYtEeKxxbFzg49gog"/>
         </elements>
-        <elements xmi:type="process:EndTerminatedEvent" xmi:id="_XmKE0DMZEeKvsbYsrc8Gjw" name="Terminate end event1" incoming="_spvSsDMhEeKYJdGEEYJqbw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eDKm1MavEeWStvAm3pigyA" content=""/>
-        </elements>
+        <elements xmi:type="process:EndTerminatedEvent" xmi:id="_XmKE0DMZEeKvsbYsrc8Gjw" name="Terminate end event1" incoming="_spvSsDMhEeKYJdGEEYJqbw"/>
         <elements xmi:type="process:ServiceTask" xmi:id="_DGVVQLYsEeKxxbFzg49gog" name="Get Weather" outgoing="_DzRTwLYsEeKxxbFzg49gog" incoming="_ZfbLoMoLEeKZxthsZIoBCw" useCardinality="true">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eDKm1cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_eDKm1savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_eDKm18avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_eDKm2MavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -114,21 +88,16 @@
         </elements>
         <elements xmi:type="process:TextAnnotation" xmi:id="_mX2ssLYtEeKxxbFzg49gog" text="FIXME: this process has to be completed!"/>
       </elements>
-      <resourceFolders xmi:type="process:ResourceFolder" xmi:id="_DnCRIMoNEeKZxthsZIoBCw" path="_VlLEgDMZEeKvsbYsrc8Gjw/application/application"/>
-      <processTemplate xmi:type="process:AssociatedFile" xmi:id="_DnCRIcoNEeKZxthsZIoBCw" path="_VlLEgDMZEeKvsbYsrc8Gjw/html/process.html"/>
-      <pageTemplate xmi:type="process:AssociatedFile" xmi:id="_DnCRI8oNEeKZxthsZIoBCw" path="_VlLEgDMZEeKvsbYsrc8Gjw/html/page.html"/>
-      <consultationTemplate xmi:type="process:AssociatedFile" xmi:id="_DnCRIsoNEeKZxthsZIoBCw" path="_VlLEgDMZEeKvsbYsrc8Gjw/html/consultation.html"/>
       <data xmi:type="process:Data" xmi:id="_az9dkDMZEeKvsbYsrc8Gjw" name="weatherText" dataType="_VfsupTMZEeKvsbYsrc8Gjw">
         <defaultValue xmi:type="expression:Expression" xmi:id="_eDKmy8avEeWStvAm3pigyA" name="" content=""/>
       </data>
       <data xmi:type="process:Data" xmi:id="_s6aFAMoIEeKZxthsZIoBCw" name="zipCode" dataType="_VfsupTMZEeKvsbYsrc8Gjw">
         <defaultValue xmi:type="expression:Expression" xmi:id="_eDKmzMavEeWStvAm3pigyA" name="10012" content="10012"/>
       </data>
-      <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_VlOu4DMZEeKvsbYsrc8Gjw" content=""/>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_pzRbARvNEeWwB5BI7jdhZw" type="LEGACY">
+      <formMapping xmi:type="process:FormMapping" xmi:id="_pzRbARvNEeWwB5BI7jdhZw">
         <targetForm xmi:type="expression:Expression" xmi:id="_eDKmzsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
-      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_pzRbAhvNEeWwB5BI7jdhZw" type="LEGACY">
+      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_pzRbAhvNEeWwB5BI7jdhZw">
         <targetForm xmi:type="expression:Expression" xmi:id="_eDKmz8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_spvSsDMhEeKYJdGEEYJqbw" target="_XmKE0DMZEeKvsbYsrc8Gjw" source="_VoeQIDMZEeKvsbYsrc8Gjw">
@@ -199,12 +168,6 @@
         <value xmi:type="expression:Expression" xmi:id="_eDKnKMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
       </searchIndexes>
     </elements>
-    <formMapping xmi:type="process:FormMapping" xmi:id="_pzRa7RvNEeWwB5BI7jdhZw" type="LEGACY">
-      <targetForm xmi:type="expression:Expression" xmi:id="_eDKm0MavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
-    </formMapping>
-    <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_pzRa7hvNEeWwB5BI7jdhZw" type="LEGACY">
-      <targetForm xmi:type="expression:Expression" xmi:id="_eDKm0cavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
-    </overviewFormMapping>
     <datatypes xmi:type="process:BooleanType" xmi:id="_VfsuoDMZEeKvsbYsrc8Gjw" name="Boolean"/>
     <datatypes xmi:type="process:DateType" xmi:id="_VfsuoTMZEeKvsbYsrc8Gjw" name="Date"/>
     <datatypes xmi:type="process:IntegerType" xmi:id="_VfsuojMZEeKvsbYsrc8Gjw" name="Integer"/>
@@ -280,7 +243,7 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DzU-IrYsEeKxxbFzg49gog" points="[0, -6, -140, -8]$[71, -6, -69, -8]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Dzc58LYsEeKxxbFzg49gog" id="(1.0,0.56)"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_q8mqQLYtEeKxxbFzg49gog" type="4003" element="_q8kOALYtEeKxxbFzg49gog" source="_eDKnSsavEeWStvAm3pigyA" target="_VqfCUDMZEeKvsbYsrc8Gjw">
+    <edges xmi:type="notation:Connector" xmi:id="_q8mqQLYtEeKxxbFzg49gog" type="4003" source="_eDKnSsavEeWStvAm3pigyA" target="_VqfCUDMZEeKvsbYsrc8Gjw">
       <styles xmi:type="notation:FontStyle" xmi:id="_eDKnZsavEeWStvAm3pigyA" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_q8mqQrYtEeKxxbFzg49gog" points="[-142, 44, 120, -44]$[-263, 73, -1, -15]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_q8sJ0LYtEeKxxbFzg49gog" id="(1.0,0.12)"/>
@@ -293,19 +256,5 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZfkVksoLEeKZxthsZIoBCw" points="[-1, -12, -247, -1]$[196, -12, -50, -1]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZfsRYMoLEeKZxthsZIoBCw" id="(1.0,1.0)"/>
     </edges>
-  </notation:Diagram>
-  <notation:Diagram xmi:id="_6mk2QDfdEeKw75Hfph0dHg" type="Form" element="_6ltTkDfdEeKw75Hfph0dHg" measurementUnit="Pixel">
-    <children xmi:type="notation:Node" xmi:id="_6shGMDfdEeKw75Hfph0dHg" type="2126" element="_6ltTozfdEeKw75Hfph0dHg">
-      <children xmi:type="notation:DecorationNode" xmi:id="_6shGNTfdEeKw75Hfph0dHg" type="5160" element="_6ltTozfdEeKw75Hfph0dHg"/>
-      <styles xmi:type="notation:DescriptionStyle" xmi:id="_6shGMTfdEeKw75Hfph0dHg"/>
-      <styles xmi:type="notation:FontStyle" xmi:id="_6shGMjfdEeKw75Hfph0dHg" fontName="Segoe UI"/>
-      <styles xmi:type="notation:LineStyle" xmi:id="_6shGMzfdEeKw75Hfph0dHg"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6shGNDfdEeKw75Hfph0dHg"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_9SJrsDfdEeKw75Hfph0dHg" type="2131" element="_9Rp8cDfdEeKw75Hfph0dHg" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eDKnWsavEeWStvAm3pigyA" type="5135" element="_9Rp8cDfdEeKw75Hfph0dHg"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9SJrsTfdEeKw75Hfph0dHg"/>
-    </children>
-    <styles xmi:type="notation:DiagramStyle" xmi:id="_6mk2QTfdEeKw75Hfph0dHg"/>
   </notation:Diagram>
 </xmi:XMI>

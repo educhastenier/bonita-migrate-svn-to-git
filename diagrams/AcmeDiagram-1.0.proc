@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_Q6uWYDJPEeKSpr5Kj7uJaA" name="AcmeDiagram" author="truc" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574001B41636D654469616772616D372E362E302D303032372E372E307370">
-    <elements xmi:type="process:Pool" xmi:id="_Q68_4DJPEeKSpr5Kj7uJaA" name="ACME Process" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
+  <process:MainProcess xmi:id="_Q6uWYDJPEeKSpr5Kj7uJaA" name="AcmeDiagram" author="truc" bonitaVersion="7.8.0" bonitaModelVersion="7.8.0-002" configId="ACED000574001B41636D654469616772616D372E382E302D303032372E382E307370">
+    <elements xmi:type="process:Pool" xmi:id="_Q68_4DJPEeKSpr5Kj7uJaA" name="ACME Process">
       <elements xmi:type="process:Lane" xmi:id="_Q7CfcDJPEeKSpr5Kj7uJaA" name="Employee lane" actor="_Q7BRUDJPEeKSpr5Kj7uJaA">
         <elements xmi:type="process:Task" xmi:id="_Q7HX8DJPEeKSpr5Kj7uJaA" name="My First Human Step" outgoing="_nIKB4DJPEeKSpr5Kj7uJaA" incoming="_Q7RI8DJPEeKSpr5Kj7uJaA" useCardinality="true" overrideActorsOfTheLane="false">
           <loopCondition xmi:type="expression:Expression" xmi:id="_bAydATpTEeSntPZ4lnT8Jg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -9,40 +9,31 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_bAydAzpTEeSntPZ4lnT8Jg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_bAydBDpTEeSntPZ4lnT8Jg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_bAydBTpTEeSntPZ4lnT8Jg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_ZrYTsDJPEeKSpr5Kj7uJaA" content=""/>
-          <formMapping xmi:type="process:FormMapping" xmi:id="_oTPLlhvNEeWwB5BI7jdhZw" type="LEGACY">
+          <formMapping xmi:type="process:FormMapping" xmi:id="_oTPLlhvNEeWwB5BI7jdhZw">
             <targetForm xmi:type="expression:Expression" xmi:id="_dJpkwMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_oTPLlRvNEeWwB5BI7jdhZw"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_9VoU2wwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_Q7M3gDJPEeKSpr5Kj7uJaA" name="Start1" outgoing="_Q7RI8DJPEeKSpr5Kj7uJaA"/>
-        <elements xmi:type="process:EndTerminatedEvent" xmi:id="_hxSq4DJPEeKSpr5Kj7uJaA" name="Terminate end event1" incoming="_ne5t8DJPEeKSpr5Kj7uJaA">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_dJpkxsavEeWStvAm3pigyA" content=""/>
-        </elements>
+        <elements xmi:type="process:EndTerminatedEvent" xmi:id="_hxSq4DJPEeKSpr5Kj7uJaA" name="Terminate end event1" incoming="_ne5t8DJPEeKSpr5Kj7uJaA"/>
         <elements xmi:type="process:Task" xmi:id="_ldHcYDJPEeKSpr5Kj7uJaA" name="My Second Human Step" outgoing="_ne5t8DJPEeKSpr5Kj7uJaA" incoming="_nIKB4DJPEeKSpr5Kj7uJaA" useCardinality="true" overrideActorsOfTheLane="false">
           <loopCondition xmi:type="expression:Expression" xmi:id="_bAydBzpTEeSntPZ4lnT8Jg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_bAydCDpTEeSntPZ4lnT8Jg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_bAydCTpTEeSntPZ4lnT8Jg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_bAydCjpTEeSntPZ4lnT8Jg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_bAydCzpTEeSntPZ4lnT8Jg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_ldHcYTJPEeKSpr5Kj7uJaA" content=""/>
-          <formMapping xmi:type="process:FormMapping" xmi:id="_oTPLnhvNEeWwB5BI7jdhZw" type="LEGACY">
+          <formMapping xmi:type="process:FormMapping" xmi:id="_oTPLnhvNEeWwB5BI7jdhZw">
             <targetForm xmi:type="expression:Expression" xmi:id="_dJpkwcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_oTPLnRvNEeWwB5BI7jdhZw"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_9VoU5AwYEei-AeSrpwoQZQ" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <resourceFolders xmi:type="process:ResourceFolder" xmi:id="_joRfgJLXEeKwgcxqM60reg" path="_Q68_4DJPEeKSpr5Kj7uJaA/application/application"/>
-      <processTemplate xmi:type="process:AssociatedFile" xmi:id="_joRfgZLXEeKwgcxqM60reg" path="_Q68_4DJPEeKSpr5Kj7uJaA/html/process.html"/>
-      <pageTemplate xmi:type="process:AssociatedFile" xmi:id="_joSGkJLXEeKwgcxqM60reg" path="_Q68_4DJPEeKSpr5Kj7uJaA/html/page.html"/>
-      <consultationTemplate xmi:type="process:AssociatedFile" xmi:id="_joRfgpLXEeKwgcxqM60reg" path="_Q68_4DJPEeKSpr5Kj7uJaA/html/consultation.html"/>
-      <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_Q68_4TJPEeKSpr5Kj7uJaA" content=""/>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_oTPLiBvNEeWwB5BI7jdhZw" type="LEGACY">
+      <formMapping xmi:type="process:FormMapping" xmi:id="_oTPLiBvNEeWwB5BI7jdhZw">
         <targetForm xmi:type="expression:Expression" xmi:id="_dJpkwsavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
-      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_oTPLiRvNEeWwB5BI7jdhZw" type="LEGACY">
+      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_oTPLiRvNEeWwB5BI7jdhZw">
         <targetForm xmi:type="expression:Expression" xmi:id="_dJpkw8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_Q7RI8DJPEeKSpr5Kj7uJaA" target="_Q7HX8DJPEeKSpr5Kj7uJaA" source="_Q7M3gDJPEeKSpr5Kj7uJaA">
@@ -101,12 +92,6 @@
         <value xmi:type="expression:Expression" xmi:id="_dJpk5cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
       </searchIndexes>
     </elements>
-    <formMapping xmi:type="process:FormMapping" xmi:id="_oTOkfBvNEeWwB5BI7jdhZw" type="LEGACY">
-      <targetForm xmi:type="expression:Expression" xmi:id="_dJpkxMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
-    </formMapping>
-    <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_oTOkfRvNEeWwB5BI7jdhZw" type="LEGACY">
-      <targetForm xmi:type="expression:Expression" xmi:id="_dJpkxcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
-    </overviewFormMapping>
     <datatypes xmi:type="process:BooleanType" xmi:id="_Q6uWYTJPEeKSpr5Kj7uJaA" name="Boolean"/>
     <datatypes xmi:type="process:DateType" xmi:id="_Q6uWYjJPEeKSpr5Kj7uJaA" name="Date"/>
     <datatypes xmi:type="process:IntegerType" xmi:id="_Q6uWYzJPEeKSpr5Kj7uJaA" name="Integer"/>

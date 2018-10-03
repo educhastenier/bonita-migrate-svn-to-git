@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" definitionId="database-jdbc" version="1.0.0" name="loadBudgets" modelVersion="7.6.0-002">
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" definitionId="database-jdbc" version="1.0.0" name="loadBudgets" modelVersion="7.8.0-002">
   <parameters key="driver">
     <expression xsi:type="expression:Expression" name="dbDriver" content="select * from b_budget where budget_year = '${field_BudgetYear}';" type="TYPE_PARAMETER" returnTypeFixed="true">
       <referencedElements xsi:type="parameter:Parameter" name="dbDriver" value="" typeClassname="java.lang.String" description=""/>

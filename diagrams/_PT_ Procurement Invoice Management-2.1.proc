@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_gAnyELcjEeKDPt49AAIjYw" name="[PT] Procurement Invoice Management" version="2.1" author="bonitasoft" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED00057400335B50545D2050726F637572656D656E7420496E766F696365204D616E6167656D656E74372E362E302D303032372E372E307370">
-    <elements xmi:type="process:Pool" xmi:id="_gApnbLcjEeKDPt49AAIjYw" name="Receive Electronic Invoices" welcomePageInternal="false" basedOnLookAndFeel="PT Look N Feel" entryPageFlowType="SKIP" version="2.1">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+  <process:MainProcess xmi:id="_gAnyELcjEeKDPt49AAIjYw" name="[PT] Procurement Invoice Management" version="2.1" author="bonitasoft" bonitaVersion="7.8.0" bonitaModelVersion="7.8.0-002" configId="ACED00057400335B50545D2050726F637572656D656E7420496E766F696365204D616E6167656D656E74372E382E302D303032372E382E307370">
+    <elements xmi:type="process:Pool" xmi:id="_gApnbLcjEeKDPt49AAIjYw" name="Receive Electronic Invoices" version="2.1">
       <elements xmi:type="process:Lane" xmi:id="_V6y1QBxzEeOHkqHEYuVquQ" name="Administrator">
         <elements xmi:type="process:EndTerminatedEvent" xmi:id="_gApndbcjEeKDPt49AAIjYw" documentation="Data Invoice Processing Complete" name="End : Invoice processing complete" incoming="_gAqOZrcjEeKDPt49AAIjYw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_P7T74BxvEeOLad8DsLhBTA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_P7T74RxvEeOLad8DsLhBTA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_P7T74hxvEeOLad8DsLhBTA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_P7T74xxvEeOLad8DsLhBTA" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_vAWkcBxzEeOHkqHEYuVquQ" documentation="This task is to upload a zip file which contains the invoice data. The zip should contain 'invoices'.csv and all the invoice pdf which are referenced in the invoices.csv. Download the sample invoice zip to understand the format. " name="Upload received invoice data " outgoing="_29qxkBx5EeOHkqHEYuVquQ" incoming="_1jycQBxzEeOHkqHEYuVquQ _gAqOYrcjEeKDPt49AAIjYw" useCardinality="true" actor="_vAUvQBxzEeOHkqHEYuVquQ">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eK0t4MavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_eK0t4cavEeWStvAm3pigyA" name="Upload received invoices" content="Upload received invoices" interpreter="GROOVY" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_eK0t4savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_eK0t48avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -69,140 +67,13 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_eK0t6cavEeWStvAm3pigyA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_eK0t6savEeWStvAm3pigyA" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <BoundaryIntermediateEvents xmi:type="process:IntermediateErrorCatchEvent" xmi:id="_vAWkkBxzEeOHkqHEYuVquQ" name="Import Failure" outgoing="_1LTq0BxzEeOHkqHEYuVquQ" errorCode="importFailed"/>
-          <form xmi:type="form:Form" xmi:id="_vAWkkxxzEeOHkqHEYuVquQ" name="UploadInvoices" nColumn="2" nLine="5">
-            <widgets xmi:type="form:SubmitFormButton" xmi:id="_vAWklBxzEeOHkqHEYuVquQ" name="Import">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_vAWklRxzEeOHkqHEYuVquQ" line="3" horizontalSpan="2"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK1VOsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK1VO8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK1VPMavEeWStvAm3pigyA" name="" content=""/>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK1VPcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK1VPsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK1VP8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK1VQMavEeWStvAm3pigyA" name="Import" content="Import" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK1VQcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-            </widgets>
-            <widgets xmi:type="form:FileWidget" xmi:id="_vAXL6BxzEeOHkqHEYuVquQ" name="Sample" downloadOnly="true" initialResourcePath="sampleProductCatalog.csv">
-              <htmlAttributes xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vAXL6RxzEeOHkqHEYuVquQ" key="input_style" value="max-width:200px;"/>
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK1VZcavEeWStvAm3pigyA" line="2"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK1VZsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK1VZ8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK1VaMavEeWStvAm3pigyA" name="sampleInvoiceZip" content="sampleInvoiceZip" type="DOCUMENT_REF_TYPE">
-                <referencedElements xmi:type="process:Document" xmi:id="_AafNMAwZEei-AeSrpwoQZQ" name="sampleInvoiceZip"/>
-              </inputExpression>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK1VasavEeWStvAm3pigyA" name="" content=""/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK1Va8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK1VbMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK1VbcavEeWStvAm3pigyA" name="Sample invoice zip file to upload" content="Sample invoice zip file to upload" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK1VbsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK1Vb8avEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK1VcMavEeWStvAm3pigyA" name="" content=""/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK1VccavEeWStvAm3pigyA" name="" content="" returnType="org.bonitasoft.engine.bpm.document.DocumentValue"/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK1VcsavEeWStvAm3pigyA" type="DOCUMENT_CREATE_UPDATE" expression="="/>
-              </action>
-              <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK1Vc8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK1VdMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK1VdcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK1VdsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK1Vd8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK1VeMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <exampleMessage xmi:type="expression:Expression" xmi:id="_eK1VecavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <outputDocumentListExpression xmi:type="expression:Expression" xmi:id="_eK1VesavEeWStvAm3pigyA" name="" content=""/>
-            </widgets>
-            <widgets xmi:type="form:FileWidget" xmi:id="_vAXMAhxzEeOHkqHEYuVquQ" name="UploadFile" mandatory="true" initialResourcePath="" inputType="Resource" downloadType="Browse">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK1Ve8avEeWStvAm3pigyA" line="2" column="1"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK1VfMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK1VfcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK1VfsavEeWStvAm3pigyA" name="" content=""/>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK1Vf8avEeWStvAm3pigyA" name="" content=""/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK1VgMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK1VgcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK1VgsavEeWStvAm3pigyA" name="Upload Invoice data (.zip)" content="Upload Invoice data (.zip)" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK1Vg8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK1VhMavEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK1VhcavEeWStvAm3pigyA" name="invoices" content="invoices" type="DOCUMENT_REF_TYPE">
-                  <referencedElements xmi:type="process:Document" xmi:id="_AafNTQwZEei-AeSrpwoQZQ" name="invoices"/>
-                </leftOperand>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK1Vh8avEeWStvAm3pigyA" name="field_UploadFile" content="field_UploadFile" type="TYPE_INPUT" returnType="org.bonitasoft.engine.bpm.document.DocumentValue">
-                  <referencedElements xmi:type="form:FileWidget" xmi:id="_AafNTwwZEei-AeSrpwoQZQ" name="UploadFile"/>
-                </rightOperand>
-                <operator xmi:type="expression:Operator" xmi:id="_eK1VicavEeWStvAm3pigyA" type="DOCUMENT_CREATE_UPDATE" expression="="/>
-              </action>
-              <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK1VisavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK1Vi8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK1VjMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK1VjcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK1VjsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK1Vj8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <exampleMessage xmi:type="expression:Expression" xmi:id="_eK1VkMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <outputDocumentListExpression xmi:type="expression:Expression" xmi:id="_eK1VkcavEeWStvAm3pigyA" name="" content=""/>
-            </widgets>
-            <widgets xmi:type="form:MessageInfo" xmi:id="_vAXykBxzEeOHkqHEYuVquQ" name="ErrorMessage" injectWidgetCondition="true">
-              <htmlAttributes xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eK1VlsavEeWStvAm3pigyA" key="input_css:color" value="red"/>
-              <htmlAttributes xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eK1Vl8avEeWStvAm3pigyA" key="input_css:font-size" value="16px"/>
-              <htmlAttributes xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eK1VmMavEeWStvAm3pigyA" key="input_style" value="text-align:left;"/>
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK1VmcavEeWStvAm3pigyA" horizontalSpan="2"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK1VmsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK1Vm8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK1VnMavEeWStvAm3pigyA" name="There was an error in importing the invoice file. Please ensure that the bonitaWebappPath is set correctly, the file  uploaded was a zip containing 'invoices.csv'. Verify also the format of the csv file and try again" content="There was an error in importing the invoice file. Please ensure that the bonitaWebappPath is set correctly, the file  uploaded was a zip containing 'invoices.csv'. Verify also the format of the csv file and try again"/>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK1VncavEeWStvAm3pigyA" name="" content=""/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK1VnsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK1Vn8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK1VoMavEeWStvAm3pigyA" name="Message1" content="Message1" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK1VocavEeWStvAm3pigyA" name="importError" content="importError" type="TYPE_VARIABLE" returnType="java.lang.Boolean" returnTypeFixed="true">
-                <referencedElements xmi:type="process:Data" xmi:id="_AafNaQwZEei-AeSrpwoQZQ" name="importError" dataType="_gAqOa7cjEeKDPt49AAIjYw"/>
-              </injectWidgetScript>
-              <action xmi:type="expression:Operation" xmi:id="_eK1Vo8avEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK1VpMavEeWStvAm3pigyA"/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK1VpcavEeWStvAm3pigyA"/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK1VpsavEeWStvAm3pigyA" type="ASSIGNMENT" expression="="/>
-              </action>
-            </widgets>
-            <widgets xmi:type="form:HtmlWidget" xmi:id="_vAXyohxzEeOHkqHEYuVquQ" name="ForShowingLeftColumn">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK1VxcavEeWStvAm3pigyA" line="4"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK1VxsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK1Vx8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK1VyMavEeWStvAm3pigyA" name="&lt;script>$('link').filter(&quot;[href='css/bonita_form_default.css']&quot;).remove();&lt;/script>" content="&lt;script>$('link').filter(&quot;[href='css/bonita_form_default.css']&quot;).remove();&lt;/script>"/>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK1VycavEeWStvAm3pigyA" name="" content=""/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK1VysavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK1Vy8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK1VzMavEeWStvAm3pigyA" name="HTML_widget1" content="HTML_widget1" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK1VzcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK1VzsavEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK1Vz8avEeWStvAm3pigyA"/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK1V0MavEeWStvAm3pigyA"/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK1V0cavEeWStvAm3pigyA" type="ASSIGNMENT" expression="="/>
-              </action>
-            </widgets>
-            <widgets xmi:type="form:MessageInfo" xmi:id="_tyLegCQxEeOLGr_nKDPveA" name="Message1">
-              <htmlAttributes xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eK1Vp8avEeWStvAm3pigyA" key="input_css:font-size" value="14px"/>
-              <htmlAttributes xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eK1VqMavEeWStvAm3pigyA" key="input_css:text-left" value="enabled"/>
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK1VqcavEeWStvAm3pigyA" line="1" horizontalSpan="2"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK1VqsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK1Vq8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK1VrMavEeWStvAm3pigyA" name="Upload a zip file containing the invoice data. The file should contain an 'invoices.csv' file and all the invoice pdf's referenced in the csv file" content="Upload a zip file containing the invoice data. The file should contain an 'invoices.csv' file and all the invoice pdf's referenced in the csv file"/>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK1VrcavEeWStvAm3pigyA" name="" content=""/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK1VrsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK1Vr8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK1VsMavEeWStvAm3pigyA" name="Message1" content="Message1" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK1VscavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK1VssavEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK1Vs8avEeWStvAm3pigyA"/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK1VtMavEeWStvAm3pigyA"/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK1VtcavEeWStvAm3pigyA" type="ASSIGNMENT" expression="="/>
-              </action>
-            </widgets>
-            <pageLabel xmi:type="expression:Expression" xmi:id="_eK1VHsavEeWStvAm3pigyA" name="Upload the received invoices" content="Upload the received invoices" interpreter="GROOVY" returnTypeFixed="true"/>
-          </form>
-          <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_eK0t7cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-          <confirmationMessage xmi:type="expression:Expression" xmi:id="_eK0t7savEeWStvAm3pigyA" name="message" content="return &quot;The invoices have been successfully imported. Please proceed to validation of the invoices&lt;br/>&quot; +&#xD;&#xA;&quot;Note : In case of an issue with the import, you will be re-directed back to the upload task so that you can resolve the import issue&quot;;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
-          <formMapping xmi:type="process:FormMapping" xmi:id="_p-o9cBvNEeWwB5BI7jdhZw" type="LEGACY">
+          <formMapping xmi:type="process:FormMapping" xmi:id="_p-o9cBvNEeWwB5BI7jdhZw">
             <targetForm xmi:type="expression:Expression" xmi:id="_eK1V-cavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_p-o9bxvNEeWwB5BI7jdhZw"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_Aael0QwZEei-AeSrpwoQZQ" name="36000000" content="36000000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_yRu1oBxzEeOHkqHEYuVquQ" name="Notify admin" outgoing="_1jycQBxzEeOHkqHEYuVquQ" incoming="_1LTq0BxzEeOHkqHEYuVquQ" useCardinality="true">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eK1WAsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_eK1WA8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_eK1WBMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_eK1WBcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -220,7 +91,6 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_eK1WD8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:CallActivity" xmi:id="_t1B8oBx6EeOHkqHEYuVquQ" name="Invoice processing" outgoing="_gAqOZrcjEeKDPt49AAIjYw" incoming="_29qxkBx5EeOHkqHEYuVquQ" type="PARALLEL" collectionDataToMultiInstantiate="_gAqOX7cjEeKDPt49AAIjYw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eK18LcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_eK18LsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_eK18L8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_eK18MMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -249,7 +119,6 @@
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_eK18PcavEeWStvAm3pigyA" name="2.1" content="2.1" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_P0pcwBx7EeOHkqHEYuVquQ" name="Start" outgoing="_gAqOYrcjEeKDPt49AAIjYw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eK18QsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_eK18Q8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_eK18RMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_eK18RcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -257,12 +126,6 @@
         <elements xmi:type="process:TextAnnotation" xmi:id="_BxnOYCEyEeOYZ5FLf8w4Yw" text="PROCESS CONFIGURATION (MANDATORY FOR MAIL AND EMBEDDED PDF)&#xD;&#xA;Select 'Invoice Processing' pool and configure the following &#xD;&#xA;1. Configure parameter values for mailUsername (GMAIL ID) and mailPassword &#xD;&#xA;2. Configure bonitaWebappPath in the 'Receive Electronic Invoices' pool. This is the path of the bonita folder in tomcat  webapps"/>
         <elements xmi:type="process:TextAnnotation" xmi:id="_G7ofYCE2EeOYZ5FLf8w4Yw" name="Copy of " text="anthony.nichols"/>
       </elements>
-      <resourceFolders xmi:type="process:ResourceFolder" xmi:id="_5fe5IF6HEeOydZYmLGcBJA" path="_gApnbLcjEeKDPt49AAIjYw/application/application"/>
-      <mandatorySymbol xmi:type="expression:Expression" xmi:id="_PyewHxxvEeOLad8DsLhBTA" name="*" content="*" returnTypeFixed="true"/>
-      <mandatoryLabel xmi:type="expression:Expression" xmi:id="_PyewIBxvEeOLad8DsLhBTA" name="" content="" returnTypeFixed="true"/>
-      <processTemplate xmi:type="process:AssociatedFile" xmi:id="_5fe5IV6HEeOydZYmLGcBJA" path="_gApnbLcjEeKDPt49AAIjYw/html/process.html"/>
-      <pageTemplate xmi:type="process:AssociatedFile" xmi:id="_5fe5I16HEeOydZYmLGcBJA" path="_gApnbLcjEeKDPt49AAIjYw/html/page.html"/>
-      <consultationTemplate xmi:type="process:AssociatedFile" xmi:id="_5fe5Il6HEeOydZYmLGcBJA" path="_gApnbLcjEeKDPt49AAIjYw/html/consultation.html"/>
       <data xmi:type="process:JavaObjectData" xmi:id="_gAqOX7cjEeKDPt49AAIjYw" name="invoiceDataList" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List">
         <defaultValue xmi:type="expression:Expression" xmi:id="_eK1VFcavEeWStvAm3pigyA" name="" content="" interpreter="GROOVY" returnType="java.util.List"/>
       </data>
@@ -275,16 +138,12 @@
       <data xmi:type="process:Data" xmi:id="_FWsjQF5-EeOydZYmLGcBJA" name="absoluteInvoiceFolderPath" dataType="_gAqOb7cjEeKDPt49AAIjYw">
         <defaultValue xmi:type="expression:Expression" xmi:id="_eK1VC8avEeWStvAm3pigyA" content=""/>
       </data>
-      <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_PyewHBxvEeOLad8DsLhBTA" name="" content="" returnTypeFixed="true"/>
-      <confirmationMessage xmi:type="expression:Expression" xmi:id="_PyewGxxvEeOLad8DsLhBTA" name="" content="" returnTypeFixed="true"/>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_p-nvehvNEeWwB5BI7jdhZw" type="LEGACY">
+      <formMapping xmi:type="process:FormMapping" xmi:id="_p-nvehvNEeWwB5BI7jdhZw">
         <targetForm xmi:type="expression:Expression" xmi:id="_eK1V-savEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
-      <recapPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_PyewHhxvEeOLad8DsLhBTA" name="" content="" returnTypeFixed="true"/>
-      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_p-nvexvNEeWwB5BI7jdhZw" type="LEGACY">
+      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_p-nvexvNEeWwB5BI7jdhZw">
         <targetForm xmi:type="expression:Expression" xmi:id="_eK1V-8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
-      <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_PyewHRxvEeOLad8DsLhBTA" name="" content="" returnTypeFixed="true"/>
       <connections xmi:type="process:SequenceFlow" xmi:id="_gAqOYrcjEeKDPt49AAIjYw" target="_vAWkcBxzEeOHkqHEYuVquQ" source="_P0pcwBx7EeOHkqHEYuVquQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_gAqOY7cjEeKDPt49AAIjYw"/>
         <condition xmi:type="expression:Expression" xmi:id="_eK18S8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -410,16 +269,14 @@
         <value xmi:type="expression:Expression" xmi:id="_eK18_MavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
       </searchIndexes>
     </elements>
-    <elements xmi:type="process:Pool" xmi:id="_rghjYBx6EeOHkqHEYuVquQ" name="Invoice Processing" welcomePageInternal="false" basedOnLookAndFeel="PT Look N Feel" entryPageFlowType="SKIP" version="2.1">
+    <elements xmi:type="process:Pool" xmi:id="_rghjYBx6EeOHkqHEYuVquQ" name="Invoice Processing" version="2.1">
       <elements xmi:type="process:Lane" xmi:id="__fsAgBx6EeOHkqHEYuVquQ" name="PO Invoice Validator" actor="_-ecl8Bx6EeOHkqHEYuVquQ">
         <elements xmi:type="process:StartEvent" xmi:id="_ulOqgBx6EeOHkqHEYuVquQ" name="Start" outgoing="_mCbqIB-HEeOFGPUeOtA9zQ">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eK18RsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_eK18R8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_eK18SMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_eK18ScavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_8PVDABx6EeOHkqHEYuVquQ" documentation="This task is to validate the incoming invoice. Also. attached is the invoice pdf which can be used to update the data. In case of discrepancy, you can reject the invoice by providing a reason to the vendor" name="Validate the incoming invoice" outgoing="_kBU9AB7iEeOC6apRDzzBBw" incoming="_jpKssB-HEeOFGPUeOtA9zQ" useCardinality="true" overrideActorsOfTheLane="false">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eK0t8cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_eK0t8savEeWStvAm3pigyA" name="title" content="&quot;Validate invoice for PO - &quot; + invoiceData.get(1);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
             <referencedElements xmi:type="process:JavaObjectData" xmi:id="_Aael1AwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
           </dynamicLabel>
@@ -515,527 +372,13 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_eK0t_cavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_eK0t_savEeWStvAm3pigyA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_eK0t_8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <transientData xmi:type="process:JavaObjectData" xmi:id="_PvMC4B7JEeOHkqHEYuVquQ" name="order" datasourceId="PAGEFLOW" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="org.bonitasoft.procurement.Order">
-            <defaultValue xmi:type="expression:Expression" xmi:id="_eK1VFsavEeWStvAm3pigyA" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="org.bonitasoft.procurement.Order"/>
-          </transientData>
-          <pageFlowConnectors xmi:type="process:Connector" xmi:id="_G9jYoB-OEeOFGPUeOtA9zQ" name="loadOrder" definitionId="database-jdbc" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_G9jYqB-OEeOFGPUeOtA9zQ" definitionId="database-jdbc" version="1.0.0" modelVersion="6.4.0-005">
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_G9jYqR-OEeOFGPUeOtA9zQ" key="driver">
-                <expression xmi:type="expression:Expression" xmi:id="_eK0uVsavEeWStvAm3pigyA" name="dbDriver" content="dbDriver" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_G9jYqx-OEeOFGPUeOtA9zQ" name="dbDriver" value="" typeClassname="java.lang.String" description=""/>
-                </expression>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_G9jYrB-OEeOFGPUeOtA9zQ" key="url">
-                <expression xmi:type="expression:Expression" xmi:id="_eK0uWMavEeWStvAm3pigyA" name="dbUrl" content="dbUrl" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_G9jYrh-OEeOFGPUeOtA9zQ" name="dbUrl" value="" typeClassname="java.lang.String" description=""/>
-                </expression>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_G9j_sB-OEeOFGPUeOtA9zQ" key="script">
-                <expression xmi:type="expression:Expression" xmi:id="_eK0uWsavEeWStvAm3pigyA" name="selectQuery" content="String.format(&quot;select o.id as order_id, o.vendor_id, o.po_number, o.requestor_id, o.total_price, o.status, o.delivery_date, v.* from po_orders  o, po_vendors v &quot; + &#xD;&#xA;&#x9;&quot;where o.vendor_id = v.id and o.po_number = '%s';&quot;, invoiceData.get(1));" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AaemPgwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-                </expression>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_G9j_tB-OEeOFGPUeOtA9zQ" key="username">
-                <expression xmi:type="expression:Expression" xmi:id="_eK0uXMavEeWStvAm3pigyA" name="dbUsername" content="dbUsername" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_G9j_th-OEeOFGPUeOtA9zQ" name="dbUsername" value="" typeClassname="java.lang.String" description=""/>
-                </expression>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_G9j_tx-OEeOFGPUeOtA9zQ" key="password">
-                <expression xmi:type="expression:Expression" xmi:id="_eK0uXsavEeWStvAm3pigyA" name="dbPassword" content="dbPassword" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_G9j_uR-OEeOFGPUeOtA9zQ" name="dbPassword" value="" typeClassname="java.lang.String" description=""/>
-                </expression>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_G9j_uh-OEeOFGPUeOtA9zQ" key="separator">
-                <expression xmi:type="expression:Expression" xmi:id="_eK0uYMavEeWStvAm3pigyA" content="" returnTypeFixed="true"/>
-              </parameters>
-            </configuration>
-            <outputs xmi:type="expression:Operation" xmi:id="_G9jYoR-OEeOFGPUeOtA9zQ">
-              <leftOperand xmi:type="expression:Expression" xmi:id="_eK1VBMavEeWStvAm3pigyA" name="order" content="order" type="TYPE_VARIABLE" returnType="org.bonitasoft.procurement.Order">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AaemWQwZEei-AeSrpwoQZQ" name="order" datasourceId="PAGEFLOW" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="org.bonitasoft.procurement.Order"/>
-              </leftOperand>
-              <rightOperand xmi:type="expression:Expression" xmi:id="_eK1VBsavEeWStvAm3pigyA" name="resultset" content="List orders =  ProcurementMapper.mapOrders(resultset);&#xD;&#xA;if(orders.empty) return null;&#xD;&#xA;return orders.get(0);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="org.bonitasoft.procurement.Order">
-                <referencedElements xmi:type="definition:Output" xmi:id="_G9jYpx-OEeOFGPUeOtA9zQ" name="resultset" type="java.sql.ResultSet"/>
-              </rightOperand>
-              <operator xmi:type="expression:Operator" xmi:id="_G9jYpR-OEeOFGPUeOtA9zQ" type="ASSIGNMENT"/>
-            </outputs>
-          </pageFlowConnectors>
-          <form xmi:type="form:Form" xmi:id="_GwvE4Bx-EeOHkqHEYuVquQ" name="ReviewInvoice" nColumn="3" nLine="14">
-            <columns xmi:type="form:Column" xmi:id="_GwwTxBx-EeOHkqHEYuVquQ" width="100%" number="3"/>
-            <lines xmi:type="form:Line" xmi:id="_GwwTxRx-EeOHkqHEYuVquQ" number="3"/>
-            <lines xmi:type="form:Line" xmi:id="_lM6IwCB2EeObHIR6CZXcdw" height="600px"/>
-            <widgets xmi:type="form:SubmitFormButton" xmi:id="_Gwvr8Bx-EeOHkqHEYuVquQ" name="Submit" labelPosition="Left">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_Gwvr8Rx-EeOHkqHEYuVquQ" line="11" horizontalSpan="2"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK1VQ8avEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK1VRMavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK1VRcavEeWStvAm3pigyA" name="" content=""/>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK1VRsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK1VR8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK1VSMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK1VScavEeWStvAm3pigyA" name="Submit" content="Submit" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK1VSsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <actions xmi:type="expression:Operation" xmi:id="_eK1VS8avEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK1VTMavEeWStvAm3pigyA" name="isAccepted" content="isAccepted" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="process:Data" xmi:id="_AafNFAwZEei-AeSrpwoQZQ" name="isAccepted" dataType="_gAqOa7cjEeKDPt49AAIjYw"/>
-                </leftOperand>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK1VTsavEeWStvAm3pigyA" name="status" content="&quot;Accept&quot;.equalsIgnoreCase(field_Status)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-                  <referencedElements xmi:type="form:SelectFormField" xmi:id="_AafNFgwZEei-AeSrpwoQZQ" name="Status"/>
-                </rightOperand>
-                <operator xmi:type="expression:Operator" xmi:id="_eK1VUMavEeWStvAm3pigyA" type="ASSIGNMENT"/>
-              </actions>
-              <actions xmi:type="expression:Operation" xmi:id="_eK1VUcavEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK1VUsavEeWStvAm3pigyA" name="poId" content="poId" type="TYPE_VARIABLE" returnType="java.lang.Long">
-                  <referencedElements xmi:type="process:Data" xmi:id="_AafNGgwZEei-AeSrpwoQZQ" name="poId" dataType="_PyeI-BxvEeOLad8DsLhBTA"/>
-                </leftOperand>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK1VVMavEeWStvAm3pigyA" name="poId" content="new Long(field_poId);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
-                  <referencedElements xmi:type="form:HiddenWidget" xmi:id="_AafNHAwZEei-AeSrpwoQZQ" name="poId"/>
-                </rightOperand>
-                <operator xmi:type="expression:Operator" xmi:id="_eK1VVsavEeWStvAm3pigyA" type="ASSIGNMENT"/>
-              </actions>
-            </widgets>
-            <widgets xmi:type="form:TextFormField" xmi:id="_Ifw5sB7HEeOHkqHEYuVquQ" name="RejectionReason" mandatory="true">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK19MsavEeWStvAm3pigyA" line="10" horizontalSpan="2"/>
-              <dependOn xmi:type="form:WidgetDependency" xmi:id="_gCouIB7HEeOHkqHEYuVquQ" widget="_7SENoB-oEeON7rwtYoi-Jg">
-                <eventTypes>onValueChange</eventTypes>
-              </dependOn>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK19NMavEeWStvAm3pigyA" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK19NcavEeWStvAm3pigyA" name="onRejection" content="&quot;Reject&quot;.equalsIgnoreCase(field_Status);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-                <referencedElements xmi:type="form:SelectFormField" xmi:id="_AagbsQwZEei-AeSrpwoQZQ" name="Status"/>
-              </displayAfterEventDependsOnConditionScript>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK19N8avEeWStvAm3pigyA" name="" content=""/>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK19OMavEeWStvAm3pigyA" name="" content=""/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK19OcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK19OsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK19O8avEeWStvAm3pigyA" name="Reason for rejection" content="Reason for rejection" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK19PMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK19PcavEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK19PsavEeWStvAm3pigyA" name="rejectionReason" content="rejectionReason" type="TYPE_VARIABLE">
-                  <referencedElements xmi:type="process:Data" xmi:id="_AagbugwZEei-AeSrpwoQZQ" name="rejectionReason" dataType="_gAqOb7cjEeKDPt49AAIjYw"/>
-                </leftOperand>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK19QMavEeWStvAm3pigyA" name="field_RejectionReason" content="field_RejectionReason" type="TYPE_INPUT">
-                  <referencedElements xmi:type="form:TextFormField" xmi:id="_AagbvAwZEei-AeSrpwoQZQ" name="RejectionReason"/>
-                </rightOperand>
-                <operator xmi:type="expression:Operator" xmi:id="_eK19QsavEeWStvAm3pigyA" type="ASSIGNMENT" expression="="/>
-              </action>
-              <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK19Q8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK19RMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK19RcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK19RsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK19R8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK19SMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <exampleMessage xmi:type="expression:Expression" xmi:id="_eK19ScavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-            </widgets>
-            <widgets xmi:type="form:RadioFormField" xmi:id="_7SENoB-oEeON7rwtYoi-Jg" name="Status" mandatory="true" itemClass="h">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK193cavEeWStvAm3pigyA" line="9" horizontalSpan="2"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK193savEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK1938avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK194MavEeWStvAm3pigyA" name="options" content="[&quot;Accept&quot;, &quot;Reject&quot;]" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List"/>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK194cavEeWStvAm3pigyA" name="" content="" returnType="java.util.Collection"/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK194savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK2jEMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK2jEcavEeWStvAm3pigyA" name="Status" content="Status" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK2jEsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK2jE8avEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK2jFMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean"/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK2jFcavEeWStvAm3pigyA" name="" content="" interpreter="GROOVY" returnType="java.lang.Boolean"/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK2jFsavEeWStvAm3pigyA" type="ASSIGNMENT" expression="="/>
-              </action>
-              <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2jF8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2jGMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK2jGcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK2jGsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK2jG8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK2jHMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <exampleMessage xmi:type="expression:Expression" xmi:id="_eK2jHcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <defaultExpression xmi:type="expression:Expression" xmi:id="_eK2jHsavEeWStvAm3pigyA" name="" content=""/>
-              <defaultExpressionAfterEvent xmi:type="expression:Expression" xmi:id="_eK2jH8avEeWStvAm3pigyA" name="" content=""/>
-            </widgets>
-            <widgets xmi:type="form:HiddenWidget" xmi:id="_GxtrUB-qEeON7rwtYoi-Jg" name="poId">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK19B8avEeWStvAm3pigyA" line="12"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK19CMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK19CcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK19CsavEeWStvAm3pigyA" name="loadPoID" content="loadPoID" type="CONNECTOR_TYPE">
-                <connectors xmi:type="process:Connector" xmi:id="_eK19C8avEeWStvAm3pigyA" name="loadPoID" definitionId="database-jdbc" definitionVersion="1.0.0">
-                  <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_eK19DMavEeWStvAm3pigyA" definitionId="database-jdbc" version="1.0.0" modelVersion="6.4.0-005">
-                    <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_eK19DcavEeWStvAm3pigyA" key="driver">
-                      <expression xmi:type="expression:Expression" xmi:id="_eK19DsavEeWStvAm3pigyA" name="dbDriver" content="dbDriver" type="TYPE_PARAMETER" returnTypeFixed="true">
-                        <referencedElements xmi:type="parameter:Parameter" xmi:id="_eK19D8avEeWStvAm3pigyA" name="dbDriver" value="" typeClassname="java.lang.String" description=""/>
-                      </expression>
-                    </parameters>
-                    <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_eK19EMavEeWStvAm3pigyA" key="url">
-                      <expression xmi:type="expression:Expression" xmi:id="_eK19EcavEeWStvAm3pigyA" name="dbUrl" content="dbUrl" type="TYPE_PARAMETER" returnTypeFixed="true">
-                        <referencedElements xmi:type="parameter:Parameter" xmi:id="_eK19EsavEeWStvAm3pigyA" name="dbUrl" value="" typeClassname="java.lang.String" description=""/>
-                      </expression>
-                    </parameters>
-                    <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_eK19E8avEeWStvAm3pigyA" key="script">
-                      <expression xmi:type="expression:Expression" xmi:id="_eK19FMavEeWStvAm3pigyA" name="query" content="String.format(&quot;select id from po_orders where po_number = '%s';&quot;, invoiceData.get(1));" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                        <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AagbkAwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-                      </expression>
-                    </parameters>
-                    <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_eK19FsavEeWStvAm3pigyA" key="username">
-                      <expression xmi:type="expression:Expression" xmi:id="_eK19F8avEeWStvAm3pigyA" name="dbUsername" content="dbUsername" type="TYPE_PARAMETER" returnTypeFixed="true">
-                        <referencedElements xmi:type="parameter:Parameter" xmi:id="_eK19GMavEeWStvAm3pigyA" name="dbUsername" value="" typeClassname="java.lang.String" description=""/>
-                      </expression>
-                    </parameters>
-                    <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_eK19GcavEeWStvAm3pigyA" key="password">
-                      <expression xmi:type="expression:Expression" xmi:id="_eK19GsavEeWStvAm3pigyA" name="dbPassword" content="dbPassword" type="TYPE_PARAMETER" returnTypeFixed="true">
-                        <referencedElements xmi:type="parameter:Parameter" xmi:id="_eK19G8avEeWStvAm3pigyA" name="dbPassword" value="" typeClassname="java.lang.String" description=""/>
-                      </expression>
-                    </parameters>
-                    <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_eK19HMavEeWStvAm3pigyA" key="separator">
-                      <expression xmi:type="expression:Expression" xmi:id="_eK19HcavEeWStvAm3pigyA" content="" returnTypeFixed="true"/>
-                    </parameters>
-                  </configuration>
-                  <outputs xmi:type="expression:Operation" xmi:id="_eK19HsavEeWStvAm3pigyA">
-                    <leftOperand xmi:type="expression:Expression" xmi:id="_eK19H8avEeWStvAm3pigyA"/>
-                    <rightOperand xmi:type="expression:Expression" xmi:id="_eK19IMavEeWStvAm3pigyA" name="resultset" content="while(resultset.next()){&#xD;&#xA;&#x9;return resultset.getLong(&quot;id&quot;);&#xD;&#xA;}&#xD;&#xA;return 0L;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
-                      <referencedElements xmi:type="definition:Output" xmi:id="_eK19IcavEeWStvAm3pigyA" name="resultset" type="java.sql.ResultSet"/>
-                    </rightOperand>
-                    <operator xmi:type="expression:Operator" xmi:id="_eK19IsavEeWStvAm3pigyA" type="ASSIGNMENT"/>
-                  </outputs>
-                </connectors>
-              </inputExpression>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK19I8avEeWStvAm3pigyA" name="" content=""/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK19JMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK19JcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK19JsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK19J8avEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK19KMavEeWStvAm3pigyA" content=""/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK19KcavEeWStvAm3pigyA" content=""/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK19KsavEeWStvAm3pigyA" type="ASSIGNMENT" expression="="/>
-              </action>
-              <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK19K8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK19LMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK19LcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK19LsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK19L8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK19MMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <exampleMessage xmi:type="expression:Expression" xmi:id="_eK19McavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-            </widgets>
-            <widgets xmi:type="form:IFrameWidget" xmi:id="_wi5ZICBAEeON7rwtYoi-Jg" name="IFrame1">
-              <htmlAttributes xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eK2jIMavEeWStvAm3pigyA" key="widget_css:height" value="600px"/>
-              <htmlAttributes xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eK2jIcavEeWStvAm3pigyA" key="input_css:height" value="600px"/>
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK2jIsavEeWStvAm3pigyA" column="1" verticalSpan="9" horizontalSpan="2"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK2jI8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK2jJMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK2jJcavEeWStvAm3pigyA" name="url" content="import java.util.logging.Logger;&#xD;&#xA;import org.apache.commons.lang.StringEscapeUtils;&#xD;&#xA;Logger logger = Logger.getLogger(&quot;org.bonitasoft.test&quot;);&#xD;&#xA;try{&#xD;&#xA;&#x9;def url = String.format(&quot;%s/%s&quot;, relativeInvoiceFolderPath, invoiceData.get(9));&#xD;&#xA;&#x9;url = url.replace(&quot; &quot;, &quot;%20&quot;);&#xD;&#xA;&#x9;return url;&#xD;&#xA;}catch (Exception e){&#xD;&#xA;&#x9;logger.severe(e.getMessage());&#xD;&#xA;&#x9;return &quot;InvoiceNotFound&quot;;&#xD;&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:Data" xmi:id="_AahCjAwZEei-AeSrpwoQZQ" name="relativeInvoiceFolderPath" dataType="_gAqOb7cjEeKDPt49AAIjYw"/>
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AahCjQwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-              </inputExpression>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK2jKMavEeWStvAm3pigyA" name="" content=""/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK2jKcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK2jKsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK2jK8avEeWStvAm3pigyA" name="IFrame1" content="IFrame1" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK2jLMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK2jLcavEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK2jLsavEeWStvAm3pigyA"/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK2jL8avEeWStvAm3pigyA"/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK2jMMavEeWStvAm3pigyA" type="ASSIGNMENT" expression="="/>
-              </action>
-            </widgets>
-            <widgets xmi:type="form:Group" xmi:id="_DroKcCB2EeObHIR6CZXcdw" name="Group1">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK2jMcavEeWStvAm3pigyA" verticalSpan="9"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK2jMsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK2jM8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK2jNMavEeWStvAm3pigyA" name="" content=""/>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK2jNcavEeWStvAm3pigyA" name="" content=""/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK2jNsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK2jN8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK2jOMavEeWStvAm3pigyA" name="Invoice Details" content="Invoice Details" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK2jOcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK2jOsavEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK2jO8avEeWStvAm3pigyA" content=""/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK2jPMavEeWStvAm3pigyA" content=""/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK2jPcavEeWStvAm3pigyA" type="ASSIGNMENT" expression="="/>
-              </action>
-              <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2jPsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2jP8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK2jQMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK2jQcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK2jQsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK2jQ8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <widgets xmi:type="form:TextFormField" xmi:id="_eK2jRMavEeWStvAm3pigyA" name="invoiceNumber" readOnly="true">
-                <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK2jRcavEeWStvAm3pigyA"/>
-                <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK2jRsavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK2jR8avEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <inputExpression xmi:type="expression:Expression" xmi:id="_eK2jSMavEeWStvAm3pigyA" name="invoiceNumber" content="invoiceData.get(0);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AahCrwwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-                </inputExpression>
-                <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK2jSsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-                <tooltip xmi:type="expression:Expression" xmi:id="_eK2jS8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <helpMessage xmi:type="expression:Expression" xmi:id="_eK2jTMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabel xmi:type="expression:Expression" xmi:id="_eK2jTcavEeWStvAm3pigyA" name="Invoice Number" content="Invoice Number" returnTypeFixed="true"/>
-                <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK2jTsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <action xmi:type="expression:Operation" xmi:id="_eK2jT8avEeWStvAm3pigyA">
-                  <leftOperand xmi:type="expression:Expression" xmi:id="_eK2jUMavEeWStvAm3pigyA" name="" content=""/>
-                  <rightOperand xmi:type="expression:Expression" xmi:id="_eK2jUcavEeWStvAm3pigyA" name="" content=""/>
-                  <operator xmi:type="expression:Operator" xmi:id="_eK2jUsavEeWStvAm3pigyA" type="ASSIGNMENT"/>
-                </action>
-                <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2jU8avEeWStvAm3pigyA" name="10" content="10" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2jVMavEeWStvAm3pigyA" name="2" content="2" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK2jVcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK2jVsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK2jV8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK2jWMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <exampleMessage xmi:type="expression:Expression" xmi:id="_eK2jWcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              </widgets>
-              <widgets xmi:type="form:TextFormField" xmi:id="_eK2jWsavEeWStvAm3pigyA" name="poNumber" readOnly="true">
-                <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK2jW8avEeWStvAm3pigyA" line="1"/>
-                <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK2jXMavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK2jXcavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <inputExpression xmi:type="expression:Expression" xmi:id="_eK2jXsavEeWStvAm3pigyA" name="migratedScript" content="invoiceData.get(1);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AahCxQwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-                </inputExpression>
-                <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK2jYMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-                <tooltip xmi:type="expression:Expression" xmi:id="_eK2jYcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <helpMessage xmi:type="expression:Expression" xmi:id="_eK2jYsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabel xmi:type="expression:Expression" xmi:id="_eK2jY8avEeWStvAm3pigyA" name="PO Number" content="PO Number" returnTypeFixed="true"/>
-                <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK2jZMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <action xmi:type="expression:Operation" xmi:id="_eK2jZcavEeWStvAm3pigyA">
-                  <leftOperand xmi:type="expression:Expression" xmi:id="_eK2jZsavEeWStvAm3pigyA" name="" content=""/>
-                  <rightOperand xmi:type="expression:Expression" xmi:id="_eK2jZ8avEeWStvAm3pigyA" name="" content=""/>
-                  <operator xmi:type="expression:Operator" xmi:id="_eK2jaMavEeWStvAm3pigyA" type="ASSIGNMENT"/>
-                </action>
-                <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2jacavEeWStvAm3pigyA" name="10" content="10" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2jasavEeWStvAm3pigyA" name="2" content="2" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK2ja8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK2jbMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK2jbcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK2jbsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <exampleMessage xmi:type="expression:Expression" xmi:id="_eK2jb8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              </widgets>
-              <widgets xmi:type="form:TextFormField" xmi:id="_eK2jcMavEeWStvAm3pigyA" name="vendorName" readOnly="true">
-                <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK2jccavEeWStvAm3pigyA" line="2"/>
-                <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK2jcsavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK2jc8avEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <inputExpression xmi:type="expression:Expression" xmi:id="_eK2jdMavEeWStvAm3pigyA" name="migratedScript" content="invoiceData.get(2);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AahC2wwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-                </inputExpression>
-                <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK2jdsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-                <tooltip xmi:type="expression:Expression" xmi:id="_eK2jd8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <helpMessage xmi:type="expression:Expression" xmi:id="_eK2jeMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabel xmi:type="expression:Expression" xmi:id="_eK2jecavEeWStvAm3pigyA" name="Vendor Name" content="Vendor Name" returnTypeFixed="true"/>
-                <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK2jesavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <action xmi:type="expression:Operation" xmi:id="_eK2je8avEeWStvAm3pigyA">
-                  <leftOperand xmi:type="expression:Expression" xmi:id="_eK2jfMavEeWStvAm3pigyA" name="" content=""/>
-                  <rightOperand xmi:type="expression:Expression" xmi:id="_eK2jfcavEeWStvAm3pigyA" content=""/>
-                  <operator xmi:type="expression:Operator" xmi:id="_eK2jfsavEeWStvAm3pigyA" type="ASSIGNMENT"/>
-                </action>
-                <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2jf8avEeWStvAm3pigyA" name="10" content="10" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2jgMavEeWStvAm3pigyA" name="2" content="2" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK2jgcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK2jgsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK2jg8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK2jhMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <exampleMessage xmi:type="expression:Expression" xmi:id="_eK2jhcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              </widgets>
-              <widgets xmi:type="form:TextFormField" xmi:id="_eK2jhsavEeWStvAm3pigyA" name="vendorRegNum" readOnly="true">
-                <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK2jh8avEeWStvAm3pigyA" line="3"/>
-                <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK2jiMavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK2jicavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <inputExpression xmi:type="expression:Expression" xmi:id="_eK2jisavEeWStvAm3pigyA" name="migratedScript" content="invoiceData.get(3);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AahC8QwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-                </inputExpression>
-                <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK2jjMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-                <tooltip xmi:type="expression:Expression" xmi:id="_eK2jjcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <helpMessage xmi:type="expression:Expression" xmi:id="_eK2jjsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabel xmi:type="expression:Expression" xmi:id="_eK2jj8avEeWStvAm3pigyA" name="Vendor VAT Number" content="Vendor VAT Number" returnTypeFixed="true"/>
-                <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK2jkMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <action xmi:type="expression:Operation" xmi:id="_eK2jkcavEeWStvAm3pigyA">
-                  <leftOperand xmi:type="expression:Expression" xmi:id="_eK2jksavEeWStvAm3pigyA" name="" content=""/>
-                  <rightOperand xmi:type="expression:Expression" xmi:id="_eK2jk8avEeWStvAm3pigyA" content=""/>
-                  <operator xmi:type="expression:Operator" xmi:id="_eK2jlMavEeWStvAm3pigyA" type="ASSIGNMENT"/>
-                </action>
-                <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2jlcavEeWStvAm3pigyA" name="10" content="10" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2jlsavEeWStvAm3pigyA" name="2" content="2" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK2jl8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK2jmMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK2jmcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK2jmsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <exampleMessage xmi:type="expression:Expression" xmi:id="_eK2jm8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              </widgets>
-              <widgets xmi:type="form:DateFormField" xmi:id="_iKBjUB7FEeOHkqHEYuVquQ" name="invoiceDate" readOnly="true" displayFormat="dd MMM yyyy">
-                <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK2j58avEeWStvAm3pigyA" line="7"/>
-                <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK2j6MavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK2j6cavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <inputExpression xmi:type="expression:Expression" xmi:id="_eK2j6savEeWStvAm3pigyA" name="migratedScript" content="if(invoiceData.get(7) != null &amp;&amp; !invoiceData.get(7).isEmpty())&#xD;&#xA;&#x9;return new Date(invoiceData.get(7));&#xD;&#xA;return new Date();" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Date">
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AahDUQwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-                </inputExpression>
-                <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK2j7MavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-                <tooltip xmi:type="expression:Expression" xmi:id="_eK2j7cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <helpMessage xmi:type="expression:Expression" xmi:id="_eK2j7savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabel xmi:type="expression:Expression" xmi:id="_eK2j78avEeWStvAm3pigyA" name="Invoice Date" content="Invoice Date" returnTypeFixed="true"/>
-                <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK2j8MavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <action xmi:type="expression:Operation" xmi:id="_eK2j8cavEeWStvAm3pigyA">
-                  <leftOperand xmi:type="expression:Expression" xmi:id="_eK2j8savEeWStvAm3pigyA" name="" content=""/>
-                  <rightOperand xmi:type="expression:Expression" xmi:id="_eK2j88avEeWStvAm3pigyA" name="" content="" returnType="java.util.Date"/>
-                  <operator xmi:type="expression:Operator" xmi:id="_eK2j9MavEeWStvAm3pigyA" type="ASSIGNMENT"/>
-                </action>
-                <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2j9cavEeWStvAm3pigyA" name="10" content="10" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2j9savEeWStvAm3pigyA" name="2" content="2" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK2j98avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK2j-MavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK2j-cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK2j-savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <exampleMessage xmi:type="expression:Expression" xmi:id="_eK2j-8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              </widgets>
-              <widgets xmi:type="form:DateFormField" xmi:id="_hvXAkB7FEeOHkqHEYuVquQ" name="invoiceDueDate" readOnly="true" displayFormat="dd MMM yyyy">
-                <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK2j_MavEeWStvAm3pigyA" line="8"/>
-                <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK2j_cavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK2j_savEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <inputExpression xmi:type="expression:Expression" xmi:id="_eK2j_8avEeWStvAm3pigyA" name="migratedScript" content="if(invoiceData.get(8) != null &amp;&amp; !invoiceData.get(8).isEmpty())&#xD;&#xA;&#x9;return new Date(invoiceData.get(8));&#xD;&#xA;return new Date();" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Date">
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AahDZgwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-                </inputExpression>
-                <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK2kAcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-                <tooltip xmi:type="expression:Expression" xmi:id="_eK2kAsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <helpMessage xmi:type="expression:Expression" xmi:id="_eK2kA8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabel xmi:type="expression:Expression" xmi:id="_eK2kBMavEeWStvAm3pigyA" name="Invoice Due Date" content="Invoice Due Date" returnTypeFixed="true"/>
-                <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK2kBcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <action xmi:type="expression:Operation" xmi:id="_eK2kBsavEeWStvAm3pigyA">
-                  <leftOperand xmi:type="expression:Expression" xmi:id="_eK2kB8avEeWStvAm3pigyA" name="" content=""/>
-                  <rightOperand xmi:type="expression:Expression" xmi:id="_eK2kCMavEeWStvAm3pigyA" name="" content="" returnType="java.util.Date"/>
-                  <operator xmi:type="expression:Operator" xmi:id="_eK2kCcavEeWStvAm3pigyA" type="ASSIGNMENT"/>
-                </action>
-                <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2kCsavEeWStvAm3pigyA" name="10" content="10" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2kC8avEeWStvAm3pigyA" name="2" content="2" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK2kDMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK2kDcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK2kDsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK2kD8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <exampleMessage xmi:type="expression:Expression" xmi:id="_eK2kEMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              </widgets>
-              <widgets xmi:type="form:TextFormField" xmi:id="_eK2jnsavEeWStvAm3pigyA" name="totalAmountExclTax" returnTypeModifier="java.lang.Double">
-                <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK2jn8avEeWStvAm3pigyA" line="4"/>
-                <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK2joMavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK2jocavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <inputExpression xmi:type="expression:Expression" xmi:id="_eK2josavEeWStvAm3pigyA" name="migratedScript" content="if(invoiceData.get(4) ==null || invoiceData.get(4).isEmpty())&#xD;&#xA;return new Double(0);&#xD;&#xA;return new Double(invoiceData.get(4));" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Double">
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AahDCQwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-                </inputExpression>
-                <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK2jpMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-                <tooltip xmi:type="expression:Expression" xmi:id="_eK2jpcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <helpMessage xmi:type="expression:Expression" xmi:id="_eK2jpsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabel xmi:type="expression:Expression" xmi:id="_eK2jp8avEeWStvAm3pigyA" name="Total Amount (Excluding Tax)" content="Total Amount (Excluding Tax)" returnTypeFixed="true"/>
-                <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK2jqMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <action xmi:type="expression:Operation" xmi:id="_eK2jqcavEeWStvAm3pigyA">
-                  <leftOperand xmi:type="expression:Expression" xmi:id="_eK2jqsavEeWStvAm3pigyA" name="priceBeforeTax" content="priceBeforeTax" type="TYPE_VARIABLE" returnType="java.lang.Double">
-                    <referencedElements xmi:type="process:Data" xmi:id="_AahDEQwZEei-AeSrpwoQZQ" name="priceBeforeTax" transient="true" datasourceId="IN_MEMORY" dataType="_gAqObrcjEeKDPt49AAIjYw"/>
-                  </leftOperand>
-                  <rightOperand xmi:type="expression:Expression" xmi:id="_eK2jrMavEeWStvAm3pigyA" name="field_totalAmountExclTax" content="field_totalAmountExclTax" type="TYPE_INPUT" returnType="java.lang.Double">
-                    <referencedElements xmi:type="form:TextFormField" xmi:id="_AahDEwwZEei-AeSrpwoQZQ" name="totalAmountExclTax"/>
-                  </rightOperand>
-                  <operator xmi:type="expression:Operator" xmi:id="_eK2jrsavEeWStvAm3pigyA" type="ASSIGNMENT"/>
-                </action>
-                <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2jr8avEeWStvAm3pigyA" name="10" content="10" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2jsMavEeWStvAm3pigyA" name="2" content="2" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK2jscavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK2jssavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK2js8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK2jtMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <exampleMessage xmi:type="expression:Expression" xmi:id="_eK2jtcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              </widgets>
-              <widgets xmi:type="form:TextFormField" xmi:id="_eK2jtsavEeWStvAm3pigyA" name="totalAmountInclTax" returnTypeModifier="java.lang.Double">
-                <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK2jt8avEeWStvAm3pigyA" line="6"/>
-                <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK2juMavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK2jucavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <inputExpression xmi:type="expression:Expression" xmi:id="_eK2jusavEeWStvAm3pigyA" name="migratedScript" content="if(invoiceData.get(6) ==null || invoiceData.get(6).isEmpty())&#xD;&#xA;return new Double(0);&#xD;&#xA;return new Double(invoiceData.get(6));" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Double">
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AahDIQwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-                </inputExpression>
-                <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK2jvMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-                <tooltip xmi:type="expression:Expression" xmi:id="_eK2jvcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <helpMessage xmi:type="expression:Expression" xmi:id="_eK2jvsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabel xmi:type="expression:Expression" xmi:id="_eK2jv8avEeWStvAm3pigyA" name="Total Amount (Including Tax)" content="Total Amount (Including Tax)" returnTypeFixed="true"/>
-                <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK2jwMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <action xmi:type="expression:Operation" xmi:id="_eK2jwcavEeWStvAm3pigyA">
-                  <leftOperand xmi:type="expression:Expression" xmi:id="_eK2jwsavEeWStvAm3pigyA" name="priceAfterTax" content="priceAfterTax" type="TYPE_VARIABLE" returnType="java.lang.Double">
-                    <referencedElements xmi:type="process:Data" xmi:id="_AahDKQwZEei-AeSrpwoQZQ" name="priceAfterTax" transient="true" datasourceId="IN_MEMORY" dataType="_gAqObrcjEeKDPt49AAIjYw"/>
-                  </leftOperand>
-                  <rightOperand xmi:type="expression:Expression" xmi:id="_eK2jxMavEeWStvAm3pigyA" name="field_totalAmountInclTax" content="field_totalAmountInclTax" type="TYPE_INPUT" returnType="java.lang.Double">
-                    <referencedElements xmi:type="form:TextFormField" xmi:id="_AahDKwwZEei-AeSrpwoQZQ" name="totalAmountInclTax" returnTypeModifier="java.lang.Double"/>
-                  </rightOperand>
-                  <operator xmi:type="expression:Operator" xmi:id="_eK2jxsavEeWStvAm3pigyA" type="ASSIGNMENT"/>
-                </action>
-                <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2jx8avEeWStvAm3pigyA" name="10" content="10" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2jyMavEeWStvAm3pigyA" name="2" content="2" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK2jycavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK2jysavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK2jy8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK2jzMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <exampleMessage xmi:type="expression:Expression" xmi:id="_eK2jzcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              </widgets>
-              <widgets xmi:type="form:TextFormField" xmi:id="_eK2jzsavEeWStvAm3pigyA" name="taxAmount" returnTypeModifier="java.lang.Double">
-                <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK2jz8avEeWStvAm3pigyA" line="5"/>
-                <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK2j0MavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK2j0cavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <inputExpression xmi:type="expression:Expression" xmi:id="_eK2j0savEeWStvAm3pigyA" name="migratedScript" content="if(invoiceData.get(5) ==null || invoiceData.get(5).isEmpty())&#xD;&#xA;return new Double(0);&#xD;&#xA;return new Double(invoiceData.get(5));" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Double">
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AahDOQwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-                </inputExpression>
-                <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK2j1MavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-                <tooltip xmi:type="expression:Expression" xmi:id="_eK2j1cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <helpMessage xmi:type="expression:Expression" xmi:id="_eK2j1savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabel xmi:type="expression:Expression" xmi:id="_eK2j18avEeWStvAm3pigyA" name="Tax" content="Tax" returnTypeFixed="true"/>
-                <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK2j2MavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-                <action xmi:type="expression:Operation" xmi:id="_eK2j2cavEeWStvAm3pigyA">
-                  <leftOperand xmi:type="expression:Expression" xmi:id="_eK2j2savEeWStvAm3pigyA" name="tax" content="tax" type="TYPE_VARIABLE" returnType="java.lang.Double">
-                    <referencedElements xmi:type="process:Data" xmi:id="_AahDQQwZEei-AeSrpwoQZQ" name="tax" transient="true" datasourceId="IN_MEMORY" dataType="_gAqObrcjEeKDPt49AAIjYw"/>
-                  </leftOperand>
-                  <rightOperand xmi:type="expression:Expression" xmi:id="_eK2j3MavEeWStvAm3pigyA" name="field_taxAmount" content="field_taxAmount" type="TYPE_INPUT" returnType="java.lang.Double">
-                    <referencedElements xmi:type="form:TextFormField" xmi:id="_AahDQwwZEei-AeSrpwoQZQ" name="taxAmount" returnTypeModifier="java.lang.Double"/>
-                  </rightOperand>
-                  <operator xmi:type="expression:Operator" xmi:id="_eK2j3savEeWStvAm3pigyA" type="ASSIGNMENT"/>
-                </action>
-                <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2j38avEeWStvAm3pigyA" name="10" content="10" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2j4MavEeWStvAm3pigyA" name="2" content="2" returnType="java.lang.Integer" returnTypeFixed="true"/>
-                <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK2j4cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK2j4savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK2j48avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK2j5MavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-                <exampleMessage xmi:type="expression:Expression" xmi:id="_eK2j5cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              </widgets>
-              <iterator xmi:type="form:GroupIterator" xmi:id="_6KEMhDTeEeS5HaADiRP1VQ" className="java.lang.Object"/>
-            </widgets>
-            <widgets xmi:type="form:HtmlWidget" xmi:id="_w0h60CE0EeOYZ5FLf8w4Yw" name="ToAvoidScroll1">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK1V0savEeWStvAm3pigyA" line="13" column="1"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK1V08avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK1V1MavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK1V1cavEeWStvAm3pigyA" name="&lt;script>$(&quot;iframe[height='700px']&quot;, parent.document.body).attr('height', '900px')&lt;/script>" content="&lt;script>$(&quot;iframe[height='700px']&quot;, parent.document.body).attr('height', '900px')&lt;/script>" interpreter="GROOVY"/>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK1V1savEeWStvAm3pigyA" name="" content=""/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK1V18avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK1V2MavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK1V2cavEeWStvAm3pigyA" name="HTML_widget2" content="HTML_widget2" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK1V2savEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK1V28avEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK1V3MavEeWStvAm3pigyA"/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK1V3cavEeWStvAm3pigyA"/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK1V3savEeWStvAm3pigyA" type="ASSIGNMENT" expression="="/>
-              </action>
-            </widgets>
-            <widgets xmi:type="form:HtmlWidget" xmi:id="_pGgSMCQ0EeOLGr_nKDPveA" name="ForShowingLeftColumn">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK1V38avEeWStvAm3pigyA" line="13"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK1V4MavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK1V4cavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK1V4savEeWStvAm3pigyA" name="&lt;script>$('link').filter(&quot;[href='css/bonita_form_default.css']&quot;).remove();&lt;/script>" content="&lt;script>$('link').filter(&quot;[href='css/bonita_form_default.css']&quot;).remove();&lt;/script>"/>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK1V48avEeWStvAm3pigyA" name="" content=""/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK1V5MavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK1V5cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK1V5savEeWStvAm3pigyA" name="HTML_widget1" content="HTML_widget1" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK1V58avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK1V6MavEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK1V6cavEeWStvAm3pigyA"/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK1V6savEeWStvAm3pigyA"/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK1V68avEeWStvAm3pigyA" type="ASSIGNMENT" expression="="/>
-              </action>
-            </widgets>
-            <pageLabel xmi:type="expression:Expression" xmi:id="_eK1VKsavEeWStvAm3pigyA" name="Review and validate the received invoice" content="Review and validate the received invoice" returnTypeFixed="true"/>
-          </form>
-          <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_eK0uA8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-          <confirmationMessage xmi:type="expression:Expression" xmi:id="_eK0uBMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-          <formMapping xmi:type="process:FormMapping" xmi:id="_p-o9hhvNEeWwB5BI7jdhZw" type="LEGACY">
+          <formMapping xmi:type="process:FormMapping" xmi:id="_p-o9hhvNEeWwB5BI7jdhZw">
             <targetForm xmi:type="expression:Expression" xmi:id="_eK1V_MavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_p-o9hRvNEeWwB5BI7jdhZw"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_Aael6AwZEei-AeSrpwoQZQ" name="36000000" content="36000000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_iPJNsB7iEeOC6apRDzzBBw" name="Notify vendor of invalid invoice" outgoing="_rFN5sB7mEeOBxsDHgwSRjQ" incoming="_oM9P8B7iEeOC6apRDzzBBw" useCardinality="true">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eK1WEMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_eK1WEcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_eK1WEsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_eK1WE8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -1162,14 +505,12 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_eK1WYMavEeWStvAm3pigyA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_eK1WYcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:XORGateway" xmi:id="_kQxHMB7iEeOC6apRDzzBBw" name="Invoice approved?" outgoing="_oM9P8B7iEeOC6apRDzzBBw _rVOBYB7iEeOC6apRDzzBBw" incoming="_kBU9AB7iEeOC6apRDzzBBw" exclusiveOutgoingTransition="true">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eK2kJsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
+        <elements xmi:type="process:XORGateway" xmi:id="_kQxHMB7iEeOC6apRDzzBBw" name="Invoice approved?" outgoing="_oM9P8B7iEeOC6apRDzzBBw _rVOBYB7iEeOC6apRDzzBBw" incoming="_kBU9AB7iEeOC6apRDzzBBw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_eK2kJ8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_eK2kKMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_eK2kKcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_CrtfUB7mEeOBxsDHgwSRjQ" name=" Notify vendor of invoice acceptance" outgoing="_zwLesB7mEeOBxsDHgwSRjQ" incoming="_rVOBYB7iEeOC6apRDzzBBw" useCardinality="true">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eK1WYsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_eK1WY8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_eK1WZMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_eK1WZcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -1296,13 +637,11 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_eK18CsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_rE3UYB7mEeOBxsDHgwSRjQ" name="End : Invoice rejected" incoming="_rFN5sB7mEeOBxsDHgwSRjQ">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eK2kLsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_eK2kL8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_eK2kMMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_eK2kMcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndMessageEvent" xmi:id="_zvuywB7mEeOBxsDHgwSRjQ" name="Send invoice received message" incoming="_zwLesB7mEeOBxsDHgwSRjQ">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eK2kNsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_eK2kN8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_eK2kOMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_eK2kOcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -1330,7 +669,6 @@
           </events>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_dhGiQB-HEeOFGPUeOtA9zQ" name="Validate if invoice matches an order" outgoing="_jIUCYB-HEeOFGPUeOtA9zQ" incoming="_mCbqIB-HEeOFGPUeOtA9zQ" useCardinality="true">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eK18C8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_eK18DMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_eK18DcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_eK18DsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
@@ -1381,20 +719,17 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_eK18K8avEeWStvAm3pigyA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_eK18LMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:XORGateway" xmi:id="_jYyuYB-HEeOFGPUeOtA9zQ" name="Matches " outgoing="_jpKssB-HEeOFGPUeOtA9zQ _lOdPgB-HEeOFGPUeOtA9zQ" incoming="_jIUCYB-HEeOFGPUeOtA9zQ" exclusiveOutgoingTransition="true">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eK2kKsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
+        <elements xmi:type="process:XORGateway" xmi:id="_jYyuYB-HEeOFGPUeOtA9zQ" name="Matches " outgoing="_jpKssB-HEeOFGPUeOtA9zQ _lOdPgB-HEeOFGPUeOtA9zQ" incoming="_jIUCYB-HEeOFGPUeOtA9zQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_eK2kK8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_eK2kLMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_eK2kLcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_lOSQYB-HEeOFGPUeOtA9zQ" name="End : No matching order found" incoming="_sWTpsB-MEeOFGPUeOtA9zQ">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eK2kMsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_eK2kM8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_eK2kNMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_eK2kNcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_rM5KkB-MEeOFGPUeOtA9zQ" documentation="This is to inform the invoice processing team that the invoice received does not match an exisiting purchase order" name="Notify user of invalid invoice" outgoing="_sWTpsB-MEeOFGPUeOtA9zQ" incoming="_lOdPgB-HEeOFGPUeOtA9zQ" useCardinality="true" overrideActorsOfTheLane="false">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_eK0uB8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_eK0uCMavEeWStvAm3pigyA" name="title" content="&quot;Notification of invalid invoice - &quot; + invoiceData.get(0);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
             <referencedElements xmi:type="process:JavaObjectData" xmi:id="_Aael6wwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
           </dynamicLabel>
@@ -1405,264 +740,7 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_eK0uDsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_eK0uD8avEeWStvAm3pigyA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_eK0uEMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <form xmi:type="form:Form" xmi:id="_rM5xzx-MEeOFGPUeOtA9zQ" name="NotifyUser" nColumn="2" nLine="7" showPageLabel="false">
-            <columns xmi:type="form:Column" xmi:id="_rM7Abh-MEeOFGPUeOtA9zQ" width="100%" number="3"/>
-            <lines xmi:type="form:Line" xmi:id="_rM7m0B-MEeOFGPUeOtA9zQ" number="3"/>
-            <widgets xmi:type="form:TextFormField" xmi:id="_rM5yFh-MEeOFGPUeOtA9zQ" name="invoiceNumber" readOnly="true" labelPosition="Left">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK19SsavEeWStvAm3pigyA" line="1"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK19S8avEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK19TMavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK19TcavEeWStvAm3pigyA" name="invoiceNumber" content="invoiceData.get(0);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AagbyQwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-              </inputExpression>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK19T8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK19UMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK19UcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK19UsavEeWStvAm3pigyA" name="Invoice Number" content="Invoice Number" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK19U8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK19VMavEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK19VcavEeWStvAm3pigyA" name="" content=""/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK19VsavEeWStvAm3pigyA" name="" content=""/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK19V8avEeWStvAm3pigyA" type="ASSIGNMENT"/>
-              </action>
-              <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK19WMavEeWStvAm3pigyA" name="10" content="10" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK19WcavEeWStvAm3pigyA" name="2" content="2" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK19WsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK19W8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK19XMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK19XcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <exampleMessage xmi:type="expression:Expression" xmi:id="_eK19XsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-            </widgets>
-            <widgets xmi:type="form:TextFormField" xmi:id="_rM5yLR-MEeOFGPUeOtA9zQ" name="poNumber" readOnly="true" labelPosition="Left">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK19X8avEeWStvAm3pigyA" line="1" column="1"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK19YMavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK19YcavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK19YsavEeWStvAm3pigyA" name="migratedScript" content="invoiceData.get(1);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_Aagb3gwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-              </inputExpression>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK19ZMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK19ZcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK19ZsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK19Z8avEeWStvAm3pigyA" name="PO Number" content="PO Number" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK19aMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK19acavEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK19asavEeWStvAm3pigyA" name="" content=""/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK19a8avEeWStvAm3pigyA" name="" content=""/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK19bMavEeWStvAm3pigyA" type="ASSIGNMENT"/>
-              </action>
-              <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK19bcavEeWStvAm3pigyA" name="10" content="10" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK19bsavEeWStvAm3pigyA" name="2" content="2" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK19b8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK19cMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK19ccavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK19csavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <exampleMessage xmi:type="expression:Expression" xmi:id="_eK19c8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-            </widgets>
-            <widgets xmi:type="form:TextFormField" xmi:id="_rM5yRB-MEeOFGPUeOtA9zQ" name="vendorName" readOnly="true" labelPosition="Left">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK19dMavEeWStvAm3pigyA" line="2"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK19dcavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK19dsavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK19d8avEeWStvAm3pigyA" name="migratedScript" content="invoiceData.get(2);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AahCCwwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-              </inputExpression>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK19ecavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK19esavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK19e8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK19fMavEeWStvAm3pigyA" name="Vendor Name" content="Vendor Name" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK19fcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK19fsavEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK19f8avEeWStvAm3pigyA" name="" content=""/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK19gMavEeWStvAm3pigyA" content=""/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK19gcavEeWStvAm3pigyA" type="ASSIGNMENT"/>
-              </action>
-              <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK19gsavEeWStvAm3pigyA" name="10" content="10" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK19g8avEeWStvAm3pigyA" name="2" content="2" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK19hMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK19hcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK19hsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK19h8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <exampleMessage xmi:type="expression:Expression" xmi:id="_eK19iMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-            </widgets>
-            <widgets xmi:type="form:TextFormField" xmi:id="_rM6Yvh-MEeOFGPUeOtA9zQ" name="vendorRegNum" readOnly="true" labelPosition="Left">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK19icavEeWStvAm3pigyA" line="2" column="1"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK19isavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK19i8avEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK19jMavEeWStvAm3pigyA" name="migratedScript" content="invoiceData.get(3);" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AahCIAwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-              </inputExpression>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK19jsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK19j8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK19kMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK19kcavEeWStvAm3pigyA" name="Vendor VAT Number" content="Vendor VAT Number" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK19ksavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK19k8avEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK19lMavEeWStvAm3pigyA" name="" content=""/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK19lcavEeWStvAm3pigyA" content=""/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK19lsavEeWStvAm3pigyA" type="ASSIGNMENT"/>
-              </action>
-              <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK19l8avEeWStvAm3pigyA" name="10" content="10" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK19mMavEeWStvAm3pigyA" name="2" content="2" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK19mcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK19msavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK19m8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK19nMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <exampleMessage xmi:type="expression:Expression" xmi:id="_eK19ncavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-            </widgets>
-            <widgets xmi:type="form:TextFormField" xmi:id="_rM6Y1R-MEeOFGPUeOtA9zQ" name="totalAmountExclTax" readOnly="true" labelPosition="Left" returnTypeModifier="java.lang.Double">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK19nsavEeWStvAm3pigyA" line="3"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK19n8avEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK19oMavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK19ocavEeWStvAm3pigyA" name="migratedScript" content="if(invoiceData.get(4) ==null || invoiceData.get(4).isEmpty())&#xD;&#xA;return new Double(0);&#xD;&#xA;return new Double(invoiceData.get(4));" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Double">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AahCNQwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-              </inputExpression>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK19o8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK19pMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK19pcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK19psavEeWStvAm3pigyA" name="Total Amount (Excluding Tax)" content="Total Amount (Excluding Tax)" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK19p8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK19qMavEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK19qcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Double"/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK19qsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Double"/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK19q8avEeWStvAm3pigyA" type="ASSIGNMENT"/>
-              </action>
-              <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK19rMavEeWStvAm3pigyA" name="10" content="10" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK19rcavEeWStvAm3pigyA" name="2" content="2" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK19rsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK19r8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK19sMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK19scavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <exampleMessage xmi:type="expression:Expression" xmi:id="_eK19ssavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-            </widgets>
-            <widgets xmi:type="form:TextFormField" xmi:id="_rM6ZBR-MEeOFGPUeOtA9zQ" name="totalAmountInclTax" readOnly="true" labelPosition="Left" returnTypeModifier="java.lang.Double">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK19s8avEeWStvAm3pigyA" line="4"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK19tMavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK19tcavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK19tsavEeWStvAm3pigyA" name="migratedScript" content="if(invoiceData.get(6) ==null || invoiceData.get(6).isEmpty())&#xD;&#xA;return new Double(0);&#xD;&#xA;return new Double(invoiceData.get(6));" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Double">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AahCSgwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-              </inputExpression>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK19uMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK19ucavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK19usavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK19u8avEeWStvAm3pigyA" name="Total Amount (Including Tax)" content="Total Amount (Including Tax)" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK19vMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK19vcavEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK19vsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Double"/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK19v8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Double"/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK19wMavEeWStvAm3pigyA" type="ASSIGNMENT"/>
-              </action>
-              <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK19wcavEeWStvAm3pigyA" name="10" content="10" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK19wsavEeWStvAm3pigyA" name="2" content="2" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK19w8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK19xMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK19xcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK19xsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <exampleMessage xmi:type="expression:Expression" xmi:id="_eK19x8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-            </widgets>
-            <widgets xmi:type="form:TextFormField" xmi:id="_rM6ZNR-MEeOFGPUeOtA9zQ" name="taxAmount" readOnly="true" labelPosition="Left" returnTypeModifier="java.lang.Double">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK19yMavEeWStvAm3pigyA" line="3" column="1"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK19ycavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK19ysavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK19y8avEeWStvAm3pigyA" name="migratedScript" content="if(invoiceData.get(5) ==null || invoiceData.get(5).isEmpty())&#xD;&#xA;return new Double(0);&#xD;&#xA;return new Double(invoiceData.get(5));" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Double">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AahCXwwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-              </inputExpression>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK19zcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK19zsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK19z8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK190MavEeWStvAm3pigyA" name="Tax" content="Tax" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK190cavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK190savEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK1908avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Double"/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK191MavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Double"/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK191cavEeWStvAm3pigyA" type="ASSIGNMENT"/>
-              </action>
-              <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK191savEeWStvAm3pigyA" name="10" content="10" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK1918avEeWStvAm3pigyA" name="2" content="2" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK192MavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK192cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK192savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK1928avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <exampleMessage xmi:type="expression:Expression" xmi:id="_eK193MavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-            </widgets>
-            <widgets xmi:type="form:DateFormField" xmi:id="_rM6__B-MEeOFGPUeOtA9zQ" name="invoiceDate" readOnly="true" labelPosition="Left" displayFormat="dd MMM yyyy">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK2kEcavEeWStvAm3pigyA" line="4" column="1"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK2kEsavEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK2kE8avEeWStvAm3pigyA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK2kFMavEeWStvAm3pigyA" name="migratedScript" content="if(invoiceData.get(7) != null &amp;&amp; !invoiceData.get(7).isEmpty())&#xD;&#xA; return new Date(invoiceData.get(7));&#xD;&#xA;return new Date();" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Date">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_AahDewwZEei-AeSrpwoQZQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List"/>
-              </inputExpression>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK2kFsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Object"/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK2kF8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK2kGMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK2kGcavEeWStvAm3pigyA" name="Invoice Date" content="Invoice Date" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK2kGsavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK2kG8avEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK2kHMavEeWStvAm3pigyA" name="" content=""/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK2kHcavEeWStvAm3pigyA" name="" content="" returnType="java.util.Date"/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK2kHsavEeWStvAm3pigyA" type="ASSIGNMENT"/>
-              </action>
-              <maxNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2kH8avEeWStvAm3pigyA" name="10" content="10" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <minNumberOfDuplication xmi:type="expression:Expression" xmi:id="_eK2kIMavEeWStvAm3pigyA" name="2" content="2" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              <displayLabelForAdd xmi:type="expression:Expression" xmi:id="_eK2kIcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForAdd xmi:type="expression:Expression" xmi:id="_eK2kIsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabelForRemove xmi:type="expression:Expression" xmi:id="_eK2kI8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <tooltipForRemove xmi:type="expression:Expression" xmi:id="_eK2kJMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <exampleMessage xmi:type="expression:Expression" xmi:id="_eK2kJcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-            </widgets>
-            <widgets xmi:type="form:SubmitFormButton" xmi:id="_89ooUB-MEeOFGPUeOtA9zQ" name="Submit1">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_8-MB8R-MEeOFGPUeOtA9zQ" line="5" horizontalSpan="2"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK1VWMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK1VWcavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK1VWsavEeWStvAm3pigyA" name="" content=""/>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK1VW8avEeWStvAm3pigyA" name="" content=""/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK1VXMavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK1VXcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK1VXsavEeWStvAm3pigyA" name="Ok" content="Ok" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK1VX8avEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK1VYMavEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK1VYcavEeWStvAm3pigyA"/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK1VYsavEeWStvAm3pigyA"/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK1VY8avEeWStvAm3pigyA" type="ASSIGNMENT" expression="="/>
-              </action>
-            </widgets>
-            <widgets xmi:type="form:MessageInfo" xmi:id="_FiAdIB-NEeOFGPUeOtA9zQ" name="Message1">
-              <htmlAttributes xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eK1VtsavEeWStvAm3pigyA" key="input_css:color" value="red"/>
-              <htmlAttributes xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eK1Vt8avEeWStvAm3pigyA" key="input_css:font-size" value="16px"/>
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK1VuMavEeWStvAm3pigyA" horizontalSpan="2"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK1VucavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK1VusavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK1Vu8avEeWStvAm3pigyA" name="There is no purchase order corresponding to the PO Number mentioned in this invoice. The invoice is therefore disqualified" content="There is no purchase order corresponding to the PO Number mentioned in this invoice. The invoice is therefore disqualified"/>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK1VvMavEeWStvAm3pigyA" name="" content=""/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK1VvcavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK1VvsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK1Vv8avEeWStvAm3pigyA" name="Message1" content="Message1" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK1VwMavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK1VwcavEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK1VwsavEeWStvAm3pigyA"/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK1Vw8avEeWStvAm3pigyA"/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK1VxMavEeWStvAm3pigyA" type="ASSIGNMENT" expression="="/>
-              </action>
-            </widgets>
-            <widgets xmi:type="form:HtmlWidget" xmi:id="_rMQdwCQ0EeOLGr_nKDPveA" name="ForShowingLeftColumn">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_eK1V7MavEeWStvAm3pigyA" line="6"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_eK1V7cavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_eK1V7savEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_eK1V78avEeWStvAm3pigyA" name="&lt;script>$('link').filter(&quot;[href='css/bonita_form_default.css']&quot;).remove();&lt;/script>" content="&lt;script>$('link').filter(&quot;[href='css/bonita_form_default.css']&quot;).remove();&lt;/script>"/>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_eK1V8MavEeWStvAm3pigyA" name="" content=""/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_eK1V8cavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_eK1V8savEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_eK1V88avEeWStvAm3pigyA" name="HTML_widget1" content="HTML_widget1" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_eK1V9MavEeWStvAm3pigyA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_eK1V9cavEeWStvAm3pigyA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_eK1V9savEeWStvAm3pigyA"/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_eK1V98avEeWStvAm3pigyA"/>
-                <operator xmi:type="expression:Operator" xmi:id="_eK1V-MavEeWStvAm3pigyA" type="ASSIGNMENT" expression="="/>
-              </action>
-            </widgets>
-            <pageLabel xmi:type="expression:Expression" xmi:id="_eK1VOMavEeWStvAm3pigyA" name="Notification for an invalid invoice" content="Notification for an invalid invoice" returnTypeFixed="true"/>
-          </form>
-          <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_eK0uEsavEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-          <confirmationMessage xmi:type="expression:Expression" xmi:id="_eK0uE8avEeWStvAm3pigyA" name="" content="" returnTypeFixed="true"/>
-          <formMapping xmi:type="process:FormMapping" xmi:id="_p-o9lRvNEeWwB5BI7jdhZw" type="LEGACY">
+          <formMapping xmi:type="process:FormMapping" xmi:id="_p-o9lRvNEeWwB5BI7jdhZw">
             <targetForm xmi:type="expression:Expression" xmi:id="_eK1V_cavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_p-o9lBvNEeWwB5BI7jdhZw"/>
@@ -1670,12 +748,6 @@
         </elements>
         <elements xmi:type="process:TextAnnotation" xmi:id="_DjxLsCE2EeOYZ5FLf8w4Yw" text="anthony.nichols"/>
       </elements>
-      <resourceFolders xmi:type="process:ResourceFolder" xmi:id="_6b-9oF6HEeOydZYmLGcBJA" path="_rghjYBx6EeOHkqHEYuVquQ/application/application"/>
-      <mandatorySymbol xmi:type="expression:Expression" xmi:id="_rgpfQRx6EeOHkqHEYuVquQ" name="" content="" returnTypeFixed="true"/>
-      <mandatoryLabel xmi:type="expression:Expression" xmi:id="_rgpfQBx6EeOHkqHEYuVquQ" name="" content="" returnTypeFixed="true"/>
-      <processTemplate xmi:type="process:AssociatedFile" xmi:id="_6b-9oV6HEeOydZYmLGcBJA" path="_rghjYBx6EeOHkqHEYuVquQ/html/process.html"/>
-      <pageTemplate xmi:type="process:AssociatedFile" xmi:id="_6b-9o16HEeOydZYmLGcBJA" path="_rghjYBx6EeOHkqHEYuVquQ/html/page.html"/>
-      <consultationTemplate xmi:type="process:AssociatedFile" xmi:id="_6b-9ol6HEeOydZYmLGcBJA" path="_rghjYBx6EeOHkqHEYuVquQ/html/consultation.html"/>
       <data xmi:type="process:JavaObjectData" xmi:id="_0g8bABx6EeOHkqHEYuVquQ" name="invoiceData" dataType="_gAqOcbcjEeKDPt49AAIjYw" className="java.util.List">
         <defaultValue xmi:type="expression:Expression" xmi:id="_eK1VF8avEeWStvAm3pigyA" name="" content="" interpreter="GROOVY" returnType="java.util.List"/>
       </data>
@@ -1697,16 +769,12 @@
       <data xmi:type="process:Data" xmi:id="_gLHd0CQvEeOLGr_nKDPveA" name="relativeInvoiceFolderPath" dataType="_gAqOb7cjEeKDPt49AAIjYw">
         <defaultValue xmi:type="expression:Expression" xmi:id="_eK1VFMavEeWStvAm3pigyA" content=""/>
       </data>
-      <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_rgpfQxx6EeOHkqHEYuVquQ" name="" content="" returnTypeFixed="true"/>
-      <confirmationMessage xmi:type="expression:Expression" xmi:id="_rgpfQhx6EeOHkqHEYuVquQ" name="" content="" returnTypeFixed="true"/>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_p-nvqBvNEeWwB5BI7jdhZw" type="LEGACY">
+      <formMapping xmi:type="process:FormMapping" xmi:id="_p-nvqBvNEeWwB5BI7jdhZw">
         <targetForm xmi:type="expression:Expression" xmi:id="_eK1V_savEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
-      <recapPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_rgpfRBx6EeOHkqHEYuVquQ" name="" content="" returnTypeFixed="true"/>
-      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_p-nvqRvNEeWwB5BI7jdhZw" type="LEGACY">
+      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_p-nvqRvNEeWwB5BI7jdhZw">
         <targetForm xmi:type="expression:Expression" xmi:id="_eK1V_8avEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
-      <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_rgpfPxx6EeOHkqHEYuVquQ" name="" content="" returnTypeFixed="true"/>
       <connections xmi:type="process:SequenceFlow" xmi:id="_kBU9AB7iEeOC6apRDzzBBw" target="_kQxHMB7iEeOC6apRDzzBBw" source="_8PVDABx6EeOHkqHEYuVquQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_kBU9AR7iEeOC6apRDzzBBw"/>
         <condition xmi:type="expression:Expression" xmi:id="_eK18VcavEeWStvAm3pigyA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -1875,18 +943,6 @@
         <value xmi:type="expression:Expression" xmi:id="_eK19BsavEeWStvAm3pigyA" content="" returnTypeFixed="true"/>
       </searchIndexes>
     </elements>
-    <mandatorySymbol xmi:type="expression:Expression" xmi:id="_PyeI_RxvEeOLad8DsLhBTA" name="*" content="*" returnTypeFixed="true"/>
-    <mandatoryLabel xmi:type="expression:Expression" xmi:id="_PyeI_hxvEeOLad8DsLhBTA" name="" content="" returnTypeFixed="true"/>
-    <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_PyeI-hxvEeOLad8DsLhBTA" name="" content="" returnTypeFixed="true"/>
-    <confirmationMessage xmi:type="expression:Expression" xmi:id="_PyeI-RxvEeOLad8DsLhBTA" name="" content="" returnTypeFixed="true"/>
-    <formMapping xmi:type="process:FormMapping" xmi:id="_p-nvWhvNEeWwB5BI7jdhZw" type="LEGACY">
-      <targetForm xmi:type="expression:Expression" xmi:id="_eK1WAMavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
-    </formMapping>
-    <recapPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_PyeI_BxvEeOLad8DsLhBTA" name="" content="" returnTypeFixed="true"/>
-    <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_p-nvWxvNEeWwB5BI7jdhZw" type="LEGACY">
-      <targetForm xmi:type="expression:Expression" xmi:id="_eK1WAcavEeWStvAm3pigyA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
-    </overviewFormMapping>
-    <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_PyeI-xxvEeOLad8DsLhBTA" name="" content="" returnTypeFixed="true"/>
     <datatypes xmi:type="process:BooleanType" xmi:id="_gAqOa7cjEeKDPt49AAIjYw" name="Boolean"/>
     <datatypes xmi:type="process:DateType" xmi:id="_gAqObLcjEeKDPt49AAIjYw" name="Date"/>
     <datatypes xmi:type="process:IntegerType" xmi:id="_gAqObbcjEeKDPt49AAIjYw" name="Integer"/>
@@ -2211,234 +1267,5 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sWUQwh-MEeOFGPUeOtA9zQ" points="[-70, 31, -1, -31]$[-70, 47, -1, -15]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sWWtAB-MEeOFGPUeOtA9zQ" id="(1.0,0.5)"/>
     </edges>
-  </notation:Diagram>
-  <notation:Diagram xmi:id="_gAtRpLcjEeKDPt49AAIjYw" type="Form" measurementUnit="Pixel">
-    <children xmi:type="notation:Node" xmi:id="_gAtRpbcjEeKDPt49AAIjYw" type="2126">
-      <children xmi:type="notation:DecorationNode" xmi:id="_gAtRprcjEeKDPt49AAIjYw" type="5160"/>
-      <styles xmi:type="notation:DescriptionStyle" xmi:id="_gAtRp7cjEeKDPt49AAIjYw"/>
-      <styles xmi:type="notation:FontStyle" xmi:id="_gAtRqLcjEeKDPt49AAIjYw" fontName="Segoe UI"/>
-      <styles xmi:type="notation:LineStyle" xmi:id="_gAtRqbcjEeKDPt49AAIjYw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAtRqrcjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAtRq7cjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KLcavEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAtRrbcjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAtRrrcjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KL8avEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAtRsLcjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAtRsbcjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KMcavEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAtRs7cjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAtRtLcjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KM8avEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAtRtrcjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAtRt7cjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KNcavEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAtRubcjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAtRurcjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KN8avEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAtRvLcjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAtRvbcjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KOcavEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAtRv7cjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAtRwLcjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KO8avEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAtRwrcjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAtRw7cjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KPcavEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAtRxbcjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAtRxrcjEeKDPt49AAIjYw" type="2133" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KP8avEeWStvAm3pigyA" type="5189"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAtRyLcjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAtRybcjEeKDPt49AAIjYw" type="2143" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KQcavEeWStvAm3pigyA" type="5197"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAtRy7cjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Node" xmi:id="_gAtRzLcjEeKDPt49AAIjYw" type="2126">
-      <children xmi:type="notation:DecorationNode" xmi:id="_gAtRzbcjEeKDPt49AAIjYw" type="5160"/>
-      <styles xmi:type="notation:DescriptionStyle" xmi:id="_gAtRzrcjEeKDPt49AAIjYw"/>
-      <styles xmi:type="notation:FontStyle" xmi:id="_gAtRz7cjEeKDPt49AAIjYw" fontName="Segoe UI"/>
-      <styles xmi:type="notation:LineStyle" xmi:id="_gAtR0LcjEeKDPt49AAIjYw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAtR0bcjEeKDPt49AAIjYw"/>
-    </children>
-    <styles xmi:type="notation:DiagramStyle" xmi:id="_gAtR0rcjEeKDPt49AAIjYw"/>
-  </notation:Diagram>
-  <notation:Diagram xmi:id="_gAtR07cjEeKDPt49AAIjYw" type="Form" measurementUnit="Pixel">
-    <styles xmi:type="notation:DiagramStyle" xmi:id="_gAtR1LcjEeKDPt49AAIjYw"/>
-  </notation:Diagram>
-  <notation:Diagram xmi:id="_gAtR1bcjEeKDPt49AAIjYw" type="Form" measurementUnit="Pixel">
-    <children xmi:type="notation:Node" xmi:id="_gAtR1rcjEeKDPt49AAIjYw" type="2126">
-      <children xmi:type="notation:DecorationNode" xmi:id="_gAt4sLcjEeKDPt49AAIjYw" type="5160"/>
-      <styles xmi:type="notation:DescriptionStyle" xmi:id="_gAt4sbcjEeKDPt49AAIjYw"/>
-      <styles xmi:type="notation:FontStyle" xmi:id="_gAt4srcjEeKDPt49AAIjYw" fontName="Segoe UI"/>
-      <styles xmi:type="notation:LineStyle" xmi:id="_gAt4s7cjEeKDPt49AAIjYw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAt4tLcjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAt4tbcjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KQ8avEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAt4t7cjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAt4uLcjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KRcavEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAt4urcjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAt4u7cjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KR8avEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAt4vbcjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAt4vrcjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KScavEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAt4wLcjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAt4wbcjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KS8avEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAt4w7cjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAt4xLcjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KTcavEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAt4xrcjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAt4x7cjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KT8avEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAt4ybcjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAt4yrcjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KUcavEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAt4zLcjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAt4zbcjEeKDPt49AAIjYw" type="2120" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KU8avEeWStvAm3pigyA" type="5157"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAt4z7cjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Node" xmi:id="_gAt40LcjEeKDPt49AAIjYw" type="2126">
-      <children xmi:type="notation:DecorationNode" xmi:id="_gAt40bcjEeKDPt49AAIjYw" type="5160"/>
-      <styles xmi:type="notation:DescriptionStyle" xmi:id="_gAt40rcjEeKDPt49AAIjYw"/>
-      <styles xmi:type="notation:FontStyle" xmi:id="_gAt407cjEeKDPt49AAIjYw" fontName="Segoe UI"/>
-      <styles xmi:type="notation:LineStyle" xmi:id="_gAt41LcjEeKDPt49AAIjYw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAt41bcjEeKDPt49AAIjYw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_gAt41rcjEeKDPt49AAIjYw" type="2133" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KVcavEeWStvAm3pigyA" type="5189"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gAt42LcjEeKDPt49AAIjYw"/>
-    </children>
-    <styles xmi:type="notation:DiagramStyle" xmi:id="_gAt42bcjEeKDPt49AAIjYw"/>
-  </notation:Diagram>
-  <notation:Diagram xmi:id="_gAt42rcjEeKDPt49AAIjYw" type="Form" measurementUnit="Pixel">
-    <styles xmi:type="notation:DiagramStyle" xmi:id="_gAt427cjEeKDPt49AAIjYw"/>
-  </notation:Diagram>
-  <notation:Diagram xmi:id="_vAegQBxzEeOHkqHEYuVquQ" type="Form" element="_vAWkkxxzEeOHkqHEYuVquQ" measurementUnit="Pixel">
-    <children xmi:type="notation:Node" xmi:id="_FzAc4Bx0EeOHkqHEYuVquQ" type="2126" element="_vAWklBxzEeOHkqHEYuVquQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_FzBD8Bx0EeOHkqHEYuVquQ" type="5160" element="_vAWklBxzEeOHkqHEYuVquQ"/>
-      <styles xmi:type="notation:DescriptionStyle" xmi:id="_FzAc4Rx0EeOHkqHEYuVquQ"/>
-      <styles xmi:type="notation:FontStyle" xmi:id="_FzAc4hx0EeOHkqHEYuVquQ" fontName="Segoe UI"/>
-      <styles xmi:type="notation:LineStyle" xmi:id="_FzAc4xx0EeOHkqHEYuVquQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FzAc5Bx0EeOHkqHEYuVquQ"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_FzCSFxx0EeOHkqHEYuVquQ" type="2133" element="_vAXL6BxzEeOHkqHEYuVquQ" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KV8avEeWStvAm3pigyA" type="5189" element="_vAXL6BxzEeOHkqHEYuVquQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FzCSGBx0EeOHkqHEYuVquQ"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_FzC5IRx0EeOHkqHEYuVquQ" type="2133" element="_vAXMAhxzEeOHkqHEYuVquQ" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KWcavEeWStvAm3pigyA" type="5189" element="_vAXMAhxzEeOHkqHEYuVquQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FzC5Ihx0EeOHkqHEYuVquQ"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_FzC5JBx0EeOHkqHEYuVquQ" type="2131" element="_vAXykBxzEeOHkqHEYuVquQ" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KW8avEeWStvAm3pigyA" type="5135" element="_vAXykBxzEeOHkqHEYuVquQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FzC5JRx0EeOHkqHEYuVquQ"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_FzDgMBx0EeOHkqHEYuVquQ" type="2143" element="_vAXyohxzEeOHkqHEYuVquQ" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KXcavEeWStvAm3pigyA" type="5197" element="_vAXyohxzEeOHkqHEYuVquQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FzDgMRx0EeOHkqHEYuVquQ"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_tyPv8CQxEeOLGr_nKDPveA" type="2131" element="_tyLegCQxEeOLGr_nKDPveA" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KX8avEeWStvAm3pigyA" type="5135" element="_tyLegCQxEeOLGr_nKDPveA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tyPv8SQxEeOLGr_nKDPveA"/>
-    </children>
-    <styles xmi:type="notation:DiagramStyle" xmi:id="_vAegQRxzEeOHkqHEYuVquQ"/>
-  </notation:Diagram>
-  <notation:Diagram xmi:id="_Gw3nwBx-EeOHkqHEYuVquQ" type="Form" element="_GwvE4Bx-EeOHkqHEYuVquQ" measurementUnit="Pixel">
-    <children xmi:type="notation:Node" xmi:id="_GC6kIB7EEeOHkqHEYuVquQ" type="2126" element="_Gwvr8Bx-EeOHkqHEYuVquQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_GC6kJR7EEeOHkqHEYuVquQ" type="5160" element="_Gwvr8Bx-EeOHkqHEYuVquQ"/>
-      <styles xmi:type="notation:DescriptionStyle" xmi:id="_GC6kIR7EEeOHkqHEYuVquQ"/>
-      <styles xmi:type="notation:FontStyle" xmi:id="_GC6kIh7EEeOHkqHEYuVquQ" fontName="Segoe UI"/>
-      <styles xmi:type="notation:LineStyle" xmi:id="_GC6kIx7EEeOHkqHEYuVquQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GC6kJB7EEeOHkqHEYuVquQ"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_Is8cQB7WEeOC6apRDzzBBw" type="2120" element="_Ifw5sB7HEeOHkqHEYuVquQ" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KYcavEeWStvAm3pigyA" type="5157" element="_Ifw5sB7HEeOHkqHEYuVquQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Is8cQR7WEeOC6apRDzzBBw"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_7SV6cB-oEeON7rwtYoi-Jg" type="2118" element="_7SENoB-oEeON7rwtYoi-Jg" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KY8avEeWStvAm3pigyA" type="5154" element="_7SENoB-oEeON7rwtYoi-Jg"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7SV6cR-oEeON7rwtYoi-Jg"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_Gx1nIB-qEeON7rwtYoi-Jg" type="2136" element="_GxtrUB-qEeON7rwtYoi-Jg" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KZcavEeWStvAm3pigyA" type="5141" element="_GxtrUB-qEeON7rwtYoi-Jg"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Gx1nIR-qEeON7rwtYoi-Jg"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_wi-4sCBAEeON7rwtYoi-Jg" type="2142" element="_wi5ZICBAEeON7rwtYoi-Jg" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KZ8avEeWStvAm3pigyA" type="5196" element="_wi5ZICBAEeON7rwtYoi-Jg"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wi-4sSBAEeON7rwtYoi-Jg"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_Drsb4CB2EeObHIR6CZXcdw" type="2125" element="_DroKcCB2EeObHIR6CZXcdw" fontName="Segoe UI">
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DrtC8CB2EeObHIR6CZXcdw"/>
-    </children>
-    <styles xmi:type="notation:DiagramStyle" xmi:id="_Gw3nwRx-EeOHkqHEYuVquQ"/>
-  </notation:Diagram>
-  <notation:Diagram xmi:id="_rM-qIB-MEeOFGPUeOtA9zQ" type="Form" element="_rM5xzx-MEeOFGPUeOtA9zQ" measurementUnit="Pixel">
-    <children xmi:type="notation:Shape" xmi:id="_7Pz0lh-MEeOFGPUeOtA9zQ" type="2120" element="_rM5yFh-MEeOFGPUeOtA9zQ" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KasavEeWStvAm3pigyA" type="5157" element="_rM5yFh-MEeOFGPUeOtA9zQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7Pz0lx-MEeOFGPUeOtA9zQ"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_7P0boR-MEeOFGPUeOtA9zQ" type="2120" element="_rM5yLR-MEeOFGPUeOtA9zQ" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KbMavEeWStvAm3pigyA" type="5157" element="_rM5yLR-MEeOFGPUeOtA9zQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7P0boh-MEeOFGPUeOtA9zQ"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_7P1CsB-MEeOFGPUeOtA9zQ" type="2120" element="_rM5yRB-MEeOFGPUeOtA9zQ" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KbsavEeWStvAm3pigyA" type="5157" element="_rM5yRB-MEeOFGPUeOtA9zQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7P1CsR-MEeOFGPUeOtA9zQ"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_7P1Csx-MEeOFGPUeOtA9zQ" type="2120" element="_rM6Yvh-MEeOFGPUeOtA9zQ" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KcMavEeWStvAm3pigyA" type="5157" element="_rM6Yvh-MEeOFGPUeOtA9zQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7P1CtB-MEeOFGPUeOtA9zQ"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_7P1pwR-MEeOFGPUeOtA9zQ" type="2120" element="_rM6Y1R-MEeOFGPUeOtA9zQ" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KcsavEeWStvAm3pigyA" type="5157" element="_rM6Y1R-MEeOFGPUeOtA9zQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7P1pwh-MEeOFGPUeOtA9zQ"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_7P1pxB-MEeOFGPUeOtA9zQ" type="2120" element="_rM6ZBR-MEeOFGPUeOtA9zQ" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KdMavEeWStvAm3pigyA" type="5157" element="_rM6ZBR-MEeOFGPUeOtA9zQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7P1pxR-MEeOFGPUeOtA9zQ"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_7P2Q0R-MEeOFGPUeOtA9zQ" type="2120" element="_rM6ZNR-MEeOFGPUeOtA9zQ" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KdsavEeWStvAm3pigyA" type="5157" element="_rM6ZNR-MEeOFGPUeOtA9zQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7P2Q0h-MEeOFGPUeOtA9zQ"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_7P235h-MEeOFGPUeOtA9zQ" type="2115" element="_rM6__B-MEeOFGPUeOtA9zQ" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KeMavEeWStvAm3pigyA" type="5151" element="_rM6__B-MEeOFGPUeOtA9zQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7P235x-MEeOFGPUeOtA9zQ"/>
-    </children>
-    <children xmi:type="notation:Node" xmi:id="_8-La4B-MEeOFGPUeOtA9zQ" type="2126" element="_89ooUB-MEeOFGPUeOtA9zQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_8-MB8B-MEeOFGPUeOtA9zQ" type="5160" element="_89ooUB-MEeOFGPUeOtA9zQ"/>
-      <styles xmi:type="notation:DescriptionStyle" xmi:id="_8-La4R-MEeOFGPUeOtA9zQ"/>
-      <styles xmi:type="notation:FontStyle" xmi:id="_8-La4h-MEeOFGPUeOtA9zQ" fontName="Segoe UI"/>
-      <styles xmi:type="notation:LineStyle" xmi:id="_8-La4x-MEeOFGPUeOtA9zQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8-La5B-MEeOFGPUeOtA9zQ"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_FiGjwB-NEeOFGPUeOtA9zQ" type="2131" element="_FiAdIB-NEeOFGPUeOtA9zQ" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eK3KesavEeWStvAm3pigyA" type="5135" element="_FiAdIB-NEeOFGPUeOtA9zQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FiGjwR-NEeOFGPUeOtA9zQ"/>
-    </children>
-    <styles xmi:type="notation:DiagramStyle" xmi:id="_rM-qIR-MEeOFGPUeOtA9zQ"/>
   </notation:Diagram>
 </xmi:XMI>

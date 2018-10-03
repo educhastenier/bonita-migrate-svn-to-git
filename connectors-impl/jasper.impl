@@ -1,34 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<implementation:connectorImplementation xmlns:implementation="http://www.bonitasoft.org/ns/connector/implementation/6.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-
-	<definitionId>jasper</definitionId>
-	<definitionVersion>1.0.0</definitionVersion>
-	<description>Implementation based on jasper 5.0.4</description>
-	<implementationClassname>org.bonitasoft.connectors.jasper.CreateReportFromDataBase</implementationClassname>
-	<implementationId>jasper-impl</implementationId>
-	<implementationVersion>1.0.6</implementationVersion>
-
-<jarDependencies>
-<jarDependency>bonita-connector-jasper-impl-1.0.6.jar</jarDependency>
-<jarDependency>commons-digester-2.1.jar</jarDependency>
-<jarDependency>bcprov-jdk14-138.jar</jarDependency>
-<jarDependency>jfreechart-1.0.12.jar</jarDependency>
-<jarDependency>commons-logging-1.1.1.jar</jarDependency>
-<jarDependency>bcmail-jdk14-1.38.jar</jarDependency>
-<jarDependency>bcprov-jdk14-1.38.jar</jarDependency>
-<jarDependency>jackson-databind-2.0.5.jar</jarDependency>
-<jarDependency>commons-collections-2.1.jar</jarDependency>
-<jarDependency>jasperreports-5.1.0.jar</jarDependency>
-<jarDependency>castor-1.2.jar</jarDependency>
-<jarDependency>commons-beanutils-1.8.0.jar</jarDependency>
-<jarDependency>bctsp-jdk14-1.38.jar</jarDependency>
-<jarDependency>jackson-annotations-2.0.5.jar</jarDependency>
-<jarDependency>bcmail-jdk14-138.jar</jarDependency>
-<jarDependency>jcommon-1.0.15.jar</jarDependency>
-<jarDependency>itext-2.1.7.js2.jar</jarDependency>
-<jarDependency>jackson-core-2.0.5.jar</jarDependency>
-
-</jarDependencies>
-
+<implementation:connectorImplementation xmlns:implementation="http://www.bonitasoft.org/ns/connector/implementation/6.0">
+  <implementationId>jasper-impl</implementationId>
+  <implementationVersion>1.0.6</implementationVersion>
+  <definitionId>jasper</definitionId>
+  <definitionVersion>1.0.0</definitionVersion>
+  <implementationClassname>org.bonitasoft.connectors.jasper.CreateReportFromDataBase</implementationClassname>
+  <description>Implementation based on jasper 5.0.4</description>
+  <jarDependencies>
+    <jarDependency>bonita-connector-jasper-impl-1.0.6.jar</jarDependency>
+    <jarDependency>commons-digester-2.1.jar</jarDependency>
+    <jarDependency>bcprov-jdk14-138.jar</jarDependency>
+    <jarDependency>jfreechart-1.0.12.jar</jarDependency>
+    <jarDependency>commons-logging-1.1.1.jar</jarDependency>
+    <jarDependency>bcmail-jdk14-1.38.jar</jarDependency>
+    <jarDependency>bcprov-jdk14-1.38.jar</jarDependency>
+    <jarDependency>jackson-databind-2.0.5.jar</jarDependency>
+    <jarDependency>commons-collections-2.1.jar</jarDependency>
+    <jarDependency>jasperreports-5.1.0.jar</jarDependency>
+    <jarDependency>castor-1.2.jar</jarDependency>
+    <jarDependency>commons-beanutils-1.8.0.jar</jarDependency>
+    <jarDependency>bctsp-jdk14-1.38.jar</jarDependency>
+    <jarDependency>jackson-annotations-2.0.5.jar</jarDependency>
+    <jarDependency>bcmail-jdk14-138.jar</jarDependency>
+    <jarDependency>jcommon-1.0.15.jar</jarDependency>
+    <jarDependency>itext-2.1.7.js2.jar</jarDependency>
+    <jarDependency>jackson-core-2.0.5.jar</jarDependency>
+  </jarDependencies>
 </implementation:connectorImplementation>
