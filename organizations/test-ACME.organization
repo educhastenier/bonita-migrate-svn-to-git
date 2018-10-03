@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="test-ACME" description="Test ACME organization.">
+  <users>
+    <user userName="william.jobs">
+      <firstName>William</firstName>
+      <lastName>Jobs</lastName>
+      <title>Mr</title>
+      <jobTitle>Chief Executive Officer</jobTitle>
+      <professionalData>
+        <email>william.jobs@acme.com</email>
+        <phoneNumber>484-302-5170</phoneNumber>
+        <mobileNumber>484-302-0170</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="april.sanchez">
+      <firstName>April</firstName>
+      <lastName>Sanchez</lastName>
+      <title>Mrs</title>
+      <jobTitle>Compensation specialist</jobTitle>
+      <manager>helen.kelly</manager>
+      <professionalData>
+        <email>april.sanchez@acme.com</email>
+        <phoneNumber>484-302-5298</phoneNumber>
+        <mobileNumber>484-302-0298</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="helen.kelly">
+      <firstName>Helen</firstName>
+      <lastName>Kelly</lastName>
+      <title>Mrs</title>
+      <jobTitle>Human resource manager</jobTitle>
+      <manager>william.jobs</manager>
+      <professionalData>
+        <email>helen.kelly@acme.com</email>
+        <phoneNumber>484-302-5298</phoneNumber>
+        <mobileNumber>484-302-0298</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="walter.bates">
+      <firstName>Walter</firstName>
+      <lastName>Bates</lastName>
+      <title>Mr</title>
+      <jobTitle>Human resources benefits</jobTitle>
+      <manager>helen.kelly</manager>
+      <professionalData>
+        <email>walter.bates@acme.com</email>
+        <phoneNumber>484-302-5298</phoneNumber>
+        <mobileNumber>484-302-0298</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="zachary.williamson">
+      <firstName>Zachary</firstName>
+      <lastName>Williamson</lastName>
+      <title>Mr</title>
+      <jobTitle>Chief Financial Officer</jobTitle>
+      <manager>william.jobs</manager>
+      <professionalData>
+        <email>zachary.williamson@acme.com</email>
+        <phoneNumber>484-302-5298</phoneNumber>
+        <mobileNumber>484-302-0298</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="patrick.gardenier">
+      <firstName>Patrick</firstName>
+      <lastName>Gardenier</lastName>
+      <title>Mr</title>
+      <jobTitle>Financial controller</jobTitle>
+      <manager>zachary.williamson</manager>
+      <professionalData>
+        <email>patrick.gardenier@acme.com</email>
+        <phoneNumber>484-302-5298</phoneNumber>
+        <mobileNumber>484-302-0298</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="virginie.jomphe">
+      <firstName>Virgine</firstName>
+      <lastName>Jomphe</lastName>
+      <title>Mrs</title>
+      <jobTitle>Accountant</jobTitle>
+      <manager>zachary.williamson</manager>
+      <professionalData>
+        <email>virginie.jomphe@acme.com</email>
+        <phoneNumber>484-302-5617</phoneNumber>
+        <mobileNumber>484-302-0617</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="thorsten.hartmann">
+      <firstName>Thorsten</firstName>
+      <lastName>Hartmann</lastName>
+      <title>Mr</title>
+      <jobTitle>Financial planning manager</jobTitle>
+      <manager>zachary.williamson</manager>
+      <professionalData>
+        <email>thorsten.hartmann@acme.com</email>
+        <phoneNumber>484-302-5617</phoneNumber>
+        <mobileNumber>484-302-0617</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="jan.fisher">
+      <firstName>Jan</firstName>
+      <lastName>Fisher</lastName>
+      <title>Mr</title>
+      <jobTitle>Infrastucture specialist</jobTitle>
+      <manager>favio.riviera</manager>
+      <professionalData>
+        <email>jan.fisher@acme.com</email>
+        <phoneNumber>484-302-5617</phoneNumber>
+        <mobileNumber>484-302-0617</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="isabel.bleasdale">
+      <firstName>Isabel</firstName>
+      <lastName>Bleasdale</lastName>
+      <title>Mrs</title>
+      <jobTitle>Product marketing manager</jobTitle>
+      <manager>favio.riviera</manager>
+      <professionalData>
+        <email>isabel.bleasdale@acme.com</email>
+        <phoneNumber>484-302-5617</phoneNumber>
+        <mobileNumber>484-302-0617</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="favio.riviera">
+      <firstName>Favio</firstName>
+      <lastName>Rivera</lastName>
+      <title>Mr</title>
+      <jobTitle>Vice President of Marketing</jobTitle>
+      <manager>william.jobs</manager>
+      <professionalData>
+        <email>favio.riviera@acme.com</email>
+        <phoneNumber>484-302-5617</phoneNumber>
+        <mobileNumber>484-302-0617</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="michael.morrison">
+      <firstName>Michael</firstName>
+      <lastName>Morrison</lastName>
+      <title>Mr</title>
+      <jobTitle>Chief Technical Officer</jobTitle>
+      <manager>william.jobs</manager>
+      <professionalData>
+        <email>michael.morrison@acme.com</email>
+        <phoneNumber>484-302-5617</phoneNumber>
+        <mobileNumber>484-302-0617</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="marc.marseau">
+      <firstName>Marc</firstName>
+      <lastName>Marseau</lastName>
+      <title>Mr</title>
+      <jobTitle>Engineer</jobTitle>
+      <manager>michael.morrison</manager>
+      <professionalData>
+        <email>marc.marseau@acme.com</email>
+        <phoneNumber>484-302-5617</phoneNumber>
+        <mobileNumber>484-302-0617</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="joseph.hovell">
+      <firstName>Joseph</firstName>
+      <lastName>Hovell</lastName>
+      <title>Mr</title>
+      <jobTitle>Engineer</jobTitle>
+      <manager>michael.morrison</manager>
+      <professionalData>
+        <email>joseph.hovell@acme.com</email>
+        <phoneNumber>484-302-5617</phoneNumber>
+        <mobileNumber>484-302-0617</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="mauro.zetticci">
+      <firstName>Mauro</firstName>
+      <lastName>Zetticci</lastName>
+      <title>Mr</title>
+      <jobTitle>Consultant</jobTitle>
+      <manager>michael.morrison</manager>
+      <professionalData>
+        <email>mauro.zetticci@acme.com</email>
+        <phoneNumber>484-302-5745</phoneNumber>
+        <mobileNumber>484-302-0745</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="thomas.wallis">
+      <firstName>Thomas</firstName>
+      <lastName>Wallis</lastName>
+      <title>Mr</title>
+      <jobTitle>Consultant</jobTitle>
+      <manager>michael.morrison</manager>
+      <professionalData>
+        <email>thomas.wallis@acme.com</email>
+        <phoneNumber>484-302-5745</phoneNumber>
+        <mobileNumber>484-302-0745</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="daniela.angelo">
+      <firstName>Daniela</firstName>
+      <lastName>Angelo</lastName>
+      <title>Mrs</title>
+      <jobTitle>Vice President of Sales</jobTitle>
+      <manager>william.jobs</manager>
+      <professionalData>
+        <email>daniela.angelo@acme.com</email>
+        <phoneNumber>484-302-5745</phoneNumber>
+        <mobileNumber>484-302-0745</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="anthony.nichols">
+      <firstName>Anthony</firstName>
+      <lastName>Nichols</lastName>
+      <title>Mr</title>
+      <jobTitle>Account manager</jobTitle>
+      <manager>daniela.angelo</manager>
+      <professionalData>
+        <email>anthony.nichols@acme.com</email>
+        <phoneNumber>484-302-5745</phoneNumber>
+        <mobileNumber>484-302-0745</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="misa.kumagai">
+      <firstName>Misa</firstName>
+      <lastName>Kumagai</lastName>
+      <title>Mrs</title>
+      <jobTitle>Account manager</jobTitle>
+      <manager>daniela.angelo</manager>
+      <professionalData>
+        <email>misa.kumagai@acme.com</email>
+        <phoneNumber>484-302-5745</phoneNumber>
+        <mobileNumber>484-302-0745</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="norio.yamazaki">
+      <firstName>Norio</firstName>
+      <lastName>Yamazaki</lastName>
+      <title>Mr</title>
+      <jobTitle>Account manager</jobTitle>
+      <manager>daniela.angelo</manager>
+      <professionalData>
+        <email>norio.yamazaki@acme.com</email>
+        <phoneNumber>484-302-5745</phoneNumber>
+        <mobileNumber>484-302-0745</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="giovanna.almeida">
+      <firstName>Giovanna</firstName>
+      <lastName>Almeida</lastName>
+      <title>Mrs</title>
+      <jobTitle>Account manager</jobTitle>
+      <manager>daniela.angelo</manager>
+      <professionalData>
+        <email>giovanna.almeida@acme.com</email>
+        <phoneNumber>484-302-5745</phoneNumber>
+        <mobileNumber>484-302-0745</mobileNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="charles.admin">
+      <firstName>Charles</firstName>
+      <lastName>Administrator</lastName>
+      <title>M.</title>
+      <jobTitle>Platform Administrator</jobTitle>
+      <personalData>
+        <email>charlesadmin@yahoo.com</email>
+        <phoneNumber>+1-217-9639292</phoneNumber>
+        <mobileNumber>+1-217-2985534</mobileNumber>
+        <building>22</building>
+        <address>Main Street</address>
+        <zipCode>62313</zipCode>
+        <city>BASCO</city>
+        <state>Illinois</state>
+        <country>United States</country>
+      </personalData>
+      <professionalData>
+        <email>charles.admin@acme.com</email>
+        <phoneNumber>+1-407-4963436</phoneNumber>
+        <mobileNumber>+1-407-5669807</mobileNumber>
+        <building>10</building>
+        <address>Lee Street</address>
+        <zipCode>32950</zipCode>
+        <city>MALABAR</city>
+        <state>Florida</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="tim.manager">
+      <firstName>Tim</firstName>
+      <lastName>Manager</lastName>
+      <title>M.</title>
+      <jobTitle>QA Manager</jobTitle>
+      <personalData>
+        <email>tim_manager@hotmail.com</email>
+        <phoneNumber>+1-701-1880847</phoneNumber>
+        <mobileNumber>+1-701-8638993</mobileNumber>
+        <building>37</building>
+        <address>Lake Street</address>
+        <zipCode>58570</zipCode>
+        <city>SOLEN</city>
+        <state>North Dakota</state>
+        <country>United States</country>
+      </personalData>
+      <professionalData>
+        <email>tim.manager@acme.com</email>
+        <phoneNumber>+1-256-1956764</phoneNumber>
+        <mobileNumber>+1-256-9141092</mobileNumber>
+        <building>17</building>
+        <address>2nd Street</address>
+        <zipCode>36263</zipCode>
+        <city>GRAHAM</city>
+        <state>Alabama</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="paulette.owner">
+      <firstName>Paulette</firstName>
+      <lastName>Owner</lastName>
+      <title>Mme</title>
+      <jobTitle>Process Specialist</jobTitle>
+      <personalData>
+        <email>paulette.owner@gmail.com</email>
+        <phoneNumber>+1-941-9732878</phoneNumber>
+        <mobileNumber>+1-941-9311182</mobileNumber>
+        <building>31</building>
+        <address>Forest Street</address>
+        <zipCode>34287</zipCode>
+        <city>NORTH PORT</city>
+        <state>Florida</state>
+        <country>United States</country>
+      </personalData>
+      <professionalData>
+        <email>paulette.owner@acme.com</email>
+        <phoneNumber>+1-716-2937443</phoneNumber>
+        <mobileNumber>+1-716-0095925</mobileNumber>
+        <building>46</building>
+        <address>Fourth Street</address>
+        <zipCode>14112</zipCode>
+        <city>NORTH EVANS</city>
+        <state>New York</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="marie.roux">
+      <firstName>Marie</firstName>
+      <lastName>Roux</lastName>
+      <title>Mme</title>
+      <jobTitle>Marketing Specialist</jobTitle>
+      <manager>tim.manager</manager>
+      <personalData>
+        <email>marie.roux@tscnhdmpxwxh.fr</email>
+        <phoneNumber>+1-520-1702516</phoneNumber>
+        <mobileNumber>+1-520-2928775</mobileNumber>
+        <building>46</building>
+        <address>Adams Street</address>
+        <zipCode>86504</zipCode>
+        <city>FORT DEFIANCE</city>
+        <state>Arizona</state>
+        <country>United States</country>
+      </personalData>
+      <professionalData>
+        <email>marie.roux@acme.com</email>
+        <phoneNumber>+1-315-7257539</phoneNumber>
+        <mobileNumber>+1-315-8246888</mobileNumber>
+        <building>21</building>
+        <address>View Street</address>
+        <zipCode>13628</zipCode>
+        <city>DEFERIET</city>
+        <state>New York</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="louis.martin">
+      <firstName>Louis</firstName>
+      <lastName>Martin</lastName>
+      <title>M.</title>
+      <jobTitle>Accounting Specialist</jobTitle>
+      <manager>tim.manager</manager>
+      <personalData>
+        <email>louismartin@stxtt.net</email>
+        <phoneNumber>+1-419-5052434</phoneNumber>
+        <mobileNumber>+1-419-6946775</mobileNumber>
+        <building>34</building>
+        <address>Park Street</address>
+        <zipCode>43321</zipCode>
+        <city>FULTON</city>
+        <state>Ohio</state>
+        <country>United States</country>
+      </personalData>
+      <professionalData>
+        <email>louis.martin@acme.com</email>
+        <phoneNumber>+1-507-7171575</phoneNumber>
+        <mobileNumber>+1-507-5995638</mobileNumber>
+        <building>35</building>
+        <address>Park Street</address>
+        <zipCode>56118</zipCode>
+        <city>BINGHAM LAKE</city>
+        <state>Minnesota</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="elodie.girard">
+      <firstName>Elodie</firstName>
+      <lastName>Girard</lastName>
+      <title>Mme</title>
+      <jobTitle>Legal Specialist</jobTitle>
+      <manager>tim.manager</manager>
+      <personalData>
+        <email>elodie_girard@qrdaxwcwyf.org</email>
+        <phoneNumber>+1-518-3904073</phoneNumber>
+        <mobileNumber>+1-518-6428411</mobileNumber>
+        <building>42</building>
+        <address>Woodland Street</address>
+        <zipCode>12133</zipCode>
+        <city>NORTH HOOSICK</city>
+        <state>New York</state>
+        <country>United States</country>
+      </personalData>
+      <professionalData>
+        <email>elodie.girard@acme.com</email>
+        <phoneNumber>+1-607-4167570</phoneNumber>
+        <mobileNumber>+1-607-2140706</mobileNumber>
+        <building>50</building>
+        <address>Chestnut Street</address>
+        <zipCode>13739</zipCode>
+        <city>BLOOMVILLE</city>
+        <state>New York</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="marie.lefebvre">
+      <firstName>Marie</firstName>
+      <lastName>Lefebvre</lastName>
+      <title>Mme</title>
+      <jobTitle>Legal Specialist</jobTitle>
+      <manager>marie.roux</manager>
+      <personalData>
+        <email>mlefebvre@yahoo.com</email>
+        <phoneNumber>+1-316-9368924</phoneNumber>
+        <mobileNumber>+1-316-1190492</mobileNumber>
+        <building>29</building>
+        <address>Cedar Street</address>
+        <zipCode>66850</zipCode>
+        <city>ELMDALE</city>
+        <state>Kansas</state>
+        <country>United States</country>
+      </personalData>
+      <professionalData>
+        <email>marie.lefebvre@acme.com</email>
+        <phoneNumber>+1-870-1039937</phoneNumber>
+        <mobileNumber>+1-870-8096751</mobileNumber>
+        <building>21</building>
+        <address>Willow Street</address>
+        <zipCode>72330</zipCode>
+        <city>DYESS</city>
+        <state>Arkansas</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="bruno.martin">
+      <firstName>Bruno</firstName>
+      <lastName>Martin</lastName>
+      <title>M.</title>
+      <jobTitle>Manufacturing Specialist</jobTitle>
+      <manager>louis.martin</manager>
+      <personalData>
+        <email>bruno.martin@hotmail.com</email>
+        <phoneNumber>+1-937-4627474</phoneNumber>
+        <mobileNumber>+1-937-2603008</mobileNumber>
+        <building>29</building>
+        <address>Pine Street</address>
+        <zipCode>45171</zipCode>
+        <city>SARDINIA</city>
+        <state>Ohio</state>
+        <country>United States</country>
+      </personalData>
+      <professionalData>
+        <email>bruno.martin@acme.com</email>
+        <phoneNumber>+1-810-9786641</phoneNumber>
+        <mobileNumber>+1-810-5500263</mobileNumber>
+        <building>11</building>
+        <address>Lakeview Street</address>
+        <zipCode>48004</zipCode>
+        <city>ANCHORVILLE</city>
+        <state>Michigan</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="madeleine.fournier">
+      <firstName>Madeleine</firstName>
+      <lastName>Fournier</lastName>
+      <title>Mme</title>
+      <jobTitle>Human Resources Specialist</jobTitle>
+      <manager>louis.martin</manager>
+      <personalData>
+        <email>mfournier@dkj.eu</email>
+        <phoneNumber>+1-419-4049195</phoneNumber>
+        <mobileNumber>+1-419-1701868</mobileNumber>
+        <building>14</building>
+        <address>Lee Street</address>
+        <zipCode>43565</zipCode>
+        <city>TONTOGANY</city>
+        <state>Ohio</state>
+        <country>United States</country>
+      </personalData>
+      <professionalData>
+        <email>madeleine.fournier@acme.com</email>
+        <phoneNumber>+1-316-7031449</phoneNumber>
+        <mobileNumber>+1-316-4098593</mobileNumber>
+        <building>17</building>
+        <address>Hickory Street</address>
+        <zipCode>67221</zipCode>
+        <city>MC CONNELL A F B</city>
+        <state>Kansas</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="christian.garcia">
+      <firstName>Christian</firstName>
+      <lastName>Garcia</lastName>
+      <title>M.</title>
+      <jobTitle>Accounting Specialist</jobTitle>
+      <manager>madeleine.fournier</manager>
+      <personalData>
+        <email>christian_garcia@aol.com</email>
+        <phoneNumber>+1-605-6468131</phoneNumber>
+        <mobileNumber>+1-605-5481501</mobileNumber>
+        <building>26</building>
+        <address>Oak Street</address>
+        <zipCode>57632</zipCode>
+        <city>HERREID</city>
+        <state>South Dakota</state>
+        <country>United States</country>
+      </personalData>
+      <professionalData>
+        <email>christian.garcia@acme.com</email>
+        <phoneNumber>+1-818-5313141</phoneNumber>
+        <mobileNumber>+1-818-6788427</mobileNumber>
+        <building>37</building>
+        <address>Oak Street</address>
+        <zipCode>91617</zipCode>
+        <city>VALLEY VILLAGE</city>
+        <state>California</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <password encrypted="false">bpm</password>
+    </user>
+  </users>
+  <roles>
+    <role name="member">
+      <displayName>Member</displayName>
+      <description></description>
+    </role>
+    <role name="qa_role">
+      <displayName>QA Role</displayName>
+      <description>This role is a QA test role</description>
+    </role>
+  </roles>
+  <groups>
+    <group name="acme">
+      <displayName>Acme</displayName>
+      <description>This group represents the acme department of the ACME organization</description>
+    </group>
+    <group name="hr" parentPath="/acme">
+      <displayName>Human Resources</displayName>
+      <description>This group represents the human resources department of the ACME organization</description>
+    </group>
+    <group name="finance" parentPath="/acme">
+      <displayName>Finance</displayName>
+      <description>This group represents the finance department of the ACME organization</description>
+    </group>
+    <group name="it" parentPath="/acme">
+      <displayName>Infrastructure</displayName>
+      <description>This group represents the infrastructure department of the ACME organization</description>
+    </group>
+    <group name="marketing" parentPath="/acme">
+      <displayName>Marketing</displayName>
+      <description>This group represents the marketing department of the ACME organization</description>
+    </group>
+    <group name="production" parentPath="/acme">
+      <displayName>Production</displayName>
+      <description>This group represents the production department of the ACME organization</description>
+    </group>
+    <group name="sales" parentPath="/acme">
+      <displayName>Sales</displayName>
+      <description>This group represents the sales department of the ACME organization</description>
+    </group>
+    <group name="europe" parentPath="/acme/sales">
+      <displayName>Europe</displayName>
+      <description>This group represents the europe department of the ACME organization</description>
+    </group>
+    <group name="asia" parentPath="/acme/sales">
+      <displayName>Asia</displayName>
+      <description>This group represents the asia department of the ACME organization</description>
+    </group>
+    <group name="latin_america" parentPath="/acme/sales">
+      <displayName>Latin America</displayName>
+      <description>This group represents the latin america department of the ACME organization</description>
+    </group>
+    <group name="north_america" parentPath="/acme/sales">
+      <displayName>North America</displayName>
+      <description>This group represents the north america department of the ACME organization</description>
+    </group>
+    <group name="rd" parentPath="/acme/production">
+      <displayName>Research &amp; Development</displayName>
+      <description>This group represents the research &amp; development department of the ACME organization</description>
+    </group>
+    <group name="services" parentPath="/acme/production">
+      <displayName>Services</displayName>
+      <description>This group represents the services department of the ACME organization</description>
+    </group>
+    <group name="qa_group">
+      <displayName>QA Group</displayName>
+      <description>This group is a QA test group</description>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>william.jobs</userName>
+      <roleName>member</roleName>
+      <groupName>acme</groupName>
+    </membership>
+    <membership>
+      <userName>april.sanchez</userName>
+      <roleName>member</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/acme</groupParentPath>
+    </membership>
+    <membership>
+      <userName>helen.kelly</userName>
+      <roleName>member</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/acme</groupParentPath>
+    </membership>
+    <membership>
+      <userName>walter.bates</userName>
+      <roleName>member</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/acme</groupParentPath>
+    </membership>
+    <membership>
+      <userName>zachary.williamson</userName>
+      <roleName>member</roleName>
+      <groupName>finance</groupName>
+      <groupParentPath>/acme</groupParentPath>
+    </membership>
+    <membership>
+      <userName>patrick.gardenier</userName>
+      <roleName>member</roleName>
+      <groupName>finance</groupName>
+      <groupParentPath>/acme</groupParentPath>
+    </membership>
+    <membership>
+      <userName>virginie.jomphe</userName>
+      <roleName>member</roleName>
+      <groupName>finance</groupName>
+      <groupParentPath>/acme</groupParentPath>
+    </membership>
+    <membership>
+      <userName>thorsten.hartmann</userName>
+      <roleName>member</roleName>
+      <groupName>finance</groupName>
+      <groupParentPath>/acme</groupParentPath>
+    </membership>
+    <membership>
+      <userName>jan.fisher</userName>
+      <roleName>member</roleName>
+      <groupName>it</groupName>
+      <groupParentPath>/acme</groupParentPath>
+    </membership>
+    <membership>
+      <userName>isabel.bleasdale</userName>
+      <roleName>member</roleName>
+      <groupName>marketing</groupName>
+      <groupParentPath>/acme</groupParentPath>
+    </membership>
+    <membership>
+      <userName>favio.riviera</userName>
+      <roleName>member</roleName>
+      <groupName>marketing</groupName>
+      <groupParentPath>/acme</groupParentPath>
+    </membership>
+    <membership>
+      <userName>michael.morrison</userName>
+      <roleName>member</roleName>
+      <groupName>production</groupName>
+      <groupParentPath>/acme</groupParentPath>
+    </membership>
+    <membership>
+      <userName>marc.marseau</userName>
+      <roleName>member</roleName>
+      <groupName>rd</groupName>
+      <groupParentPath>/acme/production</groupParentPath>
+    </membership>
+    <membership>
+      <userName>joseph.hovell</userName>
+      <roleName>member</roleName>
+      <groupName>rd</groupName>
+      <groupParentPath>/acme/production</groupParentPath>
+    </membership>
+    <membership>
+      <userName>mauro.zetticci</userName>
+      <roleName>member</roleName>
+      <groupName>services</groupName>
+      <groupParentPath>/acme/production</groupParentPath>
+    </membership>
+    <membership>
+      <userName>thomas.wallis</userName>
+      <roleName>member</roleName>
+      <groupName>services</groupName>
+      <groupParentPath>/acme/production</groupParentPath>
+    </membership>
+    <membership>
+      <userName>daniela.angelo</userName>
+      <roleName>member</roleName>
+      <groupName>europe</groupName>
+      <groupParentPath>/acme/sales</groupParentPath>
+    </membership>
+    <membership>
+      <userName>misa.kumagai</userName>
+      <roleName>member</roleName>
+      <groupName>asia</groupName>
+      <groupParentPath>/acme/sales</groupParentPath>
+    </membership>
+    <membership>
+      <userName>norio.yamazaki</userName>
+      <roleName>member</roleName>
+      <groupName>asia</groupName>
+      <groupParentPath>/acme/sales</groupParentPath>
+    </membership>
+    <membership>
+      <userName>giovanna.almeida</userName>
+      <roleName>member</roleName>
+      <groupName>latin_america</groupName>
+      <groupParentPath>/acme/sales</groupParentPath>
+    </membership>
+    <membership>
+      <userName>anthony.nichols</userName>
+      <roleName>member</roleName>
+      <groupName>north_america</groupName>
+      <groupParentPath>/acme/sales</groupParentPath>
+    </membership>
+    <membership>
+      <userName>charles.admin</userName>
+      <roleName>qa_role</roleName>
+      <groupName>qa_group</groupName>
+    </membership>
+    <membership>
+      <userName>tim.manager</userName>
+      <roleName>qa_role</roleName>
+      <groupName>qa_group</groupName>
+    </membership>
+    <membership>
+      <userName>paulette.owner</userName>
+      <roleName>qa_role</roleName>
+      <groupName>qa_group</groupName>
+    </membership>
+    <membership>
+      <userName>marie.roux</userName>
+      <roleName>member</roleName>
+      <groupName>qa_group</groupName>
+    </membership>
+    <membership>
+      <userName>louis.martin</userName>
+      <roleName>member</roleName>
+      <groupName>qa_group</groupName>
+    </membership>
+    <membership>
+      <userName>elodie.girard</userName>
+      <roleName>qa_role</roleName>
+      <groupName>qa_group</groupName>
+    </membership>
+    <membership>
+      <userName>marie.lefebvre</userName>
+      <roleName>member</roleName>
+      <groupName>qa_group</groupName>
+    </membership>
+    <membership>
+      <userName>bruno.martin</userName>
+      <roleName>member</roleName>
+      <groupName>qa_group</groupName>
+    </membership>
+    <membership>
+      <userName>madeleine.fournier</userName>
+      <roleName>member</roleName>
+      <groupName>qa_group</groupName>
+    </membership>
+    <membership>
+      <userName>christian.garcia</userName>
+      <roleName>qa_role</roleName>
+      <groupName>qa_group</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>

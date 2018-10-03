@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<implementation:connectorImplementation xmlns:implementation="http://www.bonitasoft.org/ns/connector/implementation/6.0">
+  <implementationId>test-failed-connector-impl</implementationId>
+  <implementationVersion>1.0.0</implementationVersion>
+  <definitionId>test-failed-connector</definitionId>
+  <definitionVersion>1.0.0</definitionVersion>
+  <implementationClassname>org.bonitasoft.qa.connector.TestFailedConnectorImpl</implementationClassname>
+  <jarDependencies/>
+</implementation:connectorImplementation>

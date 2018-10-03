@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ASCII"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" definitionId="salesforce-createsobject" version="1.0.0" name="salesForceConfiguration" modelVersion="7.6.0-002">
+  <parameters key="username">
+    <expression xsi:type="expression:Expression" name="salesForceUsername" content="salesForceUsername" type="TYPE_PARAMETER">
+      <referencedElements xsi:type="parameter:Parameter" name="salesForceUsername" value="" typeClassname="java.lang.String" description=""/>
+    </expression>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="salesForcePassword" content="salesForcePassword" type="TYPE_PARAMETER">
+      <referencedElements xsi:type="parameter:Parameter" name="salesForcePassword" value="" typeClassname="java.lang.String" description=""/>
+    </expression>
+  </parameters>
+  <parameters key="securityToken">
+    <expression xsi:type="expression:Expression" name="salesForceSecurityToken" content="salesForceSecurityToken" type="TYPE_PARAMETER">
+      <referencedElements xsi:type="parameter:Parameter" name="salesForceSecurityToken" value="" typeClassname="java.lang.String" description=""/>
+    </expression>
+  </parameters>
+  <parameters key="authEndpoint">
+    <expression xsi:type="expression:Expression" name="https://login.salesforce.com/services/Soap/u/24.0" content="https://login.salesforce.com/services/Soap/u/24.0"/>
+  </parameters>
+  <parameters key="serviceEndpoint">
+    <expression xsi:type="expression:Expression" name="https://login.salesforce.com/services/Soap/u/24.0" content="https://login.salesforce.com/services/Soap/u/24.0"/>
+  </parameters>
+  <parameters key="restEndpoint">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="proxyHost">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="proxyPort">
+    <expression xsi:type="expression:Expression" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="proxyUsername">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="proxyPassword">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="connectionTimeout">
+    <expression xsi:type="expression:Expression" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="readTimeout">
+    <expression xsi:type="expression:Expression" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="sObjectType">
+    <expression xsi:type="expression:Expression" name="FeedItem" content="FeedItem" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="fieldValues">
+    <expression xsi:type="expression:TableExpression">
+      <expressions>
+        <expressions name="ParentId" content="ParentId"/>
+        <expressions name="salesForceChatterId" content="salesForceChatterId" type="TYPE_VARIABLE">
+          <referencedElements xsi:type="process:Data" name="salesForceChatterId">
+            <dataType xsi:type="process:StringType" href="platform:/resource/Leave%20Management/diagrams/Leave%20Management-1.0.proc#_tqM8pqsvEeK648UwrOWNXw"/>
+          </referencedElements>
+        </expressions>
+      </expressions>
+      <expressions>
+        <expressions name="Body" content="Body"/>
+        <expressions name="chatterMessage" content="String.format(&quot;Your leave from %s to %s has been approved by the HR&quot;, &#xD;&#xA;&#x9;leave.getStartDate().format(&quot;dd MMM yyyy&quot;), leave.getEndDate().format(&quot;dd MMM yyyy&quot;));" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+          <referencedElements xsi:type="process:JavaObjectData" name="leave" transient="true" datasourceId="IN_MEMORY" className="org.bonitasoft.leavemanagement.EmployeeLeave">
+            <dataType xsi:type="process:JavaType" href="platform:/resource/Leave%20Management/diagrams/Leave%20Management-1.0.proc#_tqM8p6svEeK648UwrOWNXw"/>
+          </referencedElements>
+        </expressions>
+      </expressions>
+    </expression>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>
